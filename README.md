@@ -23,6 +23,7 @@ Daniel John Murray · [ORCID 0009-0005-1794-5945](https://orcid.org/0009-0005-17
 | If you are | Start at |
 | --- | --- |
 | A person | [the website](https://thantiklermcirony.github.io/bounded-observer/) — twelve simulations you can touch |
+| Curious what finite observation feels like | [Inside](https://thantiklermcirony.github.io/bounded-observer/inside.html) — a playable constructed world; its outcomes illustrate chosen rules, not empirical evidence |
 | Tracing the wider research | [research library](https://thantiklermcirony.github.io/bounded-observer/library.html) — dated manuscript and prediction records; [laboratories](https://thantiklermcirony.github.io/bounded-observer/labs.html) — results and failure gates |
 | An AI agent | [`AGENTS.md`](AGENTS.md), then [`llms.txt`](llms.txt) |
 | A mathematician | [`papers/capstone/`](papers/capstone/) — *Bounded Composition and Its Horizons*, v2.1 |
@@ -69,7 +70,7 @@ programme that was tested and refuted as stated.
 
 ```
 docs/        six chapters, one per gate
-site/        the website, interactive models, research library and laboratories
+site/        the website, Inside experience, interactive models, research library and laboratories
 toolkit/     the Python package `bounded`: the maths, with tests that check each theorem
 registry/    the current claim atlas and dated source inventory
 papers/      programme paper guide and the capstone source

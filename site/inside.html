@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside · The Bounded Observer</title>
+<meta name="description" content="A playable constructed world about finite observation, predictive state, an unreachable horizon and the geometry of a chosen model.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Inside · The Bounded Observer">
+<meta property="og:description" content="Move, look, measure and make a prediction from inside a world you cannot fully see.">
+<meta property="og:url" content="https://thantiklermcirony.github.io/bounded-observer/inside.html">
+<meta property="og:image" content="https://thantiklermcirony.github.io/bounded-observer/observer-hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="inside.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#experience">Skip to the experience</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
+  <nav aria-label="Primary"><a href="./">Walk</a><a href="inside.html" aria-current="page">Inside</a><a href="evidence.html">Atlas</a><a href="library.html">Library</a><a href="labs.html">Labs</a><a href="ida.html">IDA Live</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
+</div></header>
+
+<main id="main">
+  <section class="inside-intro"><div class="wrap">
+    <div class="inside-intro-grid">
+      <div>
+        <div class="gate-tag">A playable thought experiment · about four minutes</div>
+        <h1>What can you know<br>from inside?</h1>
+        <p class="lede">Move through a world that only gives you a narrow view. Decide what to remember. Bet on what happens when you act. Then try to reach its edge.</p>
+        <p class="inside-construction"><b>Constructed world · [P] inside declared rules.</b> Its numerical results follow tested code and chosen assumptions. A surprising moment here is an experience of the model, not evidence that nature has the same geometry.</p>
+        <p class="inside-intro-action"><a class="btn" href="#experience">Enter the world <span aria-hidden="true">↓</span></a></p>
+      </div>
+      <div class="inside-intro-aside" aria-label="The four questions in this experience">
+        <span>01 <b>What can you see?</b></span>
+        <span>02 <b>What did you forget?</b></span>
+        <span>03 <b>Can you reach the edge?</b></span>
+        <span>04 <b>Does a loop bring you back unchanged?</b></span>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="inside-section" id="experience" aria-label="Inside the constructed world"><div class="wrap">
+    <div class="inside-shell">
+      <div class="inside-shell-head">
+        <div><span class="inside-kicker">Inside / active scene</span><h2 id="chapter-label" tabindex="-1">Ready to enter</h2></div>
+        <div class="inside-shell-top-actions"><button type="button" id="pause-button" class="inside-minor">Pause</button><button type="button" id="reset-button" class="inside-minor">Start over</button></div>
+      </div>
+
+      <div class="inside-play-grid">
+        <div class="inside-play-main">
+          <div class="inside-viewport">
+            <canvas id="inside-canvas" width="1200" height="720" tabindex="0" aria-label="View of the constructed world. Use the controls below to move, look, zoom, scan and act." aria-describedby="inside-keyboard">Your browser needs canvas support for the animated view. The controls, readouts and event record below remain available.</canvas>
+            <div class="inside-viewport-label" aria-hidden="true">YOUR VIEW · NOT THE WHOLE WORLD</div>
+          </div>
+          <p id="scene-prompt" class="inside-scene-prompt" role="status" aria-live="polite">Your instruments are waiting. Enter to see what they can reach.</p>
+        </div>
+
+        <aside class="inside-instruments" aria-label="Observer instruments">
+          <div class="inside-instruments-title">Your instrument panel <span>Finite channels</span></div>
+          <div class="inside-reading inside-reading-wide"><span>Seen now</span><output id="read-seen">No observation yet</output></div>
+          <div class="inside-reading inside-reading-wide"><span>Kept in memory</span><output id="read-kept">Nothing retained</output></div>
+          <div class="inside-reading inside-reading-wide"><span>Hidden from you</span><output id="read-hidden">The world beyond your view</output></div>
+          <div class="inside-reading inside-reading-wide inside-reading-bet"><span>Your prediction</span><output id="read-bet">No prediction yet</output></div>
+          <div class="inside-reading"><span>Scan budget</span><output id="read-budget">—</output></div>
+          <div class="inside-reading"><span>Distance travelled</span><output id="read-distance">0</output></div>
+          <div class="inside-reading"><span>Turn</span><output id="read-turn">0°</output></div>
+        </aside>
+      </div>
+
+      <div class="inside-command-deck" aria-label="Experience controls">
+        <div class="inside-primary-actions">
+          <button type="button" id="start-button" class="inside-primary">Enter the world <span aria-hidden="true">↗</span></button>
+          <button type="button" id="scan-button" class="inside-action inside-scan">Scan surroundings</button>
+          <button type="button" id="act-button" class="inside-action">Intervene</button>
+          <button type="button" id="advance-button" class="inside-action">Continue</button>
+          <button type="button" id="loop-button" class="inside-action">Walk the loop</button>
+        </div>
+
+        <div class="inside-control-grid">
+          <div class="inside-control-group">
+            <h3>Move</h3>
+            <div class="inside-move-pad">
+              <button type="button" data-move="forward" aria-label="Move forward">↑</button>
+              <button type="button" data-move="left" aria-label="Move left">←</button>
+              <button type="button" data-move="back" aria-label="Move backward">↓</button>
+              <button type="button" data-move="right" aria-label="Move right">→</button>
+            </div>
+          </div>
+          <div class="inside-control-group">
+            <h3>Look</h3>
+            <div class="inside-small-controls"><button type="button" data-look="left">↶ Left</button><button type="button" data-look="right">Right ↷</button></div>
+          </div>
+          <div class="inside-control-group">
+            <h3>Sensor zoom</h3>
+            <div class="inside-small-controls"><button type="button" data-zoom="out" aria-label="Zoom sensor out">− Out</button><button type="button" data-zoom="in" aria-label="Zoom sensor in">+ In</button></div>
+          </div>
+          <fieldset class="inside-control-group inside-prediction">
+            <legend>What do you predict?</legend>
+            <div class="inside-small-controls"><button type="button" data-predict="steady" aria-pressed="false">Stays steady</button><button type="button" data-predict="collapse" aria-pressed="false">Collapses</button></div>
+          </fieldset>
+        </div>
+
+        <div class="inside-options">
+          <label><input type="checkbox" id="slow-mode"> Step-by-step motion</label>
+          <label><input type="checkbox" id="flat-compare"> Compare flat geometry</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="inside-after">
+      <div class="inside-instructions" id="inside-keyboard">
+        <div class="gate-tag">How to move</div>
+        <p><b>With the world focused:</b> W/A/S/D or arrow keys move · Q/E look · wheel or +/− changes sensor zoom · Space scans · Enter acts. Click or focus the world to use these keys; every action also has a visible button.</p>
+        <p><b>Step-by-step motion</b> keeps each action discrete. You can pause, restart and use the buttons without pointer lock.</p>
+      </div>
+      <div class="inside-record">
+        <div class="gate-tag">What happened</div>
+        <div id="event-log" class="inside-event-log" role="log" aria-live="polite" aria-relevant="additions text"><p>Your record begins when you enter.</p></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="inside-context gate"><div class="wrap"><div class="prose">
+    <div class="gate-tag">What this demonstrates</div>
+    <h2>The model can surprise you. Its assumptions still matter.</h2>
+    <p><span class="tag tag-P">P</span> In the declared trial, one surface reading is insufficient for this pulse because two histories yield different futures. Keeping reserve repairs this prediction. The trial does not establish a sufficient state for any natural system.</p>
+    <p><span class="tag tag-P">P</span> On the controlled straight route in the chosen disk, <em>r = tanh(ρ/2)</em>: finite intrinsic distance maps below chart radius 1. In the selected curvature −1 geometry, a carried compass turns around a closed geodesic loop by the signed holonomy, with magnitude equal to enclosed area. The sensor aperture and zoom tradeoff are authored rules. Boundedness alone does not select this geometry.</p>
+    <p>The relevant conditional mathematics, assumptions and code are in <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/1-access.md">Access</a>, <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/2-state.md">State</a>, <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/4-chart.md">Chart and boundary</a>, <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/5-geometry.md">Geometry</a> and <a href="https://github.com/thantiklermcirony/bounded-observer/tree/main/toolkit/bounded">the toolkit</a>. Natural systems need separately measured channels, admitted actions and independent tests. The <a href="evidence.html">evidence atlas</a> records those claims and their status.</p>
+    <p><a class="btn ghost" href="./#gate1">Explore the twelve focused models</a></p>
+  </div></div></section>
+</main>
+<footer class="foot"><div class="wrap">The Bounded Observer · <a href="./">The six-gate walk</a> · <a href="library.html">Research library</a> · <a href="https://orcid.org/0009-0005-1794-5945">Daniel John Murray</a></div></footer>
+<script type="module" src="inside.js"></script>
+</body>
+</html>

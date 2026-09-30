@@ -22,7 +22,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
       - name: The browser maths, against the same identities
-        run: node site/bo.test.mjs
+        run: |
+          node site/bo.test.mjs
+          node --test site/inside-core.test.mjs
 
   atlas:
     runs-on: ubuntu-latest

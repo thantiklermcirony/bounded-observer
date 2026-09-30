@@ -89,7 +89,7 @@ em.term { font-style: normal; font-weight: 600; }
 .top nav a { font-family: var(--sans); font-size: .82rem; color: var(--ink-2); text-decoration: none; white-space: nowrap; }
 .top nav a:hover, .top nav a[aria-current] { color: var(--accent); }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .top-in { display: block; height: auto; padding-top: .55rem; padding-bottom: .55rem; }
   .brand { display: block; }
   .top nav { margin: .4rem 0 0; flex-wrap: wrap; gap: .2rem .8rem; overflow: visible; }
@@ -107,6 +107,8 @@ em.term { font-style: normal; font-weight: 600; }
   .hero-art img { aspect-ratio: 4 / 3; object-fit: cover; }
 }
 .lede { font-size: clamp(1.1rem, 2.4vw, 1.3rem); color: var(--ink-2); line-height: 1.5; }
+.hero-entry { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin: 1.4rem 0 0; }
+.hero-entry span { flex: 1 1 12rem; font: .83rem/1.45 var(--sans); color: var(--ink-2); }
 .sig { font-family: var(--sans); font-size: .82rem; color: var(--ink-3); margin-top: 2rem; }
 
 .gate-index {

@@ -452,7 +452,9 @@ export function simHolonomy(host) {
       g.beginPath(); g.arc(x + len * Math.cos(th), y + len * Math.sin(th), 3, 0, TAU); g.fillStyle = col; g.fill();
     };
     drawArrow(C(0, 0), 0, ink3());
-    drawArrow(C(0, 0), -ang, accent());
+    // For the displayed 0 → a → a⊕b → 0 traversal, the signed compass
+    // holonomy is ang (clockwise for this counterclockwise triangle).
+    drawArrow(C(0, 0), ang, accent());
 
     [[C(0, 0), 'you'], [a, 'a'], [ab, 'a ⊕ b']].forEach(([p, t]) => {
       const [x, y] = P(p);
