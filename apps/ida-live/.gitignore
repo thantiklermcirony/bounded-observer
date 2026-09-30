@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+sessions/
+references/
+settings.json
+maps/custom.json
+.pytest_cache/
+build/
+dist/

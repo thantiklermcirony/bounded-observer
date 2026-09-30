@@ -1,0 +1,12 @@
+{
+  "name": "euclidean",
+  "note": "Same axes as the default map, composed flat (tangent-space sum) and mapped into the disk once. This is the Euclidean comparator: if it predicts probes as well as the hyperbolic map, the curvature is not earning its place.",
+  "kappa": 0.5,
+  "composition": "euclidean_tangent",
+  "axes": [
+    {"feature": "alpha_tp", "angle_deg": 90,  "weight": 1.0, "label": "Alpha behind the ears"},
+    {"feature": "beta",     "angle_deg": 0,   "weight": 1.0, "label": "Beta"},
+    {"feature": "theta_af", "angle_deg": 180, "weight": 1.0, "label": "Forehead theta"},
+    {"feature": "aperiodic","angle_deg": 270, "weight": 1.0, "label": "1/f exponent"}
+  ]
+}

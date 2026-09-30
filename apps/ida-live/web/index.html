@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IDA Live</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2305070d' stroke='%237FC8C4' stroke-width='2'/><path d='M4 16 Q10 8 16 16 T28 16' fill='none' stroke='%232EF2C4' stroke-width='2'/><circle cx='16' cy='16' r='2.5' fill='%23FFB45C'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="gl" aria-label="Live view of your brain waves"></canvas>
+<div id="labels" aria-hidden="true"></div>
+
+<div id="hud">
+  <header class="top">
+    <div class="brand"><b>IDA</b><span>Live</span></div>
+    <button id="conn-chip" class="chip" title="Headband and signal">
+      <span class="dot" id="conn-dot"></span>
+      <span id="conn-name">Not connected</span>
+      <span class="pips" id="pips"><i></i><i></i><i></i><i></i></span>
+      <span id="battery" class="muted"></span>
+    </button>
+    <nav id="lenses" class="seg" aria-label="Lens">
+      <button data-lens="stream">Stream<kbd>1</kbd></button>
+      <button data-lens="tunnel">Tunnel<kbd>2</kbd></button>
+      <button data-lens="map">Map<kbd>3</kbd></button>
+      <button data-lens="aurora">Aurora<kbd>4</kbd></button>
+      <button data-lens="web">Web<kbd>5</kbd></button>
+    </nav>
+    <div class="top-actions">
+      <button id="btn-home" class="levels-btn" title="Home (Esc from anywhere, or G)">Home</button>
+      <button id="btn-levels" class="levels-btn" title="Levels (L)" hidden>Levels</button>
+      <span id="claude-live" class="claude-badge" hidden title="Claude is connected through the control folder">Claude</span>
+      <button id="btn-filters" class="icon" aria-expanded="false" title="Filters (F)">
+        <svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+      </button>
+      <button id="btn-control" class="icon" aria-expanded="false" title="Control (K)">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>
+      </button>
+      <button id="btn-full" class="icon" title="Full screen (F11)">
+        <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+      <button id="btn-quit" class="icon" title="Quit IDA Live">
+        <svg viewBox="0 0 24 24"><path d="M12 3v8"/><path d="M6.3 7.5a8 8 0 1 0 11.4 0"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section id="filters" class="glass tray" hidden aria-label="Filters">
+    <div class="tray-row bands" id="band-chips"></div>
+    <div class="tray-row toggles">
+      <label class="tog"><input type="checkbox" data-d="amplitude"><span>Amplitude <small>thickness</small></span></label>
+      <label class="tog"><input type="checkbox" data-d="rainbows"><span>Rainbows <small>correlation</small></span></label>
+      <label class="tog"><input type="checkbox" data-d="hemispheres"><span>Hemispheres <small>left · right</small></span></label>
+      <label class="tog"><input type="checkbox" data-d="ida"><span>IDA <small>your state moves the field</small></span></label>
+      <label class="tog"><input type="checkbox" data-d="grid"><span>Grid</span></label>
+    </div>
+    <div class="tray-row sliders">
+      <label>Speed<input type="range" data-d="speed" min="0.1" max="3" step="0.05"><output></output></label>
+      <label>Wave height<input type="range" data-d="gain" min="0.2" max="4" step="0.05"><output></output></label>
+      <label>Tilt<input type="range" data-d="tilt" min="0" max="65" step="1"><output></output></label>
+      <label>Glow<input type="range" data-d="glow" min="0.2" max="2" step="0.05"><output></output></label>
+      <label>Rainbow at<input type="range" data-d="rainbow_threshold" min="0.1" max="0.95" step="0.01"><output></output></label>
+    </div>
+    <p class="fine">Every change is saved into the recording. <kbd>H</kbd> hides everything but the view.</p>
+  </section>
+
+  <aside id="cluster" class="cluster" aria-label="Measures">
+    <h3>Awareness candidates <button class="info" data-info="candidates">?</button></h3>
+    <div class="tile" data-m="phi"><span class="lbl">Φ information rate</span><span class="val"><b>–</b><small>bits/s</small></span><canvas></canvas></div>
+    <div class="tile" data-m="lzc"><span class="lbl">Complexity (LZ)</span><span class="val"><b>–</b></span><canvas></canvas></div>
+    <div class="tile" data-m="alt"><span class="lbl">EEG alternation</span><span class="val"><b>–</b></span><canvas></canvas></div>
+    <div class="tile" data-m="aperiodic"><span class="lbl">1/f exponent</span><span class="val"><b>–</b></span><canvas></canvas></div>
+    <h3>IDA <button class="info" data-info="ida">?</button></h3>
+    <div class="tile" data-m="d"><span class="lbl">Displacement</span><span class="val"><b>–</b><small>from reference</small></span><canvas></canvas></div>
+    <div class="tile" data-m="residue"><span class="lbl">Residue</span><span class="val"><b>–</b><small id="ret-dir"></small></span><canvas></canvas></div>
+    <div class="tile small" data-m="return"><span class="lbl">Last return</span><span class="val"><b>–</b></span></div>
+  </aside>
+
+  <footer class="bottom">
+    <div class="primary">
+      <button id="primary-btn" class="primary-btn">
+        <svg class="pring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5" class="track"/><circle cx="18" cy="18" r="15.5" class="bar" id="pring-bar"/></svg>
+        <span id="primary-label">Connect headband</span>
+      </button>
+      <div id="primary-sub" class="sub"></div>
+    </div>
+    <div class="quick" id="quick">
+      <button id="btn-drift" disabled>I drifted <kbd>D</kbd></button>
+      <button id="btn-mark" disabled>Mark <kbd>M</kbd></button>
+    </div>
+  </footer>
+
+  <div id="guide" class="glass guide" hidden aria-live="polite"></div>
+  <div id="toasts" aria-live="polite"></div>
+</div>
+
+<section id="home" class="home" hidden aria-label="Home">
+  <div class="home-in">
+    <div class="home-head"><div><p class="lv-num">IDA Live</p><h1>What would you like to do?</h1></div>
+      <button id="home-close" class="ghost">Just watch my brain</button></div>
+    <ol class="steps" id="home-steps"></ol>
+    <div class="doors" id="home-doors"></div>
+    <div class="home-foot">
+      <button class="linkish" id="home-settings">Settings, signal and advanced tests</button>
+      <button class="linkish" id="home-mre">Random-bit test (MRE)</button>
+      <button class="linkish" id="home-record">Plain recording</button>
+    </div>
+  </div>
+</section>
+<section id="booth-stage" class="booth-stage" hidden aria-label="Listening booth"></section>
+<section id="results-pick" class="modal" hidden role="dialog" aria-modal="true">
+  <div class="card glass"><h2>Results</h2>
+    <div class="pick">
+      <button data-r="booth"><b>Your experience map</b><span>Can your brain reading see how you feel? (listening booth)</span></button>
+      <button data-r="search"><b>The Search</b><span>Which shape of your mind goes with clarity, and where its sweet spot is</span></button>
+      <button data-r="attention"><b>Your attention profile</b><span>How you focus, tested on blocks it never saw</span></button>
+      <button data-r="levels"><b>What the levels did</b><span>Real rounds vs replay, effect vs effort</span></button>
+      <button data-r="mre"><b>Random-bit test (MRE)</b><span>Your paper's test, with its three falsifiers</span></button>
+    </div>
+    <button class="ghost" id="results-close">Close</button></div>
+</section>
+
+<section id="levels-screen" class="levels-screen" hidden aria-label="Levels">
+  <div class="levels-head">
+    <div><p class="lv-num">IDA Live</p><h1>Levels</h1>
+    <p class="muted">Real footage that your brain drives in real time. Twenty seconds to learn your baseline, then one three-minute journey. When you slip, the scene, the music and the pulse usually carry you back up; which falls get carried is sealed in advance, so we learn whether the carry really works.</p></div>
+    <div class="row"><button id="levels-results" class="ghost">What the levels did</button>
+    <button id="levels-close" class="icon" title="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  </div>
+  <div id="attn-card" class="attn-wrap"></div>
+  <div id="levels-grid" class="levels-grid"></div>
+</section>
+<div id="level-stage" class="level-stage" hidden></div>
+<section id="report-screen" class="report-screen" hidden aria-label="Results">
+  <button id="report-close" class="icon" title="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <iframe id="report-frame" title="Results"></iframe>
+</section>
+
+<section id="connect" class="glass sheet" hidden aria-label="Connect">
+  <h2>Connect</h2>
+  <p class="muted">Switch the headband on and close the Muse app on your phone. It talks to one device at a time.</p>
+  <div class="seg small" id="src-seg">
+    <button data-src="athena" aria-pressed="true">Muse S Athena</button>
+    <button data-src="sim">Simulated</button>
+    <button data-src="replay">Recording</button>
+    <button data-src="lsl">LSL</button>
+  </div>
+  <div id="src-athena" class="src-pane">
+    <div class="devices" id="devices"><p class="muted">Press Find to search (about 8 seconds).</p></div>
+    <button id="scan" class="ghost">Find headband</button>
+  </div>
+  <div id="src-replay" class="src-pane" hidden><input id="replay-path" type="text" placeholder="Full path to a raw_ble.txt recording"></div>
+  <div class="row end"><button id="connect-cancel" class="ghost">Close</button><button id="connect-go" class="solid">Connect</button></div>
+</section>
+
+<aside id="drawer" class="glass drawer" hidden aria-label="Control">
+  <div class="drawer-head">
+    <nav class="tabs" role="tablist">
+      <button data-tab="sessions">Sessions</button>
+      <button data-tab="knobs" aria-selected="true">Knobs</button>
+      <button data-tab="recipes">Recipes</button>
+      <button data-tab="light">Light trials</button>
+      <button data-tab="fire">Test fire</button>
+      <button data-tab="signal">Signal</button>
+      <button data-tab="sound">Sound</button>
+      <button data-tab="mre">MRE</button>
+      <button data-tab="claude">Claude</button>
+      <button data-tab="activity">Activity</button>
+    </nav>
+    <button id="drawer-close" class="icon" title="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+
+  <section class="tab" data-tab="sessions" hidden>
+    <div class="row"><button id="sess-refresh" class="ghost">Refresh</button><button id="sess-open" class="ghost">Open recordings folder</button></div>
+    <ul id="sess-list" class="list"></ul>
+    <div id="sess-detail" hidden>
+      <h4 id="sess-title"></h4>
+      <div id="sess-charts" class="sess-charts"></div>
+      <pre id="sess-summary" class="summary"></pre>
+    </div>
+  </section>
+
+  <section class="tab" data-tab="knobs">
+    <div class="row"><input id="knob-search" type="search" placeholder="Find a knob: blink, kappa, dead band, speed…"><button id="knobs-save" class="ghost">Save all</button></div>
+    <p class="fine">Changes apply at once and are written into the recording.</p>
+    <div id="knob-list" class="knob-list"></div>
+  </section>
+
+  <section class="tab" data-tab="recipes" hidden>
+    <p class="fine">A recipe says when to fire, what to fire, and keeps half the triggers as sham so the light's own effect can be separated from you drifting back by yourself.</p>
+    <ul id="recipe-list" class="list"></ul>
+    <label class="tog"><input type="checkbox" id="rc-bench"><span>Bench test <small>sponge, no person</small></span></label>
+    <label class="tog"><input type="checkbox" id="rc-covered"><span>LED covered <small>electrical-only control</small></span></label>
+    <div class="row"><button id="rc-start" class="solid" disabled>Start selected</button><button id="rc-stop" class="ghost" disabled>Stop</button><button id="rc-reveal" class="ghost" disabled>Reveal</button></div>
+    <p id="rc-status" class="fine"></p>
+    <h4>Add or replace a recipe</h4>
+    <textarea id="rc-text" rows="10" spellcheck="false" placeholder="Paste recipe JSON (Claude can write these)"></textarea>
+    <button id="rc-save" class="ghost">Save recipe</button>
+  </section>
+
+  <section class="tab" data-tab="light" hidden>
+    <p class="fine">Blinded light trials: 12 trials in randomized blocks, half real, half sham. The allocation is sealed until you reveal it.</p>
+    <div class="seg small" id="phase-seg">
+      <button data-phase="nothing" aria-pressed="true">Nothing</button>
+      <button data-phase="small">Small · IR + near-IR</button>
+      <button data-phase="larger">Larger · all optics</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="bench"><span>Bench test <small>headband on a wet sponge</small></span></label>
+    <div class="row"><button id="light-start" class="solid" disabled>Start trials</button><button id="light-stop" class="ghost" disabled>Stop</button><button id="reveal" class="ghost" disabled>Reveal</button></div>
+    <p id="light-status" class="fine"></p>
+  </section>
+
+  <section class="tab" data-tab="fire" hidden>
+    <p class="fine">Fire one pattern by hand to check hardware. Logged, never counted as a trial.</p>
+    <div class="row">
+      <select id="tf-actuator"><option value="sim_led">Simulated LED</option><option value="external_led">External LED</option><option value="muse_optics">Headband optics</option></select>
+      <label class="tog"><input type="checkbox" id="tf-sham"><span>Sham</span></label>
+    </div>
+    <textarea id="tf-pattern" rows="6" spellcheck="false">{"type": "burst", "pulse_hz": 10, "duty": 0.3, "duration_s": 2, "intensity": 0.2}</textarea>
+    <div class="row"><button id="tf-fire" class="solid">Fire once</button><button id="tf-ports" class="ghost">List serial ports</button></div>
+    <p id="tf-status" class="fine"></p>
+  </section>
+
+  <section class="tab" data-tab="signal" hidden>
+    <p class="fine">Brain rhythms are smooth and shared by neighbouring sensors; muscle comes in spiky bursts on one sensor; electrical interference is smooth and shared by every sensor. <b>Spiky</b> is the kurtosis of 30–95 Hz (3 = smooth noise, far above 3 = sharp interruptions). <b>HF shared</b> and <b>LF shared</b> are each sensor's average correlation with the others above 30 Hz and at 1–20 Hz. <b>1/f</b> is how steeply its 2–20 Hz power falls (brain &gt; 0.3). <b>Hum ↑</b> is how far its mains hum has risen above its own last minute: when the high frequencies rise <i>with</i> the hum, the sensor has loosened (<b>loose</b>); when they rise without it, that is muscle. <b>eyes</b> is a forehead burst that came with a blink or eye movement.</p>
+    <div class="seg small" id="sensor-seg"><button data-sensors="all">All four sensors</button><button data-sensors="forehead">Forehead only</button></div>
+    <table class="sig"><thead><tr><th>Sensor</th><th>State</th><th>Spread µV</th><th>Spiky</th><th>HF shared</th><th>LF shared</th><th>1/f</th><th>Hum ↑</th></tr></thead><tbody id="sig-body"></tbody></table>
+    <canvas id="traces" class="traces"></canvas>
+  </section>
+
+  <section class="tab" data-tab="sound" hidden>
+    <p class="fine">Sound plays in the levels, through headphones or bone conduction (Shokz work well: pair them with Windows, they become the default output). What you hear is the same world state as the picture: clarity opens the sound, the chord tunes in when you are in the corridor, a breath pacer guides six breaths a minute and grows stronger as your breathing locks to it, and each knock has its own sound. The Muse stays connected at the same time: it uses Bluetooth LE, the headphones use Bluetooth audio.</p>
+    <label class="row"><input type="checkbox" id="au-enabled"> Sound in the levels</label>
+    <label>Volume <input type="range" id="au-volume" min="0" max="1" step="0.05"> <span id="au-volume-v" class="mono"></span></label>
+    <label>Loudest allowed <input type="range" id="au-max" min="-30" max="-6" step="1"> <span id="au-max-v" class="mono"></span></label>
+    <label>Breath pacer <input type="range" id="au-pacer" min="3" max="12" step="0.5"> <span id="au-pacer-v" class="mono"></span></label>
+    <label>Rhythmic tone <select id="au-entrain"><option value="sealed">Sealed test: rhythm or irregular per round, revealed at the end</option><option value="on">Always the rhythm</option><option value="off">Off</option></select></label>
+    <label>Output <select id="au-device"><option value="">System default</option></select></label>
+    <div class="row"><button class="ghost" id="au-test">Play test sound (left, then right)</button><span class="fine" id="au-note"></span></div>
+    <h4>Hear a level's music</h4>
+    <p class="fine">A 95-second guided preview without the headband: waiting, arriving, climbing tiers, a knock, and the way home.</p>
+    <div class="row"><select id="au-scene"><option value="canon">Canon (classical)</option><option value="still">Still Water</option><option value="bloom">Bloom</option><option value="steady">Tightrope</option><option value="ride">Ride</option><option value="storm">Storm</option><option value="sky">Night Sky</option></select>
+    <button class="ghost" id="au-demo">Play preview</button><span class="fine mono" id="au-demo-state"></span></div>
+  </section>
+
+  <section class="tab" data-tab="mre" hidden>
+    <p class="fine">The Murray Reality Equation test: does a random-bit stream switch more often when your information rate Φ is higher? IDA Live counts a random-number device's bits in 100 ms bins, all the time, and tags every bin with what you were doing and your Φ (context-tree entropy of your forehead EEG). <b>Automation</b> (nothing connected) sets the baseline; <b>focused attention</b> is any recording with the headband. The analysis follows the paper's plan exactly, with its three falsifiers.</p>
+    <label>Device under test <select id="mre-source"><option value="off">Off</option><option value="serial">USB random-number device</option><option value="anu">ANU online (remote: a control, not a test)</option><option value="sham">Sham (pseudo-random, for checking)</option></select></label>
+    <label>Control arm <select id="mre-control"><option value="off">None</option><option value="anu">ANU online (remote)</option><option value="sham">Sham (pseudo-random)</option></select></label>
+    <label>Port <select id="mre-port"><option value="auto">Find it automatically</option></select> <button class="ghost small" id="mre-rescan">Rescan</button></label>
+    <label>Mode <select id="mre-mode"><option value="raw">Raw (unwhitened; what the test needs)</option><option value="whitened">Whitened (the device's normal output)</option></select></label>
+    <label class="row"><input type="checkbox" id="mre-keep"> Keep logging when the window closes (automation needs days)</label>
+    <div id="mre-live" class="mre-live"></div>
+    <div class="row"><button class="solid" id="mre-report">Analyse now</button><span class="fine" id="mre-note">Your data stays in Documents\IDA Live\mre.</span></div>
+  </section>
+
+  <section class="tab" data-tab="claude" hidden>
+    <p>Claude can read and drive IDA Live while it runs, through the <b>control</b> folder next to your recordings:</p>
+    <p class="mono" id="control-path"></p>
+    <ul class="fine bullets">
+      <li><b>live.json</b> is rewritten every second with your signal, state and settings.</li>
+      <li>Commands dropped into <b>inbox</b> run within half a second; results land in <b>outbox</b>.</li>
+      <li>Every change Claude makes is written into the recording, tagged as Claude's.</li>
+    </ul>
+    <p class="fine" id="claude-last">No commands from Claude yet.</p>
+  </section>
+
+  <section class="tab" data-tab="activity" hidden><div id="log" class="log"></div></section>
+</aside>
+
+<div id="question" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="q-title">
+  <div class="card glass"><h2 id="q-title"></h2><div id="q-buttons" class="q-buttons"></div><p class="fine" id="q-hint"></p></div>
+</div>
+<div id="reveal-panel" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="rv-title">
+  <div class="card glass"><h2 id="rv-title">Allocation</h2><ol id="rv-list" class="rv-list"></ol><p class="fine">The reports are under Start › IDA Live reports, or ask Claude to run them.</p><button id="rv-close" class="solid">Close</button></div>
+</div>
+<div id="info-panel" class="modal" hidden role="dialog" aria-modal="true">
+  <div class="card glass"><div id="info-body"></div><button id="info-close" class="solid">Close</button></div>
+</div>
+
+<script src="vendor/tone.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

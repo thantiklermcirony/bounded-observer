@@ -1,0 +1,25 @@
+name: A new chart
+description: A bounded quantity somewhere in the world that the law should cover
+labels: [chart]
+body:
+  - type: markdown
+    attributes:
+      value: "A chart is accepted when it meets the four conditions and carries one prediction that could fail."
+  - type: input
+    attributes: { label: The bounded quantity, description: "What is bounded, in what units?" }
+    validations: { required: true }
+  - type: input
+    attributes: { label: Its ceiling, description: "What is the limit, and how do you know it is one?" }
+    validations: { required: true }
+  - type: input
+    attributes: { label: The neutral state, description: "What change does nothing? Is it inside the interval or at an end?" }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: How changes combine, description: "The operation, and why it is continuous, associative and strictly increasing." }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: The prediction, description: "One consequence that can be measured." }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: The loss condition, description: "What observation would make this wrong? Without this the chart is not accepted." }
+    validations: { required: true }

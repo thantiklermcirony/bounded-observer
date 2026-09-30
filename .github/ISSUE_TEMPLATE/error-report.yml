@@ -1,0 +1,24 @@
+name: An error
+description: A mistake in a proof, a citation, a number or the code
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: "Corrections are the most valuable contribution here, including corrections to the author's own work. Several are already in the record."
+  - type: input
+    attributes: { label: Where, description: "File, section, theorem number or line." }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: What is wrong }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: What the correct statement is }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: What settles it, description: "A source you opened, a counterexample, or code that reproduces the problem." }
+    validations: { required: true }
+  - type: checkboxes
+    attributes:
+      label: Sources
+      options:
+        - label: I opened the sources I cite and did not rely on a search result alone

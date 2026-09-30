@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bounded Observer</title>
+<meta name="description" content="An observer with finite access, inside the world it measures. Twelve simulations of the Universal Hyperbolic Law, from the premise to the evidence.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#gate1">Skip to the walk</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
+    <nav>
+      <a href="#gate1">Access</a>
+      <a href="#gate2">State</a>
+      <a href="#gate3">Action</a>
+      <a href="#gate4">Law</a>
+      <a href="#gate5">Geometry</a>
+      <a href="#gate6">Evidence</a>
+      <a href="evidence.html">Atlas</a>
+      <a href="ida.html">IDA Live</a>
+      <a href="papers.html">Papers</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <canvas id="hero-field" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="prose">
+      <h1>You are inside the thing you are measuring.</h1>
+      <p class="lede">You cannot step outside and look. Your channels are finite, your memory is
+      finite, your time is finite. That makes predictive state a question: what must be kept
+      to predict what happens when you intervene?</p>
+      <p class="lede">A bounded quantity earns an additive <em class="term">law</em> and an
+      unreachable <em class="term">horizon</em> when its changes combine continuously,
+      associatively, strictly monotonically, and with a neutral state (C1–C4). Geometry
+      requires a further choice of comparison and multidimensional structure. Boundedness
+      alone does not fix either the law or the geometry.</p>
+      <p class="lede">The six gates below show those separate conditions and twelve simulations
+      you can touch. Each claimed result has a status and a test in the source.</p>
+      <p class="sig">Daniel John Murray · <a href="https://orcid.org/0009-0005-1794-5945">ORCID 0009-0005-1794-5945</a>
+      · <a href="https://github.com/thantiklermcirony/bounded-observer">source on GitHub</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 1 -->
+<section class="gate" id="gate1">
+  <div class="wrap">
+    <div class="prose">
+      <div class="gate-tag">Gate 1 · Access</div>
+      <h2>Wherever you stand, you are at the centre</h2>
+      <p class="gate-q">What can an observer reach, from inside the world it measures?</p>
+      <p>Not because you are special. Because <em>here</em> is where you measure from. Every
+      observer finds the same thing, and that is exactly what makes it a law rather than a
+      conceit: different observers read different raw values for the same state, and all of
+      them agree on the distances.</p>
+    </div>
+
+    <div class="sim" id="sim-centre">
+      <div class="sim-head">
+        <div class="sim-name">You are the centre</div>
+        <div class="sim-do">Drag anywhere. The world moves; the edge does not get closer.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="sim-note">Every point is at the same distance from its own neighbours no
+      matter where you drag. The ones near the rim only <b>look</b> crowded from where you
+      happen to be standing. You can measure how far the edge is. You cannot get there.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 29 · observer centrality</span><span><code>bounded/disk.py</code></span></div>
+    </div>
+
+    <div class="prose">
+      <p>The rule this sets up is a discipline, not a slogan: <b>a quantity the observer cannot
+      reach cannot appear in a law the observer is supposed to use.</b> A true underlying
+      value, an absolute rate, a variable nobody can intervene on — when one of those turns up
+      in a model, a view from nowhere has been smuggled in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 2 -->
+<section class="gate" id="gate2">
+  <div class="wrap">
+    <div class="prose">
+      <div class="gate-tag">Gate 2 · State</div>
+      <h2>Almost everything has to be thrown away</h2>
+      <p class="gate-q">What must be kept, so the rest of the past can be forgotten safely?</p>
+      <p>A <em class="term">state</em> is a summary of the past that is sufficient for the
+      future — and the test is sharper than it sounds. A summary that predicts the future when
+      you leave the system alone, but not when you push it, is a description, not a state.</p>
+      <p>This is where most measurement goes wrong, and it goes wrong the same way every time:</p>
+      <p class="pull">A measurement merges histories that have different futures.</p>
+    </div>
+
+    <div class="sim" id="sim-histories">
+      <div class="sim-head">
+        <div class="sim-name">Two histories, one reading</div>
+        <div class="sim-do">Two systems arrive at the same number, then part.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls">
+        <span class="seg"><button aria-pressed="true">One reading</button><button aria-pressed="false">Add a second measurement</button></span>
+      </div>
+      <div class="sim-note">A calm-looking reading merges a system that has recovered, one held
+      steady by support, and one whose reserve is spent. Once the distinction is erased,
+      <b>fitting the same measurement harder cannot bring it back</b>. There are exactly three
+      ways forward: more information, a narrower claim, or predicting the mixture honestly.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 10 · state–law descent</span><span>Proposition 1 · the closure trichotomy</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 3 -->
+<section class="gate" id="gate3">
+  <div class="wrap">
+    <div class="prose">
+      <div class="gate-tag">Gate 3 · Action</div>
+      <h2>Which pushes behave the same way from everywhere</h2>
+      <p class="gate-q">Which interventions act the same way from every state?</p>
+      <p>A state only means something relative to a set of interventions, so the set has to be
+      named — and not everything qualifies. The gate: <b>an intervention's endpoint from rest
+      must fix its action from every state.</b> That is testable in an afternoon.</p>
+      <p>Here is the version that matters in a laboratory. Two drugs, each with an effect.
+      What is the effect of both? If the combination law is projective, the answer lies on a
+      one-parameter family — a dial with named landmarks.</p>
+    </div>
+
+    <div class="sim" id="sim-dial">
+      <div class="sim-head">
+        <div class="sim-name">The dial</div>
+        <div class="sim-do">Turn α from independent action to odds-adding, and watch the combination surface deform.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">α = 0 is Bliss independence: the chances of <b>not</b> acting
+      multiply. α → 1 is Loewe additivity: the odds add. α = −1 is the Einstein law. They are
+      not rival theories — they are three positions on one dial, and the dial is forced.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 8 · the one-horizon family</span><span><code>bounded/law.py</code></span></div>
+    </div>
+
+    <div class="prose">
+      <h3>And here is where this programme lost a bet</h3>
+      <p>The dated local analysis plan predicted: drugs sharing a mechanism should sit near the
+      Loewe end; independent mechanisms near Bliss. The repository does not have an independent
+      timestamp for that plan. The test used 210 dose-response blocks over 36 drug pairs.</p>
+      <p><b>Refuted.</b> ρ = −0.12, p = 0.76 — the wrong sign, and nowhere near significance.
+      Same-axis pairs were <em>more</em> synergistic than distinct-mechanism pairs. An external
+      reviewer reran it and reproduced the failure to five decimals.</p>
+      <p>Part of the reason is structural and worth knowing: Loewe additivity only sits on the
+      dial when the dose-response curves have Hill slope 1 and full efficacy. At slope 2 the
+      true Loewe surface is at α = −3.5; at slope 3 it leaves the dial entirely. In that
+      dataset the median slopes were 2.0 and 1.3. The prediction, as stated, was only ever
+      right for a minority of real drug pairs.</p>
+      <p>It stays in the record, with its local plan, code and data. <a href="evidence.html">The atlas</a>
+      has the row.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 4 -->
+<section class="gate" id="gate4">
+  <div class="wrap">
+    <div class="prose">
+      <div class="gate-tag">Gate 4 · Chart and boundary</div>
+      <h2>The law, and the edge it cannot cross</h2>
+      <p class="gate-q">How do bounded changes combine, and can the edge ever be reached?</p>
+      <p>Take any real quantity with a ceiling, a neutral state, and a lawful way of combining
+      changes — where lawful means continuous, associative, and strictly increasing. Then there
+      is a coordinate, its <em class="term">rapidity</em>, in which combining <em>is</em>
+      adding. And in that coordinate the ceiling sits at infinity.</p>
+    </div>
+
+    <div class="sim" id="sim-horizon">
+      <div class="sim-head">
+        <div class="sim-name">The horizon</div>
+        <div class="sim-do">The same step, over and over. Watch both rows.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">Above: what you measure, crowding the ceiling and never arriving.
+      Below: the same steps in rapidity, evenly spaced forever. <b>Nothing has slowed down.</b>
+      The crowding is in the coordinate, not in the world — and no finite number of lawful
+      steps reaches the edge.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 1 · the horizon theorem</span><span>Aczél 1966</span></div>
+    </div>
+
+    <div class="prose">
+      <p>How many such laws are there? Three. Not three that people happen to use — three that
+      are possible.</p>
+    </div>
+
+    <div class="sim" id="sim-trichotomy">
+      <div class="sim-head">
+        <div class="sim-name">Three laws, and only three</div>
+        <div class="sim-do">Move the ceiling through zero.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">Two horizons (bounded), no ceiling (ordinary addition), or a law
+      that wraps through infinity. <b>Flat addition is not the general case.</b> It is the
+      knife-edge between the other two — which is why Euclidean description is accurate near
+      rest and wrong by a computable amount near any limit.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 4 · the trichotomy</span><span>Cayley–Klein</span></div>
+    </div>
+
+    <div class="prose">
+      <h3>So why do real things hit their limits?</h3>
+      <p>Populations do go extinct. Genes do fix. Cells do commit. If the theorem says the edge
+      is unreachable, something must give — and exactly one measurable number decides which.</p>
+    </div>
+
+    <div class="sim" id="sim-exponent">
+      <div class="sim-head">
+        <div class="sim-name">Arrival or horizon</div>
+        <div class="sim-do">Turn the exponent through 1.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">Below 1, the drive stays finite as the room runs out, and the
+      ceiling is reached in finite time. At 1 and above, the drive dies with the room, and it
+      never is. <b>In nature, smooth averages have horizons; countable events cross
+      boundaries.</b> Fixation happens because populations are made of whole individuals.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Proposition 9 · the boundary exponent</span><span>Osgood 1898 · Feller 1952</span></div>
+    </div>
+
+    <div class="prose">
+      <p>And the horizon is not the end of the space. Push past it and the law is still there,
+      acting on the other side — with the value reciprocated and the rapidity turned by a
+      quarter. In spacetime this is not a metaphor: inside are observers' velocities, outside
+      are the slopes of their lines of simultaneity, and one law moves both.</p>
+    </div>
+
+    <div class="sim" id="sim-farside">
+      <div class="sim-head">
+        <div class="sim-name">Beyond the horizon</div>
+        <div class="sim-do">Push the value past the edge.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">Left: the line closed into a circle, meeting itself at the two
+      horizons. Right: the same fact as a Minkowski diagram. A boost moves the velocity and the
+      simultaneity slope <b>by the same law</b>. Crossing the light cone exchanges timelike and
+      spacelike.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 19 · the same law on the far side</span><span>Bilaniuk et al. 1962</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 5 -->
+<section class="gate" id="gate5">
+  <div class="wrap">
+    <div class="prose">
+      <div class="gate-tag">Gate 5 · Geometry</div>
+      <h2>The room inside is bigger than the room outside</h2>
+      <p class="gate-q">What shape is the room inside the horizon?</p>
+      <p>In one dimension, the rapidity makes the interval infinitely long and that is all. In
+      two or more, something else happens — and this is the part that changes how the world
+      looks.</p>
+    </div>
+
+    <div class="sim" id="sim-room">
+      <div class="sim-head">
+        <div class="sim-name">The room inside</div>
+        <div class="sim-do">Grow a branching tree. Every edge is the same length.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">A circle of radius 5 has a circumference of <b>466</b> here, against
+      31 in the plane. At radius 10 it is 69,000 against 63. Nothing in the picture is crowded:
+      the branches have room because the room grows exponentially. From outside, the object is
+      small and bounded. From inside, it holds an exponentially large space of distinctions.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>§8.4 · hyperbolic information space</span><span>Sarkar 2012</span></div>
+    </div>
+
+    <div class="prose">
+      <p>This has been measured, by other people, in places nobody was looking for geometry:
+      the structure of complex networks, the space of natural smells, the rat hippocampus, and
+      the branching lineages of single cells. Branching histories need this room, and flat
+      space of fixed dimension does not have it.</p>
+      <p>The second thing that happens in two dimensions is stranger. The order in which
+      changes are made stops being forgettable.</p>
+    </div>
+
+    <div class="sim" id="sim-holonomy">
+      <div class="sim-head">
+        <div class="sim-name">Round and back, turned</div>
+        <div class="sim-do">Drag either point. Compare the two arrows.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="sim-note">Go out along one path, come back along another, and you return
+      <b>rotated</b> — by an angle exactly equal to the area you enclosed. This is not an
+      analogy for curvature; it is curvature. It is also why an electron's spin precesses in
+      its orbit: velocity composition is non-associative, and the leftover is the rotation.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 26 · holonomy</span><span>Thomas–Wigner rotation</span></div>
+    </div>
+
+    <div class="prose">
+      <p>The geometry is not a matter of taste. It is decided by the algebra of the observer's
+      channels — and by one distinction that is easy to miss: whether an update can be undone.</p>
+    </div>
+
+    <div class="sim" id="sim-channels">
+      <div class="sim-head">
+        <div class="sim-name">Channels that forget</div>
+        <div class="sim-do">Same starting cloud. Two kinds of update.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls">
+        <span class="seg"><button aria-pressed="true">Reversible</button><button aria-pressed="false">Forward-only</button></span>
+      </div>
+      <div class="sim-note">A reversible update moves everything and keeps every distance. A
+      forward-only update <b>shrinks them all</b>, by a factor no worse than tanh(Δ/4), and
+      keeps shrinking until every starting point lands in the same place. That is what
+      forgetting looks like from the inside: not noise, but distinguishability draining away.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 25 · the cone of the observer's channels</span><span>Birkhoff 1957</span></div>
+    </div>
+
+    <div class="prose">
+      <p>The same mathematics describes two observers coming into agreement. Couple two
+      rapidities and the shape of the coupling decides everything: an unbounded coupling always
+      locks, a bounded one locks only while the drive is small enough, and a periodic one slips.</p>
+    </div>
+
+    <div class="sim" id="sim-locking">
+      <div class="sim-head">
+        <div class="sim-name">Two minds lock</div>
+        <div class="sim-do">Raise the drive past twice the coupling.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls">
+        <span class="seg"><button aria-pressed="true">tanh</button><button aria-pressed="false">sin</button><button aria-pressed="false">sinh</button></span>
+      </div>
+      <div class="sim-note">With the bounded coupling, watch what happens as the drive
+      approaches twice β: the gap widens and the return to lock gets slower and slower —
+      <b>critical slowing</b>, the same signature that appears before a tipping point. Past it,
+      they come apart.</div>
+      <div class="sim-src"><span class="tag tag-P">P</span><span>Theorem 16 · locking</span><span>Adler 1946</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 6 -->
+<section class="gate" id="gate6">
+  <div class="wrap">
+    <div class="prose">
+      <div class="gate-tag">Gate 6 · Prediction</div>
+      <h2>Does any of it win on data it has never seen?</h2>
+      <p class="gate-q">The only gate that can go wrong in a way the mathematics cannot repair.</p>
+      <p>The cited mathematical statements have their stated assumptions. Whether they describe
+      a particular measured system remains a separate empirical question. Here is the instrument
+      built to test one application — the same six gates running on a living mind.</p>
+    </div>
+
+    <div class="sim" id="sim-ida">
+      <div class="sim-head">
+        <div class="sim-name">Your mind on the disk</div>
+        <div class="sim-do">Move four brain measurements. Watch three ways of combining them.</div>
+      </div>
+      <div class="stage"><canvas></canvas><div class="readout"></div></div>
+      <div class="ctls"></div>
+      <div class="sim-note">Each feature becomes a rapidity along its own direction, and they
+      compose by the bounded law. The grey point is the flat answer, which drifts away from the
+      real one as you move from the centre. The <b>order defect</b> is what the order of
+      composition left behind — the holonomy again, now in a headband. This is
+      <a href="ida.html">IDA Live</a>, and it runs on real EEG.</div>
+      <div class="sim-src"><span class="tag tag-H">H</span><span>the read gate is not yet passed</span><span><code>apps/ida-live</code></span></div>
+    </div>
+
+    <div class="prose">
+      <h3>The scoreboard, as it stands</h3>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Claim</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Across 19 meta-analyses, the flat effect scale is the least consistent — in 11 of the 14 that showed heterogeneity</td><td><span class="tag tag-P">replicated</span></td></tr>
+            <tr><td>Hormesis follows from bounded adaptation, with no free parameters</td><td><span class="tag tag-P">published</span></td></tr>
+            <tr><td>Glutathione has two distinct failure modes, and the model recovers known contraindications</td><td><span class="tag tag-P">published</span></td></tr>
+            <tr><td>Mechanistic overlap predicts the dial position (H1)</td><td><span class="tag tag-X">refuted</span></td></tr>
+            <tr><td>Return dynamics predict future capacity better than static readings (H5)</td><td><span class="tag tag-H">instrument not yet built</span></td></tr>
+            <tr><td>Branching histories under finite resources live in negatively curved space (H7)</td><td><span class="tag tag-H">open</span></td></tr>
+            <tr><td>Boundary exponent and cone type decide a bounded quantity's geometry</td><td><span class="tag tag-H">the next paper</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1.2rem">Every one of those has a stated test and a stated loss
+      condition — the observation that would make it wrong. A claim without one is not a
+      hypothesis, and it does not get a row.</p>
+      <p><a class="btn" href="evidence.html">Open the atlas</a>
+         <a class="btn ghost" href="papers.html">Read the papers</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>The Bounded Observer</strong><br>
+        Daniel John Murray<br>
+        <a href="https://orcid.org/0009-0005-1794-5945">ORCID 0009-0005-1794-5945</a>
+      </div>
+      <div>
+        <a href="evidence.html">The atlas</a><br>
+        <a href="papers.html">Papers</a><br>
+        <a href="ida.html">IDA Live</a><br>
+        <a href="contribute.html">Contribute</a>
+      </div>
+      <div>
+        Code MIT · text and figures CC BY 4.0<br>
+        Every simulation on this page runs the proven maths directly;
+        <code>site/bo.test.mjs</code> checks it against the same identities the manuscript proves.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+import { heroField, simCentre, simHistories, simHorizon, simTrichotomy, simExponent,
+         simRoom, simHolonomy, simFarSide, simChannels, simLocking, simDial, simIda } from './sims.js';
+heroField(document.getElementById('hero-field'));
+const go = (id, fn) => { const el = document.getElementById(id); if (el) fn(el); };
+go('sim-centre', simCentre);
+go('sim-histories', simHistories);
+go('sim-dial', simDial);
+go('sim-horizon', simHorizon);
+go('sim-trichotomy', simTrichotomy);
+go('sim-exponent', simExponent);
+go('sim-room', simRoom);
+go('sim-holonomy', simHolonomy);
+go('sim-farside', simFarSide);
+go('sim-channels', simChannels);
+go('sim-locking', simLocking);
+go('sim-ida', simIda);
+
+// mark the section being read
+const links = [...document.querySelectorAll('.top nav a[href^="#"]')];
+document.querySelectorAll('section.gate').forEach((s) => {
+  new IntersectionObserver((es) => {
+    es.forEach((e) => {
+      if (!e.isIntersecting) return;
+      links.forEach((a) => a.removeAttribute('aria-current'));
+      const a = links.find((l) => l.getAttribute('href') === '#' + s.id);
+      if (a) a.setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' }).observe(s);
+});
+</script>
+</body>
+</html>

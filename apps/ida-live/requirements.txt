@@ -1,0 +1,9 @@
+# IDA Live - Python 3.11 or newer (3.12 recommended)
+numpy>=1.26
+aiohttp>=3.9
+bleak>=0.22
+pyserial>=3.5
+# OpenMuse, pinned to the commit IDA Live was tested against (MIT licence)
+OpenMuse @ https://github.com/DominiqueMakowski/OpenMuse/archive/a9be252188321e269537eabf609bc207be293f8c.zip
+# for running the tests
+pytest>=8

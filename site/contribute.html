@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contribute · The Bounded Observer</title>
+<meta name="description" content="How to add a chart, a replication or a refutation.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
+  <nav><a href="./">The walk</a><a href="evidence.html">Atlas</a><a href="ida.html">IDA Live</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
+</div></header>
+<main class="wrap" style="padding-top:2.5rem;padding-bottom:4rem"><div class="prose">
+<h2>Contribute</h2>
+<p class="pull">A refutation is worth more than a confirmation.</p>
+<p>That is not modesty. The register in <a href="evidence.html">the atlas</a> means something
+only because entries can leave it. One of its rows is a prediction of this programme that was
+specified in a dated local plan, tested and refuted, and it stays there with its data and its code.
+The plan has no independent external timestamp.</p>
+
+<h3>Four kinds of contribution</h3>
+<table>
+<tr><th>Kind</th><th>What it needs</th></tr>
+<tr><td><b>A new chart</b></td><td>A bounded quantity that meets the four conditions, with its ceiling, its neutral state, its composition operation, its chart, and one prediction with a loss condition.</td></tr>
+<tr><td><b>A replication</b></td><td>Re-run something in <code>experiments/</code> and report what you get. Agreement and disagreement are equally publishable here.</td></tr>
+<tr><td><b>A refutation</b></td><td>What is wrong, what the correct statement is, and what evidence settles it.</td></tr>
+<tr><td><b>A correction</b></td><td>An error in a proof, a wrong citation, a number that does not reproduce. Say whether you checked the source yourself.</td></tr>
+</table>
+
+<h3>The one rule</h3>
+<p>Nothing is asserted without a status tag, and nothing is promoted without a test that ran.
+<span class="tag tag-P">P</span> proven or classical with a citation you have checked;
+<span class="tag tag-D">D</span> derived, awaiting independent checking;
+<span class="tag tag-H">H</span> a hypothesis with a stated test <b>and</b> a stated loss
+condition — the observation that would make it wrong. A claim with no loss condition is not a
+hypothesis, and it does not get a row.</p>
+
+<h3>For AI agents</h3>
+<p>Read <code>AGENTS.md</code> first. It lists the things that look like improvements and are
+not: rounding a bound into a claim, dropping a failed test, smoothing a hedge, generalising a
+number measured under one condition, inventing a citation, and making the law sound more
+universal than its four conditions allow.</p>
+
+<h3>Running the checks</h3>
+<pre style="background:var(--bg-sunk);padding:.9rem 1rem;border-radius:8px;overflow-x:auto"><code>pip install -e toolkit
+pytest toolkit/tests -q      # every test names the theorem it checks
+node site/bo.test.mjs        # the browser maths, against the same identities</code></pre>
+
+<p><a class="btn" href="https://github.com/thantiklermcirony/bounded-observer/issues">Open an issue or a pull request</a></p>
+</div></main>
+<footer class="foot"><div class="wrap">Code MIT · text and figures CC BY 4.0 ·
+<a href="https://orcid.org/0009-0005-1794-5945">Daniel John Murray</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bounded"
+version = "1.0.0"
+description = "The mathematics of The Bounded Observer: bounded composition, horizons, the hyperbolic room, as runnable and tested code"
+authors = [{name = "Daniel John Murray"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "scipy>=1.10"]
+
+[tool.setuptools]
+packages = ["bounded"]

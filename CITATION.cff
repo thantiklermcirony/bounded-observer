@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "The Bounded Observer"
+message: "If you use this work, please cite the capstone manuscript."
+type: software
+authors:
+  - family-names: Murray
+    given-names: Daniel John
+    orcid: "https://orcid.org/0009-0005-1794-5945"
+abstract: >-
+  A research programme derived from one premise: an observer with finite access, standing inside
+  the world it measures. Finite access forces a predictive state; bounded quantities force a
+  composition law; that law forces a horizon; the horizon forces a hyperbolic geometry. The
+  central theorem is the Universal Hyperbolic Law.
+license: MIT
+repository-code: "https://github.com/thantiklermcirony/bounded-observer"
+references:
+  - type: article
+    title: "Bounded Composition and Its Horizons: when a bounded quantity earns an additive chart, a horizon and a geometry"
+    authors:
+      - family-names: Murray
+        given-names: Daniel John
+    year: 2026
+    notes: "Version 2.1"

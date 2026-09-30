@@ -1,0 +1,12 @@
+{
+  "name": "rising cloud",
+  "description": "Your 'helium under the state' idea as a pattern: when you are displaced far from your reference, five short 10 Hz bursts whose intensity rises from very low, with gaps between. Half the triggers are sham. Needs the external LED.",
+  "actuator": "external_led",
+  "pattern": {"type": "train", "repeat": 5, "gap_s": 1.5,
+              "burst": {"type": "ramp", "pulse_hz": 10, "duty": 0.25, "duration_s": 1.0,
+                        "intensity_from": 0.02, "intensity_to": 0.25}},
+  "trigger": {"when": "clean and d > 1.2", "hold_s": 4, "refractory_s": 45},
+  "randomize": 0.5,
+  "outcome": {"pre_s": 5, "post_s": 25, "exclude_s": 2, "measures": ["d", "drift_d", "z_alpha_tp"]},
+  "limits": {"max_fires": 24, "max_minutes": 40}
+}

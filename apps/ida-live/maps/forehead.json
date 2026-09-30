@@ -1,0 +1,12 @@
+{
+  "name": "forehead",
+  "note": "Forehead-only map for when the ear sensors won't make clean contact. Uses AF7 and AF8 for everything. Starting hypothesis, not a finding; the calibration gate decides.",
+  "kappa": 0.5,
+  "composition": "mobius_chain",
+  "axes": [
+    {"feature": "alpha_af", "angle_deg": 90,  "weight": 1.0, "label": "Forehead alpha"},
+    {"feature": "beta_af",  "angle_deg": 0,   "weight": 1.0, "label": "Forehead beta"},
+    {"feature": "theta_af", "angle_deg": 180, "weight": 1.0, "label": "Forehead theta"},
+    {"feature": "aperiodic","angle_deg": 270, "weight": 1.0, "label": "1/f exponent"}
+  ]
+}

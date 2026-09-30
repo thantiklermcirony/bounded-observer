@@ -1,0 +1,42 @@
+# The Bounded Observer
+
+> A research programme derived from one premise: an observer with finite access, standing
+> inside the world it measures. Finite access forces a predictive state; bounded quantities
+> force a composition law; that law forces a horizon; the horizon forces a hyperbolic
+> geometry. The central theorem is the Universal Hyperbolic Law. Author: Daniel John Murray,
+> ORCID 0009-0005-1794-5945.
+
+Every claim carries a status tag: [P] proven or classical with citation, [D] derived and
+awaiting checking, [H] hypothesis with a stated test and a stated loss condition. Claims are
+promoted only when a test has run. Refuted predictions are kept in the record.
+
+## Start
+
+- [AGENTS.md](AGENTS.md): rules for agents working here. Read before writing anything.
+- [README.md](README.md): the programme on one page, and the six gates.
+
+## The six gates, in order
+
+- [1 Access](docs/1-access.md): what an observer can reach from inside.
+- [2 State](docs/2-state.md): what must be kept so the rest of the past can be forgotten.
+- [3 Action](docs/3-action.md): which interventions act the same way from every state.
+- [4 Chart and boundary](docs/4-chart.md): how bounded changes combine; the horizon.
+- [5 Geometry](docs/5-geometry.md): the shape of the room inside the horizon.
+- [6 Prediction](docs/6-prediction.md): what has been tested, and what failed.
+
+## Sources
+
+- [papers/capstone/](papers/capstone/): Bounded Composition and Its Horizons, v2.1. Theorems
+  are numbered; cite by number.
+- [toolkit/](toolkit/): the Python package `bounded`. Each module names the theorem it
+  implements; `pytest toolkit/tests` checks them numerically.
+- [registry/atlas.csv](registry/atlas.csv): every work in the programme placed as a chart of
+  the law, with its bounded quantity, its status and its next test.
+- [experiments/](experiments/): pre-registered tests with data and code, including H1, which
+  was refuted as stated.
+- [apps/ida-live/](apps/ida-live/): IDA Live, the instrument that runs the law on a living mind.
+
+## Optional
+
+- [site/](site/): the website source; twelve interactive simulations, each tied to a theorem.
+- [CONTRIBUTING.md](CONTRIBUTING.md): how to add a chart, a replication or a refutation.

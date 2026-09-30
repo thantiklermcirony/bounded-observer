@@ -1,0 +1,55 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  toolkit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -e toolkit[test]
+      - name: The theorems, checked numerically
+        run: pytest toolkit/tests -q
+
+  site-maths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: The browser maths, against the same identities
+        run: node site/bo.test.mjs
+
+  atlas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Every row has a next test, and the atlas page is in sync
+        run: |
+          python - <<'PY'
+          import csv, sys
+          rows = list(csv.DictReader(open('registry/atlas.csv')))
+          bad = [r['work'] for r in rows if not r['next_test'].strip()]
+          if bad:
+              sys.exit('rows with no next test: ' + ', '.join(bad))
+          print(f'{len(rows)} rows, every one with a next test')
+          PY
+          python site/build_evidence.py
+          git diff --exit-code site/evidence.html || (echo "site/evidence.html is out of date; run site/build_evidence.py" && exit 1)
+
+  ida:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install numpy aiohttp pytest
+      - name: IDA Live
+        run: python -m pytest tests -q
+        working-directory: apps/ida-live

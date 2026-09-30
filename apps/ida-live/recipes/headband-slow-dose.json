@@ -1,0 +1,10 @@
+{
+  "name": "headband slow dose",
+  "description": "Uses the headband's own optics (no extra hardware). When forehead theta is up, switch the IR/near-IR optics on for 8 s. The headband can only switch about once a second and each switch blinds the EEG for about half a second. Half the triggers are sham.",
+  "actuator": "muse_optics",
+  "pattern": {"type": "steady", "duration_s": 8},
+  "trigger": {"when": "clean and z_theta_af > 1.0", "hold_s": 3, "refractory_s": 40},
+  "randomize": 0.5,
+  "outcome": {"pre_s": 5, "post_s": 20, "exclude_s": 3, "measures": ["d", "z_theta_af", "z_alpha_tp"]},
+  "limits": {"max_fires": 20, "max_minutes": 30}
+}

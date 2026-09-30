@@ -1,0 +1,165 @@
+{
+ "primary_pairs": {
+  "rho": -0.12075396894619297,
+  "p": 0.7558244175582441,
+  "n": 36
+ },
+ "secondary_blocks": {
+  "rho": -0.10630180446849156,
+  "p": 0.94000599940006,
+  "n": 210
+ },
+ "raw_single_agents_pairs": {
+  "rho": -0.10941596067552427,
+  "p": 0.7428257174282572
+ },
+ "slope_restricted_pairs": {
+  "rho": -0.1270512681758241,
+  "p": 0.7482251774822518,
+  "n_pairs": 30,
+  "n_blocks": 67
+ },
+ "levels": {
+  "0": {
+   "pairs": 25,
+   "median_pair_alpha": 0.23777849786053318,
+   "ci": [
+    -1.309910173207276,
+    0.7788772683868076
+   ],
+   "blocks": 151,
+   "median_block_alpha": 0.6284360739375645,
+   "block_ci": [
+    -0.24580783074472515,
+    0.9999933893038647
+   ]
+  },
+  "1": {
+   "pairs": 10,
+   "median_pair_alpha": -0.6019658207884442,
+   "ci": [
+    -2.898758156449896,
+    0.8468813102521674
+   ],
+   "blocks": 49,
+   "median_block_alpha": -0.4376666167873628,
+   "block_ci": [
+    -4.450468776520965,
+    0.43702932630018315
+   ]
+  },
+  "2": {
+   "pairs": 1,
+   "median_pair_alpha": 0.09964481637212147,
+   "ci": null,
+   "blocks": 10,
+   "median_block_alpha": 0.09964481637212147,
+   "block_ci": [
+    -3.7716077649514546,
+    0.9999933893038647
+   ]
+  }
+ },
+ "fit_quality": {
+  "median_rmse_dial": 0.0593842459498604,
+  "median_rmse_bliss": 0.06529477897854279,
+  "median_rmse_loewe": 0.06630924767770412,
+  "frac_dial_beats_both": 0.6047619047619047,
+  "frac_alpha_at_lower_bound": 0.2523809523809524,
+  "frac_alpha_at_upper_bound": 0.3952380952380952
+ },
+ "everolimus_dactolisib_blocks": [
+  {
+   "cell": "BT-549",
+   "alpha": -2.738,
+   "alpha_loewe_calib": 1.0,
+   "nA": 4.045,
+   "nB": 0.813,
+   "rmse": 0.084
+  },
+  {
+   "cell": "CAL-85-1",
+   "alpha": 1.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 10.0,
+   "nB": 0.642,
+   "rmse": 0.087
+  },
+  {
+   "cell": "CAL148",
+   "alpha": -5.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 1.32,
+   "nB": 1.493,
+   "rmse": 0.17
+  },
+  {
+   "cell": "CAL51",
+   "alpha": -2.543,
+   "alpha_loewe_calib": 1.0,
+   "nA": 1.595,
+   "nB": 1.031,
+   "rmse": 0.062
+  },
+  {
+   "cell": "DU4475",
+   "alpha": -5.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 2.625,
+   "nB": 1.882,
+   "rmse": 0.193
+  },
+  {
+   "cell": "HCC1599",
+   "alpha": 1.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 10.0,
+   "nB": 1.591,
+   "rmse": 0.139
+  },
+  {
+   "cell": "MCF-10A",
+   "alpha": 1.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 0.748,
+   "nB": 0.96,
+   "rmse": 0.054
+  },
+  {
+   "cell": "MDAMB-436",
+   "alpha": 1.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 1.279,
+   "nB": 0.155,
+   "rmse": 0.265
+  },
+  {
+   "cell": "MDAMB231",
+   "alpha": -0.801,
+   "alpha_loewe_calib": 1.0,
+   "nA": 0.756,
+   "nB": 1.491,
+   "rmse": 0.097
+  },
+  {
+   "cell": "MFM-223",
+   "alpha": 1.0,
+   "alpha_loewe_calib": 1.0,
+   "nA": 1.905,
+   "nB": 0.857,
+   "rmse": 0.048
+  }
+ ],
+ "hill_slopes": {
+  "median_nA": 1.9604071186402499,
+  "median_nB": 1.3299213193757784,
+  "frac_both_in_half_two": 0.319047619047619
+ },
+ "loewe_calibration": {
+  "median_alpha_dial_assigns_to_true_loewe": 0.9999933893038647,
+  "iqr": [
+   0.9999933893038647,
+   0.9999933893038647
+  ]
+ }
+}

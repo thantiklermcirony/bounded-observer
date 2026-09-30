@@ -1,0 +1,10 @@
+{
+  "name": "schedule control",
+  "description": "Open-loop comparison: the same 10 Hz burst as 'alpha dip lift' but at random times, not tied to your state. Comparing the two tells you whether reacting to the brain pattern matters, or the light alone does whatever it does.",
+  "actuator": "external_led",
+  "pattern": {"type": "burst", "pulse_hz": 10, "duty": 0.3, "duration_s": 2, "intensity": 0.2},
+  "trigger": {"every_s": [40, 70]},
+  "randomize": 0.5,
+  "outcome": {"pre_s": 5, "post_s": 20, "exclude_s": 2, "measures": ["d", "z_alpha_tp", "z_theta_af"]},
+  "limits": {"max_fires": 30, "max_minutes": 30}
+}

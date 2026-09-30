@@ -1,0 +1,12 @@
+{
+  "name": "default",
+  "note": "Starting hypothesis, not a finding. One compass direction per EEG feature so you can read which feature is displacing you. EEG-only on purpose: the optics are off during light trials, so heart rate cannot be a state input without making the two trial arms unequal. Replace or reweight once the calibration gate has data.",
+  "kappa": 0.5,
+  "composition": "mobius_chain",
+  "axes": [
+    {"feature": "alpha_tp", "angle_deg": 90,  "weight": 1.0, "label": "Alpha behind the ears"},
+    {"feature": "beta",     "angle_deg": 0,   "weight": 1.0, "label": "Beta"},
+    {"feature": "theta_af", "angle_deg": 180, "weight": 1.0, "label": "Forehead theta"},
+    {"feature": "aperiodic","angle_deg": 270, "weight": 1.0, "label": "1/f exponent"}
+  ]
+}

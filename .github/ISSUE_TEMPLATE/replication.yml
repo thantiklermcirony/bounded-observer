@@ -1,0 +1,20 @@
+name: A replication or refutation
+description: You re-ran something here, or you have evidence against a claim
+labels: [evidence]
+body:
+  - type: dropdown
+    attributes:
+      label: Which
+      options: [It reproduced, It did not reproduce, It is refuted by other evidence]
+    validations: { required: true }
+  - type: input
+    attributes: { label: Which claim or experiment, description: "The atlas row, the theorem number, or the folder in experiments/." }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: What you ran, description: "Code, data, seeds and versions." }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: What you got }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: What you think it means, description: "Optional. The numbers above matter more." }

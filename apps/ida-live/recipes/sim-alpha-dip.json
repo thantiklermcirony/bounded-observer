@@ -1,0 +1,10 @@
+{
+  "name": "sim alpha dip",
+  "description": "Simulator version of 'alpha dip lift' (uses sim_led). With simulator.ir_effect = 0 the light does nothing, so real minus sham should be near zero while the sham change alone shows regression to the mean.",
+  "actuator": "sim_led",
+  "pattern": {"type": "burst", "pulse_hz": 10, "duty": 0.3, "duration_s": 2, "intensity": 0.2},
+  "trigger": {"when": "clean and z_alpha_tp < -0.5", "hold_s": 1, "refractory_s": 6},
+  "randomize": 0.5,
+  "outcome": {"pre_s": 3, "post_s": 6, "exclude_s": 1, "measures": ["d", "z_alpha_tp"]},
+  "limits": {"max_fires": 40, "max_minutes": 30}
+}
