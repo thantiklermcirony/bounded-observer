@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://thantiklermcirony.github.io/bounded-observer/observer-hero.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="inside.css">
+<link rel="stylesheet" href="inside.css?v=entry2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -30,7 +30,7 @@
         <h1>What can you know<br>from inside?</h1>
         <p class="lede">Move through a world that only gives you a narrow view. Decide what to remember. Bet on what happens when you act. Then try to reach its edge.</p>
         <p class="inside-construction"><b>Constructed world · [P] inside declared rules.</b> Its numerical results follow tested code and chosen assumptions. A surprising moment here is an experience of the model, not evidence that nature has the same geometry.</p>
-        <p class="inside-intro-action"><a class="btn" href="#experience">Enter the world <span aria-hidden="true">↓</span></a></p>
+        <p class="inside-intro-action"><a class="btn" id="intro-start" href="#experience">Enter the world <span aria-hidden="true">↓</span></a></p>
       </div>
       <div class="inside-intro-aside" aria-label="The four questions in this experience">
         <span>01 <b>What can you see?</b></span>
@@ -53,6 +53,7 @@
           <div class="inside-viewport">
             <canvas id="inside-canvas" width="1200" height="720" tabindex="0" aria-label="View of the constructed world. Use the controls below to move, look, zoom, scan and act." aria-describedby="inside-keyboard">Your browser needs canvas support for the animated view. The controls, readouts and event record below remain available.</canvas>
             <div class="inside-viewport-label" aria-hidden="true">YOUR VIEW · NOT THE WHOLE WORLD</div>
+            <button type="button" id="start-overlay" class="inside-start-overlay">Enter the world <span aria-hidden="true">→</span></button>
           </div>
           <p id="scene-prompt" class="inside-scene-prompt" role="status" aria-live="polite">Your instruments are waiting. Enter to see what they can reach.</p>
         </div>
@@ -67,7 +68,6 @@
           <div class="inside-reading"><span>Distance travelled</span><output id="read-distance">0</output></div>
           <div class="inside-reading"><span>Turn</span><output id="read-turn">0°</output></div>
         </aside>
-      </div>
 
       <div class="inside-command-deck" aria-label="Experience controls">
         <div class="inside-primary-actions">
@@ -79,7 +79,7 @@
         </div>
 
         <div class="inside-control-grid">
-          <div class="inside-control-group">
+          <div class="inside-control-group inside-motion-control">
             <h3>Move</h3>
             <div class="inside-move-pad">
               <button type="button" data-move="forward" aria-label="Move forward">↑</button>
@@ -88,11 +88,11 @@
               <button type="button" data-move="right" aria-label="Move right">→</button>
             </div>
           </div>
-          <div class="inside-control-group">
+          <div class="inside-control-group inside-motion-control">
             <h3>Look</h3>
             <div class="inside-small-controls"><button type="button" data-look="left">↶ Left</button><button type="button" data-look="right">Right ↷</button></div>
           </div>
-          <div class="inside-control-group">
+          <div class="inside-control-group inside-motion-control">
             <h3>Sensor zoom</h3>
             <div class="inside-small-controls"><button type="button" data-zoom="out" aria-label="Zoom sensor out">− Out</button><button type="button" data-zoom="in" aria-label="Zoom sensor in">+ In</button></div>
           </div>
@@ -106,6 +106,7 @@
           <label><input type="checkbox" id="slow-mode"> Step-by-step motion</label>
           <label><input type="checkbox" id="flat-compare"> Compare flat geometry</label>
         </div>
+      </div>
       </div>
     </div>
 
@@ -132,6 +133,6 @@
   </div></div></section>
 </main>
 <footer class="foot"><div class="wrap">The Bounded Observer · <a href="./">The six-gate walk</a> · <a href="library.html">Research library</a> · <a href="https://orcid.org/0009-0005-1794-5945">Daniel John Murray</a></div></footer>
-<script type="module" src="inside.js"></script>
+<script type="module" src="inside.js?v=entry2"></script>
 </body>
 </html>

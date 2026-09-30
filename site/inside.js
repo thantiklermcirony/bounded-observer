@@ -8,7 +8,7 @@ const $ = (id) => document.getElementById(id);
 const ui = Object.fromEntries([
   'inside-canvas', 'chapter-label', 'scene-prompt', 'read-seen', 'read-kept',
   'read-hidden', 'read-bet', 'read-budget', 'read-distance', 'read-turn',
-  'event-log', 'start-button', 'scan-button', 'act-button', 'advance-button',
+  'event-log', 'intro-start', 'start-overlay', 'start-button', 'scan-button', 'act-button', 'advance-button',
   'loop-button', 'reset-button', 'pause-button', 'slow-mode', 'flat-compare',
 ].map((id) => [id, $(id)]));
 const canvas = ui['inside-canvas'];
@@ -50,6 +50,7 @@ function isRevealed() { return ['revealed', 'repair-revealed'].includes(state.ph
 function canNavigate() { return ['journey', 'horizon'].includes(state.phase); }
 function isReduced() { return motionPreference.matches || ui['slow-mode'].checked; }
 function focusNext(element) { requestAnimationFrame(() => element.focus({ preventScroll: true })); }
+function showScene() { requestAnimationFrame(() => $('experience').scrollIntoView({ block: 'start' })); }
 
 function visibleTwin() {
   return twin.map((node) => ({ node, reading: observePoint(state.observer, state.heading, node.point, state.zoom) }));
@@ -66,6 +67,7 @@ function updateUI() {
     'loop-result': '04 / Returned, but turned', debrief: 'From inside, with conditions',
   };
   ui['chapter-label'].textContent = titles[p];
+  ui['start-overlay'].hidden = p !== 'ready';
   ui['start-button'].hidden = p !== 'ready';
   ui['scan-button'].hidden = !['trial', 'repair', 'journey', 'horizon'].includes(p);
   ui['act-button'].hidden = !['trial', 'repair'].includes(p);
@@ -78,9 +80,10 @@ function updateUI() {
   ui['pause-button'].textContent = stopped ? 'Resume' : 'Pause';
   ui['pause-button'].disabled = p === 'ready';
   document.querySelector('.inside-prediction').hidden = !isTrialPhase();
-  document.querySelector('.inside-control-grid').hidden = ['looping', 'loop-result', 'debrief'].includes(p);
+  document.querySelector('.inside-control-grid').hidden = p === 'ready' || ['looping', 'loop-result', 'debrief'].includes(p);
+  for (const group of document.querySelectorAll('.inside-motion-control')) group.hidden = !canNavigate();
   ui['flat-compare'].closest('label').hidden = !['loop-result', 'debrief'].includes(p);
-  ui['slow-mode'].closest('label').hidden = ['loop-result', 'debrief'].includes(p);
+  ui['slow-mode'].closest('label').hidden = !(canNavigate() || p === 'looping');
   ui['scan-button'].textContent = p === 'repair' ? 'Read the second channel' : 'Scan surroundings';
   ui['advance-button'].textContent = p === 'journey' || p === 'horizon'
     ? (isReduced() ? 'Take one equal step' : 'Run a straight route')
@@ -146,6 +149,7 @@ function enter() {
   log('Entered a constructed instrument station. The same surface channel shows A 0.50 and B 0.50. Their histories are not in the reading.');
   updateUI();
   focusNext(ui['chapter-label']);
+  showScene();
 }
 
 function choosePrediction(value) {
@@ -181,6 +185,7 @@ function intervene() {
   }
   updateUI();
   focusNext(ui['chapter-label']);
+  showScene();
 }
 
 function scan() {
@@ -210,6 +215,7 @@ function continueStory() {
     log('Rewound to the same present reading. One reserve-channel measurement is now available.');
     updateUI();
     focusNext(ui['scan-button']);
+    showScene();
     return;
   } else if (state.phase === 'repair-revealed') {
     state.phase = 'journey'; state.observer = disk.C(0, 0); state.heading = 0;
@@ -218,6 +224,7 @@ function continueStory() {
     log('At the origin of a chosen hyperbolic disk. Each forward press travels 0.24 intrinsic units. The chart radius is bounded by 1.');
     updateUI();
     focusNext(canvas);
+    showScene();
     return;
   } else if (state.phase === 'journey' || state.phase === 'horizon') {
     if (isReduced()) {
@@ -232,6 +239,7 @@ function continueStory() {
     log('Debrief: the trial is a model illustration; the horizon and loop are conditional mathematics of the chosen disk. None validates a claim about natural geometry.');
     updateUI();
     focusNext(ui['chapter-label']);
+    showScene();
     return;
   }
   updateUI();
@@ -325,6 +333,7 @@ function finishLoop() {
   log(`Closed loop returned to its start. Signed turn ${degrees}°; hyperbolic area ${state.loop.area.toFixed(3)} in curvature −1 units. A flat comparison gives 0°. Geometry was an extra model choice.`);
   updateUI();
   focusNext(ui['chapter-label']);
+  showScene();
 }
 
 function queueTick() {
@@ -351,6 +360,7 @@ function tick(time) {
         prompt(`You travelled ${state.path.toFixed(2)} intrinsic units. The chart radius is ${r.toFixed(6)}, still below 1. The mathematical path can keep growing without reaching the rim.`);
         log(`After ${state.steps} straight steps from the origin: chart radius r = tanh(28 × 0.24 / 2) = ${horizonProgress(28, STEP).toFixed(6)} < 1.`);
         updateUI();
+        showScene();
       }
   } else if (anim.kind === 'loop') {
       while (anim.elapsed >= 30 && anim.index < anim.route.length - 1) {
@@ -544,8 +554,8 @@ function draw() {
   label(g, `ZOOM ${state.zoom}  ·  ${Math.round(120 / state.zoom)}°`, 22, h - 26, 11, '#b8ced0', 'left', 700);
   if (state.phase === 'ready') {
     g.fillStyle = 'rgba(10,20,27,.69)'; g.fillRect(0, 0, w, h);
-    label(g, 'YOU CAN ONLY SEE FROM HERE', w / 2, h / 2 - 15, Math.min(20, w / 23), '#f3eee4', 'center', 700);
-    label(g, 'Enter the world below', w / 2, h / 2 + 18, 13, '#9eced3', 'center');
+    label(g, 'YOU CAN ONLY SEE FROM HERE', w / 2, h / 2 - 55, Math.min(20, w / 23), '#f3eee4', 'center', 700);
+    label(g, 'YOUR FIRST MEASUREMENT AWAITS', w / 2, h / 2 - 27, 13, '#9eced3', 'center');
   }
   drawExternalChart(g, w, h);
 }
@@ -557,15 +567,22 @@ function renderSoon() {
 
 function reset(focus = false) {
   state = fresh();
+  ui['slow-mode'].checked = false;
+  ui['flat-compare'].checked = false;
   ui['event-log'].replaceChildren();
   const row = document.createElement('p'); row.dataset.placeholder = 'true'; row.textContent = 'Your record begins when you enter.';
   ui['event-log'].append(row);
   prompt('Your instruments are waiting. Enter to see what they can reach.');
   updateUI();
-  if (focus) focusNext(ui['start-button']);
+  if (focus) { focusNext(ui['start-button']); showScene(); }
 }
 
 ui['start-button'].addEventListener('click', enter);
+ui['start-overlay'].addEventListener('click', enter);
+ui['intro-start'].addEventListener('click', (event) => {
+  event.preventDefault();
+  if (state.phase === 'ready') enter(); else showScene();
+});
 ui['reset-button'].addEventListener('click', () => reset(true));
 ui['scan-button'].addEventListener('click', scan);
 ui['act-button'].addEventListener('click', intervene);
@@ -622,6 +639,7 @@ canvas.addEventListener('wheel', (event) => {
 
 let dragging = false, lastX = 0;
 canvas.addEventListener('pointerdown', (event) => {
+  if (state.phase === 'ready') { enter(); return; }
   dragging = true; lastX = event.clientX; canvas.setPointerCapture(event.pointerId); canvas.focus();
 });
 canvas.addEventListener('pointermove', (event) => {
