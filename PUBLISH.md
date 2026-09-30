@@ -1,67 +1,46 @@
-# Publishing The Bounded Observer
+# Maintaining the published Bounded Observer
 
-This folder is the standalone release copy for
-`https://github.com/thantiklermcirony/bounded-observer`. The Desktop research library is the
-source archive and should stay intact. The older GitHub repositories are separate projects and
-should stay available.
+The public source is [thantiklermcirony/bounded-observer](https://github.com/thantiklermcirony/bounded-observer).
+GitHub Actions publishes `site/` at
+<https://thantiklermcirony.github.io/bounded-observer/> after a push to `main`.
+The GitHub profile points readers to that site and pins this repository.
 
-## 1. Check the destination
+## Before publishing a change
 
-Open `https://github.com/thantiklermcirony/bounded-observer`. If it does not exist, create a
-repository named `bounded-observer` under `thantiklermcirony`. Choose public visibility when
-ready to publish. Do not add a GitHub-generated README, license, or `.gitignore`: this folder
-already contains them. If the repository already exists, inspect its branches and contents
-before pushing; do not force-push over existing work.
+Run from the repository root with Python 3.10+ and Node.js 20+:
 
-## 2. Verify the release copy
-
-Run these checks from this folder with Python 3.10 or newer and Node.js 20 or newer:
-
-```bash
+```sh
 python -m pip install -e "toolkit[test]"
 python -m pytest toolkit/tests -q
 node site/bo.test.mjs
+python registry/legacy/validate_inventory.py
 python site/build_evidence.py
+git diff --check
 ```
 
-The last command regenerates `site/evidence.html` from `registry/atlas.csv`. Check the resulting
-diff before committing. IDA Live has its own dependencies and tests in `apps/ida-live/README.md`.
-The `.github/workflows/tests.yml` workflow runs the toolkit, site, atlas, and IDA Live checks on
-GitHub.
+Check whether `site/evidence.html` changed after regeneration; commit it with
+the corresponding `registry/atlas.csv` edit. The inventory validator checks
+the dated source receipt and its GitHub Pages copy. IDA Live has its own
+dependencies and checks in `apps/ida-live/README.md`. CI runs the site maths,
+toolkit, current atlas, dated inventory and IDA checks.
 
-## 3. Push this folder as its own repository
+Check the home page, Atlas, Library, Labs, IDA Live, Papers and Contribute
+pages after deployment. The Library is a text-light, source-pinned receipt of
+the earlier Atlas. The old Observatory remains a separate runnable project:
+its server routes, database and live features cannot be copied unchanged to
+GitHub Pages. Labs indexes its experiments, results and room source routes.
 
-From this folder, after the destination has been checked:
+## Preserving the earlier work
 
-```bash
-git init -b main
-git add -A
-git commit -m "Publish The Bounded Observer research programme"
-git remote add origin https://github.com/thantiklermcirony/bounded-observer.git
-git push -u origin main
-```
+Keep `boundedness-atlas`, `empirical-observatory`, `empirical-architecture`
+and `ida-stateatlas` online for source history and deep links. The profile
+README groups them in a collapsed archive below the new entry. Do not delete
+or force-push their histories. The current `registry/atlas.csv` is the claim
+classification for this project; `registry/legacy/` keeps the dated wider
+programme inventory without reproducing manuscript prose or 471 page images.
 
-GitHub Desktop can also add this folder as a local repository and publish it to the same
-account. The `.github/` workflows and issue templates are already included in this copy.
+## Rights
 
-## 4. Enable the site
-
-In the new repository, open **Settings → Pages**, set **Build and deployment → Source** to
-**GitHub Actions**, and run or re-run the `site` workflow if needed. It builds the atlas page
-and deploys `site/` to `https://thantiklermcirony.github.io/bounded-observer/`. Check that the
-home page, Atlas, IDA Live, Papers, and Contribute pages load and that their source links lead
-back to this repository.
-
-## 5. Preserve the existing public work
-
-Keep `empirical-architecture`, `empirical-observatory`, `boundedness-atlas`, and
-`ida-stateatlas` available. Any later README pointers or atlas migration should be reviewed
-against their current public contents as a separate change. This release does not archive,
-delete, or overwrite them.
-
-## Data and licences
-
-Code is MIT (`LICENSE`); text and figures are CC BY 4.0 (`LICENSE-CONTENT`). Confirm these
-terms before publishing. Raw EEG recordings in `Documents\IDA Live`, `web/samples.zip`, and the
-OpenMuse test recording are not in this repository. `apps/ida-live/NOTICE.md` identifies the
-third-party material and omitted test recording.
+New code is MIT (`LICENSE`), and original text and figures are CC BY 4.0
+(`LICENSE-CONTENT`). The inventory does not relicense the earlier manuscripts,
+datasets, images or linked repositories. See `registry/legacy/README.md`.

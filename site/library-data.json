@@ -1,0 +1,4255 @@
+{
+  "title": "Research library · September 2026 source inventory",
+  "as_of": "2026-09-13",
+  "source_repository": "https://github.com/thantiklermcirony/boundedness-atlas/tree/29a0cfca16ac088cd08e0267b07a50c20eacbc9b",
+  "source_file": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json",
+  "source_sha256": "a84cfc5f261d72cfb9ea75b7a3ff92d0a0058449afdb666e343184e3cffc9025",
+  "scope": "Dated public source inventory. Author-reported statuses and claims have not been independently reverified by this transfer. Online SSRN revisions may differ.",
+  "coverage": {
+    "manuscript_records": 41,
+    "pdf_pages": 1098,
+    "abstract_closing_reviewed": 41,
+    "fresh_text_matches_prior_extraction": 41,
+    "prediction_families": 41,
+    "original_numbered_items": 41,
+    "indexed_main_text_pages": 471,
+    "completeness": "Complete against the declared 41-record inventory and the five numbered prediction lists checked here. Families overlap numbered items. Main-text keyword indexing is a retrieval aid, not a proof that every implicit prediction or mathematical consequence has been identified. Bundled duplicates and predecessor records are not independent discoveries.",
+    "not_certified": [
+      "Independent proof verification",
+      "Global scientific novelty",
+      "Empirical validation of all predictions",
+      "Parity with the latest online SSRN versions"
+    ]
+  },
+  "papers": [
+    {
+      "key": "current-01",
+      "title": "Epistemic Type Safety for Generative AI: Witnessed Assertion, Fail-Closed Kernels, and Why the Model Need Not Be the World",
+      "ssrn_id": "7426838",
+      "page_count": 17,
+      "sha256": "1336b2183b6851b9e61fb7fba496392eb3249b05b7f7e9acf2ebc01217a87c51",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7426838",
+      "role": "Evidence admission",
+      "scope": "Witnessed support is channel-relative; trusted verifier/renderer/source binding required; targeted mutation tests do not establish arbitrary truth.",
+      "contribution": "Separate a proposal, source support, a current warrant, meaning and action authorization.",
+      "evidence": "Conditional certification architecture; finite prototype; H1/H2 untested",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        15
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13,
+        15
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5"
+    },
+    {
+      "key": "current-02",
+      "title": "A Law of Biological State Sufficiency: History-conditioned prediction, viable continuation, and a test for when the past may be forgotten",
+      "ssrn_id": "7425878",
+      "page_count": 18,
+      "sha256": "96274fbcacb1af4df5e2e4f54730aada0a933723a39c73135ef5db13b4204a25",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7425878",
+      "role": "State and restoration measurement",
+      "scope": "Exact quotient and finite-tolerance battery differ; common support, simultaneous uncertainty and joint carrier distribution matter.",
+      "contribution": "History matters only through distinctions a declared future can still read.",
+      "evidence": "Exact quotient and finite testing protocol; prospective biology",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        15,
+        16
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L65"
+    },
+    {
+      "key": "current-03",
+      "title": "The Acute Dose-Response Curve as a Transition Potential: Predictive-State Closure, Quadratic Degeneracy, and Temporal Identifiability",
+      "ssrn_id": "7426880",
+      "page_count": 34,
+      "sha256": "b7c8ce27f54b5d5498306e9dd484e309386b70710519d6f1e9b4311488f16ba8",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7426880",
+      "role": "Dose-to-time transport",
+      "scope": "Quadratic challenge response can hide multiple repair modes; acute potential does not determine gap dynamics or frailty transport.",
+      "contribution": "An acute curve, scalar challenge response and scalar waiting dynamics are different closure claims.",
+      "evidence": "Conditional mathematical results and experimental design",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        27
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        15,
+        17,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L150"
+    },
+    {
+      "key": "current-04",
+      "title": "Recursive Predictive Closure in the Prime Sieve: Resolution covariance, finite probability consistency, and gap-word prediction",
+      "ssrn_id": "7426882",
+      "page_count": 14,
+      "sha256": "4a3749148b2f0572ca5fd52e0fbd30c43c1829c220dbe03f4aa36b4b5281b5d1",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7426882",
+      "role": "Exact arithmetic testbed",
+      "scope": "CRT averaging is exact in scope; signed inclusion-exclusion needs probability admission; truncated predictors do not prove prime asymptotics.",
+      "contribution": "Resolving another prime transfers structure between explicit state and unresolved prediction.",
+      "evidence": "Exact CRT identities; restricted probability construction; computational checks",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        13
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L254"
+    },
+    {
+      "key": "current-05",
+      "title": "The Temporal Architecture of Living Nature: Predictive state, robust viability, and the recursive construction of biological futures",
+      "ssrn_id": "7426938",
+      "page_count": 27,
+      "sha256": "7203996c5baf71f976774f27b8ff82323af1b6525551fd4bfefb826e0fa12d2c",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7426938",
+      "role": "Temporal/environment/adaptation backbone",
+      "scope": "Viability belongs to physical realization; robust policy quantifiers, opposing channels and independent restoration tests remain separate.",
+      "contribution": "Predictive state, survival-filtered history, viability and organism-environment feedback fit one operational chain.",
+      "evidence": "Theorems, synthesis, published anchors and prospective extensions",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        22
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L326"
+    },
+    {
+      "key": "current-06",
+      "title": "Aczél-Family Composition in Bounded Pharmacology: Mechanism-selected generators, combination effects, and an aluminium-toxicology test",
+      "ssrn_id": "7426978",
+      "page_count": 10,
+      "sha256": "4c266fca8ee569621b6ce92a59d66ac0bb1c85a929b1fecb8f5650414b15a4a0",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7426978",
+      "role": "Mechanism-selected composition",
+      "scope": "Aczel generator has positive-scale freedom after identity normalization; Bliss/Loewe comparison is model-specific; projective metric differs from Fisher.",
+      "contribution": "Mechanism chooses the additive generator; a failed commutative increment is not automatically failed scalar state.",
+      "evidence": "Classical representation plus exact scoped contrasts; conditional chemistry",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        8
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L434"
+    },
+    {
+      "key": "current-07",
+      "title": "The Observer and the World: Predictive state, lawful forgetting, and the geometry of empirical reality",
+      "ssrn_id": "7426998",
+      "page_count": 27,
+      "sha256": "169909493dd906415828fe5e14d18603d46d2196ed8ff1ccc0f4d6823d3a7b8e",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7426998",
+      "role": "Observer/projective representation",
+      "scope": "Scale-blind2D linear lift yields projective ratio law; point-map gate precedes finite invariant battery; hidden channel can break scalar closure.",
+      "contribution": "A law on a measurement exists only if its discarded histories have equal declared future laws.",
+      "evidence": "Factorization theorem; conditional projective branch; synthetic demonstration",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        21,
+        22
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L490"
+    },
+    {
+      "key": "current-08",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "ssrn_id": "7427058",
+      "page_count": 23,
+      "sha256": "c14f4c804b28af92c47156c25996734e1fc9b1963349c52a13b7114a68b1969d",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7427058",
+      "role": "Order and graph integrability",
+      "scope": "Reversal rejects specified order-blind summary; nonlinear pooling can create metric cycles; potential is not sufficient state.",
+      "contribution": "Equal BED can identify histories with different endpoint distributions.",
+      "evidence": "Exact reversal null; published external observations; prospective state recovery",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        17
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L599"
+    },
+    {
+      "key": "current-09",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a discriminating experimental test",
+      "ssrn_id": "7427059",
+      "page_count": 20,
+      "sha256": "8fa4fc0184699bed2135e5e6378820dae1202bcc389621bc88b63a45d4fccd76",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7427059",
+      "role": "Finite rescue and fold regime",
+      "scope": "Fixed deterministic sections yield passage formula; asymmetry need not give monotone exponent; moving depth requires extra phase term.",
+      "contribution": "A named rescue window is a different object from injury or antioxidant abundance.",
+      "evidence": "Conditional fold law; corrected source reanalysis; prospective test",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        17
+      ],
+      "indexed_pages": [
+        1,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L683"
+    },
+    {
+      "key": "current-10",
+      "title": "Predictive Closure: State, action, and the experimental compression of history",
+      "ssrn_id": "7427098",
+      "page_count": 37,
+      "sha256": "39ca286995c0249006fd01cc6bcd9a66efb174798edfa94f996fe41221eb0b0a",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7427098",
+      "role": "Descent/composition/temporal grammar",
+      "scope": "Domain and record preservation precede action algebra; commutation differs from amount calibration; rank is linear realization, not universal memory size.",
+      "contribution": "Earn state, action descent, commutation, cumulative amount and scalar composition in that order.",
+      "evidence": "Theorem-and-no-go synthesis; computational exemplars",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        31
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L763"
+    },
+    {
+      "key": "current-11",
+      "title": "From Predictive State to Viable Action: Action Sufficiency, Safe Diagnosis, and the Operational Recoverability Bound",
+      "ssrn_id": "7427100",
+      "page_count": 12,
+      "sha256": "1a7f5dadf6c01462c3845627cedfb63949ada7a09a48b0b7d9e36d99474108c5",
+      "kind": "current",
+      "url": "https://ssrn.com/abstract=7427100",
+      "role": "Action and diagnosis",
+      "scope": "Whole-code-cell action intersection yields static set cover; diagnostic time can make physical rescue operationally inaccessible.",
+      "contribution": "Predictive distinctions, action-relevant distinctions and safely obtainable distinctions differ.",
+      "evidence": "Exact finite action-cover result and diagnostic bound; prospective biology",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        10,
+        11
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L915"
+    },
+    {
+      "key": "legacy-7347861",
+      "title": "The Observer and the World Predictive Closure, the Projective Shadow, and a First-principles Grammar of Empirical Science",
+      "ssrn_id": "7347861",
+      "page_count": 30,
+      "sha256": "db67d916b5cbace59e1dabecd1043ca021707c23fbcc1bc9a631fab57dd83070",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=7347861",
+      "role": "Observer predecessor",
+      "scope": "Retain projective conditional branch; successor governs support, measurable quotient and finite equivalence.",
+      "contribution": "Physical access selects the empirical quotient; projective geometry needs a particular observation structure.",
+      "evidence": "Earlier conditional theorem and synthetic test; successor governs scope",
+      "notice": "Programme update, 7 September 2026. This earlier formulation is preserved. The current expanded treatment is The Observer and the World: Predictive state, lawful forgetting, and the geometry of empirical reality (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426998), read with Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098). Use the newer statements of quotient measurability and support, matched-present/common-future tests, and confidence bounds for empirical equivalence. A failure to reject a difference is not a certificate of equivalence. Order reversal diagnoses a specified order-blind representation; it does not by itself prove that every scalar state description fails. Projective geometry remains conditional on the declared observation structure, as this earlier abstract also states. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        2
+      ],
+      "closing_pages": [
+        26,
+        27,
+        28
+      ],
+      "indexed_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L976"
+    },
+    {
+      "key": "legacy-7304339",
+      "title": "Predictive Closure: A Measurement-Admission Theorem for Evolving Systems",
+      "ssrn_id": "7304339",
+      "page_count": 22,
+      "sha256": "50c3875cbd2af8df30811e8636b1c32613ed01984ff88049af24b029852a0bfb",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=7304339",
+      "role": "Closure predecessor",
+      "scope": "Successor governs stochastic record/domain semantics, graph interpretation and noisy rank.",
+      "contribution": "Calibration accuracy does not certify that the selected quantity is an adequate state.",
+      "evidence": "Earlier theorem and executable finite protocol",
+      "notice": "Programme update, 7 September 2026. The current expanded formulation is Predictive Closure: State, action, and the experimental compression of history (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098). This earlier paper remains available. Use the successor for the unified treatment of stochastic successor kernels, record-conditioned partial actions and their domains, temporal contrasts, realization and action sufficiency. Kernel composition and record-conditioned updates are distinct constructions; a cycle residual is not automatically a ranking of histories, and finite noisy reconstruction does not establish an unrestricted exact state dimension. These qualifications delimit the claims rather than replacing the requirement to declare the measurement and future-test scope. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        4
+      ],
+      "closing_pages": [
+        17,
+        18
+      ],
+      "indexed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1106"
+    },
+    {
+      "key": "legacy-7302362",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "ssrn_id": "7302362",
+      "page_count": 54,
+      "sha256": "cebf56f796fb9bb94a623cabca91e767aac32b697a4108a1ee7f20cd375b90bd",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=7302362",
+      "role": "Reversal predecessor",
+      "scope": "Corrected mean/variance and multiplicity rules govern; reversal alone is not universal scalar-state failure.",
+      "contribution": "Order reversal tests an order-blind exposure representation; pooling can create graph defects.",
+      "evidence": "Earlier reversal formulation; corrected successor and supplement",
+      "notice": "Update, 7 September 2026. For the reviewed formulation and corrected supporting calculations, see When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427058), together with The Acute Dose-Response Curve as a Transition Potential (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426880). The original paper is preserved. Mean/variance adequacy must not be treated as equivalence of complete response laws. A rejection rule that triggers on either component requires appropriate multiplicity control; use the reviewed simulation tables and supplement for that rule. Reversal rejects the specified order-blind dose representation and does not, by itself, identify a biological mechanism or rule out every closed scalar dynamical model. Population mixing, measurement scale and technical noise remain part of the declared test. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        3,
+        4
+      ],
+      "closing_pages": [
+        27,
+        28
+      ],
+      "indexed_pages": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        13,
+        14,
+        17,
+        19,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1195"
+    },
+    {
+      "key": "legacy-7181465",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a decisive experimental test",
+      "ssrn_id": "7181465",
+      "page_count": 14,
+      "sha256": "6770e4ad3965beb237292fae69ed7c5a58ea262469930c8658804a03d465b4c1",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=7181465",
+      "role": "Rescue predecessor",
+      "scope": "Monotone crossover claim and evidence attribution corrected; grey+orange death bars must be combined.",
+      "contribution": "Finite rescue windows motivate an operational commitment model.",
+      "evidence": "Earlier hypothesis; corrected successor withdraws specific source interpretations",
+      "notice": "Correction and update, 7 September 2026. Please use the corrected successor, Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a discriminating experimental test (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427059). The earlier crossover description must not be read as universally monotone: asymmetric finite entry/exit sections can produce a nonmonotone effective-exponent profile. A changing forcing depth also requires the additional time-dependent phase term. The fixed-section passage formula is a deterministic model result and is not automatically a population T50 law. The attribution in Section 2.3 of a timed cystine-withdrawal/repletion rescue experiment to Poursaitidis et al. is withdrawn. In the Wiernicki source plot, the grey component is death already present at rescue addition and orange is subsequent additional death; their sum is final death, and grey is not an untreated control. The corrected paper separates these evidence corrections from the still-prospective fold-model test. The original PDF is preserved. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        2
+      ],
+      "closing_pages": [
+        12
+      ],
+      "indexed_pages": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1289"
+    },
+    {
+      "key": "legacy-6987278",
+      "title": "IDA and the Boundedness Engine",
+      "ssrn_id": "6987278",
+      "page_count": 35,
+      "sha256": "648a55d416571dd56c5a6cf4f4aa7948cc837acb543aeee02d6a67e1e8ef8114",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6987278",
+      "role": "IDA recovery and programme synthesis",
+      "scope": "Operational leaky score retained; generator affine freedom, Hill/logit substitution and quadratic-energy monotone-transfer claim need correction.",
+      "contribution": "Frozen-reference recovery, unresolved displacement and baseline drift propose a read-first controller.",
+      "evidence": "Typed synthesis; runnable offline engine; untested device hypotheses",
+      "notice": "Programme status update, 7 September 2026. The statement that this would be the programme's final new manuscript is no longer current. Subsequent work develops biological state sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098), the temporal architecture of living nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), action sufficiency and safe diagnosis (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100), and epistemic type safety for generative AI (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426838). This synthesis remains a historical programme document. Its proposed instruments, empirical tests and optional microscopic conjectures should retain their stated hypothesis status; the newer papers specify the current mathematical scope and experimental priorities. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1,
+        2
+      ],
+      "closing_pages": [
+        16,
+        17
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1349"
+    },
+    {
+      "key": "legacy-6964098",
+      "title": "Intelligence - Two Operators in the g Debate: Correlation Identifies Description, Intervention Tests Cause",
+      "ssrn_id": "6964098",
+      "page_count": 22,
+      "sha256": "1f102e6b6959fa2bfaaa966865583ddc178b2c4a81426adaf60412020185c725",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6964098",
+      "role": "Intelligence transfer operator",
+      "scope": "Covariance and intervention-response rank answer different questions; positive manifold requires the stated nonnegative model.",
+      "contribution": "Covariance rank describes a battery; an intervention-response operator asks about accessible causal handles.",
+      "evidence": "Model-specific non-identifiability theorem; simulations; illustrative transfer matrix",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        6,
+        7
+      ],
+      "closing_pages": [
+        18,
+        19
+      ],
+      "indexed_pages": [
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1431"
+    },
+    {
+      "key": "legacy-6963978",
+      "title": "Lawful Coordinates in Bounded Science: Measurement, Composition, and the Euclidean Error",
+      "ssrn_id": "6963978",
+      "page_count": 9,
+      "sha256": "5a24cc117da8fbe5e1f3ab1606c2cda64b0c835563de439d1b7f10f634920b0e",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6963978",
+      "role": "Lawful measurement coordinates",
+      "scope": "Generator depends on operation; positive scale, not arbitrary affine shift after identity0; raw-gap optimum not universal information optimum.",
+      "contribution": "A meaningful operation can license arithmetic in its generator coordinate.",
+      "evidence": "Classical composition representation; analytical bias; small illustration",
+      "notice": "Scope clarification and related work, 7 September 2026. A lawful coordinate is tied to a specified operation; boundedness alone does not select it. With the additive identity normalized to zero, generator freedom is positive scale. The approximately 0.618 combination-design point maximizes a particular raw effect gap under the common-shape n=1 model; it is not a universal optimum independent of noise, costs or the inferential target. See Aczél-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978) and Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098) for the current treatment. The original paper is preserved. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        7
+      ],
+      "indexed_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1497"
+    },
+    {
+      "key": "legacy-6963958",
+      "title": "Dominance Hides in the Bend: Boundary Identifiability and Sampling Design in Diploid Selection",
+      "ssrn_id": "6963958",
+      "page_count": 12,
+      "sha256": "3e819c2338aafd17f74758fd0324b512251b1d518262afe7e1ed83228f67f71a",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6963958",
+      "role": "Diploid boundary identifiability",
+      "scope": "Rare-allele limit identifieshs; bend exposes additional coefficient under declared model.",
+      "contribution": "Rare alleles expose hs; trajectory state dependence supplies information separating h from s.",
+      "evidence": "Exact coefficient inversion; information analysis; simulations",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        4
+      ],
+      "closing_pages": [
+        10,
+        11
+      ],
+      "indexed_pages": [
+        6,
+        11
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1541"
+    },
+    {
+      "key": "legacy-6963360",
+      "title": "Projection Geometry of the Niche-Neutral Debate: Hidden Probability Currents in Community Dynamics",
+      "ssrn_id": "6963360",
+      "page_count": 30,
+      "sha256": "f6a80a1c7fb0593d8ba4db3bcdf01cf74222f84c2d571b747a648eacab64faff",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6963360",
+      "role": "Ecological stationary currents",
+      "scope": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "contribution": "An unordered abundance distribution erases circulating dynamics.",
+      "evidence": "Conditional density/current non-identifiability; proposed diagnostics",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        26,
+        27
+      ],
+      "indexed_pages": [
+        13,
+        17,
+        21,
+        22,
+        25
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1578"
+    },
+    {
+      "key": "legacy-6947578",
+      "title": "Prime-Residue Projection Tomography of Consecutive-Prime Biases: Primorial Recovery and Gap-Word Order Asymmetry",
+      "ssrn_id": "6947578",
+      "page_count": 15,
+      "sha256": "6ee7d64fbf4043b81392846774472e2d3790039321a1f6516c9a76457445afd4",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6947578",
+      "role": "Prime projection tomography",
+      "scope": "Refined primorial projection and Markov residuals are reported numerical results, not new prime asymptotics.",
+      "contribution": "Larger CRT-aligned state recovers much coarse recurrence dependence; residual order remains.",
+      "evidence": "Finite-scale numerical study with held-out checks",
+      "notice": "Follow-up, 7 September 2026. This original prime-residue projection paper is retained. Recursive Predictive Closure in the Prime Sieve (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426882) develops the subsequent resolution and gap-word prediction framework. Read exact CRT/Euler-factor identities separately from the assumptions needed to interpret an inclusion–exclusion functional as a probability law and from asymptotic claims about actual primes. The follow-up reports its frozen predictor checks and remaining limits. This link does not withdraw the predecessor's projection results or turn correlated computational checks into independent empirical replications. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        2
+      ],
+      "closing_pages": [
+        14
+      ],
+      "indexed_pages": [
+        2,
+        5,
+        7,
+        14
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1627"
+    },
+    {
+      "key": "legacy-6914800",
+      "title": "A Classification of Bounded Composition Laws with Isometric Reassociation Defects: flat rapidity addition, Einstein gyroaddition, and the holonomy that chooses between them",
+      "ssrn_id": "6914800",
+      "page_count": 16,
+      "sha256": "d6b37df40a71f57465b0e8d10a97e9597a81798d3c2b851f1edeb4fb73d23f49",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6914800",
+      "role": "Flat/curved classification",
+      "scope": "Isometric reassociation defect is strong; radial UHL is an axiom; flat associative branch survives until nontrivial holonomy selection.",
+      "contribution": "A specified reassociation-isometry structure distinguishes flat and curved branches.",
+      "evidence": "Axiom-conditional classification; synthetic defect tomography",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        13,
+        14
+      ],
+      "indexed_pages": [
+        1,
+        9,
+        10,
+        13
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1671"
+    },
+    {
+      "key": "legacy-6907938",
+      "title": "Does Sustained Compulsory Antipsychotic Treatment Meet the Evidentiary Standard That Removal of Consent Requires? A Structured Critical Review",
+      "ssrn_id": "6907938",
+      "page_count": 32,
+      "sha256": "d4923f0bab54dfc43d90658dd086d7fb91adbaac6705b1cfaa19998b99839e9c",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6907938",
+      "role": "Evidence/estimand critique",
+      "scope": "Adding legal compulsion and giving a drug are different interventions/estimands.",
+      "contribution": "Drug efficacy does not establish the incremental efficacy of imposing legal force.",
+      "evidence": "Structured critical review plus explicit normative premise",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        14
+      ],
+      "indexed_pages": [
+        1,
+        3,
+        4,
+        10,
+        12,
+        13
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1716"
+    },
+    {
+      "key": "legacy-6865159",
+      "title": "The Invariance Signature of Public Quantum Measurement Archives: Factorizing Exchangeability Failure, Calibration Sensitivity, Overdispersion, and Job-Index Channel Structure in Leggett-Garg/Time-Order Data",
+      "ssrn_id": "6865159",
+      "page_count": 11,
+      "sha256": "515a74ce5401860338aee8d2e1dfd4ab039e69973cf3f72bb4cb1520a1c46c81",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6865159",
+      "role": "Quantum archive invariance",
+      "scope": "Job-index dependence, calibration and overdispersion are not microscopic memory or Born-rule anomaly.",
+      "contribution": "Job-index dependence survives some controls, favouring latent channel drift or batching.",
+      "evidence": "Reanalysis of a fixed public archive; no foundational quantum anomaly",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        9
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1768"
+    },
+    {
+      "key": "legacy-6858922",
+      "title": "Precision-Gated Attractor Reversal: A Triple-Threshold Hypothesis for Exceptional Recovery",
+      "ssrn_id": "6858922",
+      "page_count": 14,
+      "sha256": "67d9b57aed7f75c70a8b2912aa0f012e1e2ee2fd1dbc693251407f56da0cc213",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6858922",
+      "role": "Precision-gated recovery hypothesis",
+      "scope": "Triple gate and fast-slow coupling remain proposed mechanisms, not consequences of state/viability mathematics.",
+      "contribution": "Evidence capture, policy transduction and accessible host control are separate proposed gates.",
+      "evidence": "Prospective biological hypothesis; no new outcomes",
+      "notice": "Related-work and evidence-status note, 7 September 2026. The precision-gated recovery mechanism and proposed coupling tests in this paper remain hypotheses. The current operational treatment of measured state, viable continuation and recovery is developed in A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), and From Predictive State to Viable Action (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100). Those mathematical and experimental frameworks do not by themselves validate this earlier biological mechanism. The original preprint is retained. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        7
+      ],
+      "closing_pages": [
+        9,
+        10
+      ],
+      "indexed_pages": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1828"
+    },
+    {
+      "key": "legacy-6858880",
+      "title": "c-Ring Stoichiometry, Energetic Slack, and the Limits of Molecular Optimality",
+      "ssrn_id": "6858880",
+      "page_count": 16,
+      "sha256": "7d6317c6ad8563c20944ee00b376a3fa58a3f9ca0aa43235b0336464a30d6e94",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6858880",
+      "role": "Energetic slack in ATP synthase",
+      "scope": "Admissibility slack and evolutionary optimality are different; pressure index must not contain fitted solution.",
+      "contribution": "Coupling geometry should matter most near a non-circular energetic constraint.",
+      "evidence": "Binding/slack hypothesis; selected published cases",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        4
+      ],
+      "closing_pages": [
+        12
+      ],
+      "indexed_pages": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1873"
+    },
+    {
+      "key": "legacy-6858878",
+      "title": "A Coefficient-Locked Test of Atmospheric-Loss Geometry in the Exoplanet Radius Valley",
+      "ssrn_id": "6858878",
+      "page_count": 9,
+      "sha256": "d756e65f18fcda211e972dbf8afb5dd44fde0756516a473e570f783d9118e133",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6858878",
+      "role": "Atmospheric-loss regime boundary",
+      "scope": "Paper reports data do not select locked exponent; similar predictive score does not identify mechanism.",
+      "contribution": "A locked coordinate can fit without its coefficient or physical mechanism being identified.",
+      "evidence": "Public-data analysis with a negative identifiability result",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        2
+      ],
+      "closing_pages": [
+        8
+      ],
+      "indexed_pages": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1929"
+    },
+    {
+      "key": "legacy-6858838",
+      "title": "The Measurement Gap in Coercive Psychiatry: When the Justification for Compulsory Antipsychotic Treatment Cannot Meet the Standard the Compulsion Requires",
+      "ssrn_id": "6858838",
+      "page_count": 18,
+      "sha256": "6d2a0bbde8211f2332edced9afe70dd7585f72d7453edda5bb1ca1351393e77b",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6858838",
+      "role": "Measurement-gap predecessor",
+      "scope": "Preserve pharmacology-versus-compulsion evidence distinction without automatic clinical/legal verdict.",
+      "contribution": "The imposed intervention differs from the intervention studied in consenting drug trials.",
+      "evidence": "Earlier argument; later structured review available",
+      "notice": "Related-work update, 7 September 2026. The subsequent structured review develops the evidentiary argument in this earlier paper: Does Sustained Compulsory Antipsychotic Treatment Meet the Evidentiary Standard That Removal of Consent Requires? (https://papers.ssrn.com/abstract=6907938). Please distinguish the evidence for a pharmacological intervention from the evidence for adding legal compulsion when citing either paper. This note preserves the original preprint and does not add a new clinical outcome claim.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        3
+      ],
+      "closing_pages": [
+        16
+      ],
+      "indexed_pages": [
+        5,
+        10,
+        11,
+        15
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L1981"
+    },
+    {
+      "key": "legacy-6858819",
+      "title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions from First Principles",
+      "ssrn_id": "6858819",
+      "page_count": 17,
+      "sha256": "13658c9534032ea8a4ce6502387f27dbc75b9cda922f7aea331afc9ad24f0f53",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6858819",
+      "role": "Mechanistic hormesis",
+      "scope": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "contribution": "Earlier repair activation and later dominating damage produce biphasic response within the model.",
+      "evidence": "Conditional adaptive model; retrospective agreement; published journal development",
+      "notice": "Scope clarification, 7 September 2026. The hormetic response in this paper is conditional on its specified adaptive-activation, repair and toxicity model. Boundedness alone does not imply hormesis, and the result does not assert that every low exposure is beneficial. Model assumptions and baseline-relative benefit must accompany applications. The current broader biological framework is The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), with mechanism-dependent composition discussed in Aczél-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978). This preprint remains part of the research record. The published journal version appeared in Dose-Response 24(3) on 22 July 2026: https://doi.org/10.1177/15593258261469171. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        13,
+        14
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2025"
+    },
+    {
+      "key": "legacy-6858760",
+      "title": "Response-Coefficient Attenuation Predicts Hormetic Peak Amplitude: A Metabolic-Control Extension of Bounded Adaptive Systems",
+      "ssrn_id": "6858760",
+      "page_count": 14,
+      "sha256": "7958555cfce3e145f0a58a5b474dceef32a04de922fd873c2293d8f786ceb438",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6858760",
+      "role": "Metabolic response attenuation",
+      "scope": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "contribution": "Molecular induction and phenotypic control differ; summed response coefficients predict transmitted adaptation.",
+      "evidence": "First-order control-transmission extension; genome-scale supporting premise",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        3
+      ],
+      "closing_pages": [
+        12
+      ],
+      "indexed_pages": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2102"
+    },
+    {
+      "key": "legacy-6800400",
+      "title": "Bounded Compositional Geometry: Interior-Identity Universality and the One-Dimensional Möbius Enrichment",
+      "ssrn_id": "6800400",
+      "page_count": 34,
+      "sha256": "9383d0cac6c9733cecc445772c61f1e211f8e910b6a0d4329b132eeb2a828819",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6800400",
+      "role": "Projective selector and five-flow scope",
+      "scope": "A6 is an added selector; marked triple limits five-flow classification; Lemma2.1 listed premises fail to select pure boosts.",
+      "contribution": "Additional chart compatibility selects a geometric branch; boundedness alone does not.",
+      "evidence": "Conditional theorem synthesis with explicit projective selector",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        25,
+        26
+      ],
+      "indexed_pages": [
+        13,
+        18,
+        21
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2166"
+    },
+    {
+      "key": "legacy-6779487",
+      "title": "Thresholded Adaptive Orchestration: Typed Bounded-State Interfaces and Boundary-Stress Testing for Generative Interactive Worlds",
+      "ssrn_id": "6779487",
+      "page_count": 35,
+      "sha256": "44b7289710506d28af0f6d6c6dd9af135ec74896a46692f8afc798c700e3dd46",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6779487",
+      "role": "TAO bounded control contracts",
+      "scope": "Five curated flows, typed state contracts, confidence/fallback and hybrid safety; semantics do not establish physiological state estimation.",
+      "contribution": "World generation, state estimation and admissible world changes need separate contracts.",
+      "evidence": "Typed controller architecture; synthetic benchmark",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        2
+      ],
+      "closing_pages": [
+        31,
+        32
+      ],
+      "indexed_pages": [
+        2,
+        4,
+        10,
+        12,
+        17,
+        20,
+        22,
+        27,
+        28,
+        29,
+        30
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2207"
+    },
+    {
+      "key": "legacy-6774878",
+      "title": "Rapidity Coordinates for Bounded Belief,A Resource-Constrained Predictive Processing Framework with a Falsifiable Inter-Brain Synchrony Test",
+      "ssrn_id": "6774878",
+      "page_count": 27,
+      "sha256": "b4a9dc1fa08763373a75c5167edbdd9a3d54220bd679bc1240b8c7c99430c9ef",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6774878",
+      "role": "Bounded Bayesian belief",
+      "scope": "Bayesian odds multiplication supplies a log-odds coordinate; metabolic metric, neural rate and sinh coupling are additional hypotheses.",
+      "contribution": "The neural gamma bridge and dyadic sinh coupling are hypotheses beyond the coordinate algebra.",
+      "evidence": "Bayesian-coordinate result plus separately postulated physiological/coupling bridges",
+      "notice": "",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        5,
+        6
+      ],
+      "closing_pages": [
+        21,
+        22
+      ],
+      "indexed_pages": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2280"
+    },
+    {
+      "key": "legacy-6773218",
+      "title": "Bounded Composition Forces Interior Existence A Self-Contained Theorem",
+      "ssrn_id": "6773218",
+      "page_count": 18,
+      "sha256": "74b2903ae1283eb359d1f0ffacbf5a971ef004984435619dce96d83b36564019",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6773218",
+      "role": "Interior group existence",
+      "scope": "Open-interval group assumptions imply an additive representation; not physical existence or unique artanh metric.",
+      "contribution": "An admitted total operation remains inside its open interval under finite composition.",
+      "evidence": "Conditional interval theorem; historical interpretation narrowed by public notice",
+      "notice": "Programme scope note, 7 September 2026. This is a mathematical result about an operation satisfying the stated open-interval, smoothness, identity, associativity and monotonicity assumptions. It should not be read as a proof of physical existence, a unique artanh/logit coordinate, or a universal metric from boundedness alone. For later composition scope see https://papers.ssrn.com/abstract=6800400; for the operational distinction between measured quantities and predictive state see Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098). The theorem's declared mathematical jurisdiction and the original PDF are retained. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        2
+      ],
+      "closing_pages": [
+        15,
+        16
+      ],
+      "indexed_pages": [
+        3,
+        4,
+        12,
+        13,
+        14,
+        15
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2370"
+    },
+    {
+      "key": "legacy-6767896",
+      "title": "Bounded Reflection and Möbius Composition: A First-Principles Derivation",
+      "ssrn_id": "6767896",
+      "page_count": 22,
+      "sha256": "6e7b95a1974e7362e7ff21df6a14b85883ae292555fab2fbee623a16d7d8d08e",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6767896",
+      "role": "Reflection and disk derivation",
+      "scope": "Boundary-unbounded generator does not uniquely fixartanh; physical two-port transfer law must supply missing structure.",
+      "contribution": "Physical transfer laws support engineering formulas; the broad boundedness-to-artanh inference does not.",
+      "evidence": "Historical derivation with an explicit scope correction",
+      "notice": "Scope correction, 7 September 2026. The inference that surjectivity of an additive coordinate onto the real line pins that coordinate to artanh is not valid without additional structure. Boundary preservation alone must not be used to infer that specific generator or to exclude a flat compositional branch. For the corrected distinction between general composition, added projective assumptions and flat/curved branches, see Bounded Compositional Geometry (https://papers.ssrn.com/abstract=6800400) and A Classification of Bounded Composition Laws with Isometric Reassociation Defects (https://papers.ssrn.com/abstract=6914800). Applications based on an independently specified physical transfer law require that physical input; the broad uniqueness inference in this earlier derivation should not be cited without the added hypotheses. The original PDF is preserved.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        17,
+        18
+      ],
+      "indexed_pages": [
+        14,
+        16
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2423"
+    },
+    {
+      "key": "legacy-6761570",
+      "title": "An Architectural Classification of Bounded Adaptive Systems",
+      "ssrn_id": "6761570",
+      "page_count": 14,
+      "sha256": "45fca95c0773b14bc2fce275c173a6de69d86d495e32a3cda17a3cfe3e81fbae",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6761570",
+      "role": "Unified architecture perspective",
+      "scope": "Universal PSL and four-role claims need model-class restriction; no new mathematics claimed by this perspective.",
+      "contribution": "Plant, sensor, controller and surveillance organize a specified biological model class.",
+      "evidence": "Historical classificatory synthesis; broad claims publicly narrowed",
+      "notice": "Scope correction and update, 7 September 2026. The abstract's broad claim that any associative, boundary-preserving bounded observable is forced into a unique PSL(2,R) geometry should not be relied on without the additional projective and mechanism assumptions stated in the body and later work. Boundedness alone does not establish a universal four-role architecture or guarantee hormesis. For the revised composition scope see https://papers.ssrn.com/abstract=6800400 and Aczél-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978). For the current biological framework see The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938) and A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878). Architectural classes, predictive sufficiency, viability conditions and prospective biological claims are stated separately there. The original paper is preserved. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        11,
+        12
+      ],
+      "indexed_pages": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2460"
+    },
+    {
+      "key": "legacy-6756063",
+      "title": "Bounded Composition and Deformed Kinematics: An Axiomatic Route to Hyperbolic Momentum Space",
+      "ssrn_id": "6756063",
+      "page_count": 14,
+      "sha256": "a949fad0f1de0d039aba8f2d4509b78908612da65b1d7b65ce46b81b4a78008f",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6756063",
+      "role": "Deformed kinematics",
+      "scope": "Boundedness does not uniquely select Einstein/Snyder branch; quantization/physical bounds need independent premises.",
+      "contribution": "Kinematic and quantization consequences depend on the extra structure selecting the branch.",
+      "evidence": "Historical conditional construction with a scope correction",
+      "notice": "Scope correction, 7 September 2026. Do not rely on the unrestricted claim that the stated bounded-composition axioms alone uniquely select artanh coordinates, Einstein addition or hyperbolic momentum space. A flat branch and additional selection assumptions must be considered. The later Bounded Compositional Geometry (https://papers.ssrn.com/abstract=6800400) and Classification of Bounded Composition Laws with Isometric Reassociation Defects (https://papers.ssrn.com/abstract=6914800) give the revised scope. Kinematic and quantization conclusions in this historical paper are conditional on the extra structure selecting their branch; they are not independent empirical verification of that selection. The original PDF remains available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1
+      ],
+      "closing_pages": [
+        10,
+        11
+      ],
+      "indexed_pages": [
+        2,
+        3,
+        6,
+        9,
+        11
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2525"
+    },
+    {
+      "key": "legacy-6754498",
+      "title": "Two Failure Modes of Glutathione Homeostasis: A Calibrated Dynamical Model Recovers G6PD Severe-Deficiency Contraindications and Forecasts a Phase II NSCLC Trial Outcome",
+      "ssrn_id": "6754498",
+      "page_count": 15,
+      "sha256": "ea4b833196ce3d9a0e402d0e8497856ae5b848a713b802de23700a16e5aa8b93",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6754498",
+      "role": "Redox model and capacity calibration",
+      "scope": "Printed G=0 smooth depleted equilibrium fails; finite capacity concept survives with explicit boundary and supply model.",
+      "contribution": "Pool, regeneration capacity and surveillance flux can support distinct failure regimes.",
+      "evidence": "Biochemically calibrated model; conditional oncology forecast; journal development",
+      "notice": "Update, 7 September 2026. This paper's trial forecast is a conditional model prediction, not an observed clinical result or treatment recommendation. For current state, commitment and recovery work see A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), Finite rescue windows (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427059), and From Predictive State to Viable Action (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100). The original preprint is retained. Published journal development: https://doi.org/10.1016/j.rbc.2026.100084. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        1,
+        2
+      ],
+      "closing_pages": [
+        13,
+        14
+      ],
+      "indexed_pages": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2574"
+    },
+    {
+      "key": "legacy-6754362",
+      "title": "The five Möbius composition laws on the bounded interval",
+      "ssrn_id": "6754362",
+      "page_count": 31,
+      "sha256": "213b7adc83dff68e2906bb95e48d5901831c9fe1276f35bbf73f7ba91d54dd70",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6754362",
+      "role": "Five canonical Mobius flows",
+      "scope": "Classification restricted to marked{0,1,infinity}, not all bounded projective flows.",
+      "contribution": "Five canonical flows organize a restricted projective branch.",
+      "evidence": "Marked-point classification; later scope clarification",
+      "notice": "Scope clarification, 7 September 2026. The five canonical flows discussed here belong to the declared marked-point classification involving {0,1,infinity}; they are not a classification of every possible bounded composition operation or every boundary-preserving flow. Do not use the phrase 'all boundary configurations' without this restriction and the stated projective assumptions. See Bounded Compositional Geometry (https://papers.ssrn.com/abstract=6800400) for the later formulation, and Aczél-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978) for mechanism-selected pharmacological generators and combination-model limits. This earlier PDF is retained. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        4,
+        5
+      ],
+      "closing_pages": [
+        22,
+        23,
+        24
+      ],
+      "indexed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2648"
+    },
+    {
+      "key": "legacy-6754360",
+      "title": "A Plant–Sensor–Controller–Surveillance Architecture for Bounded Adaptive Homeostasis: Four Threshold-Typed Failure Modes, with the Redox/NRF2 System as Exemplar",
+      "ssrn_id": "6754360",
+      "page_count": 215,
+      "sha256": "b1990746cf9b79fbf8c5a9950de6de74c8bcb1b879ad5f268e32a8a1a1b3b753",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6754360",
+      "role": "Plant/sensor/controller/surveillance",
+      "scope": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "contribution": "Plant/controller failures differ from sensor/surveillance operating regimes; timing and pinning matter.",
+      "evidence": "Detailed class-specific model; mixed calibration and prospective predictions",
+      "notice": "Programme update, 7 September 2026. This detailed architecture manuscript is preserved. Its four roles and threshold-typed modes apply to the declared model class, not every possible living system. Calibrated examples and prospective predictions retain their separate evidence status. For the current treatment of predictive state, finite-horizon viability and recovery, see A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), and From Predictive State to Viable Action (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100). A failed tested policy is not proof that no viable policy exists. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        3,
+        4
+      ],
+      "closing_pages": [
+        54,
+        55,
+        56
+      ],
+      "indexed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        27,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2751"
+    },
+    {
+      "key": "legacy-6739201",
+      "title": "A Universal Composition Law for Bounded Pharmacological Observables:The Aczél-Family Structure of Dose-Response, Combination Effects,and Aluminium Toxicology",
+      "ssrn_id": "6739201",
+      "page_count": 44,
+      "sha256": "d91a6763354b43731afe1da50687d07bafb64bca64c1b881343ed137d3230706",
+      "kind": "legacy",
+      "url": "https://ssrn.com/abstract=6739201",
+      "role": "Pharmacology predecessor",
+      "scope": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "contribution": "Additive-generator correspondences and combination baselines depend on specific mechanisms.",
+      "evidence": "Historical formulation; current 06 supplies corrected scope",
+      "notice": "Update, 7 September 2026. This earlier preprint is retained as part of the research record. For the current formulation, see Aczél-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978). Do not rely on readings in which boundedness or endpoint preservation alone selects a unique logit, Möbius law or biological mechanism. The generator depends on the specified composition and, with its identity origin fixed, is unique only up to positive scale. The stated strict Bliss–Loewe ordering and approximately 0.0902 maximum gap concern the common-shape, n=1 model; the approximately 0.618 target maximizes the raw effect gap, not every noise-adjusted measure of experimental information. Order dependence alone does not establish hidden state: closed scalar dynamics may also fail to commute. The aluminium-toxicology mechanism and proposed tests remain conditional. Use the successor's assumptions and scope for current citations. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "external_version_parity": "Not certified: these are the supplied local manuscript versions.",
+      "abstract_pages": [
+        3,
+        4
+      ],
+      "closing_pages": [
+        35,
+        36
+      ],
+      "indexed_pages": [
+        4,
+        7,
+        9,
+        11,
+        12,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L2954"
+    }
+  ],
+  "predictions": [
+    {
+      "id": "AI-1",
+      "domain": "AI",
+      "title": "H1: useful certification",
+      "record_kind": "Research family",
+      "sources": [
+        "7426838"
+      ],
+      "status": "Open engineering hypothesis",
+      "next_test": "Compare proposer-plus-kernel with strong retrieval, tool-use and fail-closed systems on one frozen, versioned workload. Match evidence access and report coverage, assertion errors, external falsity, binding and trusted-core cost.",
+      "success_means": "An auditable authority path supplies useful performance within that jurisdiction. It is more than abstaining from everything.",
+      "failure_means": "Inferior useful coverage at comparable cost fails this implementation/workload claim. It does not refute every possible small-kernel architecture.",
+      "depends_on": [],
+      "source_pages": {
+        "7426838": [
+          1,
+          2,
+          3,
+          7,
+          9,
+          12,
+          13,
+          15
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3074"
+    },
+    {
+      "id": "AI-2",
+      "domain": "AI",
+      "title": "H2: proposer-size saturation",
+      "record_kind": "Research family",
+      "sources": [
+        "7426838"
+      ],
+      "status": "Open engineering hypothesis",
+      "next_test": "Cross several proposer capacities with the same evidence, binder, verifier, workloads and resource accounting; predefine a practical saturation margin.",
+      "success_means": "For this workload, generating certifiable proposals needs less model capacity than the comparator. Total cost must include evidence and maintenance.",
+      "failure_means": "Material continued gains over the declared size range reject the tested saturation claim; certification can remain useful.",
+      "depends_on": [
+        "AI-1"
+      ],
+      "source_pages": {
+        "7426838": [
+          1,
+          2,
+          3,
+          7,
+          9,
+          12,
+          13,
+          15
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3101"
+    },
+    {
+      "id": "AI-3",
+      "domain": "AI",
+      "title": "Memory that preserves future task distinctions",
+      "record_kind": "Research family",
+      "sources": [
+        "7426838",
+        "7427098"
+      ],
+      "status": "Finite counterexample established; utility untested",
+      "next_test": "Test summary compression with new queries sensitive to versions, entities, permissions and unresolved commitments; compare strong retrieval and structured-memory baselines.",
+      "success_means": "The retained representation better supports the declared future task family per unit of storage or cost.",
+      "failure_means": "No gain or failures on held-out queries narrow the memory contract; a single demonstration is not a general state verifier.",
+      "depends_on": [],
+      "source_pages": {
+        "7426838": [
+          1,
+          2,
+          3,
+          7,
+          9,
+          12,
+          13,
+          15
+        ],
+        "7427098": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3130"
+    },
+    {
+      "id": "AI-4",
+      "domain": "AI",
+      "title": "Recursive action-sufficient state",
+      "record_kind": "Research family",
+      "sources": [
+        "7427100",
+        "7427098"
+      ],
+      "status": "New proposed research problem, extending the static result",
+      "next_test": "Construct finite action codes and test whether updates can be computed from code, admitted action and observed record alone; compare existing abstraction and partially observed-control methods.",
+      "success_means": "A compact action code can support repeated operation, rather than only one static selection.",
+      "failure_means": "Inconsistent successor codes show the compression needs refinement or history. A smaller static cover does not establish a smaller recursive controller.",
+      "depends_on": [],
+      "source_pages": {
+        "7427098": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "7427100": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3191"
+    },
+    {
+      "id": "BIO-1",
+      "domain": "Biology",
+      "title": "Matched-present state failure and recovery",
+      "record_kind": "Research family",
+      "sources": [
+        "7425878",
+        "7426998",
+        "7427098"
+      ],
+      "status": "Prospective endogenous-biological test; synthetic and designed examples available",
+      "next_test": "Match histories on a frozen measurement, apply common futures, bound matching error and discrepancy, then test an augmented representation on untouched histories and batches.",
+      "success_means": "The original representation loses useful predictive information and the tested addition recovers some or all of the declared predictive scope.",
+      "failure_means": "Equivalence supports adequacy within the panel; unresolved data do not. Failure of augmentation rejects that proposed repair.",
+      "depends_on": [],
+      "source_pages": {
+        "7425878": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "7426998": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "7427098": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3252"
+    },
+    {
+      "id": "BIO-2",
+      "domain": "Biology",
+      "title": "A physical carrier of the retained distinction",
+      "record_kind": "Research family",
+      "sources": [
+        "7425878"
+      ],
+      "status": "Prospective causal test",
+      "next_test": "Use lineage-linked state/outcome data and an independently characterized intervention on a candidate carrier, with target engagement, off-target and controller-writing controls.",
+      "success_means": "Evidence supports a causal contribution of the candidate carrier within the intervention assumptions.",
+      "failure_means": "Predictive gain without selective causal evidence supports a marker, not necessarily the claimed memory mechanism.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "source_pages": {
+        "7425878": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3342"
+    },
+    {
+      "id": "BIO-3",
+      "domain": "Biology",
+      "title": "Holding effort, reserve and release",
+      "record_kind": "Research family",
+      "sources": [
+        "7425878",
+        "7427100",
+        "6754498"
+      ],
+      "status": "New proposed identifiability and assay problem from the programme backlog",
+      "next_test": "Specify a balance model and actual actuator. Determine which calibrated challenges distinguish production, consumption, maximum capacity and controller response. A holding flux alone measures only net imbalance.",
+      "success_means": "A minimally sufficient probe panel exposes reserve information beyond the steady concentration and net holding effort.",
+      "failure_means": "Observationally equivalent mechanisms require more measurements or a narrower claim; a named reserve score is not a solution by itself.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "source_pages": {
+        "7425878": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "7427100": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "6754498": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3377"
+    },
+    {
+      "id": "BIO-4",
+      "domain": "Biology",
+      "title": "Restoration after support ends",
+      "record_kind": "Research family",
+      "sources": [
+        "7425878",
+        "7426938",
+        "7427100"
+      ],
+      "status": "Prospective operational test",
+      "next_test": "Measure future-response equivalence and persistence after a defined withdrawal and rechallenge; distinguish temporary compensation from recovered capacity.",
+      "success_means": "Recovery is supported for specified futures, duration and disturbances after removal of the named support.",
+      "failure_means": "Restored snapshots with failed rechallenge do not establish restoration; success under one support policy need not transfer.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "source_pages": {
+        "7425878": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "7426938": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "7427100": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3437"
+    },
+    {
+      "id": "ACT-1",
+      "domain": "Action",
+      "title": "Action-relevant distinctions",
+      "record_kind": "Research family",
+      "sources": [
+        "7427100"
+      ],
+      "status": "Exact finite characterization; empirical action library absent",
+      "next_test": "Estimate a finite state-action success table with simultaneous bounds; test common-action intersections including higher-order conflicts, then evaluate a frozen code on held-out units.",
+      "success_means": "The measured distinction changes acceptable choices, or demonstrates that a cheaper common action suffices.",
+      "failure_means": "An empty conservative confidence-set intersection is failure to certify, not proof that no acceptable action exists.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "source_pages": {
+        "7427100": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3506"
+    },
+    {
+      "id": "ACT-2",
+      "domain": "Action",
+      "title": "Safe diagnosis before rescue closes",
+      "record_kind": "Research family",
+      "sources": [
+        "7427100",
+        "7427059"
+      ],
+      "status": "Prospective complete-policy test",
+      "next_test": "Compare diagnostic-and-action policies including their delay, measurement disturbance and outcome risk. Use the one-shot total-variation bound only under its stated non-disturbing assumptions.",
+      "success_means": "Obtaining a particular distinction improves operational recovery before the opportunity expires.",
+      "failure_means": "Prediction without net policy benefit does not justify the diagnostic. One failed diagnostic does not prove all safe diagnosis impossible.",
+      "depends_on": [
+        "ACT-1",
+        "BIO-4"
+      ],
+      "source_pages": {
+        "7427059": [
+          1,
+          4,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "7427100": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3535"
+    },
+    {
+      "id": "REDOX-1",
+      "domain": "Redox",
+      "title": "Finite-section fold passage",
+      "record_kind": "Research family",
+      "sources": [
+        "7427059"
+      ],
+      "status": "Conditional mathematical law; biological hypothesis unvalidated",
+      "next_test": "Pilot-calibrate the depth axis, then freeze rescue, finite-section family and observation model. Compare fold, cumulative-exposure, fixed-power and hazard models on held-out forcing depths with the same likelihood.",
+      "success_means": "The constrained passage family predicts an operation-specific recoverability boundary and durable fate in the tested regime.",
+      "failure_means": "Failure rejects that operational fold model; asymmetric sections need not have a monotone exponent profile, and population T50 is not automatically deterministic passage.",
+      "depends_on": [],
+      "source_pages": {
+        "7427059": [
+          1,
+          4,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3581"
+    },
+    {
+      "id": "REDOX-2",
+      "domain": "Redox",
+      "title": "Supply-limited oxidative collapse",
+      "record_kind": "Research family",
+      "sources": [
+        "6754498",
+        "6754360"
+      ],
+      "status": "Model calibrated from literature; broader transport unvalidated",
+      "next_test": "Independently measure supply, demand and regeneration parameters, predict new challenge thresholds and test the threshold ordering without fitting the target outcomes.",
+      "success_means": "The calibrated capacity-versus-demand model predicts a new system or preparation.",
+      "failure_means": "Incorrect thresholds within a calibrated regime reject that model/transport; known contraindication recovery alone is not prospective validation.",
+      "depends_on": [],
+      "source_pages": {
+        "6754498": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "6754360": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3614"
+    },
+    {
+      "id": "REDOX-3",
+      "domain": "Redox",
+      "title": "Reductive fade and the surveillance bridge",
+      "record_kind": "Research family",
+      "sources": [
+        "6754498",
+        "6754360"
+      ],
+      "status": "Mechanistic extrapolation and conditional oncology forecast",
+      "next_test": "Measure the proposed flux-to-surveillance mapping in the relevant cell type, with tumour and normal-system endpoints; establish whether the proposed biomarker reflects the needed quantity.",
+      "success_means": "A directly calibrated bridge supports the proposed surveillance mechanism and motivates testing downstream outcome forecasts.",
+      "failure_means": "A different mapping or systemic/tumour conflict weakens the forecast; a clinical hazard-ratio magnitude is not validated by the existing model.",
+      "depends_on": [],
+      "source_pages": {
+        "6754498": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "6754360": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3691"
+    },
+    {
+      "id": "REG-1",
+      "domain": "Regulation",
+      "title": "P13: controller bandwidth versus load reduction",
+      "record_kind": "Research family",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Prospective role-specific intervention prediction",
+      "next_test": "First demonstrate kinetic-mismatch failure; independently quantify whether an intervention changes controller speed rather than simply its setpoint/capacity. Compare matched load reduction on a declared outcome.",
+      "success_means": "Changing the measured control timescale improves the relevant pulse-stress outcome beyond the comparator.",
+      "failure_means": "No differential benefit after verified target engagement rejects the tested P13 instance; faster or more abundant NRF2 are not interchangeable measurements.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3768"
+    },
+    {
+      "id": "REG-2",
+      "domain": "Regulation",
+      "title": "P14: pinning versus surveillance failure",
+      "record_kind": "Research family",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Prospective diagnostic and prevalence hypotheses",
+      "next_test": "Measure capacity response to a controlled signal perturbation in appropriately stratified systems. Test the proposed pinned signature and the separate claim that it predominates.",
+      "success_means": "Response dynamics distinguish an upstream pinned controller from the competing surveillance explanation.",
+      "failure_means": "Normal capacity responsiveness in the claimed pinned class rejects that classification or prevalence claim; population correlations alone can mislead.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3831"
+    },
+    {
+      "id": "REG-3",
+      "domain": "Regulation",
+      "title": "P15–P17: sensing versus calibration",
+      "record_kind": "Research family",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Prospective; calibration and selective interventions not established",
+      "next_test": "Characterize compartmental measurements, sensor-restoration and controller-targeted interventions independently; test a locked response signature and any proposed fitness/setpoint relation.",
+      "success_means": "Different faults that yield similar visible readouts are separated by verified intervention responses.",
+      "failure_means": "An ineffective senolytic alone cannot prove controller miscalibration: inadequate engagement, another fault or irreversible damage remain alternatives.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3894"
+    },
+    {
+      "id": "HORM-1",
+      "domain": "Hormesis",
+      "title": "Biphasic shape, peak location and width",
+      "record_kind": "Research family",
+      "sources": [
+        "6858819"
+      ],
+      "status": "Conditional model; retrospective support; quantitative prospective tests remain",
+      "next_test": "Measure activation, damage and capacity independently in one system; predict untouched full curves and check location, width and amplitude separately.",
+      "success_means": "Mechanistic parameters predict the conditional adaptive curve without fitting those outcome curves.",
+      "failure_means": "Incorrect predictions reject the specified adaptive model or approximation, not the existence of hormesis. The approximate 2× activation-dose peak is not universal.",
+      "depends_on": [],
+      "source_pages": {
+        "6858819": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3957"
+    },
+    {
+      "id": "HORM-2",
+      "domain": "Hormesis",
+      "title": "Control-weighted molecular-to-functional transmission",
+      "record_kind": "Research family",
+      "sources": [
+        "6858760"
+      ],
+      "status": "First-order model and prospective same-system test",
+      "next_test": "Measure control coefficients and elasticities, then predict transmitted adaptation. Include mixed-sign targets and shared bottlenecks; test finite-induction approximation error.",
+      "success_means": "Control-weighted induction outperforms molecular abundance or target count as an amplitude predictor.",
+      "failure_means": "Failure within the valid perturbative regime rejects the proposed transmission application; a local coefficient cannot automatically predict a large finite change.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L3988"
+    },
+    {
+      "id": "HORM-3",
+      "domain": "Hormesis",
+      "title": "Conditional baseline compression",
+      "record_kind": "Research family",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Prospective small-perturbation coordinate prediction",
+      "next_test": "Hold network transmission and induction approximately fixed while varying baseline. Test the stated amplitude ratio based on 1−x0² against alternatives.",
+      "success_means": "The bounded-observation factor predicts baseline-dependent attenuation within the controlled regime.",
+      "failure_means": "A baseline shift that also changes network control is confounded; a valid controlled failure rejects the tested observation model.",
+      "depends_on": [
+        "HORM-2"
+      ],
+      "source_pages": {
+        "6858760": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4016"
+    },
+    {
+      "id": "HORM-4",
+      "domain": "Hormesis",
+      "title": "Acute–chronic amplitude split",
+      "record_kind": "Research family",
+      "sources": [
+        "6858760",
+        "6754360"
+      ],
+      "status": "Prospective; overlaps extension P5 and architecture P11",
+      "next_test": "Declare matched exposure, endpoint and timescales; measure controller response and compare a frozen acute–chronic contrast with a system-justified margin.",
+      "success_means": "The predicted timing-dependent adaptive response is supported in that system.",
+      "failure_means": "Adequately resolved equivalence or opposite direction rejects the scoped contrast; overlapping papers are one prediction family.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "6754360": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4046"
+    },
+    {
+      "id": "HORM-5",
+      "domain": "Hormesis",
+      "title": "Adaptation as improved later capability",
+      "record_kind": "Research family",
+      "sources": [
+        "7425878",
+        "7426938",
+        "6858760"
+      ],
+      "status": "New integrative experimental proposal",
+      "next_test": "After conditioning and withdrawal, test whether predicted adaptation improves an independent later challenge outcome and how reserve changes the beneficial/harmful boundary.",
+      "success_means": "A transient adaptive signal predicts a lasting, task-specific gain in capacity.",
+      "failure_means": "A higher acute endpoint without later benefit does not establish durable adaptive improvement.",
+      "depends_on": [
+        "HORM-1",
+        "BIO-4"
+      ],
+      "source_pages": {
+        "7425878": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "7426938": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "6858760": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4120"
+    },
+    {
+      "id": "RAD-1",
+      "domain": "Radiation",
+      "title": "Reversal and state recovery",
+      "record_kind": "Research family",
+      "sources": [
+        "7427058",
+        "7302362"
+      ],
+      "status": "Exact order-blind null; independent published order effects; recovery prospective",
+      "next_test": "Qualify timing and an endpoint-specific reversed pair. After a resolved split, link prechallenge state and future outcome in the same inferential unit and test held-out recovery.",
+      "success_means": "A biological representation improves on equal BED for that endpoint and preparation.",
+      "failure_means": "No resolved split can be equivalence or insufficient precision; a split alone does not identify dimension or mechanism.",
+      "depends_on": [],
+      "source_pages": {
+        "7427058": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17
+        ],
+        "7302362": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          17,
+          19,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4191"
+    },
+    {
+      "id": "RAD-2",
+      "domain": "Radiation",
+      "title": "Gap spectroscopy versus quadratic degeneracy",
+      "record_kind": "Research family",
+      "sources": [
+        "7426880"
+      ],
+      "status": "Conditional theorem; experimental implication unvalidated",
+      "next_test": "Use a qualified gap ladder and multiple priming strengths, with recovery/heterogeneity controls, to test waiting-semigroup closure. More challenge amplitudes alone can be uninformative in the quadratic branch.",
+      "success_means": "Gap response exposes predictive recovery modes hidden by an acute curve.",
+      "failure_means": "Failure of a scalar waiting model demands a revised recovery representation; it is not automatic evidence for a named molecular mechanism.",
+      "depends_on": [],
+      "source_pages": {
+        "7426880": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          15,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          27
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4243"
+    },
+    {
+      "id": "GEOM-1",
+      "domain": "Geometry",
+      "title": "Projective observation fingerprint",
+      "record_kind": "Research family",
+      "sources": [
+        "7426998",
+        "7347861"
+      ],
+      "status": "Conditional classical structure; synthetic test; prospective physical branch",
+      "next_test": "Earn an adequate state and deterministic point-map regime, then test cross-ratios on held-out separated quadruples. Independently examine any proposed physical homogeneous channels.",
+      "success_means": "The tested operation admits the projective description; a physical lift needs separate evidence.",
+      "failure_means": "Cross-ratio failure rejects the tested one-dimensional projective branch, not the broader state-discovery programme.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "source_pages": {
+        "7426998": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "7347861": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4281"
+    },
+    {
+      "id": "GEOM-2",
+      "domain": "Geometry",
+      "title": "Flat/curved defect classification",
+      "record_kind": "Research family",
+      "sources": [
+        "6914800",
+        "6800400"
+      ],
+      "status": "Axiom-conditional mathematics and synthetic tomography",
+      "next_test": "Independently review the full proof and query an admitted composition oracle across radius shells; control angle noise and test the stated defect assumptions.",
+      "success_means": "A particular system occupies the classified branch with an estimated geometric parameter.",
+      "failure_means": "An out-of-class defect rejects applying the classification; it does not justify a universal boundedness geometry.",
+      "depends_on": [],
+      "source_pages": {
+        "6914800": [
+          1,
+          9,
+          10,
+          13
+        ],
+        "6800400": [
+          13,
+          18,
+          21
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4350"
+    },
+    {
+      "id": "PHARM-1",
+      "domain": "Pharmacology",
+      "title": "Mechanism-selected combination baselines",
+      "record_kind": "Research family",
+      "sources": [
+        "7426978",
+        "6963978",
+        "6754362"
+      ],
+      "status": "Exact scoped formulas; assay identification remains empirical",
+      "next_test": "Use correct single-agent doses and prespecified mechanisms, including the common-shape n=1 contrast if appropriate; compare with full specialist null models under the actual noise model.",
+      "success_means": "A specific lawful reference improves combination interpretation and experimental discrimination.",
+      "failure_means": "The maximal raw gap near 0.618 is not a universal information optimum; a failed reference may require another scalar model rather than hidden state.",
+      "depends_on": [],
+      "source_pages": {
+        "7426978": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "6963978": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "6754362": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4379"
+    },
+    {
+      "id": "PHARM-2",
+      "domain": "Pharmacology",
+      "title": "Aluminium/SOD chemical testbed",
+      "record_kind": "Research family",
+      "sources": [
+        "7426978",
+        "6739201"
+      ],
+      "status": "Conditional chemical model",
+      "next_test": "Establish chemical speciation, relevant competition kinetics, compartment and exposure before predicting unused interventions.",
+      "success_means": "The named chemical/compositional model predicts that assay.",
+      "failure_means": "Failure rejects the chemical model in scope; it does not refute the classical additive-generator representation theorem.",
+      "depends_on": [],
+      "source_pages": {
+        "7426978": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "6739201": [
+          4,
+          7,
+          9,
+          11,
+          12,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4433"
+    },
+    {
+      "id": "NUM-1",
+      "domain": "Number theory",
+      "title": "Frozen prime gap-word prediction",
+      "record_kind": "Research family",
+      "sources": [
+        "7426882",
+        "6947578"
+      ],
+      "status": "Exact identities plus finite computations; probability assumptions explicit",
+      "next_test": "Independent implementation/enumeration on untouched intervals; preserve positivity/consistency assumptions, covariance and numerical error; compare established prime heuristics and fitted controls.",
+      "success_means": "The finite predictor transports beyond its construction interval and implementation.",
+      "failure_means": "Systematic residuals reject the tested approximation or finite predictor; large in-sample R² is not an asymptotic theorem.",
+      "depends_on": [],
+      "source_pages": {
+        "7426882": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "6947578": [
+          2,
+          5,
+          7,
+          14
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4484"
+    },
+    {
+      "id": "NUM-2",
+      "domain": "Number theory",
+      "title": "Resolution versus residual floor",
+      "record_kind": "Research family",
+      "sources": [
+        "6947578",
+        "7426882"
+      ],
+      "status": "Alternative hypotheses, not two predictions expected to hold together",
+      "next_test": "Compare sparse-aware lifted models across feasible wheels, higher-order contexts and held-out scales.",
+      "success_means": "Either closure or a persistent resolved finite-scale residual locates what the current representation misses.",
+      "failure_means": "Sparse high-resolution fits cannot establish a positive floor; finite stabilization does not prove an asymptotic limit.",
+      "depends_on": [
+        "NUM-1"
+      ],
+      "source_pages": {
+        "7426882": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "6947578": [
+          2,
+          5,
+          7,
+          14
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4521"
+    },
+    {
+      "id": "ECO-1",
+      "domain": "Ecology",
+      "title": "Currents invisible to abundance histograms",
+      "record_kind": "Research family",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional non-identifiability; field diagnostic needs validation",
+      "next_test": "Use labelled temporal community data and held-out prediction; control environmental forcing, nonstationarity, multiplicative noise, exchangeable dynamics and extinctions.",
+      "success_means": "Temporal structure supplies information absent from the stationary abundance distribution.",
+      "failure_means": "Irreversibility alone is not unique evidence of species-specific niche dynamics; lack of power is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          13,
+          17,
+          21,
+          22,
+          25
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4560"
+    },
+    {
+      "id": "GEN-1",
+      "domain": "Genetics",
+      "title": "Sample the dominance-sensitive trajectory region",
+      "record_kind": "Research family",
+      "sources": [
+        "6963958"
+      ],
+      "status": "Exact coefficient result and simulations",
+      "next_test": "Compare boundary-local and wider-frequency designs using realistic drift-aware inference, equal acquisition budgets and observed response magnitude.",
+      "success_means": "The theory identifies a practically better sampling design for separating selection strength and dominance.",
+      "failure_means": "No practical gain in the tested regime limits the design claim; algebraic identifiability alone is not finite-data accuracy.",
+      "depends_on": [],
+      "source_pages": {
+        "6963958": [
+          6,
+          11
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4584"
+    },
+    {
+      "id": "COG-1",
+      "domain": "Intelligence",
+      "title": "Covariance versus intervention-response rank",
+      "record_kind": "Research family",
+      "sources": [
+        "6964098"
+      ],
+      "status": "Model-specific theorem and simulations; no decisive transfer dataset",
+      "next_test": "Acquire a randomized multi-intervention/task transfer matrix with target engagement, task-specific channels, duration and signal-to-noise controls.",
+      "success_means": "The intervention family exposes multiple accessible response directions despite a low-dimensional descriptive factor.",
+      "failure_means": "A failed indirect training intervention does not disprove an inaccessible common cause; rank is design- and timescale-relative.",
+      "depends_on": [],
+      "source_pages": {
+        "6964098": [
+          7,
+          8,
+          9,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4605"
+    },
+    {
+      "id": "ENERGY-1",
+      "domain": "Bioenergetics",
+      "title": "c-ring constraint binding versus slack",
+      "record_kind": "Research family",
+      "sources": [
+        "6858880"
+      ],
+      "status": "Hypothesis and retrospective-analysis framework",
+      "next_test": "Use engineered/within-lineage comparisons with independently bounded environmental demand and losses; test the demand-by-coupling interaction.",
+      "success_means": "Coupling contributes more predictively near a demonstrated energetic boundary.",
+      "failure_means": "Confounding by phylogeny, unbounded losses or no interaction weakens the proposed explanation.",
+      "depends_on": [],
+      "source_pages": {
+        "6858880": [
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4633"
+    },
+    {
+      "id": "EXO-1",
+      "domain": "Exoplanets",
+      "title": "A discriminating multi-face retention boundary",
+      "record_kind": "Research family",
+      "sources": [
+        "6858878"
+      ],
+      "status": "Current data do not identify exponent/mechanism; extension proposed",
+      "next_test": "Add a coefficient-locked competing loss face, independent masses and suitable exposure/age information; compare forward models and negative controls.",
+      "success_means": "Data begin separating physical retention models rather than merely permitting a constrained classifier.",
+      "failure_means": "Equivalent fits among many coefficients remain non-identification; fitting the valley is not identifying its cause.",
+      "depends_on": [],
+      "source_pages": {
+        "6858878": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4659"
+    },
+    {
+      "id": "IDA-1",
+      "domain": "IDA",
+      "title": "Return dynamics add predictive information",
+      "record_kind": "Research family",
+      "sources": [
+        "6987278"
+      ],
+      "status": "Offline implementation; prospective real-signal test",
+      "next_test": "Predict an independent later outcome from frozen return features; compare static features, dynamic history baselines and matched feature counts with person/session holdouts.",
+      "success_means": "Return dynamics earn a role in measuring the declared recovery task.",
+      "failure_means": "No incremental value rejects the tested read-side input; prediction of a score defined from those same features is circular.",
+      "depends_on": [],
+      "source_pages": {
+        "6987278": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4684"
+    },
+    {
+      "id": "IDA-2",
+      "domain": "IDA",
+      "title": "Adaptive feedback earns a control advantage",
+      "record_kind": "Research family",
+      "sources": [
+        "6987278",
+        "7427100"
+      ],
+      "status": "Prospective intervention hypothesis",
+      "next_test": "After input validation, compare capped adaptive feedback with appropriately matched open-loop/replay, sham and well-tuned conventional feedback; measure independent outcome and exposure.",
+      "success_means": "The measured return state improves a complete control policy, then durability and transport can be tested.",
+      "failure_means": "No advantage rejects this controller implementation/task claim even if the metrics remain useful.",
+      "depends_on": [
+        "IDA-1"
+      ],
+      "source_pages": {
+        "7427100": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "6987278": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4716"
+    },
+    {
+      "id": "TAO-1",
+      "domain": "Interfaces",
+      "title": "Bounded adaptive-world contracts",
+      "record_kind": "Research family",
+      "sources": [
+        "6779487"
+      ],
+      "status": "Synthetic controller validation; live estimation/benefit unvalidated",
+      "next_test": "Validate state estimation and actuator meaning, then compare boundary recovery and user-relevant outcomes with strong bounded controllers at matched tuning effort.",
+      "success_means": "Typed interfaces improve a real adaptive environment within a stated contract.",
+      "failure_means": "No benefit beyond ordinary constraints or unreliable state estimation limits the practical architecture.",
+      "depends_on": [],
+      "source_pages": {
+        "6779487": [
+          2,
+          4,
+          10,
+          12,
+          17,
+          20,
+          22,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4761"
+    },
+    {
+      "id": "NEURO-1",
+      "domain": "Belief",
+      "title": "Gamma bridge and dyadic sinh coupling",
+      "record_kind": "Research family",
+      "sources": [
+        "6774878"
+      ],
+      "status": "Separate postulated physiological and coupling hypotheses",
+      "next_test": "Test the single-agent bridge against behavioural belief measures and artefacts first; if supported, compare independently calibrated dyadic sinh, linear, polynomial and saturating alternatives.",
+      "success_means": "The particular neural/interaction bridge gains support; the coordinate result itself does not establish it.",
+      "failure_means": "Bridge failure blocks the EEG interpretation; coupling failure rejects that potential without invalidating Bayesian log-odds.",
+      "depends_on": [],
+      "source_pages": {
+        "6774878": [
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4791"
+    },
+    {
+      "id": "RECOVERY-1",
+      "domain": "Recovery",
+      "title": "Capture–policy–host ordering",
+      "record_kind": "Research family",
+      "sources": [
+        "6858922"
+      ],
+      "status": "Hypothesis; no new empirical outcomes",
+      "next_test": "Predefine capture before outcomes; use blinded coding and prospective temporal sampling with treatment, common-driver, delayed-feedback and non-recovery controls.",
+      "success_means": "The specified threshold-local sequence adds predictive explanation beyond the alternatives.",
+      "failure_means": "Retrospective narratives or generic support effects do not validate the ordering; no clinical efficacy or belief-based cure follows.",
+      "depends_on": [],
+      "source_pages": {
+        "6858922": [
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4825"
+    },
+    {
+      "id": "ARCHIVE-1",
+      "domain": "Measurement",
+      "title": "Quantum archive channel history",
+      "record_kind": "Research family",
+      "sources": [
+        "6865159"
+      ],
+      "status": "Fixed-archive reanalysis; new archive/physical-time validation absent",
+      "next_test": "Acquire timestamps and calibration/batching metadata and fit full-count models on independent archives; compare drift, heterogeneity and exchangeability explanations.",
+      "success_means": "The archive needs a richer channel-state representation for the intended inference.",
+      "failure_means": "A job-index residual is not a physical time constant, Born-rule anomaly or evidence of microscopic memory.",
+      "depends_on": [],
+      "source_pages": {
+        "6865159": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4849"
+    },
+    {
+      "id": "EVIDENCE-1",
+      "domain": "Evidence",
+      "title": "Match the evidence to the imposed intervention",
+      "record_kind": "Research family",
+      "sources": [
+        "6907938",
+        "6858838"
+      ],
+      "status": "Review and normative argument; not a natural-law prediction",
+      "next_test": "Maintain an up-to-date comparison of the actual coercive intervention with supported voluntary care and patient-centred outcomes; keep the ethical premise explicit.",
+      "success_means": "Direct evidence can address the incremental intervention that requires justification.",
+      "failure_means": "Evidence about drug efficacy alone does not settle the effect of legal force. This synthesis supplies no new treatment or policy outcome.",
+      "depends_on": [],
+      "source_pages": {
+        "6907938": [
+          1,
+          3,
+          4,
+          10,
+          12,
+          13
+        ],
+        "6858838": [
+          5,
+          10,
+          11,
+          15
+        ]
+      },
+      "use_notice": "Research interpretation only. This is not a validated clinical decision rule or treatment instruction.",
+      "provenance": "Consolidated from the earlier programme register; wording reviewed against the supplied manuscripts. Research proposals are labelled separately from paper predictions.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4876"
+    },
+    {
+      "id": "HORM-P1",
+      "domain": "Hormesis",
+      "title": "Peak location near twice activation dose",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858819"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6858819": [
+          8
+        ]
+      },
+      "caveat": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4911"
+    },
+    {
+      "id": "HORM-P2",
+      "domain": "Hormesis",
+      "title": "Zone width and activation/toxicity separation",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858819"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6858819": [
+          8
+        ]
+      },
+      "caveat": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4932"
+    },
+    {
+      "id": "HORM-P3",
+      "domain": "Hormesis",
+      "title": "Peak amplitude from functional capacity",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858819"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6858819": [
+          8
+        ]
+      },
+      "caveat": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4953"
+    },
+    {
+      "id": "HORM-P4",
+      "domain": "Hormesis",
+      "title": "Repair capacity and zone width",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858819"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6858819": [
+          8
+        ]
+      },
+      "caveat": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4974"
+    },
+    {
+      "id": "HORM-P5",
+      "domain": "Hormesis",
+      "title": "Pathway-dependent attenuation",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858819"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6858819": [
+          8
+        ]
+      },
+      "caveat": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L4995"
+    },
+    {
+      "id": "MCA-P1",
+      "domain": "Hormesis",
+      "title": "P1 — Response-coefficient stratification",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified if high-ΣCε curves do not exceed low-ΣCε curves in matched \nsystems.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          10
+        ]
+      },
+      "caveat": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5016"
+    },
+    {
+      "id": "MCA-P2",
+      "domain": "Hormesis",
+      "title": "P2 — Elasticity-conditional multi-target advantage",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified if target count predicts amplitude even when measured \nelasticities are near zero or mixed-sign.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          10
+        ]
+      },
+      "caveat": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5037"
+    },
+    {
+      "id": "MCA-P3",
+      "domain": "Hormesis",
+      "title": "P3 — Mixed-sign cancellation",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified if \nmixed-sign architecture is indistinguishable from co-directional architecture in matched systems.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          10
+        ]
+      },
+      "caveat": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5058"
+    },
+    {
+      "id": "MCA-P4",
+      "domain": "Hormesis",
+      "title": "P4 — Control redistribution at shared bottlenecks",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified if \nindependently measured Cᵢ match naive additive estimates despite a demonstrated shared \nbottleneck.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          10
+        ]
+      },
+      "caveat": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5079"
+    },
+    {
+      "id": "MCA-P5",
+      "domain": "Hormesis",
+      "title": "P5 — Acute–chronic split",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified if the pre-registered metric does not differ by \nat least a system-justified minimal effect (for example, chronic amplitude ≤ 0.8× acute amplitude \nat matched dose) across timescales with matched architecture.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          10
+        ]
+      },
+      "caveat": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5100"
+    },
+    {
+      "id": "MCA-P6",
+      "domain": "Hormesis",
+      "title": "P6 — Baseline-scaling prediction (conditional, parameter-free)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6858760"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified if observed amplitude does not scale with (1 − \nx₀²) after controlling for molecular induction and network class. This prediction is parameter-free \nonly if the network response coefficient ΣCε and the molecular induction are held approximately \nfixed as baseline varies; it is therefore most cleanly testable where baseline is changed by an \nexternal parameter that does not rewire the network (for example mild temperature shifts \nwithout adaptation, or different initial densities), and a negative result where the baseline shift \nitself alters the Cᵢ or εᵢ (as ageing may) would not bear on the bounded-observable factor. \nBecause it is a coordinate-level prediction and not a claim about hyperbolic dynamics, it is the \ncleanest available test of the bounded-coordinate layer.",
+      "depends_on": [],
+      "source_pages": {
+        "6858760": [
+          10
+        ]
+      },
+      "caveat": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5121"
+    },
+    {
+      "id": "BAS-P1",
+      "domain": "Regulation",
+      "title": "P1 (Corollary 1, Hormesis)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification of the qualitative \nclaim: a substantial class of bounded adaptive systems showing monotonic rather than \nbiphasic dose-responses without an identifiable confound, or biphasic curves whose arms \ndo not segregate by Mode 1 / Mode 2 typing.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          44
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5142"
+    },
+    {
+      "id": "BAS-P2",
+      "domain": "Regulation",
+      "title": "P2 (Corollary 2, Antioxidant paradox)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a well-powered baseline-stratified meta-analysis \nshowing concordant signs across strata, or a stratum-difference smaller than the average \neffect.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          45
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5163"
+    },
+    {
+      "id": "BAS-P3",
+      "domain": "Regulation",
+      "title": "P3 (Corollary 3, Reductive cardiomyopathy as Mode 4b → Mode 2)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a high-V tissue with intact \nproteostatic surveillance firing at dose-proportional rate, or a tissue in which V-lowering \nrescues damage even when V_ctrl pinning is left intact.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          45
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5184"
+    },
+    {
+      "id": "BAS-P4",
+      "domain": "Regulation",
+      "title": "P4 (Corollary 4, Exercise blockade)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a bounded-stress \ntraining intervention in which equivalently-dosed antioxidant supplementation does not \nblunt the adaptive readout.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          45
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5205"
+    },
+    {
+      "id": "BAS-P5",
+      "domain": "Regulation",
+      "title": "P5 (Corollary 5, NRF2 in KEAP1-mutant NSCLC + NAC)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: any of the four conditions failing. The \nframework’s commitment is to the analysis-specification thresholds; the author has no role \nin trial execution, sponsorship, or registration. The framework predicts what the analysis \nwould show in any properly-stratified Phase II of this design.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          45
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5226"
+    },
+    {
+      "id": "BAS-P6",
+      "domain": "Regulation",
+      "title": "P6 (Corollary 6, Mode 3 with downstream controller-action consequence)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: any of the three populations showing concordant compartmental and \ncytosolic biomarkers. Joint with P17: the V-Φ relation in these populations should \nnormalise on senolytic / 𝒞-fidelity-restoration intervention without requiring V_set,actual \nchange — confirming Mode 3 as the structural fault. Persistent V-Φ dissociation after such \nintervention would re-locate the fault as genuine Mode 4c.\nPage 44 of 213\nDose Response",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          45
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5247"
+    },
+    {
+      "id": "BAS-P7",
+      "domain": "Regulation",
+      "title": "P7 (Structural — sharpened)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Model-class exhaustiveness claim",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a \ncandidate failure mode that produces a biomarker signature distinguishable from all of \nMode 1, Mode 2, Mode 3, and Mode 4 (4a/4b/4c) by every combination of the framework’s \ndiagnostic assays — a phenotype which simultaneously (a) shows no β_c crossing, (b) \noperates with Φ* in Σ’s dose-proportional band, (c) shows no compartment-resolved or \nnoise-broadcast signature of 𝒞_full degradation, and (d) shows V at fitness-aligned setpoint \nwith adequate γ_V·τ_β. Such a phenotype would force the addition of a fifth threshold-type, \nindicating a finer architectural decomposition.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          46
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5268"
+    },
+    {
+      "id": "BAS-P8",
+      "domain": "Regulation",
+      "title": "P8 (Optimal V)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a population-scale, tissue-specific dose-\nresponse showing monotonic improvement in chronic outcomes with increasing activator \ndose up to and including V_max-saturating doses, in a tissue with measurable Σ-toe \ngeometry consistent with A4.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          46
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5289"
+    },
+    {
+      "id": "BAS-P9",
+      "domain": "Regulation",
+      "title": "P9 (V-lowering paradox in Mode 2)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a \nrandomised trial of antioxidant restriction or controlled mild pro-oxidant intervention in a \nverified Mode 4b stratum showing no improvement or harm.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          46
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5310"
+    },
+    {
+      "id": "BAS-P10",
+      "domain": "Regulation",
+      "title": "P10 (Mode 3 precedes and conceals Mode 1 in compartmentally-isolated tissue)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: sequential compartment-resolved imaging showing \nconcurrent (rather than temporally-ordered) divergence.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          46
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5331"
+    },
+    {
+      "id": "BAS-P11",
+      "domain": "Regulation",
+      "title": "P11 (Timescale-stratified hormesis as Mode 4a effect)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Forward hypothesis",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: timescale-disaggregated meta-analysis showing identical peaks across \ntimescale.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          46
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5352"
+    },
+    {
+      "id": "BAS-P12",
+      "domain": "Regulation",
+      "title": "P12 (Four-term fragility index as ageing biomarker)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: matched \ncohorts with the same F-component scores but divergent total F showing no event-rate \ndivergence over the relevant follow-up window.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          46
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies. The printed falsifier is internally problematic: identical component scores cannot give different values of the same deterministic minimum. Operational repair is required.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5373"
+    },
+    {
+      "id": "BAS-P13",
+      "domain": "Regulation",
+      "title": "P13 (Controller bandwidth restoration in Mode 4a)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Forward hypothesis",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a Mode 4a phenotype where γ_V acceleration provides no rescue \nor where β-reduction alone gives equivalent rescue. This is the Mode 4a-specific \nintervention prediction; it differs from any prediction the three-component framing would \ngenerate, since the three-component framing folds Mode 4a into Mode 1 and proposes only \nβ-reduction.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          47
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5394"
+    },
+    {
+      "id": "BAS-P14",
+      "domain": "Regulation",
+      "title": "P14 (V-set decoupling diagnostics for Mode 4b)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Forward hypothesis",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a population stratified into chronic Mode 2 in which V varies normally with Φ, \nindicating no Mode 4b component.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          47
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5415"
+    },
+    {
+      "id": "BAS-P15",
+      "domain": "Regulation",
+      "title": "P15 (Calibration tolerance δ in Mode 4c — provisional)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: a population scan showing no correlation between V_set,actual–\nV_set,fitness mismatch and chronic outcome divergence after controlling for V_max and \nother confounders. This prediction is conditional on the cohort regressions described in \n§6.2.3 actually being conducted; until then, P15 is a structural prediction without empirical \nvalidation.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          47
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5436"
+    },
+    {
+      "id": "BAS-P16",
+      "domain": "Regulation",
+      "title": "P16 (Mode 3 effect on closed-loop behaviour)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Paper reclassification or conditional extension",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification: senolytic-rescued individuals showing persistent V-Φ mismatch despite \nrestored 𝒞 fidelity (which would re-locate the fault as genuine Mode 4c — see P17).",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          47
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5457"
+    },
+    {
+      "id": "BAS-P17",
+      "domain": "Regulation",
+      "title": "P17 (Mode 3 vs",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6754360"
+      ],
+      "status": "Forward hypothesis",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsification of the diagnostic. If senolytic-responsive and senolytic-non-responsive sub-\npopulations are indistinguishable on V-Φ trajectory pre/post intervention, or if no V-Φ \nmismatch dissociation is observed in either group, the diagnostic fails.",
+      "depends_on": [],
+      "source_pages": {
+        "6754360": [
+          48
+        ]
+      },
+      "caveat": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies. Failure of a senolytic alone cannot diagnose controller drift; engagement, specificity and alternative failure mechanisms must be tested.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5478"
+    },
+    {
+      "id": "AL-P1",
+      "domain": "Pharmacology",
+      "title": "Prediction 1 (load-bearing, repeated from Section 5.4)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6739201"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified by: systematic deviation (>0.10) at multiple matched dose pairs that \ncannot be attributed to mechanism overlap, axiom-violation modes (Section 3.3), or \nmeasurement error.",
+      "depends_on": [],
+      "source_pages": {
+        "6739201": [
+          31
+        ]
+      },
+      "caveat": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5499"
+    },
+    {
+      "id": "AL-P2",
+      "domain": "Pharmacology",
+      "title": "Prediction 2",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6739201"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified by: systematic differences in shifts \nacross x.",
+      "depends_on": [],
+      "source_pages": {
+        "6739201": [
+          31
+        ]
+      },
+      "caveat": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5520"
+    },
+    {
+      "id": "AL-P3",
+      "domain": "Pharmacology",
+      "title": "Prediction 3",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6739201"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified by: systematic Schild slope deviation indicating non-competitive \nmechanism.",
+      "depends_on": [],
+      "source_pages": {
+        "6739201": [
+          31
+        ]
+      },
+      "caveat": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5541"
+    },
+    {
+      "id": "AL-P4",
+      "domain": "Pharmacology",
+      "title": "Prediction 4",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6739201"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified by: dose-response inconsistent with any bounded \nsigmoidal form across at least two orders of magnitude.",
+      "depends_on": [],
+      "source_pages": {
+        "6739201": [
+          31
+        ]
+      },
+      "caveat": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5562"
+    },
+    {
+      "id": "AL-P5",
+      "domain": "Pharmacology",
+      "title": "Prediction 5",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6739201"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "Falsified by: systematic deviation from unit slope.",
+      "depends_on": [],
+      "source_pages": {
+        "6739201": [
+          31
+        ]
+      },
+      "caveat": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5583"
+    },
+    {
+      "id": "AL-P6",
+      "domain": "Pharmacology",
+      "title": "Prediction 6 (elliptic signature — exploratory)",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6739201"
+      ],
+      "status": "Historical conjecture; geometric rationale unsupported",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6739201": [
+          32
+        ]
+      },
+      "caveat": "The paper misclassifies Bliss as parabolic; an interior peak does not uniquely identify elliptic composition. Retained for provenance, not presented as an established discriminating test.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5604"
+    },
+    {
+      "id": "ECO-P1",
+      "domain": "Ecology",
+      "title": "P1",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5625"
+    },
+    {
+      "id": "ECO-P2",
+      "domain": "Ecology",
+      "title": "P2",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5646"
+    },
+    {
+      "id": "ECO-P3",
+      "domain": "Ecology",
+      "title": "P3",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5667"
+    },
+    {
+      "id": "ECO-P4",
+      "domain": "Ecology",
+      "title": "P4",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5688"
+    },
+    {
+      "id": "ECO-P5",
+      "domain": "Ecology",
+      "title": "P5",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5709"
+    },
+    {
+      "id": "ECO-P6",
+      "domain": "Ecology",
+      "title": "P6",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5730"
+    },
+    {
+      "id": "ECO-P7",
+      "domain": "Ecology",
+      "title": "P7",
+      "record_kind": "Original numbered prediction",
+      "sources": [
+        "6963360"
+      ],
+      "status": "Conditional paper prediction; not independently validated here",
+      "next_test": "Use the source-defined observable, operating conditions and comparator below. Establish precision and independent calibration before a confirmatory test.",
+      "success_means": "Agreement with the stated prediction within a predefined domain and uncertainty; independent mechanism identification remains separate.",
+      "failure_means": "A resolved contradiction of the stated model prediction in its admitted regime; a noisy null result is unresolved.",
+      "depends_on": [],
+      "source_pages": {
+        "6963360": [
+          22
+        ]
+      },
+      "caveat": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "original_source": "https://github.com/thantiklermcirony/boundedness-atlas/blob/29a0cfca16ac088cd08e0267b07a50c20eacbc9b/content/atlas.json#L5751"
+    }
+  ]
+}

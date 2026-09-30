@@ -1,5 +1,5 @@
-/* The twelve simulations. Each one runs the proven maths from bo.js and names its theorem.
-   Nothing here is an illustration of a result; each is the result, running. */
+/* Twelve interactive models. The mathematical identities are checked in bo.test.mjs;
+   empirical applications retain the separate statuses shown in the atlas. */
 
 import { law, boundary, disk, coupling, cones, fitCanvas, css, onScreen, slider } from './bo.js';
 
@@ -70,6 +70,9 @@ function drag(cv, getGeom, onMove) {
 export function simCentre(host) {
   const cv = host.querySelector('canvas');
   let obs = C(0, 0);
+  cv.tabIndex = 0;
+  cv.setAttribute('aria-label', 'Observer position. Use arrow keys to move within the disk.');
+  host.querySelector('.readout').setAttribute('aria-live', 'polite');
 
   // a lattice at hyperbolic radii, with as many points per ring as the ring has room
   const stars = [];
@@ -81,6 +84,15 @@ export function simCentre(host) {
 
   const geom = () => { const f = frame(cv); return f; };
   drag(cv, geom, (p) => { obs = p; draw(); });
+  cv.addEventListener('keydown', (e) => {
+    const delta = { ArrowLeft: [-.05, 0], ArrowRight: [.05, 0], ArrowUp: [0, -.05], ArrowDown: [0, .05] }[e.key];
+    if (!delta) return;
+    e.preventDefault();
+    const p = C(obs.x + delta[0], obs.y + delta[1]);
+    const d = Math.hypot(p.x, p.y);
+    obs = d > .97 ? C(p.x * .97 / d, p.y * .97 / d) : p;
+    draw();
+  });
 
   function draw() {
     const { g, cx, cy, R } = frame(cv);
@@ -107,7 +119,7 @@ export function simCentre(host) {
     }
     g.fillStyle = accent();
     g.beginPath(); g.arc(cx, cy, 5, 0, TAU); g.fill();
-    readout(host, `you <b>0.00</b> from yourself<br>edge <b>&#8734;</b> away<br>${near} points within <b>1.0</b>`);
+    readout(host, `position <b>${obs.x.toFixed(2)}, ${obs.y.toFixed(2)}</b><br>you <b>0.00</b> from yourself<br>edge <b>&#8734;</b> away<br>${near} points within <b>1.0</b>`);
   }
   draw();
   window.addEventListener('resize', draw);
@@ -387,12 +399,31 @@ export function simHolonomy(host) {
   let a = C(0.58, 0.10), b = C(-0.18, 0.62);
   const geom = () => frame(cv);
   let which = 0;
+  cv.tabIndex = 0;
+  cv.setAttribute('aria-label', 'Triangle points. Press 1 or 2 to select a point, then use arrow keys to move it.');
+  host.querySelector('.readout').setAttribute('aria-live', 'polite');
   cv.addEventListener('pointerdown', (e) => {
     const r = cv.getBoundingClientRect(); const { cx, cy, R } = geom();
     const p = C((e.clientX - r.left - cx) / R, (e.clientY - r.top - cy) / R);
     which = Math.hypot(p.x - a.x, p.y - a.y) < Math.hypot(p.x - b.x, p.y - b.y) ? 0 : 1;
   });
   drag(cv, geom, (p) => { if (which === 0) a = p; else b = p; draw(); });
+  cv.addEventListener('keydown', (e) => {
+    if (e.key === '1' || e.key === '2') {
+      which = Number(e.key) - 1;
+      draw();
+      return;
+    }
+    const delta = { ArrowLeft: [-.04, 0], ArrowRight: [.04, 0], ArrowUp: [0, -.04], ArrowDown: [0, .04] }[e.key];
+    if (!delta) return;
+    e.preventDefault();
+    const p0 = which === 0 ? a : b;
+    const p = C(p0.x + delta[0], p0.y + delta[1]);
+    const d = Math.hypot(p.x, p.y);
+    const bounded = d > .97 ? C(p.x * .97 / d, p.y * .97 / d) : p;
+    if (which === 0) a = bounded; else b = bounded;
+    draw();
+  });
 
   function draw() {
     const { g, cx, cy, R } = frame(cv);
@@ -429,7 +460,7 @@ export function simHolonomy(host) {
       g.font = '11px ui-sans-serif, system-ui'; g.fillStyle = ink2(); g.fillText(t, x + 7, y - 7);
     });
 
-    readout(host, `turn <b>${Math.abs(ang).toFixed(3)}</b> rad<br>triangle area <b>${Math.abs(ang).toFixed(3)}</b><br>they are the same number`);
+    readout(host, `point <b>${which === 0 ? '1' : '2'}</b> selected<br>turn <b>${Math.abs(ang).toFixed(3)}</b> rad<br>triangle area <b>${Math.abs(ang).toFixed(3)}</b><br>they are the same number`);
   }
   draw();
   window.addEventListener('resize', draw);

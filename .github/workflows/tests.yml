@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - run: pip install -e toolkit[test]
-      - name: The theorems, checked numerically
+      - name: Theorems checked numerically
         run: pytest toolkit/tests -q
 
   site-maths:
@@ -42,6 +42,8 @@ jobs:
           PY
           python site/build_evidence.py
           git diff --exit-code site/evidence.html || (echo "site/evidence.html is out of date; run site/build_evidence.py" && exit 1)
+      - name: Dated research inventory and Pages copy
+        run: python registry/legacy/validate_inventory.py
 
   ida:
     runs-on: ubuntu-latest

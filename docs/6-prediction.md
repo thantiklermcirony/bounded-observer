@@ -94,7 +94,7 @@ comes entirely from the fact that entries can leave it.
 
 ## On the site
 
-[**Evidence**](../site/evidence.html) — the whole atlas, filterable, failures included.
+[**Evidence**](https://thantiklermcirony.github.io/bounded-observer/evidence.html) — the whole atlas, including failures and next tests.
 
 ## Sources
 

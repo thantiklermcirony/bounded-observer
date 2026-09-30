@@ -123,17 +123,31 @@ export function css(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 }
 
-/** Run draw() on every animation frame, but only while the element is on screen. */
+/** Animate only while visible, and show a still frame when reduced motion is requested. */
 export function onScreen(el, draw) {
   let live = false, raf = null;
-  const loop = (t) => { draw(t); raf = live ? requestAnimationFrame(loop) : null; };
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const loop = (t) => {
+    raf = null;
+    if (!live) return;
+    draw(t);
+    if (!motion.matches) raf = requestAnimationFrame(loop);
+  };
+  const sync = () => {
+    if (raf !== null) cancelAnimationFrame(raf);
+    raf = null;
+    if (!live) return;
+    if (motion.matches) draw(0);
+    else raf = requestAnimationFrame(loop);
+  };
   new IntersectionObserver((es) => {
     es.forEach((e) => {
       live = e.isIntersecting;
-      if (live && !raf) raf = requestAnimationFrame(loop);
+      sync();
     });
   }, { rootMargin: '120px' }).observe(el);
-  return () => draw(performance.now());
+  motion.addEventListener('change', sync);
+  return () => draw(motion.matches ? 0 : performance.now());
 }
 
 /** A labelled slider that calls back on input. Returns the <input>. */

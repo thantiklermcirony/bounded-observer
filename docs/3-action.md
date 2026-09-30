@@ -76,7 +76,7 @@ is identical to five decimals.
 
 ## On the site
 
-[**The dial**](../site/sim-11-dial.html) — mix two drugs, move $\alpha$ from Bliss to Loewe and
+[**The dial**](https://thantiklermcirony.github.io/bounded-observer/#sim-dial) — mix two drugs, move $\alpha$ from Bliss to Loewe and
 watch the combination surface deform. Then see the real data, and where the prediction broke.
 
 ## Sources

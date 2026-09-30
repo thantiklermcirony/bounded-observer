@@ -55,15 +55,17 @@ page = f"""<!doctype html>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
+<a class="skip" href="#main">Skip to the atlas</a>
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
-  <nav><a href="./">The walk</a><a href="evidence.html" aria-current="true">Atlas</a>
-  <a href="ida.html">IDA Live</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
+  <nav aria-label="Primary"><a href="./">The walk</a><a href="evidence.html" aria-current="page">Atlas</a>
+  <a href="library.html">Library</a><a href="labs.html">Labs</a><a href="ida.html">IDA Live</a>
+  <a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
 </div></header>
 
-<main class="wrap" style="padding-top:2.5rem;padding-bottom:4rem">
+<main id="main" class="wrap" style="padding-top:2.5rem;padding-bottom:4rem">
   <div class="prose">
-    <h2>The atlas</h2>
+    <h1>The atlas</h1>
     <p>Every work in the programme, placed as a chart of the law: what is bounded, which chart
     applies, what state the claim is in, and — the column that matters — <b>what would move it</b>.
     A row with no next test is a row that cannot be wrong, and it does not belong here.</p>

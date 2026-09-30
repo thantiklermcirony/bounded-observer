@@ -100,9 +100,9 @@ are two views of one fact is open.
 
 ## On the site
 
-- [**The room inside**](../site/sim-06-room.html) — grow circles and a branching tree.
-- [**Round and back, turned**](../site/sim-07-holonomy.html) — walk a loop, return rotated.
-- [**Channels that forget**](../site/sim-09-channels.html) — reversible against forward-only.
+- [**The room inside**](https://thantiklermcirony.github.io/bounded-observer/#sim-room) — grow circles and a branching tree.
+- [**Round and back, turned**](https://thantiklermcirony.github.io/bounded-observer/#sim-holonomy) — walk a loop, return rotated.
+- [**Channels that forget**](https://thantiklermcirony.github.io/bounded-observer/#sim-channels) — reversible against forward-only.
 
 ## Sources
 

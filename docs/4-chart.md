@@ -101,11 +101,11 @@ test it. Recorded as an open question, not a hypothesis.
 
 ## On the site
 
-- [**The horizon**](../site/sim-03-horizon.html) — add equal steps, watch the value crowd the
+- [**The horizon**](https://thantiklermcirony.github.io/bounded-observer/#sim-horizon) — add equal steps, watch the value crowd the
   limit while the rapidity climbs evenly.
-- [**Three laws**](../site/sim-04-trichotomy.html) — choose no ceiling, one, or two.
-- [**Arrival or horizon**](../site/sim-05-exponent.html) — turn $\gamma$ through 1.
-- [**Beyond the horizon**](../site/sim-08-farside.html) — push past the edge.
+- [**Three laws**](https://thantiklermcirony.github.io/bounded-observer/#sim-trichotomy) — choose no ceiling, one, or two.
+- [**Arrival or horizon**](https://thantiklermcirony.github.io/bounded-observer/#sim-exponent) — turn $\gamma$ through 1.
+- [**Beyond the horizon**](https://thantiklermcirony.github.io/bounded-observer/#sim-farside) — push past the edge.
 
 ## Sources
 

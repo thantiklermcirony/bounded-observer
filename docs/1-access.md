@@ -49,7 +49,7 @@ symmetrically.
 
 ## On the site
 
-[**You are the centre**](../site/sim-01-centre.html) — drag anywhere in a hyperbolic tiling.
+[**You are the centre**](https://thantiklermcirony.github.io/bounded-observer/#sim-centre) — drag anywhere in a hyperbolic tiling.
 The world recentres on you and the edge stays exactly as far away as it was. Every tile is the
 same size; the ones near the rim only look small from where you happen to be standing.
 

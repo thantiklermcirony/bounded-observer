@@ -32,11 +32,17 @@ promoted only when a test has run. Refuted predictions are kept in the record.
   implements; `pytest toolkit/tests` checks them numerically.
 - [registry/atlas.csv](registry/atlas.csv): every work in the programme placed as a chart of
   the law, with its bounded quantity, its status and its next test.
+- [registry/legacy/README.md](registry/legacy/README.md): a dated, source-pinned inventory of
+  the earlier Atlas, with manuscript and prediction identifiers and page receipts. Historical
+  source statuses do not replace the current verdicts in registry/atlas.csv.
 - [experiments/](experiments/): pre-registered tests with data and code, including H1, which
   was refuted as stated.
 - [apps/ida-live/](apps/ida-live/): IDA Live, the instrument that runs the law on a living mind.
 
 ## Optional
 
-- [site/](site/): the website source; twelve interactive simulations, each tied to a theorem.
+- [site/](site/): the website source; twelve interactive models tied to the six-gate walk.
+- [site/library.html](site/library.html): the wider research record and searchable source ledger.
+- [site/labs.html](site/labs.html): earlier laboratory results and room source routes, including
+  failed success gates.
 - [CONTRIBUTING.md](CONTRIBUTING.md): how to add a chart, a replication or a refutation.

@@ -23,6 +23,7 @@ Daniel John Murray · [ORCID 0009-0005-1794-5945](https://orcid.org/0009-0005-17
 | If you are | Start at |
 | --- | --- |
 | A person | [the website](https://thantiklermcirony.github.io/bounded-observer/) — twelve simulations you can touch |
+| Tracing the wider research | [research library](https://thantiklermcirony.github.io/bounded-observer/library.html) — dated manuscript and prediction records; [laboratories](https://thantiklermcirony.github.io/bounded-observer/labs.html) — results and failure gates |
 | An AI agent | [`AGENTS.md`](AGENTS.md), then [`llms.txt`](llms.txt) |
 | A mathematician | [`papers/capstone/`](papers/capstone/) — *Bounded Composition and Its Horizons*, v2.1 |
 | Here to check the maths | [`toolkit/`](toolkit/) — `pip install -e toolkit && pytest toolkit/tests` |
@@ -68,10 +69,10 @@ programme that was tested and refuted as stated.
 
 ```
 docs/        six chapters, one per gate
-site/        the website; each simulation is a single file
+site/        the website, interactive models, research library and laboratories
 toolkit/     the Python package `bounded`: the maths, with tests that check each theorem
-registry/    the atlas: every chart of the law, its status, its next test
-papers/      every paper, with status and links; the capstone source
+registry/    the current claim atlas and dated source inventory
+papers/      programme paper guide and the capstone source
 experiments/ dated local analysis plans with their data and code
 apps/        IDA Live, the instrument
 ```
@@ -86,4 +87,5 @@ without a status tag, and nothing is promoted without a test.
 
 Code is MIT (see [`LICENSE`](LICENSE)). Text and figures are CC BY 4.0
 (see [`LICENSE-CONTENT`](LICENSE-CONTENT)). Third-party material is listed in each folder's
-`NOTICE.md`.
+`NOTICE.md`. The dated source inventory preserves original identifiers and links; its
+underlying manuscripts, datasets, art and source repositories retain their own terms.

@@ -64,7 +64,7 @@ outcome the controller does not itself produce. See `apps/ida-live/docs/IDA_EVOL
 
 ## On the site
 
-[**Two histories, one reading**](../site/sim-02-histories.html) — watch two paths arrive at the
+[**Two histories, one reading**](https://thantiklermcirony.github.io/bounded-observer/#sim-histories) — watch two paths arrive at the
 same number and then part. Add the one extra measurement that tells them apart.
 
 ## Sources

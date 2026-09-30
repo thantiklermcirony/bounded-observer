@@ -4,7 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Bounded Observer</title>
-<meta name="description" content="An observer with finite access, inside the world it measures. Twelve simulations of the Universal Hyperbolic Law, from the premise to the evidence.">
+<meta name="description" content="An observer with finite access, inside the world it measures. Six gates and twelve interactive models, from conditional mathematics to open empirical tests.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Bounded Observer · science from within">
+<meta property="og:description" content="Six gates from finite observation to testable prediction, with interactive models and an evidence atlas.">
+<meta property="og:url" content="https://thantiklermcirony.github.io/bounded-observer/">
+<meta property="og:image" content="https://thantiklermcirony.github.io/bounded-observer/observer-hero.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
@@ -14,20 +20,19 @@
 <header class="top">
   <div class="wrap top-in">
     <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
-    <nav>
-      <a href="#gate1">Access</a>
-      <a href="#gate2">State</a>
-      <a href="#gate3">Action</a>
-      <a href="#gate4">Law</a>
-      <a href="#gate5">Geometry</a>
-      <a href="#gate6">Evidence</a>
+    <nav aria-label="Primary">
+      <a href="./" aria-current="page">The walk</a>
       <a href="evidence.html">Atlas</a>
+      <a href="library.html">Library</a>
+      <a href="labs.html">Labs</a>
       <a href="ida.html">IDA Live</a>
       <a href="papers.html">Papers</a>
+      <a href="contribute.html">Contribute</a>
     </nav>
   </div>
 </header>
 
+<main id="main">
 <section class="hero">
   <canvas id="hero-field" aria-hidden="true"></canvas>
   <div class="wrap">
@@ -36,6 +41,13 @@
       <p class="lede">You cannot step outside and look. Your channels are finite, your memory is
       finite, your time is finite. That makes predictive state a question: what must be kept
       to predict what happens when you intervene?</p>
+    </div>
+    <figure class="hero-art">
+      <img src="observer-hero.png" width="1942" height="809" fetchpriority="high"
+           alt="Illustration of an observer within a circular field of measured paths, facing a distant horizon.">
+      <figcaption>Illustration · a view from inside a finite field of observation</figcaption>
+    </figure>
+    <div class="prose">
       <p class="lede">A bounded quantity earns an additive <em class="term">law</em> and an
       unreachable <em class="term">horizon</em> when its changes combine continuously,
       associatively, strictly monotonically, and with a neutral state (C1–C4). Geometry
@@ -48,6 +60,15 @@
     </div>
   </div>
 </section>
+
+<nav class="gate-index wrap" aria-label="Jump to a gate">
+  <a href="#gate1"><b>1 · Access</b><span>What can be reached?</span></a>
+  <a href="#gate2"><b>2 · State</b><span>What must be kept?</span></a>
+  <a href="#gate3"><b>3 · Action</b><span>What can be changed?</span></a>
+  <a href="#gate4"><b>4 · Law</b><span>How do changes combine?</span></a>
+  <a href="#gate5"><b>5 · Geometry</b><span>What shape follows?</span></a>
+  <a href="#gate6"><b>6 · Evidence</b><span>What survives a test?</span></a>
+</nav>
 
 <!-- ============================================================ 1 -->
 <section class="gate" id="gate1">
@@ -65,7 +86,7 @@
     <div class="sim" id="sim-centre">
       <div class="sim-head">
         <div class="sim-name">You are the centre</div>
-        <div class="sim-do">Drag anywhere. The world moves; the edge does not get closer.</div>
+        <div class="sim-do">Drag anywhere, or focus the canvas and use arrow keys. The edge does not get closer.</div>
       </div>
       <div class="stage"><canvas></canvas><div class="readout"></div></div>
       <div class="sim-note">Every point is at the same distance from its own neighbours no
@@ -289,7 +310,7 @@
     <div class="sim" id="sim-holonomy">
       <div class="sim-head">
         <div class="sim-name">Round and back, turned</div>
-        <div class="sim-do">Drag either point. Compare the two arrows.</div>
+        <div class="sim-do">Drag either point, or focus the canvas: press 1 or 2 to select and use arrow keys. Compare the arrows.</div>
       </div>
       <div class="stage"><canvas></canvas><div class="readout"></div></div>
       <div class="sim-note">Go out along one path, come back along another, and you return
@@ -377,9 +398,9 @@
         <table>
           <thead><tr><th>Claim</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>Across 19 meta-analyses, the flat effect scale is the least consistent — in 11 of the 14 that showed heterogeneity</td><td><span class="tag tag-P">replicated</span></td></tr>
-            <tr><td>Hormesis follows from bounded adaptation, with no free parameters</td><td><span class="tag tag-P">published</span></td></tr>
-            <tr><td>Glutathione has two distinct failure modes, and the model recovers known contraindications</td><td><span class="tag tag-P">published</span></td></tr>
+            <tr><td>Across 19 meta-analyses, the flat effect scale was least consistent in 11 of the 14 that showed heterogeneity</td><td>replicated in the source analysis; independent validation open</td></tr>
+            <tr><td>A bounded-adaptation model yields a conditional account of hormesis</td><td><span class="tag tag-M">M</span> published model; derived and open claims</td></tr>
+            <tr><td>The glutathione model separates calibrated G6PD behaviour from a prospective NAC prediction</td><td><span class="tag tag-U">U</span> published paper; prospective prediction open</td></tr>
             <tr><td>Mechanistic overlap predicts the dial position (H1)</td><td><span class="tag tag-X">refuted</span></td></tr>
             <tr><td>Return dynamics predict future capacity better than static readings (H5)</td><td><span class="tag tag-H">instrument not yet built</span></td></tr>
             <tr><td>Branching histories under finite resources live in negatively curved space (H7)</td><td><span class="tag tag-H">open</span></td></tr>
@@ -395,6 +416,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer class="foot">
   <div class="wrap">
@@ -406,14 +428,17 @@
       </div>
       <div>
         <a href="evidence.html">The atlas</a><br>
+        <a href="library.html">Research library</a><br>
+        <a href="labs.html">Laboratories</a><br>
         <a href="papers.html">Papers</a><br>
         <a href="ida.html">IDA Live</a><br>
         <a href="contribute.html">Contribute</a>
       </div>
       <div>
         Code MIT · text and figures CC BY 4.0<br>
-        Every simulation on this page runs the proven maths directly;
-        <code>site/bo.test.mjs</code> checks it against the same identities the manuscript proves.
+        The interactive models implement the equations described here;
+        <code>site/bo.test.mjs</code> checks their mathematical identities. Empirical claims keep
+        their separate evidence status.
       </div>
     </div>
   </div>
@@ -437,18 +462,16 @@ go('sim-channels', simChannels);
 go('sim-locking', simLocking);
 go('sim-ida', simIda);
 
-// mark the section being read
-const links = [...document.querySelectorAll('.top nav a[href^="#"]')];
-document.querySelectorAll('section.gate').forEach((s) => {
-  new IntersectionObserver((es) => {
-    es.forEach((e) => {
-      if (!e.isIntersecting) return;
-      links.forEach((a) => a.removeAttribute('aria-current'));
-      const a = links.find((l) => l.getAttribute('href') === '#' + s.id);
-      if (a) a.setAttribute('aria-current', 'true');
-    });
-  }, { rootMargin: '-45% 0px -50% 0px' }).observe(s);
-});
+// Mark the active gate in the on-page reading map.
+const gateLinks = [...document.querySelectorAll('.gate-index a')];
+const gateObserver = new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    gateLinks.forEach((link) => link.removeAttribute('aria-current'));
+    gateLinks.find((link) => link.hash === '#' + entry.target.id)?.setAttribute('aria-current', 'location');
+  }
+}, { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('section.gate').forEach((section) => gateObserver.observe(section));
 </script>
 </body>
 </html>

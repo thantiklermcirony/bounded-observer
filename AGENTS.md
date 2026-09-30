@@ -30,6 +30,7 @@ Hyperbolic Law; `papers/capstone/` has the proofs. `docs/` walks the six gates i
 | Know what a theorem actually says | `papers/capstone/` (numbered; cite by number) |
 | Check a piece of maths | `toolkit/bounded/` — the module docstrings name the theorem each implements |
 | Know whether something is already claimed | `registry/atlas.csv` — 39 rows, every work placed |
+| Trace an earlier paper or prediction | `registry/legacy/README.md` — dated identifiers and source receipts, not current verdicts |
 | Know what failed | `experiments/` — failures are kept, not deleted |
 | Know what is still open | `registry/atlas.csv`, column `next_test` |
 
