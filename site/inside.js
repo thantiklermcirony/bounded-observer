@@ -51,6 +51,48 @@ function canNavigate() { return ['journey', 'horizon'].includes(state.phase); }
 function isReduced() { return motionPreference.matches || ui['slow-mode'].checked; }
 function focusNext(element) { requestAnimationFrame(() => element.focus({ preventScroll: true })); }
 function showScene() { requestAnimationFrame(() => $('experience').scrollIntoView({ block: 'start' })); }
+function onPress(element, handler) {
+  let lastPointer = -Infinity;
+  element.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0 || element.disabled) return;
+    lastPointer = event.timeStamp;
+    handler(event);
+  });
+  element.addEventListener('click', (event) => {
+    if (event.detail > 0 && event.timeStamp - lastPointer < 1000) {
+      event.preventDefault();
+      return;
+    }
+    handler(event);
+  });
+}
+function onTogglePress(input, handler) {
+  const label = input.closest('label');
+  let lastPointer = -Infinity;
+  let expected = input.checked;
+  label.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0 || input.disabled) return;
+    event.preventDefault();
+    lastPointer = event.timeStamp;
+    expected = !input.checked;
+    input.checked = expected;
+    input.focus({ preventScroll: true });
+    handler();
+  });
+  label.addEventListener('click', (event) => {
+    if (event.detail > 0 && event.timeStamp - lastPointer < 1000) {
+      event.preventDefault();
+      input.checked = expected;
+    }
+  });
+  input.addEventListener('change', (event) => {
+    if (event.timeStamp - lastPointer < 1000) {
+      input.checked = expected;
+      return;
+    }
+    handler();
+  });
+}
 
 function visibleTwin() {
   return twin.map((node) => ({ node, reading: observePoint(state.observer, state.heading, node.point, state.zoom) }));
@@ -577,34 +619,34 @@ function reset(focus = false) {
   if (focus) { focusNext(ui['start-button']); showScene(); }
 }
 
-ui['start-button'].addEventListener('click', enter);
-ui['start-overlay'].addEventListener('click', enter);
-ui['intro-start'].addEventListener('click', (event) => {
+onPress(ui['start-button'], enter);
+onPress(ui['start-overlay'], enter);
+onPress(ui['intro-start'], (event) => {
   event.preventDefault();
   if (state.phase === 'ready') enter(); else showScene();
 });
-ui['reset-button'].addEventListener('click', () => reset(true));
-ui['scan-button'].addEventListener('click', scan);
-ui['act-button'].addEventListener('click', intervene);
-ui['advance-button'].addEventListener('click', continueStory);
-ui['loop-button'].addEventListener('click', startLoop);
-ui['pause-button'].addEventListener('click', () => {
+onPress(ui['reset-button'], () => reset(true));
+onPress(ui['scan-button'], scan);
+onPress(ui['act-button'], intervene);
+onPress(ui['advance-button'], continueStory);
+onPress(ui['loop-button'], startLoop);
+onPress(ui['pause-button'], () => {
   state.paused = !state.paused;
   if (!state.paused && state.animation) queueTick();
   prompt(state.paused ? 'Paused. Your present reading and path are held.' : 'Resumed. Continue from the same point.');
   updateUI();
 });
 for (const button of document.querySelectorAll('[data-predict]')) {
-  button.addEventListener('click', () => choosePrediction(button.dataset.predict));
+  onPress(button, () => choosePrediction(button.dataset.predict));
 }
 for (const button of document.querySelectorAll('[data-move]')) {
-  button.addEventListener('click', () => moveCommand(button.dataset.move));
+  onPress(button, () => moveCommand(button.dataset.move));
 }
 for (const button of document.querySelectorAll('[data-look]')) {
-  button.addEventListener('click', () => look(button.dataset.look));
+  onPress(button, () => look(button.dataset.look));
 }
 for (const button of document.querySelectorAll('[data-zoom]')) {
-  button.addEventListener('click', () => zoom(button.dataset.zoom));
+  onPress(button, () => zoom(button.dataset.zoom));
 }
 function settleForReducedMotion() {
   const anim = state.animation;
@@ -623,8 +665,8 @@ function settleForReducedMotion() {
   }
 }
 
-ui['slow-mode'].addEventListener('change', settleForReducedMotion);
-ui['flat-compare'].addEventListener('change', updateUI);
+onTogglePress(ui['slow-mode'], settleForReducedMotion);
+onTogglePress(ui['flat-compare'], updateUI);
 motionPreference.addEventListener('change', settleForReducedMotion);
 window.addEventListener('resize', renderSoon);
 new ResizeObserver(renderSoon).observe(canvas);
