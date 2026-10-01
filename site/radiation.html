@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radiation · The Bounded Observer</title>
+<meta name="description" content="An interactive account of exposure history, continuous SNT as a candidate model, and the two risks that shaped Fukushima evacuation decisions.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Radiation · The same total can hide different futures">
+<meta property="og:description" content="Change dose order, recovery and the next challenge. Then examine what Fukushima taught about exposure and care.">
+<meta property="og:url" content="https://thantiklermcirony.github.io/bounded-observer/radiation.html">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="radiation.css?v=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body class="rad-page">
+<a class="skip" href="#rad-model">Skip to the model</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
+  <nav aria-label="Primary"><a href="./">Walk</a><a href="inside.html">Inside</a><a href="evidence.html">Atlas</a><a href="library.html">Library</a><a href="labs.html">Labs</a><a href="ida.html">IDA Live</a><a href="radiation.html" aria-current="page">Radiation</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
+</div></header>
+
+<main id="main">
+  <section class="rad-opening" aria-labelledby="rad-title"><div class="wrap rad-opening-grid">
+    <div class="rad-opening-copy">
+      <p class="rad-overline">A bounded observer / a real safety question</p>
+      <h1 id="rad-title">The total is the same.<br><em>The future can differ.</em></h1>
+      <p class="rad-lede">A single dose number cannot tell you when exposure arrived, what remained from before, or what another exposure would meet. Keep those histories visible, and “safe” becomes a question you can actually test.</p>
+      <div class="rad-hero-actions"><a class="rad-primary" href="#rad-model">Run the histories <span aria-hidden="true">↓</span></a><a href="#rad-fukushima">See the real decision</a></div>
+      <p class="rad-hero-limit"><span class="tag tag-D">D</span> This chapter shows a conditional mathematical model and documented decisions. Its interactive values have no physical units and make no personal radiation-risk estimate.</p>
+    </div>
+    <div class="rad-hero-art" role="img" aria-label="Two luminous exposure paths have equal total lengths but meet a later challenge from different retained states">
+      <div class="rad-hero-noise" aria-hidden="true"></div>
+      <div class="rad-ring rad-ring-a" aria-hidden="true"></div><div class="rad-ring rad-ring-b" aria-hidden="true"></div><div class="rad-ring rad-ring-c" aria-hidden="true"></div>
+      <div class="rad-center-orb" aria-hidden="true"><span></span></div>
+      <div class="rad-orbit-label rad-orbit-label-a"><b>01</b><span>BIG → SMALL</span><strong>1.00</strong></div>
+      <div class="rad-orbit-label rad-orbit-label-b"><b>02</b><span>SMALL → BIG</span><strong>1.00</strong></div>
+      <div class="rad-hero-bottom">SAME TOTAL <span>·</span> DIFFERENT STATE <span>·</span> SAME NEXT TEST</div>
+    </div>
+  </div></section>
+
+  <nav class="rad-chapters wrap" aria-label="Radiation chapter sections">
+    <a href="#rad-model"><b>01 / Run it</b><span>Two orders, one total</span></a>
+    <a href="#rad-law"><b>02 / Read the law</b><span>State through time</span></a>
+    <a href="#rad-horizon"><b>03 / Widen the record</b><span>How much can be known?</span></a>
+    <a href="#rad-fukushima"><b>04 / Pull back</b><span>Fukushima, 2011</span></a>
+  </nav>
+
+  <section id="rad-model" class="rad-section rad-model-section"><div class="wrap">
+    <div class="rad-section-head"><div><span class="rad-overline">01 / The experiment</span><h2>Reverse the history.<br><em>Keep the total fixed.</em></h2></div><p><span class="tag tag-D">D</span> Two equal-length exposure periods deliver 0.80 and 0.20 normalized units. Swap their order. Change the time between them or the recovery time. The model evolves throughout delivery and waiting.</p></div>
+    <div class="rad-console">
+      <div class="rad-console-top"><span class="rad-console-name">LIVE MODEL / TWO OBSERVERS OF THE SAME TOTAL</span><span class="rad-console-equal">0.80 + 0.20 = 0.20 + 0.80</span></div>
+      <div class="rad-chart-shell"><canvas id="rad-chart" aria-hidden="true"></canvas><div class="rad-chart-top"><span>EXPOSURE → RETAINED STATE → RESPONSE</span><span id="rad-chart-status">TWO HISTORIES</span></div><div class="rad-chart-key"><span><i class="rad-key-warm"></i>Big then small</span><span><i class="rad-key-cool"></i>Small then big</span></div><noscript><p class="rad-no-script">The interactive graph needs JavaScript. The model and historical explanation below remain readable: a candidate state follows ẋ = q − R(x), while the response ledger follows Ḣ = h′(x)q.</p></noscript></div>
+      <div class="rad-controls">
+        <fieldset class="rad-mode"><legend>Which response rule?</legend><button type="button" data-rad-mode="curve" aria-pressed="true">S-shaped potential</button><button type="button" data-rad-mode="quadratic" aria-pressed="false">Quadratic boundary</button></fieldset>
+        <label class="rad-range">Time between exposures <output id="rad-gap-out" for="rad-gap">0.90</output><input id="rad-gap" type="range" min="0" max="3" step="0.05" value="0.9"></label>
+        <label class="rad-range">Recovery time <output id="rad-tau-out" for="rad-tau">1.25</output><input id="rad-tau" type="range" min="0.25" max="3" step="0.05" value="1.25"></label>
+        <div class="rad-action-row"><button id="rad-challenge" type="button" class="rad-next" aria-pressed="false">Apply the same next exposure <span aria-hidden="true">→</span></button><button id="rad-replay" type="button" class="rad-replay">Replay paths</button></div>
+      </div>
+      <div class="rad-readout" aria-live="polite">
+        <div><span class="rad-readout-label">The total-only ledger</span><strong>1.000 <span>=</span> 1.000</strong><small>It cannot distinguish these histories.</small></div>
+        <div><span class="rad-readout-label">Retained state after the pair</span><strong><span id="rad-state-a">—</span> <span class="rad-readout-vs">/</span> <span id="rad-state-b">—</span></strong><small>Warm / cool · normalized units</small></div>
+        <div><span class="rad-readout-label" id="rad-response-label">Model response after the pair</span><strong><span id="rad-response-a">—</span> <span class="rad-readout-vs">/</span> <span id="rad-response-b">—</span></strong><small>Warm / cool · unitless ledger, not a risk percentage</small></div>
+      </div>
+      <p class="rad-interpretation" id="rad-interpretation"><span class="tag tag-D">D</span> Waiting changes the state that the second exposure meets. The colored paths are model outputs, not measured human outcomes.</p>
+    </div>
+    <div class="rad-under-console"><p><span class="tag tag-P">P</span> The sum-only reading is exactly equal by construction. In the quadratic setting, the two-period response can also agree while retained states differ. The identical third exposure then separates the modelled futures. <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/site/radiation-model.test.mjs">See the mathematical checks.</a></p><p><span class="tag tag-H">H</span> Whether a real biological endpoint follows this continuous rule must be tested for a specified population, preparation, exposure range, timing and outcome. A failed recovery prediction or challenge-curve translation would reject that proposed fit.</p></div>
+  </div></section>
+
+  <section id="rad-law" class="rad-section rad-law"><div class="wrap">
+    <div class="rad-section-head"><div><span class="rad-overline">02 / What makes this continuous</span><h2>A curve is not a clock.<br><em>It needs a state.</em></h2></div><p><span class="tag tag-D">D</span> The candidate continuous SNT construction keeps the state that remains while dose arrives. Recovery and the acute response must be specified separately. The acute curve alone does not tell us how fast a body recovers.</p></div>
+    <div class="rad-equations"><article><span>INPUT / what arrives</span><strong>q(t)</strong><p>A rate through time. The same total can be delivered in different sequences.</p></article><article><span>STATE / what remains</span><strong>ẋ = q(t) − R(x)</strong><p>Past input persists and recovery changes what later input meets. This demo sets <em>R(x) = x / τ</em>.</p></article><article><span>LEDGER / what accumulates</span><strong>Ḣ = h′(x) q(t)</strong><p>The candidate response potential <em>h</em> gives the increment at the current state.</p></article></div>
+    <div class="rad-law-floor"><p><span class="tag tag-P">P</span> In the instantaneous-pulse limit, a dose <em>d</em> arriving at state <em>x</em> adds <em>h(x + d) − h(x)</em>. This follows from integrating the displayed response rule during a pulse. For the fixed illustrative rules above, the numerical time-step check passes.</p><p><span class="tag tag-D">D</span> The law is useful because it tells us what to measure next: an acute response curve, a separately measured recovery process, and matched future challenges. An order effect rejects a specified order-blind summary for that endpoint; it does not establish this mechanism by itself.</p></div>
+    <div class="rad-test-grid"><article><b>TEST 01 / REVERSE</b><h3>Same total. Same gap. Reverse the order.</h3><p><span class="tag tag-P">P</span> A reproducible difference in a declared endpoint rejects a total-only or otherwise order-blind prediction for that tested setting.</p></article><article><b>TEST 02 / WAIT</b><h3>Measure recovery before the next dose.</h3><p><span class="tag tag-H">H</span> Do the later challenge curves follow the state transition predicted from a separate recovery measurement?</p></article><article><b>TEST 03 / CHALLENGE</b><h3>Make the future expose the missing state.</h3><p><span class="tag tag-P">P</span> A matching pair of endpoints need not mean matching states. The same later intervention can distinguish them.</p></article></div>
+    <p class="rad-law-boundary"><span class="tag tag-H">H</span> Continuous SNT is a proposed model, not a validated replacement for radiation-protection guidance. The 6 + 12 versus 12 + 6 Gy example in Murray’s order-reversal paper concerns specific mouse tumour and immune endpoints in radiotherapy; it cannot be transferred directly to low-dose public exposure.</p>
+  </div></section>
+
+  <section id="rad-horizon" class="rad-section rad-horizon"><div class="wrap rad-horizon-grid">
+    <div><span class="rad-overline">03 / The knowledge horizon</span><h2>Safety sharpens<br><em>as the record deepens.</em></h2><p><span class="tag tag-D">D</span> Each extra fact can remove exposure histories compatible with a record. Under one fixed, correct model, the set of compatible predictions can only stay the same or shrink. This is a statement about information; it is not a promise of perfect certainty.</p><div class="rad-horizon-steps" role="group" aria-label="Choose how much context is known"><button type="button" data-horizon="0" aria-pressed="true">Total</button><button type="button" data-horizon="1" aria-pressed="false">Order</button><button type="button" data-horizon="2" aria-pressed="false">Recovery</button><button type="button" data-horizon="3" aria-pressed="false">Observer</button><button type="button" data-horizon="4" aria-pressed="false">Outcome</button></div></div>
+    <div class="rad-horizon-screen"><div class="rad-horizon-screen-top"><span>COMPATIBLE FUTURES / FIXED MODEL</span><span id="rad-horizon-step">01 / 05</span></div><div class="rad-fan" aria-hidden="true"><span class="rad-fan-line"></span><span class="rad-fan-line"></span><span class="rad-fan-line"></span><span class="rad-fan-line"></span><span class="rad-fan-line"></span><span class="rad-fan-axis"></span></div><div class="rad-horizon-screen-bottom"><strong id="rad-horizon-title">Only the total is known</strong><p id="rad-horizon-copy">Many dose-rate histories fit one number. Their predicted retained states and later responses need not agree.</p><small id="rad-horizon-remaining">Uncertainty remains: timing, recovery, person, endpoint, model fit.</small></div></div>
+  </div><div class="wrap"><p class="rad-horizon-limit"><span class="tag tag-H">H</span> More context can improve a conditional prediction, but unobserved facts, variation among people, uncertain model structure and future chance remain. “Infinitely sure” would require assumptions that real safety decisions cannot verify. A failed model prediction can widen the horizon again.</p></div></section>
+
+  <section id="rad-fukushima" class="rad-section rad-fukushima"><div class="wrap">
+    <div class="rad-section-head"><div><span class="rad-overline">04 / One place, two clocks</span><h2>Fukushima.<br><em>Protecting life had two histories.</em></h2></div><p><span class="tag tag-D">D</span> In March 2011, decision makers had to limit radiation exposure while preserving transport, shelter, water, medicine and continuous care. Later evidence lets us see more of both risks. It does not give any one person a perfect counterfactual.</p></div>
+    <div class="rad-fuku-stage">
+      <div class="rad-fuku-visual" aria-hidden="true"><div class="rad-fuku-horizon"></div><div class="rad-fuku-plant"><span></span><span></span><span></span></div><div class="rad-fuku-route"></div><div class="rad-fuku-pulse pulse-one"></div><div class="rad-fuku-pulse pulse-two"></div><div class="rad-fuku-caption">11 MARCH 2011 <span>→</span> THE RECORD CONTINUES</div></div>
+      <div class="rad-fuku-content"><div class="rad-fuku-controls" role="group" aria-label="Choose the historical frame"><button type="button" data-fuku="then" aria-pressed="true">What was at stake</button><button type="button" data-fuku="later" aria-pressed="false">What later evidence adds</button></div>
+        <div id="rad-fuku-then" class="rad-fuku-panel"><span class="rad-panel-kicker">INSIDE THE DECISION</span><h3>Leave, shelter, or move with care?</h3><p>The radiological desk must act before individual future exposures are known. The hospital ward cannot treat a fragile patient as a dose number: transport and interruption of care have their own immediate hazards.</p><div class="rad-fuku-perspectives"><div><b>Radiation clock</b><span>What exposure follows each route and delay?</span></div><div><b>Care clock</b><span>Can oxygen, fluids, staffing and safe transport continue?</span></div></div><small><span class="tag tag-D">D</span> A reconstruction of competing decision variables, not a transcript of any official’s private reasoning.</small></div>
+        <div id="rad-fuku-later" class="rad-fuku-panel" hidden><span class="rad-panel-kicker">THE RETROSPECTIVE FRAME</span><h3>Both risks were real.</h3><p><span class="tag tag-P">P</span> UNSCEAR modeled a Futaba scenario in which evacuation lowered first-year adult dose from about 43 mSv without evacuation to 0.35–2.5 mSv with evacuation. These are modeled group counterfactuals, not individual measurements. <a href="https://www.unscear.org/unscear/uploads/documents/publications/UNSCEAR_2020_21_Annex-B_Attach_A-18.pdf">Dose table A-18.1 ↗</a></p><p><span class="tag tag-P">P</span> A retrospective study of Futaba Hospital records found 39 of 338 patients died before evacuation was complete, with one missing. Care interruption and difficult transport were documented; the study does not isolate each death’s cause. <a href="https://doi.org/10.1017/dmp.2021.265">Hospital study ↗</a></p><p><span class="tag tag-P">P</span> A separate hospital study found higher mortality among medically vulnerable people who remained without adequate support. “Stay” alone was not a safe answer either. <a href="https://pubmed.ncbi.nlm.nih.gov/30056383/">Shelter study ↗</a></p><small><span class="tag tag-D">D</span> The defensible lesson is to compare exposure avoided against the care a protective action can actually sustain, in that setting and with those people.</small></div>
+      </div>
+    </div>
+    <div class="rad-fuku-after"><p><span class="tag tag-P">P</span> UNSCEAR reports no documented resident health effects directly attributable to radiation and none expected to be detectable at population scale. That does not mean zero individual risk. <a href="https://www.unscear.org/unscear/en/areas-of-work/fukushima-report-faq.html">UNSCEAR FAQ</a></p><p><span class="tag tag-D">D</span> The continuous SNT interaction above has <em>not</em> been validated as a Fukushima risk calculator. This scene instead applies Gate 2’s simpler discipline: a useful safety state must preserve both exposure history and the conditions of care. <a href="https://www.oecd.org/en/publications/fukushima-daiichi-nuclear-power-plant-accident-ten-years-on_124c2774-en.html">OECD NEA retrospective</a></p></div>
+  </div></section>
+
+  <section class="rad-section rad-sources"><div class="wrap"><div class="rad-section-head"><div><span class="rad-overline">05 / The evidence behind the experience</span><h2>A testable law.<br><em>A boundary on its claims.</em></h2></div><p>The model and the historical case have different kinds of evidence. The links here keep their limits visible.</p></div>
+    <div class="rad-source-grid"><article><span class="rad-source-index">01 / MATHEMATICS</span><h3>The state-recovery paper</h3><p><span class="tag tag-D">D</span> Murray derives the candidate continuous construction and the context-refinement result. Recovery and human transfer remain to be established.</p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426880">Read Murray’s paper ↗</a></article><article><span class="rad-source-index">02 / THE ORDER TEST</span><h3>Equal BED, unequal biology</h3><p><span class="tag tag-D">D</span> A precise order-blind null and an endpoint-specific radiotherapy example. It sets a test; it is not a population-safety result.</p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427058">Read Murray’s paper ↗</a></article><article><span class="rad-source-index">03 / THE EXPLANATION</span><h3>Jack Devanney’s Rate SNT</h3><p><span class="tag tag-P">P</span> Jack’s continuous SNT article presents a worked rate model and explicitly credits Daniel Murray for its mathematical development. Its numerical scenarios are model outputs.</p><a href="https://jackdevanney.substack.com/p/rate-snt-the-continuous-version-of">Read Jack’s article ↗</a></article><article><span class="rad-source-index">04 / THE DECISION RECORD</span><h3>Fukushima and evacuation</h3><p><span class="tag tag-D">D</span> Dose reconstruction, hospital records and later care studies expose different parts of one safety decision.</p><a href="https://www.unscear.org/unscear/uploads/documents/unscear-reports/UNSCEAR_2020_21_Report_Vol.II-CORR.pdf">UNSCEAR dose reconstruction ↗</a><a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/emergency-hospital-evacuation-from-a-hospital-within-5-km-radius-of-fukushima-daiichi-nuclear-power-plant-a-retrospective-analysis-of-disaster-preparedness-for-hospitalized-patients/AB333C1E3A311416BCF6E56ABC616FCB">Futaba Hospital study ↗</a><a href="https://pubmed.ncbi.nlm.nih.gov/30056383/">Unsupported shelter study ↗</a></article></div>
+    <p class="rad-ledger-link">Methods, assumptions, source qualifications and loss conditions: <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/radiation-safety.md">radiation safety source ledger</a>. Continue the observer story in <a href="inside.html#real-scenes">Inside</a>, or examine the claim register in the <a href="evidence.html">Atlas</a>.</p>
+  </div></section>
+</main>
+<footer class="foot"><div class="wrap">The Bounded Observer · <a href="./">The six-gate walk</a> · <a href="inside.html">Inside</a> · <a href="library.html">Research library</a> · <a href="https://orcid.org/0009-0005-1794-5945">Daniel John Murray</a></div></footer>
+<script type="module" src="radiation.js?v=1"></script>
+</body>
+</html>

@@ -87,6 +87,8 @@ outcome the controller does not itself produce. See `apps/ida-live/docs/IDA_EVOL
 [**Two histories, one reading**](https://thantiklermcirony.github.io/bounded-observer/#sim-histories) — watch two paths arrive at the
 same number and then part. Add the one extra measurement that tells them apart.
 
+[**Radiation safety: the same total, different histories**](https://thantiklermcirony.github.io/bounded-observer/radiation.html) — vary exposure order and recovery in a conditional continuous model, then give both histories the same future challenge. The model illustrates the state test; it does not provide an individual radiation-risk estimate.
+
 ## Sources
 
 - Capstone v2.1, Theorem 10 and Proposition 1 — `papers/capstone/`
