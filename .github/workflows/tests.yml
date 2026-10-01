@@ -25,6 +25,11 @@ jobs:
         run: |
           node site/bo.test.mjs
           node --test site/inside-core.test.mjs
+          node --test site/valley-world.test.mjs
+          node --check site/inside.js
+          node --check site/valley-view.mjs
+          node --check site/inside-film.mjs
+          node --check site/inside-film-player.js
 
   atlas:
     runs-on: ubuntu-latest

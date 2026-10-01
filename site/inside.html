@@ -4,135 +4,154 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inside · The Bounded Observer</title>
-<meta name="description" content="A playable constructed world about finite observation, predictive state, an unreachable horizon and the geometry of a chosen model.">
+<meta name="description" content="A visual essay about an observer inside the world it measures, followed by an optional constructed valley to explore inherited perspectives and consequential action.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Inside · The Bounded Observer">
-<meta property="og:description" content="Move, look, measure and make a prediction from inside a world you cannot fully see.">
+<meta property="og:description" content="A cinematic account of finite observation, inherited memory, action and conditional bounded change.">
 <meta property="og:url" content="https://thantiklermcirony.github.io/bounded-observer/inside.html">
 <meta property="og:image" content="https://thantiklermcirony.github.io/bounded-observer/observer-hero.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="inside.css?v=entry2">
+<link rel="stylesheet" href="inside.css?v=valley1">
+<link rel="stylesheet" href="inside-film.css?v=film1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
-<body>
-<a class="skip" href="#experience">Skip to the experience</a>
+<body class="inside-page">
+<a class="skip" href="#film">Skip to the visual essay</a>
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
   <nav aria-label="Primary"><a href="./">Walk</a><a href="inside.html" aria-current="page">Inside</a><a href="evidence.html">Atlas</a><a href="library.html">Library</a><a href="labs.html">Labs</a><a href="ida.html">IDA Live</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
 </div></header>
 
 <main id="main">
-  <section class="inside-intro"><div class="wrap">
-    <div class="inside-intro-grid">
-      <div>
-        <div class="gate-tag">A playable thought experiment · about four minutes</div>
-        <h1>What can you know<br>from inside?</h1>
-        <p class="lede">Move through a world that only gives you a narrow view. Decide what to remember. Bet on what happens when you act. Then try to reach its edge.</p>
-        <p class="inside-construction"><b>Constructed world · [P] inside declared rules.</b> Its numerical results follow tested code and chosen assumptions. A surprising moment here is an experience of the model, not evidence that nature has the same geometry.</p>
-        <p class="inside-intro-action"><a class="btn" id="intro-start" href="#experience">Enter the world <span aria-hidden="true">↓</span></a></p>
-      </div>
-      <div class="inside-intro-aside" aria-label="The four questions in this experience">
-        <span>01 <b>What can you see?</b></span>
-        <span>02 <b>What did you forget?</b></span>
-        <span>03 <b>Can you reach the edge?</b></span>
-        <span>04 <b>Does a loop bring you back unchanged?</b></span>
-      </div>
+  <section class="inside-opening"><div class="wrap inside-opening-grid">
+    <div><div class="gate-tag">Inside · an original visual essay</div>
+      <h1>You are made by the world<br>you are trying to see.</h1>
     </div>
+    <p>There is no seat outside the world. We measure from a place and a history; what we keep shapes what we can predict; what we do becomes part of what comes next. Watch the argument unfold, then test one part of it in a constructed valley.</p>
   </div></section>
 
-  <section class="inside-section" id="experience" aria-label="Inside the constructed world"><div class="wrap">
-    <div class="inside-shell">
-      <div class="inside-shell-head">
-        <div><span class="inside-kicker">Inside / active scene</span><h2 id="chapter-label" tabindex="-1">Ready to enter</h2></div>
-        <div class="inside-shell-top-actions"><button type="button" id="pause-button" class="inside-minor">Pause</button><button type="button" id="reset-button" class="inside-minor">Start over</button></div>
+  <section id="film" class="inside-film-section" aria-label="Visual essay"><div class="wrap">
+    <div class="inside-film-heading"><div><span class="inside-eyebrow">The observer and the world · 2 minutes 35 seconds</span><h2>A story told in moving diagrams.</h2></div><p>Original computer graphics with the argument in captions. Pause, scrub, or step through the scenes at your own pace.</p></div>
+    <div class="inside-film-shell">
+      <div class="inside-film-stage">
+        <canvas id="film-canvas" width="1600" height="900" role="img" aria-label="Animated visual essay about a situated observer, inherited records and bounded change"></canvas>
+        <div class="inside-film-top"><span id="film-scene-label">01 / 08 · INSIDE</span><span>MODEL / WORLD / OBSERVER</span></div>
+        <div class="inside-film-caption" aria-live="polite"><h3 id="film-caption">You are inside the thing you are measuring.</h3><p id="film-claim">A visual metaphor for finite access.</p></div>
+        <button id="film-start" type="button" class="inside-film-start"><span aria-hidden="true">▶</span><strong>Play the visual essay</strong><small>2:35 · captions on</small></button>
+      </div>
+      <div class="inside-film-controls">
+        <button id="film-play" type="button" aria-label="Play visual essay">Play</button>
+        <input id="film-scrub" type="range" min="0" max="155" step="0.1" value="0" aria-label="Position in visual essay">
+        <span id="film-time">00:00 / 02:35</span>
+        <button id="film-next" type="button">Next scene →</button>
+      </div>
+    </div>
+    <details class="inside-film-transcript"><summary>Read the scene captions and claim notes</summary><ol id="film-transcript-list"></ol></details>
+  </div></section>
+
+  <section id="experience" class="inside-experience" aria-label="Playable valley experience"><div class="wrap">
+    <div class="inside-valley-bridge"><div><span class="inside-eyebrow">Optional · try one part of the argument</span><h2>The river has one gate.<br>It has two histories.</h2></div><p>Two communities share one river. A gate closes. What that means depends on where you stand and what your people remember. Find what you can, choose what to do, then see what the next generation inherits.</p></div>
+    <div id="entry" class="inside-entry">
+      <div><span class="inside-eyebrow">Choose where your story begins</span>
+        <h2>No one enters without a history.</h2>
+        <p>You are your community’s delegate to the shared gate. You can visit the other bank, but the account you inherited travels with you. Investigating costs a day. The river keeps moving while you learn.</p>
+      </div>
+      <div class="inside-entry-options">
+        <button type="button" data-home="estuary"><strong>Born at Estuary</strong><span>Downriver · you know the cost of a dry channel.</span></button>
+        <button type="button" data-home="ridge"><strong>Born at Ridge</strong><span>Upriver · you know the cost of a rising flood.</span></button>
+      </div>
+    </div>
+
+    <div id="simulation" class="inside-simulation" hidden>
+      <div class="inside-era-bar">
+        <div><span class="inside-eyebrow">Your lifetime</span><strong id="era-label">Generation 1 of 3</strong></div>
+        <div class="inside-era-steps" aria-label="Generations"><span data-era-step="0"></span><span data-era-step="1"></span><span data-era-step="2"></span></div>
+        <div class="inside-era-day"><span class="inside-eyebrow">Time before response</span><strong id="day-label">Day 0</strong></div>
       </div>
 
-      <div class="inside-play-grid">
-        <div class="inside-play-main">
-          <div class="inside-viewport">
-            <canvas id="inside-canvas" width="1200" height="720" tabindex="0" aria-label="View of the constructed world. Use the controls below to move, look, zoom, scan and act." aria-describedby="inside-keyboard">Your browser needs canvas support for the animated view. The controls, readouts and event record below remain available.</canvas>
-            <div class="inside-viewport-label" aria-hidden="true">YOUR VIEW · NOT THE WHOLE WORLD</div>
-            <button type="button" id="start-overlay" class="inside-start-overlay">Enter the world <span aria-hidden="true">→</span></button>
+      <div class="inside-workspace">
+        <div class="inside-world-column">
+          <div class="inside-vista">
+            <canvas id="valley-canvas" width="1200" height="720" role="img" aria-label="Situated view of the river valley"></canvas>
+            <div class="inside-vista-caption"><span id="place-label">ESTUARY · DOWNRIVER</span><span>WHAT REACHES YOU FROM HERE</span></div>
           </div>
-          <p id="scene-prompt" class="inside-scene-prompt" role="status" aria-live="polite">Your instruments are waiting. Enter to see what they can reach.</p>
-        </div>
-
-        <aside class="inside-instruments" aria-label="Observer instruments">
-          <div class="inside-instruments-title">Your instrument panel <span>Finite channels</span></div>
-          <div class="inside-reading inside-reading-wide"><span>Seen now</span><output id="read-seen">No observation yet</output></div>
-          <div class="inside-reading inside-reading-wide"><span>Kept in memory</span><output id="read-kept">Nothing retained</output></div>
-          <div class="inside-reading inside-reading-wide"><span>Hidden from you</span><output id="read-hidden">The world beyond your view</output></div>
-          <div class="inside-reading inside-reading-wide inside-reading-bet"><span>Your prediction</span><output id="read-bet">No prediction yet</output></div>
-          <div class="inside-reading"><span>Scan budget</span><output id="read-budget">—</output></div>
-          <div class="inside-reading"><span>Distance travelled</span><output id="read-distance">0</output></div>
-          <div class="inside-reading"><span>Turn</span><output id="read-turn">0°</output></div>
-        </aside>
-
-      <div class="inside-command-deck" aria-label="Experience controls">
-        <div class="inside-primary-actions">
-          <button type="button" id="start-button" class="inside-primary">Enter the world <span aria-hidden="true">↗</span></button>
-          <button type="button" id="scan-button" class="inside-action inside-scan">Scan surroundings</button>
-          <button type="button" id="act-button" class="inside-action">Intervene</button>
-          <button type="button" id="advance-button" class="inside-action">Continue</button>
-          <button type="button" id="loop-button" class="inside-action">Walk the loop</button>
-        </div>
-
-        <div class="inside-control-grid">
-          <div class="inside-control-group inside-motion-control">
-            <h3>Move</h3>
-            <div class="inside-move-pad">
-              <button type="button" data-move="forward" aria-label="Move forward">↑</button>
-              <button type="button" data-move="left" aria-label="Move left">←</button>
-              <button type="button" data-move="back" aria-label="Move backward">↓</button>
-              <button type="button" data-move="right" aria-label="Move right">→</button>
+          <div class="inside-signal">
+            <span class="inside-eyebrow">Right now</span>
+            <p id="scene-line" role="status" aria-live="polite">The gate is closed.</p>
+          </div>
+          <div class="inside-actions">
+            <div class="inside-actions-head"><div><span class="inside-eyebrow">Learn more</span><h3>Every journey takes time.</h3></div><span id="days-remaining">3 days to respond</span></div>
+            <div class="inside-inquiry">
+              <button id="travel-btn" type="button"><strong>Cross the valley</strong><span>Visit the other bank · 1 day</span></button>
+              <button id="inspect-btn" type="button"><strong>Inspect what is here</strong><span>Measure a local sign · 1 day</span></button>
+              <button id="listen-btn" type="button"><strong>Listen to someone here</strong><span>Hear an account · 1 day</span></button>
+            </div>
+            <div id="decision" class="inside-decision">
+              <span class="inside-eyebrow">What will you do about the gate?</span>
+              <p>Choose from the evidence you have. You can act now or take time to learn.</p>
+              <div class="inside-choice-grid">
+                <button type="button" data-choice="open"><strong>Open it</strong><span>Restore flow now. Risk what lies behind it.</span></button>
+                <button type="button" data-choice="hold"><strong>Keep it shut</strong><span>Protect the barrier. Leave the lower fields waiting.</span></button>
+                <button type="button" data-choice="coordinate"><strong>Seek a joint response</strong><span>Share a warning and supplies if the other bank can trust it.</span></button>
+              </div>
+            </div>
+            <div id="outcome" class="inside-outcome" hidden>
+              <span class="inside-eyebrow">After your action</span>
+              <h3 id="outcome-title"></h3>
+              <p id="outcome-copy"></p>
+              <div class="inside-outcome-actions">
+                <button id="compare-btn" type="button" class="inside-primary">Pull back and compare both accounts</button>
+                <button id="next-btn" type="button">Enter the next generation</button>
+                <button id="replay-btn" type="button">Try this generation again</button>
+              </div>
             </div>
           </div>
-          <div class="inside-control-group inside-motion-control">
-            <h3>Look</h3>
-            <div class="inside-small-controls"><button type="button" data-look="left">↶ Left</button><button type="button" data-look="right">Right ↷</button></div>
-          </div>
-          <div class="inside-control-group inside-motion-control">
-            <h3>Sensor zoom</h3>
-            <div class="inside-small-controls"><button type="button" data-zoom="out" aria-label="Zoom sensor out">− Out</button><button type="button" data-zoom="in" aria-label="Zoom sensor in">+ In</button></div>
-          </div>
-          <fieldset class="inside-control-group inside-prediction">
-            <legend>What do you predict?</legend>
-            <div class="inside-small-controls"><button type="button" data-predict="steady" aria-pressed="false">Stays steady</button><button type="button" data-predict="collapse" aria-pressed="false">Collapses</button></div>
-          </fieldset>
         </div>
 
-        <div class="inside-options">
-          <label><input type="checkbox" id="slow-mode"> Step-by-step motion</label>
-          <label><input type="checkbox" id="flat-compare"> Compare flat geometry</label>
-        </div>
+        <aside class="inside-observer-panel" aria-label="What this observer can know">
+          <div class="inside-panel-top"><span class="inside-eyebrow">The observer you are</span><h2 id="identity-label">Estuary</h2><p id="identity-copy"></p></div>
+          <div class="inside-knowledge"><span class="inside-eyebrow">What you see</span><p id="seen-copy"></p></div>
+          <div class="inside-knowledge"><span class="inside-eyebrow">What you inherited</span><p id="memory-copy"></p></div>
+          <div class="inside-knowledge"><span class="inside-eyebrow">What you infer</span><p id="inference-copy"></p><small>An inference can be sincere and still be incomplete.</small></div>
+          <div class="inside-knowledge"><span class="inside-eyebrow">What you have since learned</span><ul id="learned-list"><li>Nothing beyond your starting view yet.</li></ul></div>
+          <div class="inside-record"><span class="inside-eyebrow">Your record</span><ol id="record-list"><li>Your story begins here.</li></ol></div>
+        </aside>
       </div>
-      </div>
-    </div>
 
-    <div class="inside-after">
-      <div class="inside-instructions" id="inside-keyboard">
-        <div class="gate-tag">How to move</div>
-        <p><b>With the world focused:</b> W/A/S/D or arrow keys move · Q/E look · wheel or +/− changes sensor zoom · Space scans · Enter acts. Click or focus the world to use these keys; every action also has a visible button.</p>
-        <p><b>Step-by-step motion</b> keeps each action discrete. You can pause, restart and use the buttons without pointer lock.</p>
-      </div>
-      <div class="inside-record">
-        <div class="gate-tag">What happened</div>
-        <div id="event-log" class="inside-event-log" role="log" aria-live="polite" aria-relevant="additions text"><p>Your record begins when you enter.</p></div>
+      <div class="inside-lineage">
+        <div><span class="inside-eyebrow">What time carries forward</span><h2>Three generations, one changing inheritance.</h2></div>
+        <div id="lineage-list" class="inside-lineage-list"></div>
       </div>
     </div>
   </div></section>
 
-  <section class="inside-context gate"><div class="wrap"><div class="prose">
-    <div class="gate-tag">What this demonstrates</div>
-    <h2>The model can surprise you. Its assumptions still matter.</h2>
-    <p><span class="tag tag-P">P</span> In the declared trial, one surface reading is insufficient for this pulse because two histories yield different futures. Keeping reserve repairs this prediction. The trial does not establish a sufficient state for any natural system.</p>
-    <p><span class="tag tag-P">P</span> On the controlled straight route in the chosen disk, <em>r = tanh(ρ/2)</em>: finite intrinsic distance maps below chart radius 1. In the selected curvature −1 geometry, a carried compass turns around a closed geodesic loop by the signed holonomy, with magnitude equal to enclosed area. The sensor aperture and zoom tradeoff are authored rules. Boundedness alone does not select this geometry.</p>
-    <p>The relevant conditional mathematics, assumptions and code are in <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/1-access.md">Access</a>, <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/2-state.md">State</a>, <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/4-chart.md">Chart and boundary</a>, <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/5-geometry.md">Geometry</a> and <a href="https://github.com/thantiklermcirony/bounded-observer/tree/main/toolkit/bounded">the toolkit</a>. Natural systems need separately measured channels, admitted actions and independent tests. The <a href="evidence.html">evidence atlas</a> records those claims and their status.</p>
-    <p><a class="btn ghost" href="./#gate1">Explore the twelve focused models</a></p>
-  </div></div></section>
+  <section id="debrief" class="inside-debrief" hidden><div class="wrap">
+    <div class="inside-debrief-head"><span class="gate-tag">After the action · model's reconstruction</span>
+      <h2>Pull back. No one had this whole view.</h2>
+      <p>This account combines both communities' records with the hidden physical rule of this constructed valley. It is an analysis after the event, not a viewpoint available while deciding.</p>
+    </div>
+    <div class="inside-debrief-grid">
+      <article><span class="inside-eyebrow">What happened at the gate</span><h3 id="cause-title"></h3><p id="cause-copy"></p></article>
+      <article><span class="inside-eyebrow">Estuary passed on</span><h3>Downriver memory</h3><p id="estuary-record"></p></article>
+      <article><span class="inside-eyebrow">Ridge passed on</span><h3>Upriver memory</h3><p id="ridge-record"></p></article>
+    </div>
+    <div class="inside-alternatives"><span class="inside-eyebrow">The same visible closure · other actions</span><div id="alternative-list"></div></div>
+    <p id="debrief-lesson" class="inside-debrief-lesson"></p>
+    <button type="button" id="debrief-next" class="inside-primary">Continue into the next generation</button>
+  </div></section>
+
+  <section class="inside-method"><div class="wrap inside-method-grid">
+    <div><span class="gate-tag">What the experience can claim</span><h2>A model of access, memory and action.</h2></div>
+    <div>
+      <p><span class="tag tag-P">P</span> Within declared rules, a closed gate can be the same local observation in worlds where opening it has different effects. That reading alone is not sufficient for this intervention. This illustrates the conditional state test in <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/2-state.md">Gate 2</a>.</p>
+      <p><span class="tag tag-P">P</span> Within the tested valley rules, inherited records alter what an observer infers and whether a joint response is available. Those social rules are authored, not inferred from the theorem or measured in real communities. Applying this model elsewhere would require specified channels, interventions and independent outcomes.</p>
+      <p>This does not give access to another person's subjective experience or guarantee agreement. The broader framework begins with the observer's finite access in <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/1-access.md">Gate 1</a>; the <a href="https://github.com/thantiklermcirony/boundedness-atlas/blob/main/HONESTY.md">honesty ledger</a> records what remains outside it.</p>
+    </div>
+  </div></section>
 </main>
 <footer class="foot"><div class="wrap">The Bounded Observer · <a href="./">The six-gate walk</a> · <a href="library.html">Research library</a> · <a href="https://orcid.org/0009-0005-1794-5945">Daniel John Murray</a></div></footer>
-<script type="module" src="inside.js?v=entry3"></script>
+<script type="module" src="inside.js?v=valley2"></script>
+<script type="module" src="inside-film-player.js?v=film2"></script>
 </body>
 </html>

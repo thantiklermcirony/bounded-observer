@@ -1,0 +1,144 @@
+import { FILM_SCENES, drawFilmFrame } from './inside-film.mjs?v=film2';
+
+const $ = (id) => document.getElementById(id);
+const canvas = $('film-canvas');
+const scrub = $('film-scrub');
+const start = $('film-start');
+const play = $('film-play');
+const next = $('film-next');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+const duration = FILM_SCENES.at(-1).end;
+let seconds = 0;
+let playing = false;
+let started = false;
+let lastFrame = 0;
+let sceneIndex = -1;
+let pointerX = 0;
+let pointerY = 0;
+
+function clock(value) {
+  const whole = Math.floor(value);
+  return String(Math.floor(whole / 60)).padStart(2, '0') + ':' +
+    String(whole % 60).padStart(2, '0');
+}
+
+function sceneAt(value) {
+  return Math.max(0, FILM_SCENES.findIndex((scene, index) =>
+    value >= scene.start && (value < scene.end || index === FILM_SCENES.length - 1)));
+}
+
+function draw() {
+  drawFilmFrame(canvas, seconds, { reducedMotion: reduced.matches, pointerX, pointerY });
+}
+
+function update() {
+  const index = sceneAt(seconds);
+  if (index !== sceneIndex) {
+    sceneIndex = index;
+    const scene = FILM_SCENES[index];
+    $('film-scene-label').textContent = String(index + 1).padStart(2, '0') +
+      ' / ' + String(FILM_SCENES.length).padStart(2, '0') + ' · ' + scene.title.toUpperCase();
+    $('film-caption').textContent = scene.caption;
+    $('film-claim').textContent = scene.claim;
+  }
+  scrub.value = String(seconds);
+  $('film-time').textContent = clock(seconds) + ' / ' + clock(duration);
+  play.textContent = playing ? 'Pause' : seconds >= duration ? 'Replay' : 'Play';
+  play.setAttribute('aria-label', playing ? 'Pause visual essay' :
+    seconds >= duration ? 'Replay visual essay' : 'Play visual essay');
+  start.hidden = started;
+  draw();
+}
+
+function pause() {
+  playing = false;
+  lastFrame = 0;
+  update();
+}
+
+function begin() {
+  if (seconds >= duration) seconds = 0;
+  started = true;
+  playing = true;
+  lastFrame = 0;
+  update();
+}
+
+function frame(now) {
+  if (playing) {
+    if (lastFrame) seconds = Math.min(duration, seconds + Math.min(.15, (now - lastFrame) / 1000));
+    lastFrame = now;
+    if (seconds >= duration) {
+      playing = false;
+      lastFrame = 0;
+    }
+    update();
+  }
+  requestAnimationFrame(frame);
+}
+
+function seek(value) {
+  seconds = Math.min(duration, Math.max(0, value));
+  started = true;
+  lastFrame = 0;
+  update();
+}
+
+function press(button, run) {
+  let pointerTime = -Infinity;
+  button.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0 || button.disabled) return;
+    pointerTime = event.timeStamp;
+    run();
+  });
+  button.addEventListener('click', (event) => {
+    if (event.detail > 0 && event.timeStamp - pointerTime < 1000) {
+      event.preventDefault();
+      return;
+    }
+    if (!button.disabled) run();
+  });
+}
+
+press(start, begin);
+press(play, () => playing ? pause() : begin());
+press(next, () => {
+  const upcoming = FILM_SCENES.find((scene) => scene.start > seconds + .25);
+  seek(upcoming ? upcoming.start : 0);
+});
+scrub.max = String(duration);
+scrub.addEventListener('input', () => seek(Number(scrub.value)));
+document.addEventListener('visibilitychange', () => { if (document.hidden && playing) pause(); });
+canvas.addEventListener('pointermove', (event) => {
+  const rect = canvas.getBoundingClientRect();
+  pointerX = Math.max(-1, Math.min(1, 2 * ((event.clientX - rect.left) / rect.width) - 1));
+  pointerY = Math.max(-1, Math.min(1, 2 * ((event.clientY - rect.top) / rect.height) - 1));
+  if (!playing) draw();
+});
+canvas.addEventListener('pointerleave', () => { pointerX = 0; pointerY = 0; if (!playing) draw(); });
+new ResizeObserver(() => draw()).observe(canvas);
+reduced.addEventListener('change', () => draw());
+
+const transcript = $('film-transcript-list');
+const gateDocs = ['1-access.md', '1-access.md', '1-access.md', '2-state.md',
+  '3-action.md', '4-chart.md', '5-geometry.md', '6-prediction.md'];
+FILM_SCENES.forEach((scene, index) => {
+  const item = document.createElement('li');
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = clock(scene.start) + ' · ' + scene.title;
+  button.className = 'inside-film-jump';
+  press(button, () => seek(scene.start));
+  const caption = document.createElement('span');
+  caption.textContent = scene.caption;
+  const note = document.createElement('small');
+  note.textContent = scene.claim;
+  const source = document.createElement('a');
+  source.href = 'https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/' + gateDocs[index];
+  source.textContent = 'Read the relevant gate';
+  item.append(button, caption, note, source);
+  transcript.append(item);
+});
+
+update();
+requestAnimationFrame(frame);
