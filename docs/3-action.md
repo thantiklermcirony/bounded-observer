@@ -16,8 +16,9 @@ written as an element of the law. If it is not, the endpoint label does not iden
 intervention's action from every state. The action representation must be repaired before a
 chart is fitted; this result alone does not identify hidden state.
 
-This is Theorem 12 read as a protocol: composing with a fixed element is a translation by that
-element's rapidity, whatever the starting point. Status: **[P]**.
+The action gate makes composition by endpoint labels well defined (Appendix A.3). If that
+composition also passes the regular-closure conditions at gate 4, Theorem 12 makes each
+fixed-element action a translation in rapidity. Status: **[P]**, conditional on those gates.
 
 ## The bracket test: does order matter?
 
