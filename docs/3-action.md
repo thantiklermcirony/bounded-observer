@@ -12,8 +12,9 @@ An intervention passes if **its endpoint from rest fixes its action from every s
 That is a strong requirement and a testable one. Take an intervention, apply it from the
 neutral state, and record where it lands. Now apply it from somewhere else. If knowing the
 first result is enough to predict the second, the intervention composes lawfully and can be
-written as an element of the law. If it is not, the intervention is carrying hidden state, and
-no chart fitted to it means anything.
+written as an element of the law. If it is not, the endpoint label does not identify the
+intervention's action from every state. The action representation must be repaired before a
+chart is fitted; this result alone does not identify hidden state.
 
 This is Theorem 12 read as a protocol: composing with a fixed element is a translation by that
 element's rapidity, whatever the starting point. Status: **[P]**.
@@ -28,13 +29,19 @@ $$\varepsilon\eta\,(fg' - gf')$$
 If that vanishes everywhere, then $g = cf$ for a constant $c$, and both flows share the same
 rapidity $\psi = \int dx/f$. One chart serves both.
 
-If it does not vanish, order is being stored somewhere, and the system needs more than one
-dimension — which is gate 5's subject.
+If it does not vanish, these two flows do not share one additive rapidity. Even a complete
+one-dimensional state can have noncommuting flows, so this result alone does not require
+another state dimension. Gate 5 treats structures that independently earn a higher-dimensional
+description. For example, on $0<x<1$, $f=x(1-x)$ and $g=x(1-x)(1+x)$ give
+$fg'-gf'=x^2(1-x)^2>0$ while $x$ is still a complete scalar state for these flows.
 
-This is cheap to run and it is diagnostic. A measured order effect is the signature of hidden
-state, feedback or memory (the Theorem 10 corollary). `toolkit/bounded/coupling.py` implements
-both the measurement and the leading-order prediction, and
-`test_bracket_predicts_order_effect` checks that they agree.
+This is cheap to run and diagnostic of a proposed common-chart or order-blind encoding. An
+order effect can arise from the intervention maps themselves, the endpoint encoding, feedback,
+or an incomplete state. To attribute it to missing state, use gate 2's matched-present test:
+different histories at the same proposed state must separate under the same future challenge.
+`toolkit/bounded/coupling.py` implements the bracket measurement and leading-order prediction;
+`test_bracket_predicts_order_effect` checks that they agree. Status: **[P]** for the conditional
+flow calculation and state criterion, not for an empirical diagnosis.
 
 ## Where this bites: drug combinations
 

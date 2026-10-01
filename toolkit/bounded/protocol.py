@@ -4,7 +4,9 @@ from .charts import CHARTS, rapidity, hamacher_compose
 
 def associativity_defect(ab_c, a_bc):
     """Step 2. Grouping test: mean and max |(a+b)+c - a+(b+c)| from paired measurements.
-    Non-zero beyond noise = hidden state (memory/feedback), Theorem 10 corollary."""
+    A reproducible defect rejects at least one of the proposed encoding, endpoint model,
+    grouping law, or state sufficiency. A matched-present test is needed before attributing
+    the defect to missing state (Theorem 10; protocol step 0)."""
     d = np.asarray(ab_c, float) - np.asarray(a_bc, float)
     return {"mean_defect": float(d.mean()), "max_abs_defect": float(np.abs(d).max()), "n": int(d.size)}
 

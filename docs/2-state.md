@@ -31,6 +31,26 @@ the same input for both.
 There are exactly three ways forward, and no fourth: get more information, narrow the claim, or
 predict the mixture honestly.
 
+## What a persistent residual tells us
+
+A residual alone does not choose between missing state, a wrong transition rule, measurement
+error, and a changing experimental setting. Freeze the proposed state $(x,Z)$, the admitted
+interventions, the future outcome and window, the matching tolerance, and a meaningful
+discrepancy before testing new data. Prepare different histories that match on $(x,Z)$, give
+them the same intervention, and compare their **future distributions**, not only their means.
+Repeated preparations and technical controls measure the noise floor; untouched histories
+and batches test whether a separation travels.
+
+If history still predicts the future beyond those errors, $(x,Z)$ fails the state test for
+that intervention and operating range. Another candidate variable earns support only if it
+predicts and removes the separation on held-out histories and challenges. If matched histories
+have equivalent futures within a predeclared bound but a proposed equation still makes
+reproducibly wrong predictions, test the equation, action encoding, and chart. Both failures
+can occur together. Failure to detect a difference is not evidence of equivalence without a
+precise confidence bound, and a finite challenge panel cannot certify every possible future.
+The criterion is [P] (Theorem 10); which explanation fits a real residual remains an empirical
+question.
+
 ## The closure trichotomy
 
 Suppose a scalar summary $L$ of a history is proposed as a state, and that sequential histories
