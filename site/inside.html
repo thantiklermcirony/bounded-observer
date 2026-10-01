@@ -13,7 +13,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="inside.css?v=valley1">
-<link rel="stylesheet" href="inside-film.css?v=film3">
+<link rel="stylesheet" href="inside-film.css?v=film4">
+<link rel="stylesheet" href="inside-cases.css?v=cases1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body class="inside-page">
@@ -32,27 +33,30 @@
   </div></section>
 
   <section id="film" class="inside-film-section" aria-label="Visual essay"><div class="wrap">
-    <div class="inside-film-heading"><div><span class="inside-eyebrow">A view made by a life · 2 minutes 35 seconds</span><h2>What I saw was true. It was not enough.</h2></div><p>An original cinematic story with moving graphics and captions. Pause or step through whenever you want to look closer.</p></div>
+    <div class="inside-film-heading"><div><span class="inside-eyebrow">A view made by a life · 2 minutes 3 seconds</span><h2>What I saw was true. It was not enough.</h2></div><p>An original cinematic story with narration, soundscape and captions. Pause or step through whenever you want to look closer.</p></div>
     <div class="inside-film-shell">
       <div class="inside-film-stage">
         <canvas id="film-canvas" width="1600" height="900" role="img" aria-label="Animated story of two situated observers, inherited records, and future possibilities after sharing evidence"></canvas>
         <div class="inside-film-top"><span id="film-scene-label">01 / 08 · THE SENTENCE I INHERITED</span><span>ONE RIVER / TWO HISTORIES</span></div>
-        <div class="inside-film-caption" aria-live="polite"><h3 id="film-caption">The gate is shut. I know what that means.</h3><p id="film-claim">Constructed story · Situated observer</p></div>
-        <button id="film-start" type="button" class="inside-film-start"><span aria-hidden="true">▶</span><strong>Enter the story</strong><small>2:35 · captions on</small></button>
+        <div class="inside-film-caption" aria-live="off"><h3 id="film-caption">The gate is shut. I know what that means.</h3><p id="film-claim">Constructed story · Situated observer</p></div>
+        <button id="film-start" type="button" class="inside-film-start"><span aria-hidden="true">▶</span><strong>Enter the story</strong><small>2:03 · narrated · captions on</small></button>
       </div>
       <div class="inside-film-controls">
         <button id="film-play" type="button" aria-label="Play visual essay">Play</button>
-        <input id="film-scrub" type="range" min="0" max="155" step="0.1" value="0" aria-label="Position in visual essay">
-        <span id="film-time">00:00 / 02:35</span>
+        <input id="film-scrub" type="range" min="0" max="123" step="0.1" value="0" aria-label="Position in visual essay">
+        <span id="film-time">00:00 / 02:03</span>
+        <button id="film-sound" type="button" aria-label="Turn sound off" aria-pressed="true">Sound on</button>
         <button id="film-next" type="button">Next scene →</button>
       </div>
+      <audio id="film-audio" preload="metadata" src="inside-audio.mp3"></audio>
     </div>
-    <details class="inside-film-transcript"><summary>Read the story and its claim boundaries</summary><ol id="film-transcript-list"></ol></details>
+    <p class="inside-film-credit"><a href="https://www.aidocmaker.com/">Voiceover Generated with AIDOCMAKER.COM</a> · original script and soundscape by this project</p>
+    <details class="inside-film-transcript"><summary>Read the narration and its claim boundaries</summary><ol id="film-transcript-list"></ol></details>
     <div class="inside-film-coda">
       <span class="inside-eyebrow">The turn in this constructed story</span>
       <h3>The event is over.<br>The account can change.<br>The next action is still open.</h3>
       <p>Both banks kept a real loss. Neither record proved the other bank simply did not care. When the observers compare what each could see, a shared response becomes visible. It still has costs and unknowns.</p>
-      <a href="#experience">Make the gate decision yourself <span aria-hidden="true">↓</span></a>
+      <div class="inside-coda-actions"><a href="#experience">Make the gate decision yourself <span aria-hidden="true">↓</span></a><a href="#real-scenes">See it in ten real scenes <span aria-hidden="true">↓</span></a></div>
     </div>
   </div></section>
 
@@ -155,9 +159,42 @@
       <p>This does not give access to another person's subjective experience or guarantee agreement. The broader framework begins with the observer's finite access in <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/1-access.md">Gate 1</a>; the <a href="https://github.com/thantiklermcirony/boundedness-atlas/blob/main/HONESTY.md">honesty ledger</a> records what remains outside it.</p>
     </div>
   </div></section>
+
+  <section id="real-scenes" class="inside-cases" aria-labelledby="cases-title"><div class="wrap">
+    <header class="cases-heading">
+      <span class="inside-eyebrow">Epilogue · ten events in the record</span>
+      <h2 id="cases-title">The scene was real.<br><em>The story</em> outran it.</h2>
+      <p>Stand inside each account, then pull above it. The last view combines later evidence; it does not grant anyone a perfect view or erase responsibility for what they did.</p>
+    </header>
+    <div class="cases-shell">
+      <div class="cases-stage" aria-hidden="true">
+        <canvas id="cases-canvas" width="1600" height="1000"></canvas>
+        <div class="cases-stage-top"><span id="case-stage-number">01 / 10</span><span id="case-stage-place">ATLANTIC · 1962</span></div>
+        <div id="case-evidence" class="cases-evidence" hidden><span id="case-evidence-a"></span><span id="case-evidence-b"></span></div>
+        <div class="cases-stage-bottom"><span id="case-stage-lens">THE SCENE</span><span id="case-stage-instruction">ONE EVENT / MORE THAN ONE VIEW</span></div>
+      </div>
+      <div class="cases-story" aria-live="polite">
+        <div class="cases-story-head"><span id="case-count" class="inside-eyebrow">01 / 10 · Real case</span><span id="case-phase-count">01 / 04</span></div>
+        <h3 id="case-title" tabindex="-1"></h3>
+        <div id="case-copy" class="cases-copy"></div>
+        <nav class="cases-steps" aria-label="Views of this case">
+          <button type="button" data-case-phase="0">The scene</button>
+          <button type="button" data-case-phase="1">First view</button>
+          <button type="button" data-case-phase="2">Second view</button>
+          <button type="button" data-case-phase="3">Pull back</button>
+        </nav>
+        <div class="cases-controls"><button id="case-back" type="button">← Back</button><button id="case-forward" type="button">Enter the first view →</button></div>
+      </div>
+    </div>
+    <div class="cases-selection-head"><span class="inside-eyebrow">Choose another scene</span><span>10 events · sourced records</span></div>
+    <div id="case-list" class="cases-list" aria-label="Ten real scenes"></div>
+    <div class="cases-finale"><span class="inside-eyebrow">After the pullback</span><h3>No one inside the scene<br>had the whole frame.</h3><p>We can put surviving records together. When they correct an accusation, carry the correction forward. When they show a preventable choice, keep the responsibility visible. The past stays. The next account can change.</p></div>
+    <p class="cases-afterword"><span class="tag tag-D">D</span> These are compact, source-led reconstructions of real events. The moving drawings are abstract illustrations, not historical footage. “What they inferred” describes a documented account, not access to anyone’s private experience. Each case links to the records behind it; the <a href="https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/inside-real-cases.md">source ledger</a> gives the evidence limits in full. The framework’s mathematical results concern access and predictive states; they do not prove claims about historical motives, empathy or reconciliation.</p>
+  </div></section>
 </main>
 <footer class="foot"><div class="wrap">The Bounded Observer · <a href="./">The six-gate walk</a> · <a href="library.html">Research library</a> · <a href="https://orcid.org/0009-0005-1794-5945">Daniel John Murray</a></div></footer>
 <script type="module" src="inside.js?v=valley2"></script>
-<script type="module" src="inside-film-player.js?v=film5"></script>
+<script type="module" src="inside-film-player.js?v=film6"></script>
+<script type="module" src="inside-cases.js?v=cases1"></script>
 </body>
 </html>

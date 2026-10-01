@@ -3,47 +3,55 @@
  * The story is constructed; a visual overlap is not a theorem of empathy,
  * agreement, historical explanation, or subjective consciousness.
  */
-export const FILM_DURATION = 155;
+export const FILM_DURATION = 123;
 
 export const FILM_SCENES = Object.freeze([
   {
-    start: 0, end: 18, title: 'The shut gate',
+    start: 0, end: 14, title: 'The shut gate',
     caption: 'The gate is shut. I know what that means.',
+    narration: 'The gate is shut. From my bank, the river is thinning. I already know the story. I heard it before I knew the people across the water: when they close the gate, we pay.',
     claim: 'Fictional story. Gate 1 treats finite access as a premise; this image does not simulate or explain consciousness.',
   },
   {
-    start: 18, end: 36, title: 'An inherited answer',
+    start: 14, end: 27, title: 'An inherited answer',
     caption: 'I inherited the answer before I saw the gate.',
+    narration: 'I thought I was looking directly at the world. But my view carried old summers, rationed cups, names of people who waited, sentences repeated until they felt like sight. History had arrived with me.',
     claim: 'Fictional, selective transmission of records. No general law of real cultures is asserted.',
   },
   {
-    start: 36, end: 55, title: 'The loss',
+    start: 27, end: 46, title: 'The loss',
     caption: 'Our water fell. We rationed. That loss was real.',
+    narration: 'We measure the falling channel. The loss is real. Children carry buckets farther. A record of harm is not a mistake. The mistake begins when that record pretends to tell us why the other bank acted.',
     claim: 'The water loss is a fact inside this constructed story. Its cause and the other bank’s intent are not yet established.',
   },
   {
-    start: 55, end: 76, title: 'Across the river',
+    start: 46, end: 65, title: 'Across the river',
     caption: 'Across the river, another account survived.',
+    narration: 'Across the river, Ridge remembers a different danger. Their wall broke under an old crest. They rebuilt it. From there, a closed gate looks less like punishment, more like protection. Their record, too, is true and incomplete.',
     claim: 'A second fictional observer adds evidence while remaining situated and fallible. This is not a theorem of empathy or agreement.',
   },
   {
-    start: 76, end: 96, title: 'The crest',
+    start: 65, end: 82, title: 'The crest',
     caption: 'They had watched a dangerous crest. I had not.',
+    narration: 'Today the gauge is rising again. Neither inherited sentence can tell us whether opening the gate will help or flood another home. We need the reading both banks can check.',
     claim: 'The crest is an observation in the constructed world. That observation need not erase the loss on the other bank.',
   },
   {
-    start: 96, end: 115, title: 'True, and incomplete',
+    start: 82, end: 94, title: 'True, and incomplete',
     caption: 'What I saw was true. It was not enough.',
-    claim: '[P] Gate 2, Theorem 10: a proposed state is predictive only if histories it identifies have the same conditional futures under every admissible intervention. This incident illustrates the criterion; it does not test a real society.',
+    narration: 'What I saw was true. It was not enough. I knew our loss. I was guessing at their reason. The guess had become a person in my mind, and I had begun to blame it.',
+    claim: 'Fictional insight under Gate 1: access to a real loss can still leave another actor’s reason unknown. The story does not demonstrate Gate 2’s predictive-state criterion.',
   },
   {
-    start: 115, end: 137, title: 'Different futures',
+    start: 94, end: 108, title: 'Different futures',
     caption: 'We each carried a different future for the other.',
+    narration: 'Pull back. Each of us projects a future from a different past. One fact enters both views. It does not make the past fair or the risks equal. It changes which next actions we can see.',
     claim: 'The projected futures are fictional inferences, not observed facts. No theorem promises that another viewpoint produces agreement.',
   },
   {
-    start: 137, end: 155, title: 'What we pass on',
+    start: 108, end: 123, title: 'What we pass on',
     caption: 'We cannot change that day. We can change what the next generation inherits.',
+    narration: 'They do not have to agree about everything. They can warn each other, share what the gauge shows, and choose a costly response together. That day is gone. What reaches the next generation is still being made.',
     claim: 'The common action and inherited record are possibilities in this constructed story. Shared evidence leaves unresolved uncertainty; it does not solve consciousness or guarantee moral unity.',
   },
 ].map((scene) => Object.freeze(scene)));
