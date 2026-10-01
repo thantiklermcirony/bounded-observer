@@ -1,4 +1,4 @@
-import { FILM_SCENES, drawFilmFrame } from './inside-film.mjs?v=film2';
+import { FILM_SCENES, drawFilmFrame } from './inside-film.mjs?v=film5';
 
 const $ = (id) => document.getElementById(id);
 const canvas = $('film-canvas');
@@ -8,6 +8,16 @@ const play = $('film-play');
 const next = $('film-next');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const duration = FILM_SCENES.at(-1).end;
+const screenNotes = [
+  'Constructed story · Situated observer',
+  'Constructed story · Inherited record',
+  'Constructed story · Downriver account',
+  'Constructed story · Upriver account',
+  'Constructed story · Observed crest',
+  '[P] Gate 2 · One reading can be insufficient',
+  'Constructed projections · Outcomes not yet known',
+  'Constructed ending · Agreement is a choice',
+];
 let seconds = 0;
 let playing = false;
 let started = false;
@@ -39,7 +49,7 @@ function update() {
     $('film-scene-label').textContent = String(index + 1).padStart(2, '0') +
       ' / ' + String(FILM_SCENES.length).padStart(2, '0') + ' · ' + scene.title.toUpperCase();
     $('film-caption').textContent = scene.caption;
-    $('film-claim').textContent = scene.claim;
+    $('film-claim').textContent = screenNotes[index];
   }
   scrub.value = String(seconds);
   $('film-time').textContent = clock(seconds) + ' / ' + clock(duration);
@@ -120,8 +130,8 @@ new ResizeObserver(() => draw()).observe(canvas);
 reduced.addEventListener('change', () => draw());
 
 const transcript = $('film-transcript-list');
-const gateDocs = ['1-access.md', '1-access.md', '1-access.md', '2-state.md',
-  '3-action.md', '4-chart.md', '5-geometry.md', '6-prediction.md'];
+const gateDocs = ['1-access.md', '1-access.md', '1-access.md', '1-access.md',
+  '1-access.md', '2-state.md', '3-action.md', '6-prediction.md'];
 FILM_SCENES.forEach((scene, index) => {
   const item = document.createElement('li');
   const button = document.createElement('button');
@@ -135,7 +145,7 @@ FILM_SCENES.forEach((scene, index) => {
   note.textContent = scene.claim;
   const source = document.createElement('a');
   source.href = 'https://github.com/thantiklermcirony/bounded-observer/blob/main/docs/' + gateDocs[index];
-  source.textContent = 'Read the relevant gate';
+  source.textContent = 'Framework context';
   item.append(button, caption, note, source);
   transcript.append(item);
 });

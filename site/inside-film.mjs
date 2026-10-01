@@ -1,80 +1,98 @@
-/* Inside: an original, constructed visual argument.
- * The canvas supplies imagery. The page controller should expose FILM_SCENES'
- * captions and boundaries as real text, including for screen readers.
- * Nothing in the fictional social scenes is evidence about actual cultures or
- * about subjective consciousness. The mathematical scenes name their gates.
+/* Inside film — one fictional valley, two bounded viewpoints.
+ * Images are original site assets. The player owns the accessible captions.
+ * The story is constructed; a visual overlap is not a theorem of empathy,
+ * agreement, historical explanation, or subjective consciousness.
  */
-import { disk } from './bo.js';
-
 export const FILM_DURATION = 155;
 
 export const FILM_SCENES = Object.freeze([
   {
-    start: 0, end: 18, title: 'Inside the world',
-    caption: 'I measure from here, and my actions enter what I measure.',
-    status: 'Premise · Gate 1',
-    boundary: 'A situated observer is the programme’s starting premise. The reflection is a visual metaphor, not a simulation or explanation of consciousness.',
+    start: 0, end: 18, title: 'The shut gate',
+    caption: 'The gate is shut. I know what that means.',
+    claim: 'Fictional story. Gate 1 treats finite access as a premise; this image does not simulate or explain consciousness.',
   },
   {
-    start: 18, end: 35, title: 'What survives',
-    caption: 'A history leaves more than one trace; only some are kept.',
-    status: 'Constructed illustration',
-    boundary: 'These changing filters and inherited records belong to a fictional world. They do not establish a law of real cultures.',
+    start: 18, end: 36, title: 'An inherited answer',
+    caption: 'I inherited the answer before I saw the gate.',
+    claim: 'Fictional, selective transmission of records. No general law of real cultures is asserted.',
   },
   {
-    start: 35, end: 55, title: 'One event, two views',
-    caption: 'The same event can reach us as different evidence.',
-    status: 'Constructed illustration · Gate 1',
-    boundary: 'The two viewpoints illustrate finite access. Neither is a claim about any real community, nor does combining them reveal every fact.',
+    start: 36, end: 55, title: 'The loss',
+    caption: 'Our water fell. We rationed. That loss was real.',
+    claim: 'The water loss is a fact inside this constructed story. Its cause and the other bank’s intent are not yet established.',
   },
   {
-    start: 55, end: 76, title: 'One reading, two futures',
-    caption: 'If one reading hides futures that diverge under the same action, it was not enough.',
-    status: '[P] Predictive-state criterion · Gate 2',
-    boundary: 'Theorem 10 gives the conditional criterion under admissible interventions. The two numerical histories shown here are constructed.',
+    start: 55, end: 76, title: 'Across the river',
+    caption: 'Across the river, another account survived.',
+    claim: 'A second fictional observer adds evidence while remaining situated and fallible. This is not a theorem of empathy or agreement.',
   },
   {
-    start: 76, end: 96, title: 'Which actions count?',
-    caption: 'If an action changes with hidden context, one simple rule is not enough.',
-    status: '[P] Conditional action gate · Gate 3',
-    boundary: 'Theorem 12 applies when an intervention’s endpoint from rest determines its action from every state. The animation does not certify any real intervention.',
+    start: 76, end: 96, title: 'The crest',
+    caption: 'They had watched a dangerous crest. I had not.',
+    claim: 'The crest is an observation in the constructed world. That observation need not erase the loss on the other bank.',
   },
   {
-    start: 96, end: 122, title: 'Two ways to read a step',
-    caption: 'One path can be straight in its own measure, yet crowd a limit on a bounded scale.',
-    status: '[P] Aczél representation · Gate 4',
-    boundary: 'C1 continuous composition, C2 associativity, C3 strict monotonicity and C4 a neutral state are required. x = tanh ψ is one selected two-horizon chart, not the law of every saturating system.',
+    start: 96, end: 115, title: 'True, and incomplete',
+    caption: 'What I saw was true. It was not enough.',
+    claim: '[P] Gate 2, Theorem 10: a proposed state is predictive only if histories it identifies have the same conditional futures under every admissible intervention. This incident illustrates the criterion; it does not test a real society.',
   },
   {
-    start: 122, end: 137, title: 'A route can leave a turn',
-    caption: 'In this selected geometry, a closed route turns a carried direction.',
-    status: '[P] Selected hyperbolic branch · Gate 5',
-    boundary: 'The loop is in the curvature −1 Poincaré disk. Holonomy is conditional on this geometry and admissible comparison; boundedness alone does not select spatial curvature.',
+    start: 115, end: 137, title: 'Different futures',
+    caption: 'We each carried a different future for the other.',
+    claim: 'The projected futures are fictional inferences, not observed facts. No theorem promises that another viewpoint produces agreement.',
   },
   {
-    start: 137, end: 155, title: 'Compare with the world',
-    caption: 'We can compare partial records against a shared world; tests can support or rule out specific uses.',
-    status: 'Evidence and testing · Gate 6',
-    boundary: 'A replicated effect-scale comparison does not prove the universal law. H1’s drug-dial prediction was refuted; H7 remains open. The records retain disagreement and unknowns.',
+    start: 137, end: 155, title: 'What we pass on',
+    caption: 'We cannot change that day. We can change what the next generation inherits.',
+    claim: 'The common action and inherited record are possibilities in this constructed story. Shared evidence leaves unresolved uncertainty; it does not solve consciousness or guarantee moral unity.',
   },
-].map((scene) => Object.freeze({ ...scene, claim: `${scene.status} — ${scene.boundary}` })));
+].map((scene) => Object.freeze(scene)));
 
-const P = {
-  void: '#06121b', deep: '#0b2430', blue: '#153749',
-  ice: '#c9e8e7', muted: '#829eaa', cyan: '#70e3e8',
-  gold: '#ffd098', coral: '#f58b78', violet: '#afa2ff',
-  green: '#9ed7ac', white: '#f2f2e9',
+const ASSET_FILES = {
+  observer: 'inside-observer.webp',
+  ridge: 'inside-ridge.webp',
+  gate: 'inside-gate.webp',
+  inheritance: 'inside-inheritance.webp',
+};
+const assets = Object.fromEntries(Object.keys(ASSET_FILES).map((key) => [key, { image: null, ready: false }]));
+let lastDraw = null;
+
+export const FILM_ASSETS_READY = typeof Image === 'undefined'
+  ? Promise.resolve(false)
+  : Promise.all(Object.entries(ASSET_FILES).map(([key, file]) => new Promise((resolve) => {
+      const image = new Image();
+      image.decoding = 'async';
+      image.onload = () => {
+        assets[key].image = image;
+        assets[key].ready = true;
+        resolve(true);
+      };
+      image.onerror = () => resolve(false);
+      image.src = new URL(file, import.meta.url).href;
+    }))).then((results) => {
+      if (lastDraw) drawFilmFrame(lastDraw.canvas, lastDraw.seconds, lastDraw.options);
+      return results.every(Boolean);
+    });
+
+const C = {
+  dark: '#07131b', navy: '#10232b', slate: '#234453',
+  ink: '#ecf1ea', dim: '#9cb2b5', gold: '#ffd39a',
+  ember: '#f5aa72', teal: '#8de4dc', blue: '#70bccc',
+  green: '#c2e0ae', shadow: '#081821',
 };
 const TAU = Math.PI * 2;
-const clamp = (v, lo = 0, hi = 1) => Math.min(hi, Math.max(lo, v));
-const ease = (v) => { const x = clamp(v); return x * x * (3 - 2 * x); };
-const mix = (a, b, t) => a + (b - a) * t;
-const nrand = (n) => {
+const clamp = (x, lo = 0, hi = 1) => Math.max(lo, Math.min(hi, x));
+const smooth = (x) => { const v = clamp(x); return v * v * (3 - 2 * v); };
+const lerp = (a, b, t) => a + (b - a) * t;
+const hash = (n) => {
   const v = Math.sin(n * 127.1 + 78.233) * 43758.5453123;
   return v - Math.floor(v);
 };
 
-function path(g, points, color, width = 1, alpha = 1, dash = null) {
+function rect(g, x, y, w, h, fill, alpha = 1) {
+  g.save(); g.globalAlpha *= alpha; g.fillStyle = fill; g.fillRect(x, y, w, h); g.restore();
+}
+function line(g, points, color, width = 1, alpha = 1, dash = []) {
   if (points.length < 2) return;
   g.save();
   g.globalAlpha *= alpha;
@@ -82,520 +100,435 @@ function path(g, points, color, width = 1, alpha = 1, dash = null) {
   g.lineWidth = width;
   g.lineCap = 'round';
   g.lineJoin = 'round';
-  if (dash) g.setLineDash(dash);
+  g.setLineDash(dash);
   g.beginPath();
   g.moveTo(points[0][0], points[0][1]);
   for (let i = 1; i < points.length; i++) g.lineTo(points[i][0], points[i][1]);
   g.stroke();
   g.restore();
 }
-
-function circle(g, x, y, r, color, { fill = true, width = 1, alpha = 1, glow = 0 } = {}) {
+function dot(g, x, y, r, color, alpha = 1, blur = 0) {
   if (r <= 0) return;
   g.save();
   g.globalAlpha *= alpha;
-  if (glow) { g.shadowColor = color; g.shadowBlur = glow; }
-  g.beginPath();
-  g.arc(x, y, r, 0, TAU);
-  if (fill) { g.fillStyle = color; g.fill(); }
-  else { g.strokeStyle = color; g.lineWidth = width; g.stroke(); }
-  g.restore();
-}
-
-function rounded(g, x, y, w, h, r, fill, stroke = null, alpha = 1) {
-  r = Math.max(0, Math.min(r, w / 2, h / 2));
-  g.save();
-  g.globalAlpha *= alpha;
-  g.beginPath();
-  g.moveTo(x + r, y);
-  g.lineTo(x + w - r, y);
-  g.quadraticCurveTo(x + w, y, x + w, y + r);
-  g.lineTo(x + w, y + h - r);
-  g.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
-  g.lineTo(x + r, y + h);
-  g.quadraticCurveTo(x, y + h, x, y + h - r);
-  g.lineTo(x, y + r);
-  g.quadraticCurveTo(x, y, x + r, y);
-  g.closePath();
-  if (fill) { g.fillStyle = fill; g.fill(); }
-  if (stroke) { g.strokeStyle = stroke; g.lineWidth = 1; g.stroke(); }
-  g.restore();
-}
-
-function text(g, str, x, y, size, color = P.ice, align = 'left', weight = 600, alpha = 1) {
-  g.save();
-  g.globalAlpha *= alpha;
   g.fillStyle = color;
-  g.textAlign = align;
-  g.textBaseline = 'middle';
-  g.font = `${weight} ${Math.max(9, size)}px ui-sans-serif, system-ui, sans-serif`;
-  g.fillText(str, x, y);
+  if (blur) { g.shadowColor = color; g.shadowBlur = blur; }
+  g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill();
   g.restore();
 }
-
-function glow(g, x, y, r, color, intensity = .25) {
+function glow(g, x, y, r, color, alpha = .25) {
   const grad = g.createRadialGradient(x, y, 0, x, y, r);
   grad.addColorStop(0, color);
   grad.addColorStop(1, 'rgba(0,0,0,0)');
   g.save();
-  g.globalAlpha *= intensity;
+  g.globalAlpha *= alpha;
   g.fillStyle = grad;
-  g.beginPath();
-  g.arc(x, y, r, 0, TAU);
-  g.fill();
+  g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill();
   g.restore();
 }
-
-function triangle(g, points, fill, alpha = 1) {
+function label(g, value, x, y, size, color = C.ink, align = 'center', alpha = 1) {
+  g.save();
+  g.globalAlpha *= alpha;
+  g.fillStyle = color;
+  g.font = '700 ' + Math.max(9, size) + 'px ui-sans-serif, system-ui, sans-serif';
+  g.textAlign = align;
+  g.textBaseline = 'middle';
+  g.shadowColor = 'rgba(0,0,0,.75)';
+  g.shadowBlur = 7;
+  g.fillText(value, x, y);
+  g.restore();
+}
+function polygon(g, points, color, alpha = 1) {
+  if (points.length < 3) return;
   g.save();
   g.globalAlpha *= alpha;
   g.beginPath();
   g.moveTo(points[0][0], points[0][1]);
   for (let i = 1; i < points.length; i++) g.lineTo(points[i][0], points[i][1]);
   g.closePath();
-  g.fillStyle = fill;
+  g.fillStyle = color;
   g.fill();
   g.restore();
 }
-
-function drawBackground(g, w, h, seconds, still) {
-  const bg = g.createLinearGradient(0, 0, w, h);
-  bg.addColorStop(0, P.void);
-  bg.addColorStop(.56, '#102c38');
-  bg.addColorStop(1, '#071820');
-  g.fillStyle = bg;
-  g.fillRect(0, 0, w, h);
-  const S = Math.min(w, h);
-  glow(g, w * .52, h * .46, Math.max(w, h) * .55, '#21516b', .18);
-  for (let i = 0; i < 95; i++) {
-    const xx = nrand(i * 3 + 1) * w;
-    const yy = ((nrand(i * 3 + 2) + (still ? 0 : seconds * (.00012 + .00007 * nrand(i + 201)))) % 1) * h;
-    const a = .06 + nrand(i * 3 + 3) * .2;
-    circle(g, xx, yy, Math.max(.45, S * (.0008 + .0011 * nrand(i + 75))), P.ice, { alpha: a });
-  }
-  // The same current of light runs through every scene.
-  const current = [];
-  for (let i = 0; i <= 72; i++) {
-    const x = i / 72 * w;
-    const phase = (still ? 0 : seconds * .055);
-    const y = h * (.84 + .02 * Math.sin(i * .18 + phase) + .012 * Math.sin(i * .43 - phase));
-    current.push([x, y]);
-  }
-  path(g, current, P.cyan, Math.max(1, S * .0017), .19);
-  const vignette = g.createRadialGradient(w * .5, h * .48, h * .2, w * .5, h * .48, Math.max(w, h) * .78);
-  vignette.addColorStop(0, 'rgba(0,0,0,0)');
-  vignette.addColorStop(1, 'rgba(0,5,12,.68)');
-  g.fillStyle = vignette;
-  g.fillRect(0, 0, w, h);
-}
-
-function drawHuman(g, x, y, scale, color, alpha = 1, turned = false) {
-  const r = 14 * scale;
-  glow(g, x, y - 32 * scale, 76 * scale, color, .23 * alpha);
-  circle(g, x + (turned ? 4 : 0) * scale, y - 45 * scale, r, color, { alpha: .78 * alpha, glow: 11 * scale });
-  triangle(g, [
-    [x - 11 * scale, y - 26 * scale],
-    [x + 11 * scale, y - 26 * scale],
-    [x + 22 * scale, y + 28 * scale],
-    [x - 22 * scale, y + 28 * scale],
-  ], color, .24 * alpha);
-  path(g, [[x - 10 * scale, y - 23 * scale], [x - 19 * scale, y + 28 * scale], [x + 19 * scale, y + 28 * scale], [x + 10 * scale, y - 23 * scale]], color, 2 * scale, .6 * alpha);
-  circle(g, x, y - 45 * scale, r + 8 * scale, color, { fill: false, width: 1.1 * scale, alpha: .35 * alpha });
-}
-
-function drawEye(g, x, y, r, color, alpha = 1) {
+function bezier(g, start, c1, c2, end, color, width, alpha) {
   g.save();
   g.globalAlpha *= alpha;
-  g.beginPath();
-  g.moveTo(x - r, y);
-  g.quadraticCurveTo(x, y - r * .75, x + r, y);
-  g.quadraticCurveTo(x, y + r * .75, x - r, y);
   g.strokeStyle = color;
-  g.lineWidth = Math.max(1.3, r * .055);
+  g.lineWidth = width;
+  g.lineCap = 'round';
+  g.shadowColor = color;
+  g.shadowBlur = width * 5;
+  g.beginPath();
+  g.moveTo(start[0], start[1]);
+  g.bezierCurveTo(c1[0], c1[1], c2[0], c2[1], end[0], end[1]);
   g.stroke();
-  circle(g, x, y, r * .27, color, { alpha: .85 });
+  g.restore();
+}
+function bezierPoint(a, b, c, d, t) {
+  const u = 1 - t;
+  return [
+    u*u*u*a[0] + 3*u*u*t*b[0] + 3*u*t*t*c[0] + t*t*t*d[0],
+    u*u*u*a[1] + 3*u*u*t*b[1] + 3*u*t*t*c[1] + t*t*t*d[1],
+  ];
+}
+
+function shot(g, key, x, y, w, h, zoom, focusX, focusY, shiftX = 0, shiftY = 0, alpha = 1) {
+  const record = assets[key];
+  g.save();
+  g.globalAlpha *= alpha;
+  g.beginPath(); g.rect(x, y, w, h); g.clip();
+  if (record.ready && record.image.naturalWidth) {
+    const image = record.image;
+    const dw = image.naturalWidth * Math.max(w / image.naturalWidth, h / image.naturalHeight) * zoom;
+    const dh = image.naturalHeight * Math.max(w / image.naturalWidth, h / image.naturalHeight) * zoom;
+    let dx = x + w * .5 - focusX * dw + shiftX * w;
+    let dy = y + h * .5 - focusY * dh + shiftY * h;
+    dx = clamp(dx, x + w - dw, x);
+    dy = clamp(dy, y + h - dh, y);
+    g.drawImage(image, dx, dy, dw, dh);
+  } else {
+    const sky = g.createLinearGradient(x, y, x, y + h);
+    sky.addColorStop(0, '#304255');
+    sky.addColorStop(.43, '#a65d47');
+    sky.addColorStop(1, '#0a1d25');
+    g.fillStyle = sky;
+    g.fillRect(x, y, w, h);
+    const yy = y + h * .56;
+    polygon(g, [[x, yy], [x+w*.18, yy-h*.2], [x+w*.34, yy], [x+w*.54, yy-h*.29], [x+w*.74, yy], [x+w, yy-h*.12], [x+w, y+h]], '#101f2b', .7);
+    glow(g, x+w*.5, y+h*.48, h*.28, C.ember, .36);
+  }
   g.restore();
 }
 
-function sceneInside(g, w, h, p, pointerX, pointerY) {
-  const S = Math.min(w, h);
-  const dx = clamp(pointerX, -1, 1) * S * .025;
-  const dy = clamp(pointerY, -1, 1) * S * .018;
-  const hx = w * .39 + dx, hy = h * .62 + dy;
-  const mirrorX = w * .72, mirrorY = h * .44;
-  const world = g.createRadialGradient(mirrorX, mirrorY, S * .02, mirrorX, mirrorY, S * .38);
-  world.addColorStop(0, 'rgba(103,226,233,.24)');
-  world.addColorStop(.7, 'rgba(75,143,172,.08)');
-  world.addColorStop(1, 'rgba(75,143,172,0)');
-  g.fillStyle = world;
-  g.fillRect(0, 0, w, h);
+function filmGrade(g, w, h, warm = .2, cool = .1) {
+  const wash = g.createLinearGradient(0, 0, w, h);
+  wash.addColorStop(0, 'rgba(24,43,59,' + cool + ')');
+  wash.addColorStop(.55, 'rgba(6,19,28,0)');
+  wash.addColorStop(1, 'rgba(91,43,24,' + warm + ')');
+  rect(g, 0, 0, w, h, wash);
+  const vignette = g.createRadialGradient(w*.49, h*.43, h*.2, w*.49, h*.43, Math.max(w,h)*.72);
+  vignette.addColorStop(0, 'rgba(0,0,0,0)');
+  vignette.addColorStop(1, 'rgba(3,10,15,.64)');
+  rect(g, 0, 0, w, h, vignette);
+}
+function motes(g, w, h, t, still, count = 50) {
+  const s = Math.min(w,h);
+  for (let i = 0; i < count; i++) {
+    const x = ((hash(i*4+1) + (still ? 0 : t * (.002 + .001*hash(i+420)))) % 1) * w;
+    const y = ((hash(i*4+2) - (still ? 0 : t * (.0007 + .0005*hash(i+270))) + 100) % 1) * h;
+    dot(g, x, y, Math.max(.5, s*(.0008+.0013*hash(i+710))), i%4 ? C.gold : C.teal, .12+.23*hash(i+240));
+  }
+}
+function rain(g, w, h, t, still, alpha = .25) {
+  const s = Math.min(w,h);
+  for (let i = 0; i < 54; i++) {
+    const x = hash(i*7+81) * w;
+    const y = ((hash(i*7+25) + (still ? 0 : t*.018*(.8+hash(i)))) % 1) * h;
+    line(g, [[x,y],[x-s*.009,y+s*.03]], C.ink, Math.max(.55,s*.0011), alpha*(.35+.65*hash(i+77)));
+  }
+}
+function memoryThreads(g, w, h, p, t, still, color = C.gold, weight = 1) {
+  const s = Math.min(w,h);
   for (let i = 0; i < 5; i++) {
-    const rr = S * (.16 + i * .075 + p * .01);
-    circle(g, mirrorX, mirrorY, rr, P.cyan, { fill: false, width: 1, alpha: .07 + .035 * (5 - i) });
+    const y0 = h*(.24+i*.11);
+    const a = [w*.91, y0];
+    const b = [w*.76, y0 - h*.13];
+    const c = [w*.58, y0 + h*.17];
+    const d = [w*.32, h*(.31+i*.075)];
+    bezier(g,a,b,c,d,color,Math.max(1,s*.0015)*weight,.08+.18*p);
+    const pulse = (still ? .68 : (p*1.3+i*.18+t*.012)%1);
+    const q = bezierPoint(a,b,c,d,pulse);
+    dot(g,q[0],q[1],Math.max(1.6,s*.003),color,.35+.3*p,s*.016);
   }
-  triangle(g, [[hx, hy - S * .08], [w * .93, h * .1], [w * .93, h * .75]], P.cyan, .055);
-  for (let i = 0; i < 18; i++) {
-    const angle = -.75 + i / 17 * 1.5;
-    const len = S * (.28 + nrand(i + 401) * .42);
-    path(g, [[hx, hy - S * .08], [hx + Math.cos(angle) * len, hy - S * .08 + Math.sin(angle) * len]], P.cyan, 1, .08 + .12 * nrand(i + 304));
-  }
-  drawHuman(g, hx, hy, S / 520, P.gold);
-  circle(g, mirrorX, mirrorY, S * .155, P.ice, { fill: false, width: Math.max(1.3, S * .0022), alpha: .62 });
-  drawHuman(g, mirrorX, mirrorY + S * .05, S / 1050, P.cyan, .35 + .3 * ease(p));
-  drawEye(g, mirrorX, mirrorY - S * .022, S * .056, P.ice, .55);
-  const signal = ease((p - .22) / .62);
-  const a = [mirrorX - S * .14, mirrorY + S * .06];
-  const b = [hx + S * .025, hy - S * .11];
-  const point = [mix(a[0], b[0], signal), mix(a[1], b[1], signal)];
-  path(g, [a, b], P.gold, Math.max(1.4, S * .003), .23);
-  circle(g, point[0], point[1], Math.max(2.5, S * .006), P.gold, { glow: S * .045 });
-  text(g, 'WORLD', mirrorX, h * .73, Math.min(16, S * .028), P.muted, 'center', 700, .66);
-  text(g, 'HERE', hx, h * .83, Math.min(16, S * .028), P.gold, 'center', 700, .75);
+}
+function crossingThread(g,w,h,p,t,still) {
+  const s = Math.min(w,h);
+  const a = [w*.13,h*.52], b = [w*.36,h*.33], c = [w*.64,h*.63], d = [w*.88,h*.43];
+  bezier(g,a,b,c,d,C.gold,Math.max(2,s*.003),.47);
+  bezier(g,a,[w*.35,h*.48],[w*.62,h*.28],d,C.teal,Math.max(1,s*.0016),.26);
+  const q = bezierPoint(a,b,c,d,still ? .64 : smooth(p));
+  dot(g,q[0],q[1],Math.max(2,s*.006),C.gold,.9,s*.035);
 }
 
-function sceneFilters(g, w, h, p) {
-  const S = Math.min(w, h);
-  const centres = [w * .2, w * .5, w * .8];
-  const pulse = ease(p);
-  for (let i = 0; i < 3; i++) {
-    const x = centres[i];
-    const span = w * .22;
-    rounded(g, x - span * .48, h * .25, span * .96, h * .44, S * .025,
-      i === 1 ? 'rgba(106,155,178,.08)' : 'rgba(125,137,161,.065)',
-      'rgba(178,220,222,.18)', .85);
-    drawHuman(g, x, h * .57, S / 850, i === 0 ? P.gold : i === 1 ? P.cyan : P.violet, .7 + i * .07);
-    for (let j = 0; j < 8; j++) {
-      const sy = h * (.27 + j * .06);
-      const length = span * (.7 + nrand(i * 15 + j) * .35);
-      path(g, [[x - length * .58, sy], [x + length * .4, sy + (nrand(j + i * 7) - .5) * S * .035]],
-        i === 0 ? P.gold : i === 1 ? P.cyan : P.violet, 1.3, .08 + .18 * nrand(j * 11 + i));
-    }
-    // A selective record: two bright marks survive each passage.
-    rounded(g, x - S * .054, h * .19, S * .108, S * .082, S * .008,
-      'rgba(9,30,42,.83)', 'rgba(183,225,223,.38)', .88);
-    for (let k = 0; k < 2; k++) {
-      path(g, [[x - S * .034, h * .217 + k * S * .019], [x + S * (.017 + .009 * ((i + k) % 2)), h * .217 + k * S * .019]],
-        k === 0 ? P.gold : P.cyan, 2, .72);
-    }
-    if (i < 2) {
-      const nextX = centres[i + 1];
-      const y = h * .46;
-      const xm = mix(x + S * .07, nextX - S * .07, pulse);
-      path(g, [[x + S * .07, y], [nextX - S * .07, y]], P.ice, Math.max(1, S * .002), .2, [4, 7]);
-      circle(g, xm, y, S * .006, P.gold, { alpha: .9, glow: S * .026 });
-    }
+function scene1(g,w,h,p,t,still,px,py) {
+  shot(g,'observer',0,0,w,h,1.05+p*.1,lerp(.72,.48,smooth(p)),.48,px*.015,py*.01);
+  filmGrade(g,w,h,.13,.18);
+  rain(g,w,h,t,still,.28);
+  glow(g,w*.37,h*.51,Math.min(w,h)*.22,C.ember,.11+.08*p);
+  const s = Math.min(w,h);
+  line(g,[[w*.34,h*.51],[w*.39,h*.51]],C.gold,Math.max(1,s*.0016),.36);
+  line(g,[[w*.365,h*.485],[w*.365,h*.535]],C.gold,Math.max(1,s*.0016),.36);
+  motes(g,w,h,t,still,32);
+}
+function scene2(g,w,h,p,t,still,px,py) {
+  shot(g,'inheritance',0,0,w,h,1.08+p*.08,lerp(.69,.77,p),.48,px*.012,py*.008);
+  filmGrade(g,w,h,.19,.07);
+  memoryThreads(g,w,h,.5+.5*p,t,still,C.gold,1.12);
+  for (let i=0;i<3;i++) {
+    const x=w*(.17+i*.085), y=h*(.65+i*.055);
+    glow(g,x,y,Math.min(w,h)*.065,C.gold,.12);
+    dot(g,x,y,Math.max(1.5,Math.min(w,h)*.004),C.gold,.65,8);
   }
-  for (let i = 0; i < 28; i++) {
-    const x = nrand(i + 910) * w;
-    const y = h * (.08 + nrand(i + 740) * .13);
-    path(g, [[x, y], [x - S * .011, y + S * (.03 + .02 * p)]], P.ice, 1, .18 + .22 * nrand(i + 9));
+  motes(g,w,h,t,still,58);
+}
+function scene3(g,w,h,p,t,still,px,py) {
+  shot(g,'observer',0,0,w,h,1.23+p*.07,lerp(.37,.43,p),lerp(.57,.61,p),px*.01,py*.009);
+  filmGrade(g,w,h,.23,.13);
+  const s=Math.min(w,h);
+  const waterY=h*(.65+.04*p);
+  const shade=g.createLinearGradient(0,waterY-h*.12,0,waterY+h*.1);
+  shade.addColorStop(0,'rgba(7,20,27,0)');
+  shade.addColorStop(1,'rgba(7,20,27,.54)');
+  rect(g,0,waterY-h*.12,w,h*.25,shade,.75);
+  for(let i=0;i<12;i++) {
+    const x=w*(.11+.064*i), y=waterY+s*.014*Math.sin(i*.8+t*.35);
+    line(g,[[x,y],[x+s*.025,y]],C.gold,Math.max(.8,s*.0015),.13+.12*(1-p));
   }
-  text(g, 'EVENT', w * .2, h * .77, Math.min(16, S * .025), P.gold, 'center', 700, .8);
-  text(g, 'MEMORY', w * .5, h * .77, Math.min(16, S * .025), P.cyan, 'center', 700, .8);
-  text(g, 'INHERITED RECORD', w * .8, h * .77, Math.min(16, S * .025), P.violet, 'center', 700, .8);
+  rain(g,w,h,t,still,.13);
+  motes(g,w,h,t,still,34);
+}
+function scene4(g,w,h,p,t,still,px,py) {
+  shot(g,'gate',0,0,w,h,1.14-p*.045,.5,.49,px*.009,py*.007);
+  const arrival=smooth((p-.39)/.36);
+  shot(g,'ridge',0,0,w,h,1.13,lerp(.5,.69,p),.47,px*.011,py*.008,arrival);
+  filmGrade(g,w,h,.14,.15);
+  crossingThread(g,w,h,p,t,still);
+  motes(g,w,h,t,still,50);
+}
+function scene5(g,w,h,p,t,still,px,py) {
+  shot(g,'ridge',0,0,w,h,1.06+p*.12,lerp(.72,.49,smooth(p)),lerp(.47,.51,p),px*.012,py*.009);
+  filmGrade(g,w,h,.08,.23);
+  const s=Math.min(w,h);
+  const crest=[];
+  for(let i=0;i<=35;i++) {
+    const x=w*(.08+.84*i/35);
+    const y=h*(.66-.055*Math.sin(i*.25+p*2)) - s*.013*Math.sin(i*.6);
+    crest.push([x,y]);
+  }
+  line(g,crest,C.teal,Math.max(1.3,s*.0025),.25);
+  for(let i=0;i<6;i++) {
+    const x=w*(.25+i*.1),y=h*(.45+.03*Math.sin(i+t*.28));
+    glow(g,x,y,s*.06,C.teal,.06);
+  }
+  rain(g,w,h,t,still,.18);
+  motes(g,w,h,t,still,38);
+}
+function scene6(g,w,h,p,t,still,px,py) {
+  const half=w*.5;
+  shot(g,'observer',0,0,half,h,1.18,.56,.5,px*.008,py*.005);
+  shot(g,'ridge',half,0,half,h,1.18,.69,.47,px*.008,py*.005);
+  rect(g,0,0,half,h,'rgba(88,47,22,.17)');
+  rect(g,half,0,half,h,'rgba(23,78,94,.17)');
+  const blend=smooth((p-.27)/.45);
+  shot(g,'gate',w*.42,h*.18,w*.16,h*.5,1.12,.5,.5,0,0,blend*.65);
+  filmGrade(g,w,h,.12,.12);
+  line(g,[[half,h*.09],[half,h*.75]],C.ink,Math.max(1.5,Math.min(w,h)*.002),.3);
+  const s=Math.min(w,h);
+  const labelSize=Math.min(w<650?10:14,s*.024);
+  label(g,'OBSERVED · WATER FELL',w*.26,h*.23,labelSize,C.gold,'center',.9);
+  label(g,'OBSERVED · CREST ROSE',w*.74,h*.23,labelSize,C.teal,'center',.9);
+  label(g,'OBSERVED · GATE SHUT',w*.5,h*.37,labelSize,C.ink,'center',.55+.4*blend);
+  line(g,[[w*.23,h*.31],[w*.43,h*.37]],C.gold,1.3,.45);
+  line(g,[[w*.77,h*.31],[w*.57,h*.37]],C.teal,1.3,.45);
+  label(g,'INFERRED · THEIR INTENT',w*.5,h*.62,labelSize,C.dim,'center',.42+.3*blend);
+  motes(g,w,h,t,still,37);
+}
+function scene7(g,w,h,p,t,still,px,py) {
+  const split=w*.5;
+  shot(g,'observer',0,0,split,h,1.17,lerp(.67,.56,p),.48,px*.008,py*.005);
+  shot(g,'ridge',split,0,split,h,1.17,lerp(.71,.6,p),.48,px*.008,py*.005);
+  filmGrade(g,w,h,.13,.12);
+  rect(g,0,0,w,h,'rgba(3,13,20,.28)');
+  rect(g,split-w*.017,0,w*.034,h,'rgba(5,17,24,.68)');
+  const s=Math.min(w,h);
+  const openness=smooth((p-.09)/.56);
+  const a=[w*.25,h*.56], b=[w*.75,h*.56];
+  const leftCone=[a,[w*.13,h*.22],[w*.45,h*.23],[w*.58,h*.45]];
+  const rightCone=[b,[w*.87,h*.22],[w*.55,h*.23],[w*.42,h*.45]];
+  polygon(g,leftCone,C.gold,.17+.24*openness);
+  polygon(g,rightCone,C.teal,.17+.24*openness);
+  line(g,[...leftCone,a],C.gold,Math.max(1.7,s*.0035),.7*openness);
+  line(g,[...rightCone,b],C.teal,Math.max(1.7,s*.0035),.7*openness);
+  line(g,[a,[w*.46,h*.37]],C.gold,Math.max(1.5,s*.0026),.66*openness,[4,6]);
+  line(g,[b,[w*.54,h*.37]],C.teal,Math.max(1.5,s*.0026),.66*openness,[4,6]);
+  dot(g,a[0],a[1],Math.max(3,s*.008),C.gold,openness,s*.035);
+  dot(g,b[0],b[1],Math.max(3,s*.008),C.teal,openness,s*.035);
+  glow(g,w*.5,h*.4,s*.13,C.ink,.11*openness);
+  label(g,'POSSIBLE',w*.25,h*.34,Math.min(14,s*.023),C.gold,'center',.9*openness);
+  label(g,'POSSIBLE',w*.75,h*.34,Math.min(14,s*.023),C.teal,'center',.9*openness);
+  motes(g,w,h,t,still,39);
 }
 
-function sceneBanks(g, w, h, p) {
-  const S = Math.min(w, h);
-  const gateX = w * .5, gateY = h * .45;
-  // Two banks and one shared, partly obscured event.
-  const terrain = g.createLinearGradient(0, h * .51, 0, h);
-  terrain.addColorStop(0, 'rgba(31,82,91,.24)');
-  terrain.addColorStop(1, 'rgba(7,24,34,.72)');
-  g.fillStyle = terrain; g.fillRect(0, h * .5, w, h * .4);
-  const river = [];
-  for (let i = 0; i <= 32; i++) {
-    const y = h * (.22 + i / 32 * .62);
-    river.push([gateX + Math.sin(i * .29 + p * 3) * S * .024, y]);
-  }
-  path(g, river, P.cyan, S * .075, .1);
-  path(g, river, P.cyan, 1.5, .3);
-  path(g, [[w * .18, gateY + S * .06], [w * .82, gateY + S * .06]], P.ice, S * .016, .25);
-  const close = ease((p - .35) / .31);
-  const lift = (1 - close) * S * .085;
-  rounded(g, gateX - S * .036, gateY - S * .08 - lift, S * .072, S * .16,
-    S * .005, 'rgba(244,186,121,.32)', P.gold, .8);
-  for (let i = -1; i <= 1; i++) {
-    path(g, [[gateX + i * S * .017, gateY - S * .072 - lift], [gateX + i * S * .017, gateY + S * .072 - lift]], P.gold, 1.5, .7);
-  }
-  const L = [w * .22, h * .56], R = [w * .78, h * .56];
-  drawHuman(g, L[0], L[1], S / 880, P.gold);
-  drawHuman(g, R[0], R[1], S / 880, P.cyan, 1, true);
-  triangle(g, [[L[0] + S * .01, L[1] - S * .09], [gateX - S * .018, gateY - S * .065], [gateX - S * .018, gateY + S * .07]], P.gold, .12);
-  triangle(g, [[R[0] - S * .01, R[1] - S * .09], [gateX + S * .018, gateY - S * .06], [gateX + S * .018, gateY + S * .075]], P.cyan, .12);
-  // Each archive retains a different fragment, not an omniscient replay.
-  for (const [x, color, flip] of [[w * .18, P.gold, 1], [w * .82, P.cyan, -1]]) {
-    rounded(g, x - S * .045, h * .24, S * .09, S * .083, S * .009,
-      'rgba(6,23,33,.85)', color, .75);
-    path(g, [[x - S * .026, h * .267], [x + flip * S * .021, h * .267]], color, 2, .8);
-    path(g, [[x - S * .026, h * .29], [x + flip * S * .007, h * .29]], color, 2, .55);
-    path(g, [[x, h * .325], [x + flip * S * .015, h * .405]], color, 1, .35, [3, 4]);
-  }
-  glow(g, gateX, gateY, S * (.13 + .04 * close), P.coral, .12 + .1 * close);
-  text(g, 'BANK A', L[0], h * .75, Math.min(16, S * .025), P.gold, 'center', 700, .8);
-  text(g, 'BANK B', R[0], h * .75, Math.min(16, S * .025), P.cyan, 'center', 700, .8);
+function contour(g,w,h,cx,cy,rx,ry,color,alpha) {
+  g.save();
+  g.globalAlpha*=alpha;
+  g.strokeStyle=color;
+  g.lineWidth=Math.max(.8,Math.min(w,h)*.0012);
+  g.beginPath();
+  g.ellipse(cx,cy,rx,ry,.04,0,TAU);
+  g.stroke();
+  g.restore();
 }
-
-function sceneState(g, w, h, p) {
-  const S = Math.min(w, h);
-  const mid = w * .52, gaugeY = h * .43;
-  const startX = w * .12, endX = w * .88;
-  const histories = [
-    [[startX, h * .25], [w * .27, h * .21], [w * .37, h * .32], [mid - S * .065, gaugeY]],
-    [[startX, h * .67], [w * .27, h * .71], [w * .37, h * .56], [mid - S * .065, gaugeY]],
+function aerialMap(g,w,h,p) {
+  const s=Math.min(w,h);
+  const sky=g.createLinearGradient(0,0,w,h);
+  sky.addColorStop(0,'#0b1b25');
+  sky.addColorStop(.57,'#132e34');
+  sky.addColorStop(1,'#07161d');
+  rect(g,0,0,w,h,sky);
+  g.save();
+  const zoom=lerp(2.15,.88,smooth(p));
+  g.translate(w*.5,h*.44);
+  g.scale(zoom,zoom);
+  g.translate(-w*.5,-h*.44);
+  for(let i=0;i<7;i++) {
+    const r=s*(.14+i*.075);
+    contour(g,w,h,w*.2,h*.44,r*.72,r*1.4,C.gold,.055+.009*i);
+    contour(g,w,h,w*.8,h*.44,r*.72,r*1.4,C.teal,.055+.009*i);
+  }
+  const river=[];
+  for(let i=0;i<=70;i++) {
+    const y=h*(.06+.83*i/70);
+    const x=w*(.5+.045*Math.sin(i*.115)+.019*Math.sin(i*.3));
+    river.push([x,y]);
+  }
+  line(g,river,'#285a66',s*.092,.4);
+  line(g,river,C.teal,s*.013,.37);
+  line(g,[[w*.36,h*.48],[w*.64,h*.48]],C.gold,Math.max(2,s*.006),.72);
+  dot(g,w*.5,h*.48,s*.009,C.ink,.85,s*.03);
+  for(let side of [-1,1]) {
+    for(let i=0;i<9;i++) {
+      const x=w*(.5+side*(.15+.026*hash(i+side*9+35)));
+      const y=h*(.19+i*.067);
+      dot(g,x,y,s*(.002+.002*hash(i+17)),side<0?C.gold:C.teal,.2+.23*hash(i+49));
+    }
+  }
+  g.restore();
+}
+function hatchUnknown(g,w,h,alpha) {
+  const s=Math.min(w,h);
+  const regions=[
+    [[0,h*.12],[w*.18,h*.12],[w*.31,h*.42],[w*.11,h*.71],[0,h*.71]],
+    [[w,h*.12],[w*.82,h*.12],[w*.69,h*.42],[w*.89,h*.71],[w,h*.71]],
   ];
-  path(g, histories[0], P.gold, Math.max(2, S * .004), .76);
-  path(g, histories[1], P.cyan, Math.max(2, S * .004), .76);
-  for (let i = 0; i < 2; i++) {
-    const pts = histories[i];
-    const q = clamp(p * 1.4);
-    const seg = q * (pts.length - 1);
-    const k = Math.min(pts.length - 2, Math.floor(seg));
-    const t = seg - k;
-    circle(g, mix(pts[k][0], pts[k + 1][0], t), mix(pts[k][1], pts[k + 1][1], t), S * .008,
-      i ? P.cyan : P.gold, { glow: S * .04 });
+  for(const poly of regions) {
+    polygon(g,poly,'#020a0f',.72*alpha);
+    line(g,[poly[1],poly[2],poly[3]],C.dim,Math.max(1.2,s*.002),.44*alpha);
   }
-  circle(g, mid, gaugeY, S * .068, P.ice, { fill: false, width: 1.5, alpha: .67 });
-  circle(g, mid, gaugeY, S * .091, P.cyan, { fill: false, width: 1, alpha: .2 });
-  text(g, '0.50', mid, gaugeY, Math.min(30, S * .051), P.white, 'center', 700);
-  const pulse = ease((p - .46) / .17);
-  if (pulse > 0) {
-    circle(g, mid, gaugeY, S * (.095 + pulse * .1), P.coral, { fill: false, width: 2, alpha: (1 - pulse) * .7 });
-    path(g, [[mid, h * .15], [mid, gaugeY - S * .1]], P.coral, 3, .18 + .53 * (1 - pulse));
-    triangle(g, [[mid, gaugeY - S * .07], [mid - S * .012, gaugeY - S * .095], [mid + S * .012, gaugeY - S * .095]], P.coral, .75);
+  for(let i=0;i<17;i++) {
+    const y=h*(.16+i*.03);
+    line(g,[[0,y],[w*.08,y+s*.014]],C.dim,1,.2*alpha);
+    line(g,[[w,y],[w*.92,y+s*.014]],C.dim,1,.2*alpha);
   }
-  const reveal = ease((p - .54) / .37);
-  const branchA = [[mid + S * .065, gaugeY], [w * .69, mix(gaugeY, h * .22, reveal)], [endX, mix(gaugeY, h * .2, reveal)]];
-  const branchB = [[mid + S * .065, gaugeY], [w * .69, mix(gaugeY, h * .65, reveal)], [endX, mix(gaugeY, h * .69, reveal)]];
-  path(g, branchA, P.gold, Math.max(2, S * .004), .22 + .62 * reveal);
-  path(g, branchB, P.cyan, Math.max(2, S * .004), .22 + .62 * reveal);
-  circle(g, endX, branchA[2][1], S * .01, P.gold, { alpha: reveal, glow: S * .03 });
-  circle(g, endX, branchB[2][1], S * .01, P.cyan, { alpha: reveal, glow: S * .03 });
-  text(g, 'HISTORY A', startX, h * .18, Math.min(15, S * .023), P.gold, 'left', 700, .8);
-  text(g, 'HISTORY B', startX, h * .76, Math.min(15, S * .023), P.cyan, 'left', 700, .8);
-  text(g, 'SAME READING', mid, h * .67, Math.min(16, S * .025), P.ice, 'center', 700, .65);
 }
-
-function sceneAction(g, w, h, p) {
-  const S = Math.min(w, h);
-  const rows = [h * .32, h * .64];
-  const x0 = w * .15, x1 = w * .77;
-  const progress = ease((p - .16) / .59);
-  rows.forEach((y, i) => {
-    const col = i === 0 ? P.cyan : P.gold;
-    circle(g, x0, y, S * .032, col, { fill: false, width: 1.4, alpha: .7 });
-    circle(g, x0, y, S * .008, col, { glow: S * .03 });
-    const targetY = i === 0 ? y : y - S * .038;
-    const actualY = i === 0 ? y : y + S * .095 * progress;
-    path(g, [[x0 + S * .04, y], [x1, targetY]], col, 2.2, .22, [5, 5]);
-    path(g, [[x0 + S * .04, y], [mix(x0 + S * .04, x1, progress), mix(y, actualY, progress)]], col, Math.max(2.1, S * .004), .82);
-    circle(g, x1, targetY, S * .027, col, { fill: false, width: 1.5, alpha: .5 });
-    circle(g, mix(x0 + S * .04, x1, progress), mix(y, actualY, progress), S * .009, col, { glow: S * .04 });
-    text(g, i === 0 ? 'FROM REST' : 'FROM ANOTHER STATE', x0, y - S * .09,
-      Math.min(15, S * .024), col, 'left', 700, .86);
-    text(g, i === 0 ? 'RULE HOLDS' : 'HIDDEN CONTEXT', x1, y + (i ? S * .14 : S * .08),
-      Math.min(15, S * .024), i ? P.coral : P.green, 'center', 700, .55 + .4 * progress);
-  });
-  // The same intervention enters both rows; the second trajectory misses.
-  const bx = w * .5, by = h * .13;
-  path(g, [[bx, by], [bx, rows[0] - S * .07]], P.coral, 2, .52);
-  path(g, [[bx, by], [bx + S * .07, rows[1] - S * .08]], P.coral, 2, .4);
-  circle(g, bx, by, S * .015, P.coral, { glow: S * .04 });
-  text(g, 'SAME PROPOSED ACTION', bx, by - S * .045, Math.min(16, S * .026), P.coral, 'center', 700, .82);
-}
-
-function sceneChart(g, w, h, p) {
-  const S = Math.min(w, h);
-  const left = w * .13, right = w * .87;
-  const span = right - left;
-  const topY = h * .36, lowY = h * .67;
-  const small = w < 620;
-  const badges = [
-    ['C1', 'CONTINUOUS'], ['C2', 'ASSOCIATIVE'],
-    ['C3', 'MONOTONE'], ['C4', 'NEUTRAL'],
-  ];
-  badges.forEach(([head, desc], i) => {
-    const x = small ? w * (.27 + (i % 2) * .46) : w * (.14 + i * .24);
-    const y = small ? h * (.105 + Math.floor(i / 2) * .082) : h * .13;
-    rounded(g, x - (small ? w * .19 : w * .105), y - S * .027,
-      small ? w * .38 : w * .21, S * .055, S * .012,
-      'rgba(79,132,149,.12)', 'rgba(156,219,220,.35)', .95);
-    text(g, `${head} ${desc}`, x, y, Math.min(small ? 10 : 13, S * .021), P.ice, 'center', 700, .85);
-  });
-  if (!small) {
-    text(g, 'VELOCITY · ESTABLISHED', w * .2, h * .25, 11, P.green, 'center', 700, .65);
-    text(g, 'TWO-CHOICE ODDS · IF BAYES', w * .5, h * .25, 11, P.ice, 'center', 700, .65);
-    text(g, 'BIOLOGICAL RESPONSE · TEST', w * .8, h * .25, 11, P.gold, 'center', 700, .65);
-  }
-  path(g, [[left, topY], [right, topY]], P.ice, 1.4, .65);
-  path(g, [[left, lowY], [right, lowY]], P.cyan, 1.7, .75);
-  text(g, 'ADDITIVE COORDINATE  ψ', w * .5, topY - S * .065, Math.min(15, S * .024), P.white, 'center', 700, .86);
-  text(g, 'SELECTED TWO-HORIZON CHART  x = tanh ψ', w * .5, lowY + S * .084,
-    Math.min(small ? 10 : 15, S * .024), P.cyan, 'center', 700, .88);
-  const mapX = (psi) => left + span * ((Math.tanh(psi) + 1) / 2);
-  for (let i = -4; i <= 4; i++) {
-    const tx = left + span * ((i + 4) / 8);
-    const bx = mapX(i);
-    path(g, [[tx, topY - S * .012], [tx, topY + S * .012]], P.ice, 1.3, .65);
-    path(g, [[bx, lowY - S * .014], [bx, lowY + S * .014]], P.cyan, 1.3, .72);
-    if (i > -4 && i < 4) {
-      const bend = [[tx, topY + S * .015], [mix(tx, bx, .38), mix(topY, lowY, .37)], [bx, lowY - S * .012]];
-      path(g, bend, P.cyan, 1, .08 + .06 * (i + 4));
+function scene8(g,w,h,p,t,still,px,py) {
+  aerialMap(g,w,h,p);
+  // The gate is pulled away from the viewer as the same valley becomes a map.
+  // This is a change of vantage, not access to a perfect outside account.
+  const retreat=smooth((p-.025)/.59);
+  const photoW=lerp(w,w*.54,retreat), photoH=lerp(h,h*.52,retreat);
+  const photoX=(w-photoW)*.5, photoY=lerp(0,h*.055,retreat);
+  const departure=1-smooth((p-.17)/.29);
+  shot(g,'gate',photoX,photoY,photoW,photoH,lerp(1.22,1.02,retreat),.5,.47,px*.008,py*.006,departure);
+  const s=Math.min(w,h);
+  if(retreat>0) {
+    const corners=[[photoX,photoY+photoH],[photoX+photoW,photoY+photoH]];
+    line(g,[corners[0],[w*.23,h*.61]],C.gold,Math.max(1,s*.0017),.21*departure);
+    line(g,[corners[1],[w*.77,h*.61]],C.teal,Math.max(1,s*.0017),.21*departure);
+    for(let i=0;i<3;i++) {
+      contour(g,w,h,w*.5,h*.44,s*(.18+i*.105+retreat*.13),s*(.1+i*.07+retreat*.09),C.ink,
+        .15*(1-retreat));
     }
   }
-  text(g, '−1', left, lowY + S * .04, Math.min(13, S * .021), P.gold, 'center', 700, .72);
-  text(g, '+1', right, lowY + S * .04, Math.min(13, S * .021), P.gold, 'center', 700, .72);
-  const psi = mix(0, 4, ease(p));
-  const equalX = left + span * ((psi + 4) / 8);
-  const boundedX = mapX(psi);
-  path(g, [[equalX, topY], [boundedX, lowY]], P.gold, Math.max(1.6, S * .003), .55);
-  circle(g, equalX, topY, S * .009, P.gold, { glow: S * .033 });
-  circle(g, boundedX, lowY, S * .009, P.gold, { glow: S * .033 });
-  for (const edgeX of [left, right]) {
-    path(g, [[edgeX, lowY - S * .035], [edgeX, lowY + S * .035]], P.gold, 2, .56);
-  }
-}
-
-const loopA = disk.C(0, 0);
-const loopB = disk.C(.58, .08);
-const loopC = disk.add(loopB, disk.C(-.19, .57));
-const loopSegments = [
-  disk.geodesic(loopA, loopB, 42),
-  disk.geodesic(loopB, loopC, 42),
-  disk.geodesic(loopC, loopA, 42),
-];
-const loopRoute = [...loopSegments[0], ...loopSegments[1].slice(1), ...loopSegments[2].slice(1)];
-const loopTurn = disk.gyrationAngle(loopB, disk.C(-.19, .57));
-
-function sceneLoop(g, w, h, p) {
-  const S = Math.min(w, h);
-  const cx = w * .5, cy = h * .48;
-  const rad = Math.min(w * .33, h * .35);
-  glow(g, cx, cy, rad * 1.36, P.cyan, .16);
-  circle(g, cx, cy, rad, P.ice, { fill: false, width: 1.7, alpha: .66 });
-  for (const rho of [1, 2, 3, 4]) {
-    circle(g, cx, cy, rad * Math.tanh(rho / 2), P.cyan, { fill: false, width: 1, alpha: .14 });
-  }
-  for (let i = 0; i < 12; i++) {
-    const a = i * TAU / 12;
-    path(g, [[cx, cy], [cx + Math.cos(a) * rad, cy - Math.sin(a) * rad]], P.cyan, 1, .07);
-  }
-  const xy = (v) => [cx + v.x * rad, cy - v.y * rad];
-  loopSegments.forEach((seg) => path(g, seg.map(xy), P.gold, Math.max(1.8, S * .0037), .52));
-  const routeIndex = Math.min(loopRoute.length - 1, Math.floor(ease(p) * (loopRoute.length - 1)));
-  path(g, loopRoute.slice(0, routeIndex + 1).map(xy), P.gold, Math.max(2.2, S * .005), .9);
-  const walker = xy(loopRoute[routeIndex]);
-  circle(g, walker[0], walker[1], Math.max(3, S * .008), P.gold, { glow: S * .038 });
-  const angle = loopTurn * ease((p - .73) / .27);
-  const ar = rad * .23;
-  path(g, [[cx, cy], [cx + Math.sin(angle) * ar, cy - Math.cos(angle) * ar]], P.gold, Math.max(2, S * .004), .95);
-  path(g, [[cx, cy], [cx, cy - ar]], P.ice, 1.4, .33, [4, 4]);
-  const ah = [cx + Math.sin(angle) * ar, cy - Math.cos(angle) * ar];
-  const tail = [ah[0] - Math.sin(angle) * S * .022, ah[1] + Math.cos(angle) * S * .022];
-  triangle(g, [ah,
-    [tail[0] - Math.cos(angle) * S * .011, tail[1] - Math.sin(angle) * S * .011],
-    [tail[0] + Math.cos(angle) * S * .011, tail[1] + Math.sin(angle) * S * .011]], P.gold, .8);
-  text(g, 'SELECTED HYPERBOLIC MODEL · CURVATURE −1', w * .5, h * .13,
-    Math.min(w < 550 ? 10 : 16, S * .024), P.ice, 'center', 700, .85);
-  text(g, 'CARRIED DIRECTION', w * .5, h * .78, Math.min(14, S * .021), P.gold, 'center', 700, .74);
-}
-
-function sceneEvidence(g, w, h, p) {
-  const S = Math.min(w, h);
-  const join = ease((p - .13) / .54);
-  const left = w * (.19 + .09 * join), right = w * (.81 - .09 * join);
-  const bandY = h * .46;
-  const len = w * .32;
-  for (const [x, c, sign] of [[left, P.gold, -1], [right, P.cyan, 1]]) {
-    rounded(g, x - len * .5, bandY - S * .14, len, S * .28, S * .018,
-      'rgba(12,37,49,.56)', c, .42 + .18 * join);
-    for (let i = 0; i < 4; i++) {
-      const yy = bandY - S * .09 + i * S * .055;
-      const start = x - len * .37;
-      const width = len * (.38 + .36 * nrand(i + (sign + 1) * 9));
-      path(g, [[start, yy], [start + width, yy]], c, Math.max(1.6, S * .003), .34 + .36 * nrand(i + 16));
-    }
-  }
-  // Shared observations brighten; empty segments remain visible as unknowns.
-  const tl = [[w * .12, h * .69], [w * .88, h * .69]];
-  path(g, tl, P.ice, Math.max(1.5, S * .0025), .5);
-  for (let i = 0; i < 13; i++) {
-    const x = w * (.12 + .76 * i / 12);
-    path(g, [[x, h * .675], [x, h * .705]], i % 4 === 2 ? P.muted : i % 2 ? P.cyan : P.gold, 1.4, .55);
-  }
-  const overlaps = [[.31, .39], [.49, .58], [.68, .74]];
-  overlaps.forEach(([a, b], i) => {
-    const x = w * a, width = w * (b - a);
-    rounded(g, x, h * .675, width, h * .03, S * .006, P.green, null, join * (.5 + .14 * i));
-  });
-  for (const a of [.43, .62, .8]) {
-    rounded(g, w * a, h * .67, w * .025, h * .04, S * .005,
-      'rgba(5,16,23,.8)', 'rgba(170,184,190,.38)', .8);
-  }
-  const cards = [
-    { x: .2, color: P.green, head: 'REPLICATED', sub: 'effect-scale comparison' },
-    { x: .5, color: P.coral, head: 'REFUTED', sub: 'H1 drug dial' },
-    { x: .8, color: P.violet, head: 'OPEN', sub: 'H7 geometry' },
+  const reveal=smooth((p-.065)/.32);
+  rect(g,0,0,w,h,'rgba(2,10,16,.33)',reveal);
+  g.save();
+  g.globalAlpha*=reveal;
+  g.globalCompositeOperation='screen';
+  const a=[w*.23,h*.61], b=[w*.77,h*.61];
+  // Unequal inherited records produce unequal possibility fields.
+  const leftCone=[a,[w*.09,h*.24],[w*.31,h*.17],[w*.56,h*.2],[w*.61,h*.38],[w*.49,h*.57]];
+  const rightCone=[b,[w*.91,h*.25],[w*.74,h*.16],[w*.59,h*.2],[w*.37,h*.4],[w*.51,h*.57]];
+  polygon(g,leftCone,C.gold,.43);
+  polygon(g,rightCone,C.teal,.42);
+  g.restore();
+  line(g,[...leftCone,a],C.gold,Math.max(2.2,s*.0048),.91*reveal);
+  line(g,[...rightCone,b],C.teal,Math.max(2.2,s*.0048),.91*reveal);
+  const goldBranches=[
+    [a,[w*.25,h*.42],[w*.31,h*.28]],
+    [a,[w*.33,h*.45],[w*.46,h*.26]],
+    [a,[w*.36,h*.5],[w*.5,h*.44]],
   ];
-  for (const card of cards) {
-    const x = w * card.x;
-    const cw = Math.min(w * .27, S * .41);
-    const y = h * .13;
-    rounded(g, x - cw / 2, y, cw, S * .105, S * .01,
-      'rgba(8,29,41,.8)', card.color, .5 + .45 * join);
-    text(g, card.head, x, y + S * .036, Math.min(w < 550 ? 10 : 14, S * .022), card.color, 'center', 750, .9);
-    if (w > 630) text(g, card.sub, x, y + S * .072, Math.min(11, S * .018), P.ice, 'center', 500, .7);
+  const tealBranches=[
+    [b,[w*.76,h*.4],[w*.78,h*.24]],
+    [b,[w*.67,h*.39],[w*.59,h*.27]],
+    [b,[w*.62,h*.5],[w*.5,h*.44]],
+  ];
+  for(const branch of goldBranches) line(g,branch,C.gold,Math.max(1.2,s*.0022),.49*reveal);
+  for(const branch of tealBranches) line(g,branch,C.teal,Math.max(1.2,s*.0022),.49*reveal);
+  const overlap=[[w*.42,h*.31],[w*.58,h*.31],[w*.62,h*.45],[w*.5,h*.57],[w*.38,h*.45]];
+  polygon(g,overlap,C.green,.41*reveal);
+  line(g,[...overlap,overlap[0]],C.green,Math.max(2.5,s*.0054),.94*reveal);
+  glow(g,w*.5,h*.41,s*.19,C.green,.42*reveal);
+  hatchUnknown(g,w,h,reveal);
+  for(const [x,color] of [[w*.23,C.gold],[w*.77,C.teal]]) {
+    dot(g,x,h*.61,Math.max(4,s*.012),color,reveal,s*.055);
+    contour(g,w,h,x,h*.61,s*.031,s*.031,color,.9*reveal);
   }
-  text(g, 'OVERLAP', w * .5, h * .78, Math.min(15, S * .024), P.green, 'center', 700, .5 + .3 * join);
-  text(g, 'UNKNOWN', w * .82, h * .78, Math.min(15, S * .024), P.muted, 'center', 700, .65);
+  const pulse=still?.7:smooth((p-.31)/.58);
+  for(const [x,color] of [[w*.23,C.gold],[w*.77,C.teal]]) {
+    const qx=lerp(x,w*.5,pulse),qy=lerp(h*.61,h*.44,pulse);
+    line(g,[[x,h*.61],[qx,qy]],color,Math.max(1.8,s*.0035),.76*reveal);
+    dot(g,qx,qy,Math.max(2.3,s*.006),color,reveal,s*.035);
+  }
+  const fs=Math.min(w<650?10:14,s*.022);
+  label(g,'OBSERVED · GATE SHUT',w*.5,h*.18,fs,C.ink,'center',.66*reveal);
+  label(g,'INFERRED FUTURES',w*.5,h*.265,fs,C.dim,'center',.7*reveal);
+  label(g,'CHECKED FACT',w*.5,h*.345,fs,C.green,'center',.94*reveal);
+  label(g,'JOINT ACTION',w*.5,h*.425,Math.min(w<650?12:17,s*.027),C.ink,'center',reveal);
+  const compact=w<650;
+  const originSize=compact?10:Math.min(12,s*.019);
+  label(g,compact?'ESTUARY · LOSS':'ESTUARY · INHERITED LOSS',w*.23,h*.535,originSize,C.gold,'center',.95*reveal);
+  label(g,compact?'RIDGE · DANGER':'RIDGE · INHERITED DANGER',w*.77,h*.535,originSize,C.teal,'center',.95*reveal);
+  label(g,'UNRESOLVED',w*.14,h*.44,fs,C.dim,'center',.85*reveal);
+  motes(g,w,h,t,still,41);
 }
 
-const sceneDrawers = [sceneInside, sceneFilters, sceneBanks, sceneState,
-  sceneAction, sceneChart, sceneLoop, sceneEvidence];
-
-function sceneAt(seconds) {
-  const t = clamp(Number.isFinite(seconds) ? seconds : 0, 0, FILM_DURATION - 1e-7);
-  let index = FILM_SCENES.findIndex((s) => t >= s.start && t < s.end);
-  if (index < 0) index = FILM_SCENES.length - 1;
-  const scene = FILM_SCENES[index];
-  return { t, index, scene, progress: clamp((t - scene.start) / (scene.end - scene.start)) };
+const drawers=[scene1,scene2,scene3,scene4,scene5,scene6,scene7,scene8];
+function currentScene(seconds) {
+  const t=clamp(Number.isFinite(seconds)?seconds:0,0,FILM_DURATION);
+  const index=Math.max(0,FILM_SCENES.findIndex((scene,i)=>t>=scene.start&&(t<scene.end||i===FILM_SCENES.length-1)));
+  const scene=FILM_SCENES[index];
+  return {t,index,scene,progress:clamp((t-scene.start)/(scene.end-scene.start))};
 }
 
-/** Draw one deterministic frame. `pointerX/Y` are optional centred values in [-1, 1].
- * Resize the backing store for the canvas's CSS size, capped at 2× DPR.
- * Returns the scene descriptor so a controller can synchronize accessible text.
- */
-export function drawFilmFrame(canvas, seconds, { reducedMotion = false, pointerX = 0, pointerY = 0 } = {}) {
-  if (!canvas || typeof canvas.getContext !== 'function') throw new TypeError('drawFilmFrame requires a canvas');
-  const rect = typeof canvas.getBoundingClientRect === 'function' ? canvas.getBoundingClientRect() : null;
-  const w = Math.max(1, Math.round((rect && rect.width) || canvas.clientWidth || canvas.width || 960));
-  const h = Math.max(1, Math.round((rect && rect.height) || canvas.clientHeight || canvas.height || 540));
-  const dpr = Math.min(2, Math.max(1, typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1));
-  const backingW = Math.round(w * dpr), backingH = Math.round(h * dpr);
-  if (canvas.width !== backingW || canvas.height !== backingH) {
-    canvas.width = backingW;
-    canvas.height = backingH;
+export function drawFilmFrame(canvas,seconds,{reducedMotion=false,pointerX=0,pointerY=0}={}) {
+  if(!canvas||typeof canvas.getContext!=='function') throw new TypeError('drawFilmFrame requires a canvas');
+  lastDraw={canvas,seconds,options:{reducedMotion,pointerX,pointerY}};
+  const box=typeof canvas.getBoundingClientRect==='function'?canvas.getBoundingClientRect():null;
+  const w=Math.max(1,Math.round((box&&box.width)||canvas.clientWidth||canvas.width||960));
+  const h=Math.max(1,Math.round((box&&box.height)||canvas.clientHeight||canvas.height||540));
+  const dpr=Math.min(2,Math.max(1,typeof window==='undefined'?1:window.devicePixelRatio||1));
+  if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)) {
+    canvas.width=Math.round(w*dpr);
+    canvas.height=Math.round(h*dpr);
   }
-  const g = canvas.getContext('2d', { alpha: false });
-  if (!g) throw new Error('A Canvas 2D context is required');
-  g.setTransform(dpr, 0, 0, dpr, 0, 0);
-  const frame = sceneAt(seconds);
-  drawBackground(g, w, h, frame.t, reducedMotion);
-  const render = (index, progress, alpha) => {
-    g.save();
-    g.globalAlpha *= alpha;
-    sceneDrawers[index](g, w, h, progress,
-      reducedMotion ? 0 : pointerX, reducedMotion ? 0 : pointerY);
+  const g=canvas.getContext('2d',{alpha:false});
+  if(!g) throw new Error('A Canvas 2D context is required');
+  g.setTransform(dpr,0,0,dpr,0,0);
+  rect(g,0,0,w,h,C.dark);
+  const frame=currentScene(seconds);
+  const t=reducedMotion?0:frame.t;
+  const render=(index,progress,alpha)=>{
+    g.save();g.globalAlpha*=alpha;
+    drawers[index](g,w,h,progress,t,reducedMotion,reducedMotion?0:clamp(pointerX,-1,1),reducedMotion?0:clamp(pointerY,-1,1));
     g.restore();
   };
-  if (reducedMotion) {
-    render(frame.index, .72, 1);
-  } else if (frame.index > 0 && frame.t - frame.scene.start < 1.4) {
-    const blend = ease((frame.t - frame.scene.start) / 1.4);
-    render(frame.index - 1, 1, 1 - blend);
-    render(frame.index, frame.progress, blend);
-  } else {
-    render(frame.index, frame.progress, 1);
-  }
+  if(reducedMotion) render(frame.index,.68,1);
+  else if(frame.index>0&&frame.t-frame.scene.start<1.5) {
+    const blend=smooth((frame.t-frame.scene.start)/1.5);
+    render(frame.index-1,1,1-blend);
+    render(frame.index,frame.progress,blend);
+  } else render(frame.index,frame.progress,1);
   return frame;
 }
