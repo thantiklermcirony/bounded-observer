@@ -250,3 +250,27 @@ def test_c3_admits_the_neutral_end_and_excludes_the_horizon():
     assert bliss(Q(0), Q(3, 10)) == Q(3, 10) == bliss(Q(3, 10), Q(0))   # 0 is neutral
     assert bliss(Q(0), Q(1, 5)) < bliss(Q(0), Q(2, 5))                  # strict at the neutral end
     assert bliss(Q(1), Q(1, 5)) == bliss(Q(1), Q(2, 5)) == 1            # not strict at the horizon
+
+
+# ---------------------------------------------------------------- Theorem 8: where dial laws differ
+def test_dial_gap_identity_and_that_the_gap_vanishes_at_both_ends():
+    # For 0 <= a, b < 1 and alpha, beta <= 1 (exact rationals):
+    #   F_alpha - F_beta = (beta - alpha) a b (1-a)(1-b) / [(1 - alpha a b)(1 - beta a b)].
+    # The gap shrinks near zero effect AND near saturation, so "move nearer the bound" is not a
+    # general design rule. Bliss vs alpha = 1 on a = b: 1/12 at 1/2, 0.004925 at 0.99, and its
+    # maximum lies inside, near the golden-ratio point (Appendix B lists 0.0902).
+    from fractions import Fraction as Q
+    F = lambda a, b, t: (a + b - (1 + t) * a * b) / (1 - t * a * b)
+    gap = lambda a, b, s, t: (t - s) * a * b * (1 - a) * (1 - b) / ((1 - s * a * b) * (1 - t * a * b))
+    rng = np.random.default_rng(8)
+    for _ in range(500):
+        a, b = (Q(int(rng.integers(0, 999)), 1000) for _ in range(2))
+        s, t = (Q(int(rng.integers(-5000, 1001)), 1000) for _ in range(2))
+        assert F(a, b, s) - F(a, b, t) == gap(a, b, s, t)
+    assert F(Q(1, 2), Q(1, 2), 0) - F(Q(1, 2), Q(1, 2), 1) == Q(1, 12)
+    assert F(Q(99, 100), Q(99, 100), 0) - F(Q(99, 100), Q(99, 100), 1) == Q(9801, 1990000)
+    xs = np.linspace(0.001, 0.999, 99_901)
+    g = xs * xs * (1 - xs) ** 2 / (1 - xs * xs)
+    assert g[0] < 1e-5                       # near zero effect the gap shrinks like a^2
+    assert g[-1] < 1e-3 and g[-1] < g.max() / 100  # near saturation it shrinks like (1 - a)/2
+    assert 0.0901 < g.max() < 0.0903 and abs(xs[g.argmax()] - (5 ** 0.5 - 1) / 2) < 1e-3

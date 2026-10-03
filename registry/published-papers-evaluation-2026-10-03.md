@@ -12,6 +12,9 @@ extracts*. That can check specific statements, such as whether a stated conditio
 or whether a printed equation has an equilibrium. **It cannot settle the value of the full
 published papers.** The journal versions may differ, add analyses, or fix what is flagged here.
 The "readings" below are readings of the extracts, not verdicts on the papers.
+Agreement among the AI analyses used here does not establish a paper's merit, and missing
+access does not establish a defect. Nothing in this document changes a published claim or title;
+substantive criticisms are kept only where the available source text supports them.
 
 **Read this first: what was and was not read.** The published journal texts could not be
 fetched; every publisher, DOI, PubMed and Europe PMC route is blocked from this environment.

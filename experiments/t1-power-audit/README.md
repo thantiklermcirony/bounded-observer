@@ -4,11 +4,14 @@
 (`../h1-decrease/`). Was that a result about the dial, or was the experiment unable to tell the
 laws apart at all?
 
-**Why it matters.** Near rest every lawful composition is flat. Two dial laws differ, to leading
-order, by (α₁ − α₂)·a·b (capstone Theorem 8, expanded; review 2026-10-03, D1). If the single-agent
-effects a and b are small, the laws predict almost the same surface, and α is fitted to noise.
+**Why it matters.** Two dial laws differ by exactly
+(β − α)·a·b·(1 − a)(1 − b) / [(1 − α·a·b)(1 − β·a·b)] (capstone Theorem 8; checked in
+`toolkit/tests/test_falsifiable.py`). The gap shrinks when the single-agent effects a, b are small
+*and* when they approach saturation. If it is small across a design, the laws predict nearly the
+same surface and α is weakly identified. *Corrected 3 October 2026:* an earlier version gave only
+the leading-order term (α₁ − α₂)·a·b, which hides the shrinkage near saturation.
 
-**Plan, stated before the run.** The hypothesis, its test and its loss condition were written
+**Plan, stated before the run (historical; kept as written).** The hypothesis, its test and its loss condition were written
 into `registry/review-2026-10-03.md` (§4, D1) and pushed in commit `3cbd55f` before this script
 existed:
 
@@ -31,16 +34,20 @@ the script loads H1's own functions from `../h1-decrease/h1_dial.py`, unchanged.
 > this comparison measures, for four reasons:
 > 1. **The noise figure is a proxy, not a validated noise estimate.** The single-agent Hill-fit
 >    residual mixes measurement noise with Hill-model error.
-> 2. **Small per-cell gaps can add up.** Across 49 cells per block and 210 blocks, they can
->    become detectable. This page compares per-cell sizes only.
+> 2. **Small per-cell gaps can add up.** Aggregated over cells and blocks they can become
+>    detectable, but the wells are not independent replicates: they share single-agent fits,
+>    block-level calibration and plate effects. The effective sample size is smaller than
+>    49 × 210. This page compares per-cell sizes only.
 > 3. **It covers two models out of many.** It compares Bliss (α = 0) with the Loewe end of the
 >    dial (α = 1). H1 concerns the whole dial, including Einstein composition (α = −1), and
 >    conventional rivals.
 > 4. **It does not compute the power of H1's actual test,** the ordinal test across 36 pairs, nor
 >    does it account for calibration uncertainty or dependence between measurements.
 >
-> A full audit covering all four is in progress. Until it lands, read the table below as a
-> per-cell description of the design, not as a power result.
+> **A full power analysis covering all four was not completed, and is not active in this repair
+> pass.** Read the table below as a per-cell description of the design, not as a power result.
+> Post hoc noise estimates made during the stopped audit are archived, exploratory and not
+> accepted, in `exploratory-noise-2026-10-03/`. They change no conclusion here.
 
 | Quantity (median over 210 blocks) | Value |
 | --- | --- |
@@ -69,17 +76,20 @@ In words, and only per cell:
 ## What this changes, and what it does not
 
 - **H1 stays refuted as stated.** Its pre-registered prediction failed, and that record is kept.
-- **How much the refutation tells us about the dial reading is not settled here.** That needs the
-  power of H1's actual test, which is being audited. Low power, if found, would narrow what the
-  failure tells us. It would never be evidence for the framework.
-- **D1 has a first, partial check that is consistent with it.** [H], not promoted. This page does
-  not test the power of the H1 statistic. H2's half of the claim is separate and untested; for H2 the same
+- **How much the refutation tells us about the dial reading is not settled.** That needs the
+  power of H1's actual statistic, which has not been computed. Low power, if ever shown, would
+  narrow what the failure tells us. It would never be evidence for the framework.
+- **The low-power explanation was not rejected, and that does not establish it.** The stated
+  loss condition was not met, but the noise figure was a proxy and the cells are correlated.
+  D1 stays [H], not promoted. This page does not test the power of the H1 statistic. H2's half of the claim is separate and untested; for H2 the same
   argument is shown arithmetically in `papers/capstone/ERRATA_v2.1.md`, E3.
 - **The design rule for every future chart test.** Before freezing, compute the power of the
   planned primary test on the planned design: model the predicted gaps between all rival laws,
   use a validated noise estimate, and account for calibration uncertainty and dependence between
-  measurements. Proceed only if the power is adequate. Being near saturation is often needed, but
-  it is not enough on its own to make laws distinguishable.
+  measurements. Proceed only if the power is adequate. Being nearer a bound is not a general
+  prescription: the gap between dial laws shrinks near saturation as well as near zero effect.
+  *Superseded, kept as history:* the plan above used "at least 3 times the replicate SE" per
+  cell. DECREASE has no replicate SE, and a per-cell gate is not a power calculation.
 
 ## Run it
 
