@@ -129,8 +129,11 @@ def main(argv: list[str] | None = None) -> int:
         outputs["docx"] = docx
     if "pdf" in formats:
         from playwright.sync_api import sync_playwright
-        import playwright as _pw
-        tools["playwright"] = getattr(_pw, "__version__", "unknown")
+        from importlib.metadata import PackageNotFoundError, version as _dist_version
+        try:
+            tools["playwright"] = _dist_version("playwright")
+        except PackageNotFoundError:
+            tools["playwright"] = "unknown"
         pdf = out / f"{STEM}_v{version}.pdf"
         footer = ('<div style="font-size:8px;width:100%;text-align:center;color:#666">Murray — Bounded '
                   f'Composition and Its Horizons, v{version} — <span class="pageNumber"></span>/'
