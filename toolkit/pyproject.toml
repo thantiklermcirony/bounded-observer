@@ -16,3 +16,8 @@ test = ["pytest>=7", "scipy>=1.10"]
 
 [tool.setuptools]
 packages = ["bounded"]
+
+[tool.pytest.ini_options]
+markers = [
+    "smoke: lookup or smoke check (a stated constant or formula value); it could not fail if the theorem were false. Substantive checks are unmarked.",
+]

@@ -21,7 +21,11 @@ export const law = {
   bliss: (a, b) => 1 - (1 - a) * (1 - b),
   loewe: (a, b) => { const o = a / (1 - a) + b / (1 - b); return o / (1 + o); },
 
-  // Theorem 19: the far side. artanh x = artanh(1/x) + i pi/2 for |x| > 1 (both signs, A.19)
+  // Theorem 19: the far side. Mirrors toolkit/bounded/law.py far_side_rapidity: the chosen
+  // representative r(x) = (1/2) Log((1+x)/(1-x)) (principal Log of the ratio), i.e.
+  // artanh(1/x) + i pi/2 for |x| > 1 on both signs. Exact additivity for inside (+) outside;
+  // only modulo i pi for outside (+) outside. At x = +-1 this returns re = +-Infinity
+  // (Python raises ValueError there): the horizons are excluded points.
   farSide: (x) => Math.abs(x) <= 1
     ? { re: Math.atanh(x), im: 0 }
     : { re: Math.atanh(1 / x), im: Math.PI / 2 },
