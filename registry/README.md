@@ -18,7 +18,9 @@
 Two rules give the file its meaning.
 
 **Every row has a next test.** A row with no next test is a row that cannot be wrong, and it
-does not belong in a register.
+does not belong in a register. Two kinds of row are kept for the record but carry no test of
+their own: a superseded row (L-U) and a synthesis row (L-A). Each names the rows that carry its
+tests, and neither counts as evidence by itself.
 
 **The `Outside UHL` layer is real.** Three works sit there: their conditions are not met, and
 the law says nothing about them. Keeping them listed is what stops "universal" from meaning

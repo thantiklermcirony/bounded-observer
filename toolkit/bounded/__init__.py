@@ -1,7 +1,10 @@
 """bounded: the mathematics of The Bounded Observer as runnable code.
 
 Each module implements proven results of *Bounded Composition and Its Horizons* (v2.1)
-and names the theorem it implements. The tests in toolkit/tests check every one numerically.
+and names the theorem it implements. toolkit/tests/test_theorems.py checks the identities;
+toolkit/tests/test_falsifiable.py checks conclusions independently of the toolkit's own formulas
+(by quadrature, integration or simulation), with negative controls where an error could hide.
+Theorems with no code here are listed in registry/review-2026-10-03.md.
 
     law       the law, the horizon, the three forms, the one-horizon dial, the far side
     boundary  arrival or horizon: the boundary exponent
