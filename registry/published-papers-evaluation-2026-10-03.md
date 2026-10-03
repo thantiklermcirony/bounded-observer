@@ -1,4 +1,4 @@
-# The two published papers: what they establish — 3 October 2026
+# The two published papers: a reading of the available extracts — 3 October 2026
 
 An evaluation of the programme's two journal papers, written because the author rightly objected
 that the review had described them only through the registry. Five independent analyses were run
@@ -6,6 +6,12 @@ for each paper: the maths re-derived and run, the empirical record, prior art, t
 for, and the strongest case against. A judge then weighed them. The judge for the glutathione
 paper was stopped by an automated filter, so that verdict was weighed by the lead reviewer from
 the same five analyses.
+
+**The limit on this whole document.** It reviews claims *as worded in partial preprint
+extracts*. That can check specific statements, such as whether a stated condition is sufficient
+or whether a printed equation has an equilibrium. **It cannot settle the value of the full
+published papers.** The journal versions may differ, add analyses, or fix what is flagged here.
+The "readings" below are readings of the extracts, not verdicts on the papers.
 
 **Read this first: what was and was not read.** The published journal texts could not be
 fetched; every publisher, DOI, PubMed and Europe PMC route is blocked from this environment.
@@ -66,7 +72,7 @@ journal versions.** If the journal text differs, the journal text wins.
   Stebbing 1982, and Conolly and Lutz 2004). These references were identified by the analyses
   and not re-read here. Whether the journal version cites them could not be checked.
 
-**Verdict.** A peer-reviewed, conditional, retrospectively consistent model. Its distinctive
+**Reading of the extract (not a verdict on the paper).** A peer-reviewed, conditional, retrospectively consistent model. Its distinctive
 predictions are open, and the necessity claim in its title overstates it.
 
 **What would make it a discovery.** Measure Da, Dt, both steepnesses, the baseline and η
@@ -109,7 +115,7 @@ alternatives.**
   Kinetic GSH models with saturable regeneration predate it (Reed 2008, which the paper cites,
   and others named by the analyses).
 
-**Verdict.** A careful, peer-reviewed modelling paper with one creditable pre-registered clinical
+**Reading of the extract (not a verdict on the paper).** A careful, peer-reviewed modelling paper with one creditable pre-registered clinical
 prediction. Not yet a discovery: nothing it predicted has been measured.
 
 **What would make it a discovery.** A trial or cohort that tests the pre-specified HR band and
