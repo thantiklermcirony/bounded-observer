@@ -62,8 +62,9 @@ data, the report, and the superseded output kept for provenance.
 ### Published
 
 - **Hormesis as a geometric necessity of bounded adaptive systems** —
-  [SSRN 6858819](https://papers.ssrn.com/abstract=6858819). A zero-free-parameter prediction
-  checked against Calabrese's database of more than 10,000 dose-responses.
+  [SSRN 6858819](https://papers.ssrn.com/abstract=6858819). Its zero-free-parameter predictions
+  are still to be compared with Calabrese's database of more than 10,000 dose-responses
+  (capstone §10.2; atlas row L-H1, where this is the next test).
 - **A dynamical model of glutathione homeostasis** —
   [SSRN 6754498](https://papers.ssrn.com/abstract=6754498). Recovers G6PD severe-deficiency
   contraindications and forecasts a phase II NSCLC trial outcome.

@@ -23,4 +23,6 @@ figures. The part files `00_front.md` through `05_appendix.md` are the source of
 concatenated markdown and the PDF are built from them.
 
 Versions 1.0, 1.1 and 2.0 are kept unchanged in the author's research library. The claim
-register in §15 has 38 entries: 12 proven, 11 derived, 15 open.
+register in §15 has 35 rows. The puzzle register in §12 has 38 entries: 12 re-read by the law,
+11 located (turned into a test), 15 outside its conditions. Corrections found after v2.1 was
+built are listed in [`capstone/ERRATA_v2.1.md`](capstone/ERRATA_v2.1.md).
