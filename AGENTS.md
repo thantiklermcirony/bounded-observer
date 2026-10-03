@@ -4,6 +4,17 @@ You are reading the source of a research programme, not a codebase with a produc
 The rules below exist because the programme's value is entirely in the discipline of its
 claims. Breaking them silently damages it more than any bug would.
 
+## Current authorization (3 October 2026)
+
+Daniel has withdrawn authorization for parallel research agents. The only work authorized on
+this branch is one bounded repository-repair pass on draft PR #1. Repository access does not
+authorize any further tasks, new research, or external communication such as email,
+submissions or releases.
+
+This notice is a written instruction, not a process lock. It does not stop sessions that are
+already running, and it binds only agents that read it. An earlier attempt by another assistant
+to save this instruction failed; this commit is the first time it is in the repository.
+
 ## The one rule
 
 **Nothing is asserted without a status tag, and nothing is promoted without a test that ran.**
