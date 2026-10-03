@@ -33,9 +33,11 @@ restated version awaits a dataset with many same-target pairs and replicates.
 
 **Power, checked afterwards (3 October 2026).** On this design the Bliss and Loewe surfaces differ
 by a median 0.010, half the single-agent noise and a seventh of the misfit of every law
-(`../t1-power-audit/`). The refutation stands as stated, but this design could not have
-separated the laws, so it carries little weight against the dial reading. The restated H1 faces
-the same limit: any dataset used for it must first pass the power check there.
+(`../t1-power-audit/`). Per cell, the Bliss–Loewe gap is small next to a
+Hill-residual noise proxy. That proxy is not a validated noise estimate, and this is not the power
+of H1's test, which a full audit is computing. **The refutation stands as stated.** Low power, if
+confirmed, would narrow what it tells us; it would not count for the framework. Any dataset used
+for the restated H1 must first pass a power check.
 
 ## Files
 
