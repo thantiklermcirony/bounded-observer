@@ -75,10 +75,11 @@ In words, and only per cell:
 - **D1 has a first, partial check that is consistent with it.** [H], not promoted. This page does
   not test the power of the H1 statistic. H2's half of the claim is separate and untested; for H2 the same
   argument is shown arithmetically in `papers/capstone/ERRATA_v2.1.md`, E3.
-- **The design rule for every future chart test.** Before freezing, compute the predicted gap
-  between the rival laws on the planned design. Proceed only where it exceeds 3σ in a
-  pre-stated share of cells. On data like this, that means doses high enough for the single
-  agents to act strongly.
+- **The design rule for every future chart test.** Before freezing, compute the power of the
+  planned primary test on the planned design: model the predicted gaps between all rival laws,
+  use a validated noise estimate, and account for calibration uncertainty and dependence between
+  measurements. Proceed only if the power is adequate. Being near saturation is often needed, but
+  it is not enough on its own to make laws distinguishable.
 
 ## Run it
 
