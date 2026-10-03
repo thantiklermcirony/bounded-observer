@@ -27,7 +27,7 @@ Daniel John Murray · [ORCID 0009-0005-1794-5945](https://orcid.org/0009-0005-17
 | Tracing the wider research | [research library](https://thantiklermcirony.github.io/bounded-observer/library.html) — dated manuscript and prediction records; [laboratories](https://thantiklermcirony.github.io/bounded-observer/labs.html) — results and failure gates |
 | An AI agent | [`AGENTS.md`](AGENTS.md), then [`llms.txt`](llms.txt) |
 | A mathematician | [`papers/capstone/`](papers/capstone/) — *Bounded Composition and Its Horizons*, v2.1 |
-| Here to check the maths | [`toolkit/`](toolkit/) — `pip install -e toolkit && pytest toolkit/tests` |
+| Here to check the maths | [`toolkit/`](toolkit/) — `pip install -e 'toolkit[test]' && python -m pytest toolkit/tests` |
 | Looking for what is untested | [`registry/atlas.csv`](registry/atlas.csv) — every claim, its status, its next test |
 | Here for the instrument | [`apps/ida-live/`](apps/ida-live/) — the law running on a living mind |
 

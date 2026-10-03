@@ -1,0 +1,1124 @@
+{
+ "status": "not begun; data sealed; no hypothesis tested",
+ "sealed_on": "2026-10-03 (UTC times per file); archived 2026-10-03",
+ "sealed_files": {
+  "bg_EHP7600_mixtures.sealed.csv": {
+   "bytes": 756647,
+   "sha256": "bb2aa18cd7adca934c30a872d976e6129fae6747206979fd82ac67b8a16307bb",
+   "sealed_utc": "2026-10-03T10:00:09Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/nanhung/EHP7600",
+   "source_commit": "3920407b263445d01bbf850684c9fcd9dce3a0e6",
+   "source_paths": [
+    "datasets/mixture_data.csv"
+   ],
+   "selection": "whole file (multi-component environmental mixtures)",
+   "script": "seal_ehp.py",
+   "access_status": "parsed",
+   "licence": "no licence file found: treat as all rights reserved",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "bg_fazmin_3D_checkerboard_isosurface.sealed.csv": {
+   "bytes": 27246,
+   "sha256": "c800630cbe98fc056122c343c745ebca795fef2d307c8f2a642fb1aacfe08b1c",
+   "sealed_utc": "2026-10-03T10:03:34Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/Fazmin/Triple-Synergy-Plot-3D",
+   "source_commit": "83f8f7152e7def3f2350001989e68a3d14fb3ef6",
+   "source_paths": [
+    "ndmKPC*.csv, ndmCTX*.csv, 3drug.csv, 3ddata.csv, two \"3D data for Faz\" workbooks"
+   ],
+   "selection": "all coordinate rows (isosurface points are outcome-bearing)",
+   "script": "seal_fazmin.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); underlying experimental data licence not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "bg_mixdra_FBSA_CPF_IMI_ternary_workbook.sealed.xls": {
+   "bytes": 4924416,
+   "sha256": "0820bf87ebe40d556081e0444541410e753315a163a66a7561a57209a04b1cfa",
+   "sealed_utc": "2026-10-03T10:05:17Z",
+   "verbatim_copy_of": [
+    "bg_SvL-1_mixdra:FBSA CPF IMI ternary -simplified.xls"
+   ],
+   "source_repository": "https://github.com/SvL-1/mixdra",
+   "source_commit": "0564abdf2dc2cca2777999b676d6ee3c4a3957d7",
+   "source_paths": [
+    "FBSA CPF IMI ternary -simplified.xls"
+   ],
+   "selection": "verbatim copy (workbook with ternary data and fits)",
+   "script": "seal_mixdra.py (shutil.copy)",
+   "access_status": "verbatim copy, not opened",
+   "licence": "GPL (>= 3) (DESCRIPTION, LICENSE.md); package is pre-release and the authors ask to be contacted before publication use",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "bg_mixdra_vanloon2025_exp1_ternary.sealed.csv": {
+   "bytes": 2165,
+   "sha256": "76361482e142b9dc3039faa7cea5ccf7830d18d4b8ebc2aa7edc8696a9c2211c",
+   "sealed_utc": "2026-10-03T10:05:17Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/SvL-1/mixdra",
+   "source_commit": "0564abdf2dc2cca2777999b676d6ee3c4a3957d7",
+   "source_paths": [
+    "inst/extdata/ternary_ca_fbsa_cpf_imi_continuous.csv"
+   ],
+   "selection": "rows with three nonzero doses",
+   "script": "seal_mixdra.py",
+   "access_status": "parsed",
+   "licence": "GPL (>= 3) (DESCRIPTION, LICENSE.md); package is pre-release and the authors ask to be contacted before publication use",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "bg_ncats_tact_TAUC_sliding_window.sealed.tab": {
+   "bytes": 167875,
+   "sha256": "3bb0dba414cb86648abb06e86b44bb5303661b85162c47505a3d0ea39252a8d9",
+   "sealed_utc": "2026-10-03T10:06:00Z",
+   "verbatim_copy_of": [
+    "bg_ncats_tact:input/Malaria_TAUC_sliding_window_concat.tab"
+   ],
+   "source_repository": "https://github.com/ncats/tact",
+   "source_commit": "68350b9efa9cb29a39e96536336dea6a99c4f326",
+   "source_paths": [
+    "input/Malaria_TAUC_sliding_window_concat.tab"
+   ],
+   "selection": "verbatim copy",
+   "script": "none (file copy)",
+   "access_status": "verbatim copy; header row and first column read",
+   "licence": "input/LICENSE.txt: Creative Commons Attribution 4.0 (data); code/LICENSE.txt: MIT",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "bg_ncats_tact_transformed_input.sealed.tab": {
+   "bytes": 172891,
+   "sha256": "d8df2f58bd96e167118b43c4eae8221ea25369e804a3ec0e3c4fa2607ddfbf59",
+   "sealed_utc": "2026-10-03T10:06:00Z",
+   "verbatim_copy_of": [
+    "bg_ncats_tact:input/transformed.sliding.window.input.tab"
+   ],
+   "source_repository": "https://github.com/ncats/tact",
+   "source_commit": "68350b9efa9cb29a39e96536336dea6a99c4f326",
+   "source_paths": [
+    "input/transformed.sliding.window.input.tab"
+   ],
+   "selection": "verbatim copy",
+   "script": "none (file copy)",
+   "access_status": "verbatim copy, not opened",
+   "licence": "input/LICENSE.txt: Creative Commons Attribution 4.0 (data); code/LICENSE.txt: MIT",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "bg_tox21_RGCA_ARER_mixtures.sealed.csv": {
+   "bytes": 335733,
+   "sha256": "9252c0a22c2f2f238aa01965f36023f3cf152dfc0887c10b0abd77be86076e04",
+   "sealed_utc": "2026-10-03T09:59:54Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/NIEHS/RGCA",
+   "source_commit": "13fa2afdae676e1d9e8e87bdf444f8b5a9f96b7f",
+   "source_paths": [
+    "inst/extdata/{AR-bla,AR-luc,ER-bla,ER-luc}.txt",
+    "inst/extdata/AllMixtureComponentsARER.xls (composition metadata)"
+   ],
+   "selection": "rows of mixtures with 3 or more components",
+   "script": "seal_rgca.py",
+   "access_status": "parsed",
+   "licence": "GPL (>= 2) (DESCRIPTION); Tox21 source data are described as US federal public-domain screening data (not verified here)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "caramel_MAGENTA_triplet.sealed.csv": {
+   "bytes": 1705,
+   "sha256": "362d98d9307a2e92a8a59f9663025d2ca6b63f1697b5b06d977d4f54910d9df0",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/CARAMeL",
+   "source_commit": "4d042fc9b93da9b8d41a57904152ea724dec2f84",
+   "source_paths": [
+    "data/ecoli_interactions.xlsx (sheet MAGENTA_triplet)"
+   ],
+   "selection": "whole sheet",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); compiled third-party data, original licences not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "caramel_Russ2018.sealed.csv": {
+   "bytes": 620,
+   "sha256": "9dd7ad9b94ad279a225a674bca34b243486c2046f923e47def0518b77d76b308",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/CARAMeL",
+   "source_commit": "4d042fc9b93da9b8d41a57904152ea724dec2f84",
+   "source_paths": [
+    "data/ecoli_interactions.xlsx (sheet Russ_2018)"
+   ],
+   "selection": "rows naming 3 or more drugs",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); compiled third-party data, original licences not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "caramel_mtb.sealed.csv": {
+   "bytes": 3220,
+   "sha256": "aaaf909578e96174a9539053f25309100ae7565ed7e9a83ebe5f935fc6e1145c",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/CARAMeL",
+   "source_commit": "4d042fc9b93da9b8d41a57904152ea724dec2f84",
+   "source_paths": [
+    "data/mtb_interactions.xlsx (sheet data)"
+   ],
+   "selection": "rows naming 3 or more drugs",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); compiled third-party data, original licences not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "lozano_huntelman2021.sealed.csv": {
+   "bytes": 65638755,
+   "sha256": "3a37c2bfb5d3bf875307862a5246b851b2f18fc63a9285081dabdd5219a920f5",
+   "sealed_utc": "2026-10-03T09:40:35Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/raphael-group/chimeric-epistasis",
+   "source_commit": "c8f007b8d0993074837f8c26c8f855f73e5effa9",
+   "source_paths": [
+    "drug_data/Lozano-HuntelmanEtAl2021/Raw Data and Growth Rate/Raw Data/Final_data_growthrates/*.csv"
+   ],
+   "selection": "every well of a 3-, 4- or 5-drug condition",
+   "script": "lozano_extract.py",
+   "access_status": "parsed",
+   "licence": "BSD-3-Clause (repository LICENSE); embedded Lozano-Huntelman 2021 data licence not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "lozano_huntelman2021_3Drug_summary.sealed.csv": {
+   "bytes": 93968,
+   "sha256": "4259e24e5b1b76736f0ce36108c0b53e79485f61b4fe7e95479ecf372a1a8b89",
+   "sealed_utc": "2026-10-03T09:40:35Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/raphael-group/chimeric-epistasis",
+   "source_commit": "c8f007b8d0993074837f8c26c8f855f73e5effa9",
+   "source_paths": [
+    "drug_data/Lozano-HuntelmanEtAl2021/Python Data and Code/3Drug.xlsx"
+   ],
+   "selection": "whole file",
+   "script": "lozano_extract.py",
+   "access_status": "parsed",
+   "licence": "BSD-3-Clause (repository LICENSE); embedded Lozano-Huntelman 2021 data licence not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "lozano_huntelman2021_4Drugs_summary.sealed.csv": {
+   "bytes": 386553,
+   "sha256": "7b295b6917c08bc12fb1d3da53abb6bcf74a22b8e8caafb8517975d98e55515f",
+   "sealed_utc": "2026-10-03T09:40:35Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/raphael-group/chimeric-epistasis",
+   "source_commit": "c8f007b8d0993074837f8c26c8f855f73e5effa9",
+   "source_paths": [
+    "drug_data/Lozano-HuntelmanEtAl2021/Python Data and Code/4Drugs.xlsx"
+   ],
+   "selection": "whole file",
+   "script": "lozano_extract.py",
+   "access_status": "parsed",
+   "licence": "BSD-3-Clause (repository LICENSE); embedded Lozano-Huntelman 2021 data licence not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "lozano_huntelman2021_5Drug_summary.sealed.csv": {
+   "bytes": 1011039,
+   "sha256": "2bac89213c94632f21bef1e849ce6742f8b2f83ca26db9f28eb1f855433a16d5",
+   "sealed_utc": "2026-10-03T09:40:36Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/raphael-group/chimeric-epistasis",
+   "source_commit": "c8f007b8d0993074837f8c26c8f855f73e5effa9",
+   "source_paths": [
+    "drug_data/Lozano-HuntelmanEtAl2021/Python Data and Code/5Drug.xlsx"
+   ],
+   "selection": "whole file",
+   "script": "lozano_extract.py",
+   "access_status": "parsed",
+   "licence": "BSD-3-Clause (repository LICENSE); embedded Lozano-Huntelman 2021 data licence not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "m2d2_Cokol.sealed.csv": {
+   "bytes": 10337,
+   "sha256": "a6e98e010aa29711bd01911ee9b54523b9bfcd90bad139cb48c3d33613f5c12a",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/M2D2",
+   "source_commit": "e476e414ed095b1a0da02bcedc976281df1cf595",
+   "source_paths": [
+    "… drugInteractions_allsources.xlsx (sheet Cokol)"
+   ],
+   "selection": "rows naming 3 or more drugs",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); compiled third-party data, original licences not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "m2d2_Katzir.sealed.csv": {
+   "bytes": 1610,
+   "sha256": "f69aed99b37682dca5ce61c59a2963328326d91642736020a479222eb1326e54",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/M2D2",
+   "source_commit": "e476e414ed095b1a0da02bcedc976281df1cf595",
+   "source_paths": [
+    "M2D2_stage2ML_traintest/drugInteractions/drugInteractions_allsources.xlsx (sheet Katzir)"
+   ],
+   "selection": "rows naming 3 or more drugs",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); compiled third-party data, original licences not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "m2d2_Russ.sealed.csv": {
+   "bytes": 970,
+   "sha256": "f88af116264a2b7c2cc4121d84ffaebcac25f631d54907c3d6c263d9392e1d04",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/M2D2",
+   "source_commit": "e476e414ed095b1a0da02bcedc976281df1cf595",
+   "source_paths": [
+    "… drugInteractions_allsources.xlsx (sheet Russ)"
+   ],
+   "selection": "rows naming 3 or more drugs",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); compiled third-party data, original licences not stated",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "magenta_cokol2018_triplet_plates.sealed.csv": {
+   "bytes": 20502,
+   "sha256": "09a9132a62fe1ecac927c048ef3e803db37ac8ce4cac9c924a490abc3b56e7b0",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/MAGENTA",
+   "source_commit": "4f79f4a079f60a5489cd10cfc2497be275842208",
+   "source_paths": [
+    "data/Ecoli-triplets.xlsx (sheets Plate1-4)"
+   ],
+   "selection": "rows with 3 drug IDs",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); data licence not stated separately",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "magenta_suppl_triplet_predictions.sealed.csv": {
+   "bytes": 6033,
+   "sha256": "353034ec36343205efd6767c729e0186a8e319fd50896b55001d2e1fe37a7ef4",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/MAGENTA",
+   "source_commit": "4f79f4a079f60a5489cd10cfc2497be275842208",
+   "source_paths": [
+    "data/MAGENTA_supplementary_dataset.xlsx (sheet \"triplet predictions\")"
+   ],
+   "selection": "whole sheet (published predictions with experimental values)",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); data licence not stated separately",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "magenta_triplets_inx_scores.sealed.csv": {
+   "bytes": 1386,
+   "sha256": "64cb21b7cd987a08a62ffed9093769a2117e49576a02d9fc44556bf7b6b8409f",
+   "sealed_utc": "2026-10-03T09:42:20Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/sriram-lab/MAGENTA",
+   "source_commit": "4f79f4a079f60a5489cd10cfc2497be275842208",
+   "source_paths": [
+    "data/Ecoli-triplets.xlsx (sheet inx_scores)"
+   ],
+   "selection": "whole sheet (derived triple interaction scores)",
+   "script": "magenta_extract.py",
+   "access_status": "parsed",
+   "licence": "GPL-3.0 (repository LICENSE); data licence not stated separately",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "ncats_10023_calc_possible_triple.sealed.csv": {
+   "bytes": 1226,
+   "sha256": "0cd73f24e241c4b45361de496816cf8e548d6293373fc723f5a0b18d9fd350c0",
+   "sealed_utc": "2026-10-03T09:44:08Z",
+   "verbatim_copy_of": [
+    "bioc_synergyfinder:data-raw/NCATS_10023/calc.csv"
+   ],
+   "source_repository": "https://github.com/bioc/synergyfinder",
+   "source_commit": "ebf173dc528391196df1af73b3483a3851b4c7b0",
+   "source_paths": [
+    "data-raw/NCATS_10023/calc.csv"
+   ],
+   "selection": "verbatim copy (NCATS per-block synergy scores)",
+   "script": "none (file copy)",
+   "access_status": "verbatim copy; agent record says triple outcomes were VIEWED",
+   "licence": "MPL-2.0 (DESCRIPTION, COPYING); upstream NCATS data terms not verified; an R doc header says \"Proprietary and confidential\" (conflict recorded by the sweep)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "ncats_10023_pyr_artesunate_12blocks_possible_triple.sealed.csv": {
+   "bytes": 34806,
+   "sha256": "0b0a6e82d9c833cf6411e88f6e0a8d02fe295d0b7cf88faf6b8c22a70ea550aa",
+   "sealed_utc": "2026-10-03T09:44:08Z",
+   "verbatim_copy_of": [
+    "bioc_synergyfinder:data-raw/NCATS_10023/responses.csv"
+   ],
+   "source_repository": "https://github.com/bioc/synergyfinder",
+   "source_commit": "ebf173dc528391196df1af73b3483a3851b4c7b0",
+   "source_paths": [
+    "data-raw/NCATS_10023/responses.csv"
+   ],
+   "selection": "verbatim copy (possible third-drug layering; not established)",
+   "script": "none (file copy)",
+   "access_status": "verbatim copy; agent record says triple outcomes were VIEWED",
+   "licence": "MPL-2.0 (DESCRIPTION, COPYING); upstream NCATS data terms not verified; an R doc header says \"Proprietary and confidential\" (conflict recorded by the sweep)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "ncats_malaria_tact_synergyfinder.sealed.csv": {
+   "bytes": 178315,
+   "sha256": "a242220c3f05ac3ddcd2445405b61f44710386774d82d9a434c8eb8fe1708eec",
+   "sealed_utc": "2026-10-03T09:43:36Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/bioc/synergyfinder",
+   "source_commit": "ebf173dc528391196df1af73b3483a3851b4c7b0",
+   "source_paths": [
+    "data/NCATS_screening_data.rda"
+   ],
+   "selection": "rows with three nonzero concentrations",
+   "script": "ncats_extract.py",
+   "access_status": "parsed",
+   "licence": "MPL-2.0 (DESCRIPTION, COPYING); upstream NCATS data terms not verified; an R doc header says \"Proprietary and confidential\" (conflict recorded by the sweep)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "pkg_EDITH_3drugs.sealed.csv": {
+   "bytes": 21662,
+   "sha256": "76102c61ae035567742fc98776b1fff4b0592af3df62ce87a98abfc6d21a56df",
+   "sealed_utc": "2026-10-03T09:52:28Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/mathilde-robin/EDITH",
+   "source_commit": "fedeeae704c80fb426086b137b6848e55764b1bf",
+   "source_paths": [
+    "inst/extdata/3drugs.xlsx"
+   ],
+   "selection": "rows with three nonzero concentrations (anonymised drugs; demo data)",
+   "script": "seal_edith.py",
+   "access_status": "parsed",
+   "licence": "MIT (DESCRIPTION, LICENSE.md)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "pkg_mixtox_antibiotox_mixtures.sealed.csv": {
+   "bytes": 20261,
+   "sha256": "74b9a604c01b0cfd3085b9fcf9c5a3518fc03c4633388879e52b5842262b4851",
+   "sealed_utc": "2026-10-03T09:53:44Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/cran/mixtox",
+   "source_commit": "26616ce51cb831de30cd211f481403813ae82ec3",
+   "source_paths": [
+    "data/antibiotox.rda"
+   ],
+   "selection": "mixture curves (7 components each; no triples)",
+   "script": "seal_mixtox.py",
+   "access_status": "parsed",
+   "licence": "GPL-2 (DESCRIPTION)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "pkg_mixtox_cytotox_mixtures.sealed.csv": {
+   "bytes": 19274,
+   "sha256": "7203fa1fc613bced3d1115816b172f2e294356b4c76b68c50e6479cfdf9a7c55",
+   "sealed_utc": "2026-10-03T09:53:44Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/cran/mixtox",
+   "source_commit": "26616ce51cb831de30cd211f481403813ae82ec3",
+   "source_paths": [
+    "data/cytotox.rda"
+   ],
+   "selection": "mixture curves (8 components each; no triples)",
+   "script": "seal_mixtox.py",
+   "access_status": "parsed",
+   "licence": "GPL-2 (DESCRIPTION)",
+   "redistribution": "NOT committed to this repository (see README)"
+  },
+  "pkg_synergyfinder_NCATS_screening_data.sealed.csv": {
+   "bytes": 178315,
+   "sha256": "a242220c3f05ac3ddcd2445405b61f44710386774d82d9a434c8eb8fe1708eec",
+   "sealed_utc": "2026-10-03T09:50:03Z",
+   "verbatim_copy_of": [],
+   "source_repository": "https://github.com/shuyuzheng/synergyfinder",
+   "source_commit": "ea2d246e4e14c79767df90eec67b9a2b75162b92",
+   "source_paths": [
+    "data/NCATS_screening_data.rda (byte-identical to the bioc copy)"
+   ],
+   "selection": "rows with three nonzero concentrations; byte-identical to ncats_malaria_tact_synergyfinder.sealed.csv",
+   "script": "seal_ncats.py",
+   "access_status": "parsed",
+   "licence": "MPL-2.0 (DESCRIPTION, COPYING); upstream NCATS data terms not verified",
+   "redistribution": "NOT committed to this repository (see README)"
+  }
+ },
+ "calibration_extracts": {
+  "work/bg/mixdra_exp1_singles_pairs.csv": {
+   "bytes": 7889,
+   "sha256": "4997cdf8b451b8458b724ac5144f35c5d7a8a526112c83336de29bf26e91eb59",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/bg/tox21_RGCA_singles_pairs.csv": {
+   "bytes": 160390,
+   "sha256": "03dde5a1bc3c8d524227d7edc1de986499806e20dbcddd31d21e0a6cdfa93322",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/caramel_Russ2018_order_le2.csv": {
+   "bytes": 1312,
+   "sha256": "684a32a3cdbf951e1e764dfecf238cfcc3a04223a4f7e0fb36a8933968599575",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/caramel_mtb_order_le2.csv": {
+   "bytes": 5129,
+   "sha256": "30daa1580d4b6588018ca886e243fafff58b90d0d1dfe147e8bcb409e7610b93",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/lozano2021_singles_pairs.csv": {
+   "bytes": 54561161,
+   "sha256": "67f8b8e957236683281a061c730e72912d35ebd793d4be484df60c24fabdc3da",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/m2d2_Cokol_order_le2.csv": {
+   "bytes": 2943,
+   "sha256": "1a8e78431193ebdb7e779cde9bb9cf403d3c1fdde6301af6a79bb11b2161e831",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/m2d2_Katzir_order_le2.csv": {
+   "bytes": 2601,
+   "sha256": "daf015ae3162614eaaa36b07b27ef63c9de33e134035f5f30df7b85f2f582e68",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/m2d2_Russ_order_le2.csv": {
+   "bytes": 5532,
+   "sha256": "a8b5595fe9d8e2781ab27f3942692801881b43ed4ce30dcec35ba2d4d89f4ec1",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/magenta_pairscreen_LB_summary.csv": {
+   "bytes": 3596,
+   "sha256": "60f176634cee8a0464f243c3644e5d7557774b84b4486c349c315734d2b09efe",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/magenta_triplet_plates_singles.csv": {
+   "bytes": 9519,
+   "sha256": "35d4f660714018a3f0e3d276c3fd38817d255fe7b1bc6399f8f9f52ab7732da8",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/ncats_tact_singles_pairs.csv": {
+   "bytes": 59559,
+   "sha256": "18c711095d533f04cf768e70382d48399cbf9c0ff332e7fbff788994d3a64109",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/pkg/edith_singles_pairs.csv": {
+   "bytes": 17335,
+   "sha256": "dcd2bac7dca7b53c15d30c412bb211d73f512bb51ad5933d5c2ecbad902f0af3",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/pkg/mixtox_antibiotox_singles.csv": {
+   "bytes": 12586,
+   "sha256": "54576785363ff692acebb6b499cf93c692f61e1b91c1e515cc386edb28c514f4",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/pkg/mixtox_cytotox_singles.csv": {
+   "bytes": 13316,
+   "sha256": "a99d4dca6c27e74a08ad22ed48e42dfa0eb2fcf522a5877f2b86a0a399fda031",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  },
+  "work/pkg/ncats_singles_pairs.csv": {
+   "bytes": 59559,
+   "sha256": "18c711095d533f04cf768e70382d48399cbf9c0ff332e7fbff788994d3a64109",
+   "access_status": "opened and inspected (singles and pairs only)",
+   "redistribution": "NOT committed"
+  }
+ },
+ "repositories": {
+  "bg_Fazmin_Triple-Synergy-Plot-3D": {
+   "url": "https://github.com/Fazmin/Triple-Synergy-Plot-3D",
+   "commit": "83f8f7152e7def3f2350001989e68a3d14fb3ef6",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ],
+   "source_files": {
+    "ndmKPC.csv": {
+     "bytes": 175,
+     "sha256": "7086f4e9b76fcfc880cda07d6a40de43653fd6b139be1236185ef2ddd9c662d7"
+    },
+    "ndmKPC_2.csv": {
+     "bytes": 839,
+     "sha256": "57274d6e2c454a86b2f1f461a990134246cf2469e8157757abb82c0800d119b0"
+    },
+    "ndmCTX.csv": {
+     "bytes": 177,
+     "sha256": "ae43ba39116dc63b30029b479b7d6f60aea5e886a8bd566b9740c81e616b5f08"
+    },
+    "ndmCTX_2.csv": {
+     "bytes": 797,
+     "sha256": "9362069b780f191714104922a53c6fc8920615d47f81bfb1778ee75d7052d41a"
+    },
+    "3drug.csv": {
+     "bytes": 4159,
+     "sha256": "060ca1a3b242763888328b641a89ba7a1a3ba6bf52636fefd318c5e071ccd128"
+    },
+    "3ddata.csv": {
+     "bytes": 1312,
+     "sha256": "d3aa35f078940e7f7ede0fc515444a1011b8b5b42f1c27ae617255114305a02a"
+    },
+    "3D data for Faz 030816.xlsx": {
+     "bytes": 11099,
+     "sha256": "bc35380947e5a9c8784b47225f23cdf15a9a9bc3276fee385e72baee5d9d5ea3"
+    },
+    "3D data for Faz 080816.xlsx": {
+     "bytes": 9369,
+     "sha256": "95b92da75a0cd88006db46c473b2ce919dffa3533981a720342cf26bb18866e5"
+    }
+   }
+  },
+  "bg_ICB-DCM_NullModels": {
+   "url": "https://github.com/ICB-DCM/NullModels",
+   "commit": "8c32f847905751e86a357081a850920bb3f53759",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "bg_LJMU-Chemoinformatics_Mixture-Toxicity-Modelling-Workflow": {
+   "url": "https://github.com/LJMU-Chemoinformatics/Mixture-Toxicity-Modelling-Workflow",
+   "commit": "0983f0034e863c26d646bd2bcbb733d8d17fb849",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "bg_NIEHS_RGCA": {
+   "url": "https://github.com/NIEHS/RGCA",
+   "commit": "13fa2afdae676e1d9e8e87bdf444f8b5a9f96b7f",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL (>= 2)"
+   ],
+   "source_files": {
+    "inst/extdata/AR-bla.txt": {
+     "bytes": 117692,
+     "sha256": "34ab8d0798af1bdd5da3e6198d12fec57b6a71a1c25437ae73fcd960abf0cd31"
+    },
+    "inst/extdata/AR-luc.txt": {
+     "bytes": 120919,
+     "sha256": "37c2e1f9681dd02ada38d1cf89a8c0f3886eae4601c04093c0a0d8bbf3d0ada7"
+    },
+    "inst/extdata/ER-bla.txt": {
+     "bytes": 111268,
+     "sha256": "1cdc939633e09be4b2284d42112c16b3d365560630c18880cff3ab9643c9231f"
+    },
+    "inst/extdata/ER-luc.txt": {
+     "bytes": 120067,
+     "sha256": "5de54fe20fd3a59bcb733e1dfdcf906c1928cc20700ec93714b50abe23bfe677"
+    },
+    "inst/extdata/AllMixtureComponentsARER.xls": {
+     "bytes": 50176,
+     "sha256": "416e64ce8967ec3f697359940ce624ab2d5754e9c1d63f2aa6ccfee8c2d467d3"
+    }
+   }
+  },
+  "bg_SimonHansul_Ecotoxicity-of-Metal-Mixtures-To-Fresh": {
+   "url": "https://github.com/SimonHansul/Ecotoxicity-of-Metal-Mixtures-To-Freshwater-Zooplankton-Communities",
+   "commit": "be22259b84d26258ed6f93a7f6fca8c06aa3566b",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "bg_SimonHansul_Interactive-metal-mixture-toxicity-as-emergent-p": {
+   "url": "https://github.com/SimonHansul/Interactive-metal-mixture-toxicity-as-emergent-property",
+   "commit": "f5e452f86d5a9d182cb171de550dce3156c28b1b",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: MIT License Copyright (c) 2021 SimonHansul Permission is hereby granted, free of charge, t"
+   ]
+  },
+  "bg_SvL-1_mixdra": {
+   "url": "https://github.com/SvL-1/mixdra",
+   "commit": "0564abdf2dc2cca2777999b676d6ee3c4a3957d7",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL (>= 3)",
+    "LICENSE.md: GNU General Public License ========================== _Version 3, 29 June 2007_ _Copyright"
+   ],
+   "source_files": {
+    "inst/extdata/ternary_ca_fbsa_cpf_imi_continuous.csv": {
+     "bytes": 8507,
+     "sha256": "1cefde6d636c30cc46da234a8d0e2897588af02ca4563549ee709572ee0e392a"
+    },
+    "FBSA CPF IMI ternary -simplified.xls": {
+     "bytes": 4924416,
+     "sha256": "0820bf87ebe40d556081e0444541410e753315a163a66a7561a57209a04b1cfa"
+    }
+   }
+  },
+  "bg_fabigpb_soil_mixture_risks": {
+   "url": "https://github.com/fabigpb/soil_mixture_risks",
+   "commit": "5a0e3e593333dde7892be03f3222f145ac38312f",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ]
+  },
+  "bg_ichxw_mixtox": {
+   "url": "https://github.com/ichxw/mixtox",
+   "commit": "99185972a93476edbde4d9a59cd0262feeb4a71e",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL-2"
+   ]
+  },
+  "bg_kristineccles_invitro-PAC-mixtures": {
+   "url": "https://github.com/kristineccles/invitro-PAC-mixtures",
+   "commit": "529b964941d895259c141e2b4187a49773e90f1a",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: MIT License Copyright (c) 2024 His Majesty the King Permission is hereby granted, free of "
+   ]
+  },
+  "bg_nanhung_EHP7600": {
+   "url": "https://github.com/nanhung/EHP7600",
+   "commit": "3920407b263445d01bbf850684c9fcd9dce3a0e6",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "no licence file found"
+   ],
+   "source_files": {
+    "datasets/mixture_data.csv": {
+     "bytes": 851229,
+     "sha256": "434c0888342ba5d1d64749aefe95390b2d5247ae30f1479cf199cacd2de7fc91"
+    },
+    "datasets/chem_data.csv": {
+     "bytes": 1386547,
+     "sha256": "796d8f8f5bd8fa2ff126e081450cd5ff21f3abd333ac6faf1a40f3e1a1edda6b"
+    },
+    "datasets/mixture_info.csv": {
+     "bytes": 4566,
+     "sha256": "81762cacc2e2ae71d16624fd39e35ef4a18ee3aef45fe5c142c0ac763a718fd5"
+    }
+   }
+  },
+  "bg_ncats_tact": {
+   "url": "https://github.com/ncats/tact",
+   "commit": "68350b9efa9cb29a39e96536336dea6a99c4f326",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "no licence file found"
+   ],
+   "source_files": {
+    "input/Malaria_TAUC_sliding_window_concat.tab": {
+     "bytes": 167875,
+     "sha256": "3bb0dba414cb86648abb06e86b44bb5303661b85162c47505a3d0ea39252a8d9"
+    },
+    "input/transformed.sliding.window.input.tab": {
+     "bytes": 172891,
+     "sha256": "d8df2f58bd96e167118b43c4eae8221ea25369e804a3ec0e3c4fa2607ddfbf59"
+    }
+   }
+  },
+  "bg_pennykahn_MixtureToxicity": {
+   "url": "https://github.com/pennykahn/MixtureToxicity",
+   "commit": "a67d871032ca9774f9aa6c18c700ae673e792beb",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "bg_viennadelnat_DTV-magnifies-mixture-toxicity": {
+   "url": "https://github.com/viennadelnat/DTV-magnifies-mixture-toxicity",
+   "commit": "8139a696757b7ecc31c68fe4955d8d9f7a25bae1",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "bioc_synergyfinder": {
+   "url": "https://github.com/bioc/synergyfinder",
+   "commit": "ebf173dc528391196df1af73b3483a3851b4c7b0",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "DESCRIPTION License: Mozilla Public License 2.0",
+    "COPYING: Mozilla Public License Version 2.0 ================================== 1. Definitions -----"
+   ],
+   "source_files": {
+    "data/NCATS_screening_data.rda": {
+     "bytes": 19041,
+     "sha256": "4f849f542c5ad5e8fd54c99b70c26f7a8d0ed35c36540c24ac2ce484d100676e"
+    },
+    "data-raw/NCATS_10023/metadata.csv": {
+     "bytes": 3872,
+     "sha256": "3bf2ba734a04b3064df9491385ca4235945ff6ea0e0d9cc6d9b8c6579965ee8f"
+    },
+    "data-raw/NCATS_10023/responses.csv": {
+     "bytes": 34806,
+     "sha256": "0b0a6e82d9c833cf6411e88f6e0a8d02fe295d0b7cf88faf6b8c22a70ea550aa"
+    },
+    "data-raw/NCATS_10023/calc.csv": {
+     "bytes": 1226,
+     "sha256": "0cd73f24e241c4b45361de496816cf8e548d6293373fc723f5a0b18d9fd350c0"
+    }
+   }
+  },
+  "djwooten_synergy": {
+   "url": "https://github.com/djwooten/synergy",
+   "commit": "fc6cf0e2e6b62399432d4fee6e051b39810bfd7d",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ]
+  },
+  "moors_TPLLdrugscreen": {
+   "url": "https://github.com/Moors-Code/TPLLdrugscreen",
+   "commit": "17ef8cd9022a8d3a447723263bd3cb766c007df9",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "musyc2021": {
+   "url": "https://github.com/djwooten/natcomms-musyc2021",
+   "commit": "9c484aa6552419120d404997d129f2c9c504722c",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_AleksandrIanevski_SynergyFinder": {
+   "url": "https://github.com/AleksandrIanevski/SynergyFinder",
+   "commit": "d2d0a8ffaa9f4a94752e682e30889dd477e195f8",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_CBIGR_HTSplotter": {
+   "url": "https://github.com/CBIGR/HTSplotter",
+   "commit": "78351ac94abbe2e74926ba6cdbaa8c8766318af7",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE.md: GPLV3 license",
+    "LICENSE.txt: GNU General Public License version 3 GPL-3.0-only The GNU General Public License is a free"
+   ]
+  },
+  "pkg_HaotingZhang1_SynBa": {
+   "url": "https://github.com/HaotingZhang1/SynBa",
+   "commit": "7ff69ee9aba9176db7f922b9ffe5a1147c0ab9e8",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: MIT License Copyright (c) 2023 Haoting Zhang Permission is hereby granted, free of charge,"
+   ]
+  },
+  "pkg_IanevskiAleksandr_SynergyFinder": {
+   "url": "https://github.com/IanevskiAleksandr/SynergyFinder",
+   "commit": "53149b76a303d1c3e2720694586eef888381a5f5",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_QuLab-VU_MuSyC_Cell": {
+   "url": "https://github.com/QuLab-VU/MuSyC_Cell",
+   "commit": "1ccc505cdb06f4d056ef1fe07f7c12779f9ee557",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_RafRomB_SynergyLMM": {
+   "url": "https://github.com/RafRomB/SynergyLMM",
+   "commit": "f1a9a16d02daae7f84eeaa6d351c51b3e6286497",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL (>= 3)",
+    "LICENSE.md: GNU General Public License ========================== _Version 3, 29 June 2007_ _Copyright"
+   ]
+  },
+  "pkg_TangSoftwareLab_SynergyFinderR": {
+   "url": "https://github.com/TangSoftwareLab/SynergyFinderR",
+   "commit": "ddee05bf9956922c0181fb9494979fa875b1b87f",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: Mozilla Public License 2.0",
+    "COPYING: Mozilla Public License Version 2.0 ================================== 1. Definitions -----"
+   ]
+  },
+  "pkg_Wenyu1024_synergyfinderplus_showcase": {
+   "url": "https://github.com/Wenyu1024/synergyfinderplus_showcase",
+   "commit": "24d313fcd9ef78e14c4cc12b44e8dd37b1d6b155",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_aalto-ics-kepaco_comboFM": {
+   "url": "https://github.com/aalto-ics-kepaco/comboFM",
+   "commit": "daa2e2b8d4619c18ce62e7e48993b2c407859081",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_bioconductor-source_synergyfinder": {
+   "url": "https://github.com/bioconductor-source/synergyfinder",
+   "commit": "ebf173dc528391196df1af73b3483a3851b4c7b0",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: Mozilla Public License 2.0",
+    "COPYING: Mozilla Public License Version 2.0 ================================== 1. Definitions -----"
+   ]
+  },
+  "pkg_cran_BIGL": {
+   "url": "https://github.com/cran/BIGL",
+   "commit": "d485b845a6e2afe39e851bc60549e05772d1b340",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL-3"
+   ]
+  },
+  "pkg_cran_COMBIA": {
+   "url": "https://github.com/cran/COMBIA",
+   "commit": "95d7e940f0c49d4ebd356f47bd645556ccd7d81a",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL (>= 2)"
+   ]
+  },
+  "pkg_cran_ToxicR": {
+   "url": "https://github.com/cran/ToxicR",
+   "commit": "1a4cd7d0817cc9613311bb13443e1b758d96fa9c",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: LGPL (>= 3)"
+   ]
+  },
+  "pkg_cran_braidrm": {
+   "url": "https://github.com/cran/braidrm",
+   "commit": "14b5ca85727389a1333d6622fd9a7466811eef3c",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL (>= 3)"
+   ]
+  },
+  "pkg_cran_drc": {
+   "url": "https://github.com/cran/drc",
+   "commit": "c6b005da4cceb55204875288f55683f2080e3d0d",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL-2"
+   ]
+  },
+  "pkg_cran_drugCombo": {
+   "url": "https://github.com/cran/drugCombo",
+   "commit": "a764e56fd9e22621912a25503a77ef68aa72db37",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL-3"
+   ]
+  },
+  "pkg_cran_mixexp": {
+   "url": "https://github.com/cran/mixexp",
+   "commit": "496374b8d08830efd4c889eb7248b984685e945c",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL (>= 2)"
+   ]
+  },
+  "pkg_cran_mixtox": {
+   "url": "https://github.com/cran/mixtox",
+   "commit": "26616ce51cb831de30cd211f481403813ae82ec3",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL-2"
+   ],
+   "source_files": {
+    "data/antibiotox.rda": {
+     "bytes": 7507,
+     "sha256": "27ae7f589126f17eb5833a827fd7e98e92517d58347980cce8c242e8da8de24a"
+    },
+    "data/cytotox.rda": {
+     "bytes": 9002,
+     "sha256": "99014fa0221a306fb53fb420f940b4d9dcd015d6302995ec63b75a10232e09a6"
+    }
+   }
+  },
+  "pkg_cran_synergyfinder": {
+   "url": "https://github.com/cran/synergyfinder",
+   "commit": "b27e8ec3e48c9dc64a2494fb5c11be60f3992073",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: Artistic License 2.0"
+   ]
+  },
+  "pkg_gdrplatform_gDRtestData": {
+   "url": "https://github.com/gdrplatform/gDRtestData",
+   "commit": "3bf1f759d2c229ce00f1240d59eaf32506dac6cf",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: Artistic-2.0"
+   ]
+  },
+  "pkg_hly89_synergyfinder": {
+   "url": "https://github.com/hly89/synergyfinder",
+   "commit": "9334b8e9c207c8607078e5ecabc0ba12eb5388a1",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: Mozilla Public License 2.0 + file LICENSE",
+    "LICENSE: YEAR: 2016 COPYRIGHT HOLDER: Liye He and specify as License: Mozilla Public License 2.0 + "
+   ]
+  },
+  "pkg_iTReX-Shiny_iTReX": {
+   "url": "https://github.com/iTReX-Shiny/iTReX",
+   "commit": "3d84e7b1fd8f004d45e02ea31b9deb957d011e8a",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "DESCRIPTION License: GPL-3",
+    "COPYING: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ]
+  },
+  "pkg_lootpiz_cdCocktails": {
+   "url": "https://github.com/lootpiz/cdCocktails",
+   "commit": "cf41b75ff46be68b215cc4ebf23932b248a6adb8",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "no licence file found"
+   ]
+  },
+  "pkg_mathilde-robin_EDITH": {
+   "url": "https://github.com/mathilde-robin/EDITH",
+   "commit": "fedeeae704c80fb426086b137b6848e55764b1bf",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "DESCRIPTION License: MIT + file LICENSE",
+    "LICENSE: YEAR: 2025 COPYRIGHT HOLDER: EDITH authors",
+    "LICENSE.md: # MIT License Copyright (c) 2025 EDITH authors Permission is hereby granted, free of charg"
+   ],
+   "source_files": {
+    "inst/extdata/3drugs.xlsx": {
+     "bytes": 23674,
+     "sha256": "ec8a3e5017059802464fed1c666994c1ffdd658b553fbe4ee77b89e22cba7bd3"
+    }
+   }
+  },
+  "pkg_shuyuzheng_synergyfinder": {
+   "url": "https://github.com/shuyuzheng/synergyfinder",
+   "commit": "ea2d246e4e14c79767df90eec67b9a2b75162b92",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "DESCRIPTION License: Mozilla Public License 2.0",
+    "COPYING: Mozilla Public License Version 2.0 ================================== 1. Definitions -----"
+   ],
+   "source_files": {
+    "data/NCATS_screening_data.rda": {
+     "bytes": 19041,
+     "sha256": "4f849f542c5ad5e8fd54c99b70c26f7a8d0ed35c36540c24ac2ce484d100676e"
+    }
+   }
+  },
+  "raphael_chimeric-epistasis": {
+   "url": "https://github.com/raphael-group/chimeric-epistasis",
+   "commit": "c8f007b8d0993074837f8c26c8f855f73e5effa9",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "LICENSE: BSD 3-Clause License Copyright (c) 2024, Princeton University All rights reserved. Redistr"
+   ],
+   "source_files": {
+    "drug_data/Lozano-HuntelmanEtAl2021/Python Data and Code/3Drug.xlsx": {
+     "bytes": 89123,
+     "sha256": "da4111603044e00144ccf5cb64993dd17e956faeb1c583dcd4cb5d664dbf2599"
+    },
+    "drug_data/Lozano-HuntelmanEtAl2021/Python Data and Code/4Drugs.xlsx": {
+     "bytes": 326237,
+     "sha256": "6266110f6fb5ad9c8881cd8485088f2440931457659ad15f766104da66e82ec7"
+    },
+    "drug_data/Lozano-HuntelmanEtAl2021/Python Data and Code/5Drug.xlsx": {
+     "bytes": 784751,
+     "sha256": "8e3a33e950217af09949a4000241fb75576d944f00a60cb204820ba0cf175d21"
+    }
+   },
+   "source_dir_Final_data_growthrates": {
+    "n_files": 56,
+    "sha256_of_sorted_name_and_hash_list": "75fccd11805f19103483af6e83a3dea3caa4212942fbef37153a488a86027fba"
+   }
+  },
+  "sriram_CARAMeL": {
+   "url": "https://github.com/sriram-lab/CARAMeL",
+   "commit": "4d042fc9b93da9b8d41a57904152ea724dec2f84",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ],
+   "source_files": {
+    "data/ecoli_interactions.xlsx": {
+     "bytes": 106294,
+     "sha256": "5babb2ac07f94b5746672f00f23127c652aa6263531baa36a52d6a9777b91ca0"
+    },
+    "data/mtb_interactions.xlsx": {
+     "bytes": 19995,
+     "sha256": "ecab15b77d68b865614b974da14ce20c6719321a71b35c8f76ee5fffbb77465f"
+    }
+   }
+  },
+  "sriram_INDIGOpy": {
+   "url": "https://github.com/sriram-lab/INDIGOpy",
+   "commit": "f6f43f26bb78997b49239213ed09e5b2839fe0d3",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ]
+  },
+  "sriram_M2D2": {
+   "url": "https://github.com/sriram-lab/M2D2",
+   "commit": "e476e414ed095b1a0da02bcedc976281df1cf595",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ],
+   "source_files": {
+    "M2D2_stage2ML_traintest/drugInteractions/drugInteractions_allsources.xlsx": {
+     "bytes": 94885,
+     "sha256": "ca196a07a55c915b393bbaf75fdc58bdae38320a580827d469c6c3df75fda910"
+    }
+   }
+  },
+  "sriram_MAGENTA": {
+   "url": "https://github.com/sriram-lab/MAGENTA",
+   "commit": "4f79f4a079f60a5489cd10cfc2497be275842208",
+   "role": "source of sealed files",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ],
+   "source_files": {
+    "data/Ecoli-triplets.xlsx": {
+     "bytes": 24882,
+     "sha256": "1b0914be16dd1275a058f729198a739a6139436f17d47be7a31bf24ad86d6da1"
+    },
+    "data/MAGENTA_supplementary_dataset.xlsx": {
+     "bytes": 26746,
+     "sha256": "b5189d7e837d2e883ac7fe0fae048ad945ef52fe92cd817a9d844a8022cb9665"
+    },
+    "data/Ecoli_screens.xlsx": {
+     "bytes": 79087,
+     "sha256": "f6bf44eaff1105ec2982225c3bc05f2df2c671cc58e9a7c95699b41f095dd277"
+    }
+   }
+  },
+  "sriram_TACTIC": {
+   "url": "https://github.com/sriram-lab/TACTIC",
+   "commit": "a232274c155ebb4fb3ee556c6ba9ff6c666e8fbb",
+   "role": "downloaded (cloned) and searched; no file sealed from it",
+   "licence_evidence": [
+    "LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Founda"
+   ]
+  }
+ }
+}

@@ -31,6 +31,14 @@ and sensitivity statistic is identical to five decimals.
 each block's own fitted single-agent curves, rather than about a single dial position. The
 restated version awaits a dataset with many same-target pairs and replicates.
 
+**Power, checked afterwards (3 October 2026).** On this design the Bliss and Loewe surfaces differ
+by a median 0.010, half the single-agent noise and a seventh of the misfit of every law
+(`../t1-power-audit/`). Per cell, the Bliss–Loewe gap is small next to a
+Hill-residual noise proxy. That proxy is not a validated noise estimate, and this is not the power
+of H1's test, which has not been computed (the full power analysis was not completed and is not active). **The refutation stands as stated.** Low power, if
+confirmed, would narrow what it tells us; it would not count for the framework. Any dataset used
+for the restated H1 must first pass a power check.
+
 ## Files
 
 | File | What it is |

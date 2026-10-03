@@ -1,0 +1,14 @@
+{
+ "blocks": 210,
+ "median_sigma": 0.019805387625906674,
+ "median_rms_gap_bliss_loewe": 0.010197868555614015,
+ "median_ratio_bliss_loewe": 0.49802645400512113,
+ "median_ratio_bliss_alpha_minus3": 0.9658610145916695,
+ "frac_blocks_ratio_BL_ge_3": 0.05238095238095238,
+ "frac_blocks_ratio_BL_lt_1": 0.6857142857142857,
+ "median_frac_cells_gap_gt_2sigma": 0.0,
+ "median_mean_ab": 0.015973572236665998,
+ "loss_condition_met": false,
+ "median_gap_over_bliss_misfit": 0.14081174371815536,
+ "frac_blocks_gap_exceeds_misfit": 0.009523809523809525
+}

@@ -191,6 +191,7 @@ em.term { font-style: normal; font-weight: 600; }
 .tag-X { background: color-mix(in srgb, var(--bad) 15%, transparent); color: var(--bad); }
 .tag-M { background: color-mix(in srgb, var(--cool) 12%, transparent); color: var(--cool); }
 .tag-U { background: color-mix(in srgb, var(--ink-3) 14%, transparent); color: var(--ink-2); }
+.tag-E { background: color-mix(in srgb, var(--ink-3) 14%, transparent); color: var(--ink-2); }
 
 /* ---------------------------------------------------------------- tables */
 table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: .86rem; }

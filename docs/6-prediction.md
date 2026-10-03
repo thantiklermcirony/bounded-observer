@@ -62,8 +62,9 @@ data, the report, and the superseded output kept for provenance.
 ### Published
 
 - **Hormesis as a geometric necessity of bounded adaptive systems** —
-  [SSRN 6858819](https://papers.ssrn.com/abstract=6858819). A zero-free-parameter prediction
-  checked against Calabrese's database of more than 10,000 dose-responses.
+  [SSRN 6858819](https://papers.ssrn.com/abstract=6858819). Its zero-free-parameter predictions
+  are still to be compared with Calabrese's database of more than 10,000 dose-responses
+  (capstone §10.2; atlas row L-H1, where this is the next test).
 - **A dynamical model of glutathione homeostasis** —
   [SSRN 6754498](https://papers.ssrn.com/abstract=6754498). Recovers G6PD severe-deficiency
   contraindications and forecasts a phase II NSCLC trial outcome.
@@ -80,10 +81,16 @@ data, the report, and the superseded output kept for provenance.
 | Hypothesis | Test | Loss condition |
 | --- | --- | --- |
 | **H1 restated** | Bliss and Loewe surfaces from per-block Hill fits, on NCI-ALMANAC or DrugComb | Overlap does not predict surface position |
-| **H5** | IDA read gate: do return features beat static, dynamic and simple-recovery baselines on a held-out behavioural outcome? | They do not, over 20 sessions after the freeze |
+| **IDA-RG** | IDA read gate: do return features beat static, dynamic and simple-recovery baselines on a held-out behavioural outcome? | They do not, over 20 sessions after the freeze |
 | **H7** | Gromov $\delta$ and best-fit curvature of perturbation-response and neural state spaces | Flat or spherical fits are as good or better |
 | **Theorem 25 item 3** | Reassociation defects and sectional curvature in a qutrit or covariance-tracking system | Defects vanish, or fitted curvature is constant |
 | **The classification** | Predict boundary exponent and cone type from a pre-specified mechanism; compare against a flexible alternative on held-out measurements | The flexible alternative predicts as well or better |
+
+*Identifiers.* IDA-RG, the IDA read gate, was labelled "H5" in this table before 3 October 2026.
+It is a different hypothesis from the capstone's H5 (§11.1, the per-person perceptual slope,
+written UHL-H5 outside the capstone). It is also different from Hypothesis 5 of the TAO manuscript
+(SSRN 6779487, written TAO-H5). The capstone keeps its own label H5. No claim was changed by
+relabelling.
 
 ## The rule this gate enforces
 

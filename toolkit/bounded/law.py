@@ -73,11 +73,26 @@ def loewe_odds(a: float, b: float) -> float:
 # ------------------------------------------------------------------ the far side (Theorem 19)
 
 def far_side_rapidity(x: float) -> complex:
-    """For |x| > 1: artanh x = artanh(1/x) + i pi/2 (principal branch, x > 1).
-    An outside state is the reciprocal of an inside one, rapidity turned a quarter."""
+    """A chosen complex rapidity r(x) for any real x with |x| != 1 (Theorem 19, A.19).
+
+    Convention (stated, not implied by "principal branch" alone):
+        r(x) = (1/2) Log((1 + x) / (1 - x)), Log the principal logarithm of the RATIO.
+    Inside (|x| < 1) this is artanh(x). Outside (|x| > 1) it is artanh(1/x) + i pi/2, with the
+    same +i pi/2 for x > 1 and for x < -1. It equals cmath.atanh(complex(x, +0.0)); the other
+    reading (1/2)[Log(1 + x) - Log(1 - x)] gives -i pi/2 for x > 1, so the convention matters.
+
+    What holds, and in what sense:
+    - tanh(r(x)) = x exactly, on both sides (tanh has period i pi).
+    - Inside (+) outside: for |a| < 1 and |x| > 1, x (+) a stays outside (it may pass through
+      infinity, e.g. (-3) (+) 0.5 = 5) and r(x (+) a) = r(x) + r(a) exactly.
+    - Outside (+) outside: x (+) y = (1/x) (+) (1/y) is always inside, and
+      r(x) + r(y) = r(x (+) y) + i pi. Additivity holds only modulo i pi there.
+    - Excluded: x = +-1 (the horizons) raise ValueError. The composition has a pole at
+      a = -1/x (x (+) a = infinity); the limit is represented by r = i pi/2.
+    These are coordinate and implementation facts, not physical predictions."""
     if abs(x) <= 1:
         return complex(math.atanh(x), 0.0)
-    return complex(math.atanh(1.0 / x), math.copysign(math.pi / 2, x))
+    return complex(math.atanh(1.0 / x), math.pi / 2)
 
 
 def simultaneity_slope(v: float) -> float:
