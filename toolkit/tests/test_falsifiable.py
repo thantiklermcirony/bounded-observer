@@ -213,3 +213,40 @@ def test_einstein_ceiling_recovers_the_ceiling():
         a, b = rng.uniform(0.01, 0.5, 2) * ell
         ab = (a + b) / (1 + a * b / ell ** 2)
         assert protocol.einstein_ceiling(a, b, ab) == pytest.approx(ell, rel=1e-9)
+
+
+# ---------------------------------------------------------------- Proposition 1, A.3 (ERRATA E1)
+def test_failed_composition_can_be_an_action_gate_failure_with_a_sufficient_state():
+    # ERRATA E1, second argument: the state x is sufficient (the future depends only on x and the
+    # intervention), yet no single-valued F on endpoint-from-rest summaries exists.
+    T_b = lambda x: x + 1.0
+    T_c = lambda x: 2.0 * x + 1.0
+    assert T_b(0.0) == T_c(0.0) == 1.0                       # equal summaries (endpoint from rest)
+    assert T_b(1.0) != T_c(1.0)                              # different actions from x = 1
+    # two different histories that reach the same present x = 1 have identical futures
+    for T in (T_b, T_c):
+        assert T(T_b(0.0)) == T(T_c(0.0))
+    # so F(L(present)=1, L(intervention)=1) would need two values: no single-valued F
+    assert {T_b(1.0), T_c(1.0)} == {2.0, 3.0}
+
+
+def test_failed_composition_can_be_state_insufficiency():
+    # ERRATA E1, first argument: the world carries (x, h); L reads x only. Equal L, same
+    # continuation b, different futures: L is not a sufficient state.
+    step = lambda x, h, b: (x + h * b, h)
+    L = lambda s: s[0]
+    s1, s2 = (1.0, 0.0), (1.0, 1.0)
+    assert L(s1) == L(s2)
+    assert L(step(*s1, 1.0)) != L(step(*s2, 1.0))
+
+
+# ---------------------------------------------------------------- Theorems 1-2, C3 (ERRATA E2)
+def test_c3_admits_the_neutral_end_and_excludes_the_horizon():
+    # ERRATA E2: with neutral state e, C3 excludes every finite end other than e. Bliss on [0, 1):
+    # the neutral end 0 can belong to the domain and keeps strict monotonicity; adding the
+    # horizon 1 breaks it, because 1 (+) a = 1 for every a.
+    from fractions import Fraction as Q
+    bliss = lambda a, b: 1 - (1 - a) * (1 - b)                   # exact rational arithmetic
+    assert bliss(Q(0), Q(3, 10)) == Q(3, 10) == bliss(Q(3, 10), Q(0))   # 0 is neutral
+    assert bliss(Q(0), Q(1, 5)) < bliss(Q(0), Q(2, 5))                  # strict at the neutral end
+    assert bliss(Q(1), Q(1, 5)) == bliss(Q(1), Q(2, 5)) == 1            # not strict at the horizon
