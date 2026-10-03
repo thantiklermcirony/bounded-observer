@@ -9,11 +9,18 @@ missing_tests = [r["work"] for r in rows if not r["next_test"].strip()]
 if missing_tests:
     raise ValueError("atlas rows without a next test: " + ", ".join(missing_tests))
 
+LEGACY_E = "legacy E — definition unverified"
+
+
 def tag(v):
     v = (v or "").strip()
     if v.lower().startswith(("outside", "refuted")):
         return "X"
     parts = v.split(" / ")
+    # "E" appears in two legacy rows and is defined nowhere (review item 11). Show it as such,
+    # never silently as "U" and never as proven; the raw value stays in the status column.
+    if any(re.match(r"^E(?:$|[\s;,(])", part) for part in parts):
+        return "E"
     statuses = [re.match(r"^([PDH])(?:$|[\s;,(])", part) for part in parts]
     if len(parts) > 1 and all(statuses):
         return "M"  # one row contains claims with different statuses
@@ -34,15 +41,16 @@ for L in layers:
         title = html.escape(r["short_title"])
         if ssrn.isdigit():
             title = f'<a href="https://papers.ssrn.com/abstract={ssrn}">{title}</a>'
+        label = LEGACY_E if t == "E" else t
         body.append(
-            f'<tr data-tag="{t}"><td><span class="tag tag-{t}">{t}</span></td>'
+            f'<tr data-tag="{t}"><td><span class="tag tag-{t}">{label}</span></td>'
             f'<td>{title}</td><td>{html.escape(r["verdict_status"])}</td>'
             f'<td>{html.escape(r["bounded_quantity"])}</td>'
             f'<td>{html.escape(r["chart"])}</td><td>{html.escape(r["next_test"])}</td>'
             f'<td>{html.escape(r["last_result"])}</td></tr>')
     body.append("</tbody></table></div>")
 
-counts = {t: sum(1 for r in rows if tag(r["verdict_status"]) == t) for t in "PDHMXU"}
+counts = {t: sum(1 for r in rows if tag(r["verdict_status"]) == t) for t in "PDHMXUE"}
 
 page = f"""<!doctype html>
 <html lang="en">
@@ -74,9 +82,11 @@ page = f"""<!doctype html>
        <span class="tag tag-H">H</span> hypothesis with a stated loss condition ·
        <span class="tag tag-M">M</span> mixed statuses within one work ·
        <span class="tag tag-X">X</span> outside the law's conditions or explicitly refuted ·
-       <span class="tag tag-U">U</span> status needs classification</p>
+       <span class="tag tag-U">U</span> status needs classification ·
+       <span class="tag tag-E">{LEGACY_E}</span> a legacy tag whose meaning is not defined in any
+       source found; the raw value is kept in the status column</p>
     <p>{counts['P']} proven · {counts['D']} derived · {counts['H']} open · {counts['M']} mixed ·
-    {counts['X']} outside or refuted · {counts['U']} unclassified. The full status text stays
+    {counts['X']} outside or refuted · {counts['U']} unclassified · {counts['E']} legacy E. The full status text stays
     visible in each row. The law applies <b>only where its four conditions hold</b>.</p>
   </div>
   <div style="max-width:76rem;margin-top:2rem">

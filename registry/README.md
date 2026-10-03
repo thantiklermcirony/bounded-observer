@@ -26,6 +26,27 @@ tests, and neither counts as evidence by itself.
 the law says nothing about them. Keeping them listed is what stops "universal" from meaning
 "unfalsifiable". The law is universal over its four conditions C1–C4 and over nothing else.
 
+**Status values in use** (documented 3 October 2026; the CSV is not restructured here):
+
+| Value in `verdict_status` | Meaning | Shown on the atlas page as |
+| --- | --- | --- |
+| `P`, `D`, `H` | The three status tags defined in AGENTS.md and capstone §1 | P, D, H |
+| several of these joined by ` / ` | Different claims within one work carry different tags | M (mixed) |
+| `outside conditions`, `refuted…` | Outside the law's conditions, or explicitly refuted | X |
+| `superseded…`, `synthesis…` | Kept for the record; carries no test of its own (see the rule above) | U |
+| `L` (row P-Q) | The §12 puzzle verdict "located", not a status tag | U |
+| `E` (rows L-08, L-GSH) | A legacy tag defined in no source found | legacy E — definition unverified |
+
+**Four things the status column does not distinguish, and should not be read as merging:**
+1. *publication*: whether a work appeared in a journal;
+2. *mathematical status*: proven, derived or conjectured;
+3. *evidence type*: calibrated, retrodicted, prospectively predicted, or untested;
+4. *replication status*: whether anyone has independently reproduced it.
+
+Publication alone is not empirical validation. A published paper with an untested prediction is
+still untested. When these columns are separated in a future revision, the raw values above
+must be preserved.
+
 Adding a row: see `../CONTRIBUTING.md`. You will be asked for the bounded quantity, its
 ceiling, the neutral state, the composition operation, the chart, and one prediction with a
 loss condition.
