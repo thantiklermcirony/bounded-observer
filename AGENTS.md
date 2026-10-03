@@ -37,8 +37,8 @@ Hyperbolic Law; `papers/capstone/` has the proofs. `docs/` walks the six gates i
 ## Running the checks
 
 ```bash
-pip install -e toolkit
-pytest toolkit/tests -q
+pip install -e 'toolkit[test]'
+python -m pytest toolkit/tests -q
 ```
 
 Every test names the theorem it checks. If you change `toolkit/bounded/`, the tests must still

@@ -111,9 +111,11 @@ def test_lz76_known_values():
     assert 0.85 < c * np.log2(4096) / 4096 < 1.15
 
 
-def test_control_folder_roundtrip():
+def test_control_folder_roundtrip(tmp_path, monkeypatch):
     from ida_live.engine import Engine
     from ida_live.control import ControlBridge
+    # keep the control folder out of the working tree
+    monkeypatch.setattr("ida_live.control.DATA_DIR", tmp_path)
 
     async def run():
         e = Engine(load_settings())

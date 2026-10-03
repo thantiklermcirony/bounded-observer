@@ -33,8 +33,8 @@ Use the error-report template. Please say whether you checked the source yoursel
 ## Running the checks
 
 ```bash
-pip install -e toolkit
-pytest toolkit/tests -q
+pip install -e 'toolkit[test]'
+python -m pytest toolkit/tests -q
 ```
 
 Each test names the theorem it checks. A new function in `toolkit/bounded/` needs a new test
