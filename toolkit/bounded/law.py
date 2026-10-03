@@ -73,11 +73,13 @@ def loewe_odds(a: float, b: float) -> float:
 # ------------------------------------------------------------------ the far side (Theorem 19)
 
 def far_side_rapidity(x: float) -> complex:
-    """For |x| > 1: artanh x = artanh(1/x) + i pi/2 (principal branch, x > 1).
-    An outside state is the reciprocal of an inside one, rapidity turned a quarter."""
+    """For |x| > 1: artanh x = artanh(1/x) + i pi/2 (principal branch, A.19).
+    An outside state is the reciprocal of an inside one, rapidity turned a quarter.
+    The imaginary part is +i pi/2 on the whole far side, for x < -1 as well as x > 1,
+    so additivity holds exactly when a composition passes through infinity."""
     if abs(x) <= 1:
         return complex(math.atanh(x), 0.0)
-    return complex(math.atanh(1.0 / x), math.copysign(math.pi / 2, x))
+    return complex(math.atanh(1.0 / x), math.pi / 2)
 
 
 def simultaneity_slope(v: float) -> float:

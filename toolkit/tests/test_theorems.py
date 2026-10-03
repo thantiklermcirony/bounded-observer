@@ -76,6 +76,24 @@ def test_far_side():
     assert math.isclose(1 / law.einstein(v, u), 1.4375)
 
 
+def test_far_side_rapidity_is_additive_through_infinity():
+    # Theorem 19.2: rapidity(x + a) = rapidity(x) + rapidity(a) exactly for |x| > 1, |a| < 1,
+    # including compositions that pass through infinity, e.g. (-3) + 0.5 = 5.
+    assert law.far_side_rapidity(-3.0).imag == pytest.approx(math.pi / 2)
+    assert law.einstein(-3.0, 0.5) == pytest.approx(5.0)
+    rng = np.random.default_rng(19)
+    for _ in range(10_000):
+        a = rng.uniform(-0.99, 0.99)
+        x = rng.choice([-1, 1]) / rng.uniform(0.01, 0.99)
+        y = law.einstein(x, a)
+        if abs(abs(y) - 1) < 1e-6 or not math.isfinite(y):
+            continue
+        lhs = law.far_side_rapidity(y)
+        rhs = law.far_side_rapidity(x) + law.far_side_rapidity(a)
+        assert abs(lhs - rhs) < 1e-8
+        assert abs(lhs - cmath.atanh(y)) < 1e-8
+
+
 # ---------------------------------------------------------------- Theorem 29: the observer is the centre
 def test_observer_centrality():
     o, x, y = 0.4 + 0.3j, -0.2 + 0.6j, 0.5 - 0.1j

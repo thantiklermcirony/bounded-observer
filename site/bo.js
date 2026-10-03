@@ -21,10 +21,10 @@ export const law = {
   bliss: (a, b) => 1 - (1 - a) * (1 - b),
   loewe: (a, b) => { const o = a / (1 - a) + b / (1 - b); return o / (1 + o); },
 
-  // Theorem 19: the far side. artanh x = artanh(1/x) + i pi/2 for |x| > 1
+  // Theorem 19: the far side. artanh x = artanh(1/x) + i pi/2 for |x| > 1 (both signs, A.19)
   farSide: (x) => Math.abs(x) <= 1
     ? { re: Math.atanh(x), im: 0 }
-    : { re: Math.atanh(1 / x), im: Math.sign(x) * Math.PI / 2 },
+    : { re: Math.atanh(1 / x), im: Math.PI / 2 },
 };
 
 /* Proposition 9: the boundary exponent. delta' = -k delta^gamma.
