@@ -1,0 +1,41 @@
+{
+ "version_from_sources": "2.1",
+ "source_commit": "29cbf98730ef23faf861124111ea6730cb78da4d",
+ "sources": {
+  "00_front.md": "590d23dee2a8d65dcb296b700b77e64a2514689269ce4d980f06f6d7dd1565ba",
+  "01_law.md": "fb5b9062b7fa9549ddebc227a785ef1a7e81a1cbf27cbe216f7999cbc8def40a",
+  "02_horizon.md": "4fc272717ed4e3a6ce204f996bf96fcd85e6d5b57e55d8585954cefb53f66209",
+  "03_charts.md": "83d55bbfa38ff555b37ac0b2c591be0372581a6f7ef42b8c878322750c84b2a6",
+  "04_test.md": "72e9c8f1609b858b7ce3bd2b5a7a7fb17c181b000bdca181d07cfba9d0435fae",
+  "05_appendix.md": "cf0d4a1423171ed213ed53f369eff170b6c410b9900f7674de7374765984fe17"
+ },
+ "css": "none (pandoc default styling; original style.css not in repository)",
+ "tools": {
+  "python": "3.11.15",
+  "pandoc": "pandoc 3.9",
+  "playwright": "1.63.0",
+  "chromium": "141.0.7390.37"
+ },
+ "outputs": {
+  "md": {
+   "file": "Bounded_Composition_and_Its_Horizons_v2.1.md",
+   "sha256": "40a4cf5cd50db7a40a99d5fbbe66ae073194e6333d0fc4f80d945711d54ff078",
+   "bytes": 148899
+  },
+  "html": {
+   "file": "Bounded_Composition_and_Its_Horizons_v2.1.html",
+   "sha256": "5bedf41c0ba2cc2e6655aade44440b0f205ea95283c877d53af923f5e5d68357",
+   "bytes": 1120028
+  },
+  "docx": {
+   "file": "Bounded_Composition_and_Its_Horizons_v2.1.docx",
+   "sha256": "8bd818b57d0051463f97dec99f589bc0167222d998fd0a040e2d27fca4ae9075",
+   "bytes": 517560
+  },
+  "pdf": {
+   "file": "Bounded_Composition_and_Its_Horizons_v2.1.pdf",
+   "sha256": "96e717aedab2af862efac32a1fe4eb27a06b12df8704dc335073ee2d0aa9fcc5",
+   "bytes": 685939
+  }
+ }
+}
