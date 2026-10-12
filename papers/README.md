@@ -1,26 +1,33 @@
-# Papers
+# Current papers
 
-| Paper | Status | Where |
-|---|---|---|
-| **Bounded Composition and Its Horizons** (the capstone) | v2.1 ready; four specialist readers, then submission | `capstone/` |
-| The Observer and the World (the grammar) | On SSRN; revision to point down to the capstone, after the capstone's readers report | [SSRN 7347861](https://papers.ssrn.com/abstract=7347861) |
-| Hormesis as a geometric necessity | **Published** | [SSRN 6858819](https://papers.ssrn.com/abstract=6858819) |
-| A dynamical model of glutathione homeostasis | **Published** | [SSRN 6754498](https://papers.ssrn.com/abstract=6754498) |
-| Finite rescue windows in NRF2-active cancer | Major revision in progress | [SSRN 7181465](https://papers.ssrn.com/abstract=7181465) |
-| The classification (boundary exponent and cone type decide the geometry) | **Not yet written.** The only open path to a prediction that can win | — |
-| IDA Live, the software | **Not yet written.** The repository is public and its tests run in CI | `../apps/ida-live/` |
+The current operational framework is the 12 October 2026 library. Its twelve public manuscripts were received by SSRN on 13 October and await completeness review. The frozen v2.1 composition capstone is preserved separately.
 
-The full list of the author's SSRN records, and where each sits in the programme, is in
-`../registry/atlas.csv`.
+## Capstone and supporting papers
 
-## The capstone
+| Manuscript | Source | PDF | SSRN |
+| --- | --- | --- | --- |
+| The Bounded Observer | [Source](library-2026-10-12/papers/capstone.md) | [PDF](library-2026-10-12/pdf/capstone.pdf) | [7603080](https://papers.ssrn.com/abstract=7603080) |
+| The Geometry of Bounded Records | [Source](library-2026-10-12/papers/paper1.md) | [PDF](library-2026-10-12/pdf/paper1.pdf) | [7603118](https://papers.ssrn.com/abstract=7603118) |
+| One Motion on the Line | [Source](library-2026-10-12/papers/paper2.md) | [PDF](library-2026-10-12/pdf/paper2.pdf) | [7603159](https://papers.ssrn.com/abstract=7603159) |
+| Light Time and Horizons | [Source](library-2026-10-12/papers/paper3.md) | [PDF](library-2026-10-12/pdf/paper3.pdf) | [7603162](https://papers.ssrn.com/abstract=7603162) |
+| Two Observers | [Source](library-2026-10-12/papers/paper4.md) | [PDF](library-2026-10-12/pdf/paper4.pdf) | [7603182](https://papers.ssrn.com/abstract=7603182) |
+| Where Singularities Can Live | [Source](library-2026-10-12/papers/paper5.md) | [PDF](library-2026-10-12/pdf/paper5.pdf) | [7603198](https://papers.ssrn.com/abstract=7603198) |
+| The Partner Freedom | [Source](library-2026-10-12/papers/paper6.md) | [PDF](library-2026-10-12/pdf/paper6.pdf) | [7603278](https://papers.ssrn.com/abstract=7603278) |
+| Gravity as Equilibrium | [Source](library-2026-10-12/papers/paper7.md) | [PDF](library-2026-10-12/pdf/paper7.pdf) | [7603300](https://papers.ssrn.com/abstract=7603300) |
+| The Ceiling and the Constants | [Source](library-2026-10-12/papers/paper8.md) | [PDF](library-2026-10-12/pdf/paper8.pdf) | [7603303](https://papers.ssrn.com/abstract=7603303) |
 
-`capstone/` holds the source of *Bounded Composition and Its Horizons: when a bounded quantity
-earns an additive chart, a horizon and a geometry*, version 2.1, 30 September 2026. 57 pages.
+## Amendment and proposed corrections
 
-Build it with `python build.py` (needs pandoc and Playwright); `figs.py` regenerates the six
-figures. The part files `00_front.md` through `05_appendix.md` are the source of record; the
-concatenated markdown and the PDF are built from them.
+| Manuscript | Source | PDF | SSRN |
+| --- | --- | --- | --- |
+| Exact Onset and Peak Laws for Bounded Adaptive Responses | [Source](library-2026-10-12/papers/hormesis_amendment.md) | [PDF](library-2026-10-12/pdf/hormesis_amendment.pdf) | [7603323](https://papers.ssrn.com/abstract=7603323) |
+| Correction to Hormesis as a Geometric Necessity of Bounded Adaptive Systems | [Source](library-2026-10-12/corrections/hormesis_corrigendum.md) | [PDF](library-2026-10-12/pdf/hormesis_corrigendum.pdf) | [7603378](https://papers.ssrn.com/abstract=7603378) |
+| Proposed correction to Bounded Composition and Deformed Kinematics | [Source](library-2026-10-12/corrections/deformed_kinematics_correction.md) | [PDF](library-2026-10-12/pdf/deformed_kinematics_correction.pdf) | [7603418](https://papers.ssrn.com/abstract=7603418) |
 
-Versions 1.0, 1.1 and 2.0 are kept unchanged in the author's research library. The claim
-register in §15 has 38 entries: 12 proven, 11 derived, 15 open.
+The notices are author proposals; the hormesis proposal is not an issued journal corrigendum. Existing original SSRN abstracts now carry dated correction links; their original PDFs and reuse settings remain unchanged.
+
+## Versions and reuse
+
+[Publication and licensing receipt](PUBLICATION_STATUS_2026-10-13.md) · [Immutable October snapshot](library-2026-10-12/README.md) · [Frozen v2.1](capstone/) · [Historical inventory](../registry/legacy/README.md).
+
+The snapshot's preparation metadata is dated 12 October and still says no submission was performed. The dated receipt records the later authorized SSRN submissions and CC BY 4.0 choice without changing the checked manuscripts or manifest. Reproduce its checks and builds in a separate working copy.

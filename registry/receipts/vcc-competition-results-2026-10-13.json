@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-10-13",
+  "scope": "Dated historical competition results; ranks are observed entry ranks, not live positions or unique-team ranks. Scores are normalized challenge aggregates, not accuracy percentages.",
+  "method": {
+    "entry31": "Non-neural, rule-based sparse-count predictor using empirical source effects, explicit guide/cis rules, bounded profile updates and count-preserving rendering.",
+    "later_variants": "Some later variants add fitted low-rank ridge components or least-squares calibration; methods are recorded separately."
+  },
+  "entries": [
+    {
+      "name": "31-EchoFull",
+      "overall_score": 0.2102,
+      "observed_rank": 221,
+      "observed_date_sydney": "2026-10-10",
+      "source_file": "SUBMISSION31_USER_REPORTED_RESULT.json",
+      "source_sha256": "e06b6e30ab0d5845fa4515c879c7ac2c287ab8e30a56aa09267bd2ee1a1b7085",
+      "score_provenance": "Official dashboard/email supplied by the author",
+      "entry_id": "JEpBQXOn9EVFl25wQikg",
+      "entry_binding": "Upload log gives entry ID separately; author-supplied score notice does not name it",
+      "entries_at_observation": 1416,
+      "normalized_PDS": 0.7815,
+      "predicted_cells": 360000,
+      "perturbation_context_groups": 900,
+      "genes": 18533
+    },
+    {
+      "name": "32-ProgrammeQuarter64-A-CisHeld-Research",
+      "overall_score": 0.209234751780545,
+      "observed_rank": 227,
+      "observed_date_sydney": "2026-10-10",
+      "source_file": "STATUS_20261010T064652_811887Z.json",
+      "source_sha256": "8356f12d15e837df5b360d02397328b41d78101a4af2b58d892e3e2dae1e81fd",
+      "score_provenance": "Saved official server status",
+      "entry_id": "q7MvD22MZwdVYU3yXZsk",
+      "entry_binding": "Official server status",
+      "validation_panel": "vcc2026-val-1",
+      "anchor_version": "vcc2026-valA-r4+vcc2026-valB-r4+vcc2026-valC-r4"
+    },
+    {
+      "name": "33-NT20-KL-MeanHeld-Research",
+      "overall_score": 0.137797589987645,
+      "observed_rank": 558,
+      "observed_date_sydney": "2026-10-11",
+      "source_file": "STATUS_20261011T005739_622693Z.json",
+      "source_sha256": "ff6f7cf6c6b550ce6b0a5d76b57eb0e31978b8dcb04317f89cd6b1532980feed",
+      "score_provenance": "Saved official server status",
+      "entry_id": "eeOYBqkJCjJbLZjXETnp",
+      "entry_binding": "Official server status",
+      "validation_panel": "vcc2026-val-1",
+      "anchor_version": "vcc2026-valA-r4+vcc2026-valB-r4+vcc2026-valC-r4"
+    },
+    {
+      "name": "34-SourceSpecificQuarter64-A-CisHeld-Research",
+      "overall_score": 0.2097282273440253,
+      "observed_rank": 246,
+      "observed_date_sydney": "2026-10-12",
+      "source_file": "STATUS_20261011T213937_516617Z.json",
+      "source_sha256": "c141f1a0273b9ad356887788d423a190cb8fadffa43757a027fa5b079db78c78",
+      "score_provenance": "Saved official server status",
+      "entry_id": "fUvtnouuJORRrB00iuek",
+      "entry_binding": "Official server status",
+      "validation_panel": "vcc2026-val-1",
+      "anchor_version": "vcc2026-valA-r4+vcc2026-valB-r4+vcc2026-valC-r4"
+    },
+    {
+      "name": "35-EchoRoad",
+      "overall_score": 0.2082,
+      "observed_rank": null,
+      "observed_date_sydney": "2026-10-12",
+      "source_file": "result_35_road.json",
+      "source_sha256": "e9f6e73aad6ce04e7fdf1e2898aeee0e28b9a7190edb5ba6d49478882809c91c",
+      "score_provenance": "Official dashboard/email supplied by the author",
+      "entry_id": "ODyZUFXB5rwIQF6VRGnu",
+      "entry_binding": "Retained upload log and author-supplied result",
+      "normalized_PDS": 0.7712
+    },
+    {
+      "name": "36-EchoRoadShared",
+      "overall_score": 0.209,
+      "observed_rank": null,
+      "observed_date_sydney": "2026-10-12",
+      "source_file": "result_36_shared.json",
+      "source_sha256": "9a0333fce78313b274b190ad208f346d02761b54a6438033d303867ab50e2b43",
+      "score_provenance": "Official dashboard/email supplied by the author",
+      "entry_id": "qyIwp5pnJenDeRQQJYxj",
+      "entry_binding": "Retained upload log and author-supplied result",
+      "normalized_PDS": 0.7734
+    }
+  ],
+  "candidate_family_decision": "The rejected signed-logFC L1 research head is distinct from the successfully uploaded 35-EchoRoad entry.",
+  "next_built_variant": "A 37-EchoShared archive was found; no upload/scored receipt was established in the inspected records."
+}

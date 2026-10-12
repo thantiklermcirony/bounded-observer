@@ -1,0 +1,34 @@
+{
+  "status": "all checks passed",
+  "paper_sha256": "2e77b01782ddd035614123cf5f018e0c4d82d70db729b312685c2bdaa00e6342",
+  "verified": [
+    "centred covariance and scalar-generator degeneracy",
+    "Higgs mass matrix",
+    "SM Z6 weights and kernel phases",
+    "anomaly cubic with and without right-handed neutrino",
+    "mixed Y/B-L coefficients",
+    "total-generation parity counterexample",
+    "minimal U2 charge multisets",
+    "neutral-pair dimension and response",
+    "closed-colour and regular-edge alternatives",
+    "publication path hygiene"
+  ],
+  "minimal_multisets": [
+    [
+      -3,
+      1,
+      1,
+      1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      3
+    ]
+  ],
+  "neutral_pair_dimension": 42,
+  "neutral_pair_ratio": "2",
+  "closed_colour_ratio": "14/3",
+  "primary_reference_count": 16
+}

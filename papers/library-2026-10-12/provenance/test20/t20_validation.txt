@@ -1,0 +1,6 @@
+== synthetic truth: lcdm ==
+  synth    bao        LCDM chi2 7.97 (Om 0.3109) | UHL c=1 chi2 10.38 (Om 0.2848) | Delta chi2 = +2.42 -> NEUTRAL
+  synth    bao+sn     LCDM chi2 1658.60 (Om 0.3058) | UHL c=1 chi2 1668.70 (Om 0.2726) | Delta chi2 = +10.10 -> DISFAVOURED
+== synthetic truth: hde ==
+  synth    bao        LCDM chi2 18.51 (Om 0.3001) | UHL c=1 chi2 14.77 (Om 0.2743) | Delta chi2 = -3.73 -> NEUTRAL
+  synth    bao+sn     LCDM chi2 1445.62 (Om 0.3063) | UHL c=1 chi2 1438.49 (Om 0.2735) | Delta chi2 = -7.13 -> FAVOURED

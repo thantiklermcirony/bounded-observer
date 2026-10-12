@@ -1,0 +1,202 @@
+{
+  "status": "all checks passed",
+  "paper2_sha256": "a39a826a98f6e16db9b896cf0e8523dcbf71840a96c3296a33e668b96abab299",
+  "product_Hill_checks": [
+    {
+      "A": 0.021,
+      "epsilon": 0.02,
+      "peak_x": 0.024688830667362105,
+      "peak_response": 1.000012190915811
+    },
+    {
+      "A": 0.22,
+      "epsilon": 0.02,
+      "peak_x": 2.1583446105876964,
+      "peak_response": 1.1027413400700963
+    },
+    {
+      "A": 2.02,
+      "epsilon": 0.02,
+      "peak_x": 5.432746750175235,
+      "peak_response": 2.4407790426685043
+    },
+    {
+      "A": 0.201,
+      "epsilon": 0.2,
+      "peak_x": 0.00249625810164174,
+      "peak_response": 1.0000012462624552
+    },
+    {
+      "A": 0.4,
+      "epsilon": 0.2,
+      "peak_x": 0.392280956059262,
+      "peak_response": 1.0317541634481457
+    },
+    {
+      "A": 2.2,
+      "epsilon": 0.2,
+      "peak_x": 1.4826758270431337,
+      "peak_response": 1.784648345913732
+    },
+    {
+      "A": 0.801,
+      "epsilon": 0.8,
+      "peak_x": 0.0006246486375786544,
+      "peak_response": 1.000000312148834
+    },
+    {
+      "A": 1.0,
+      "epsilon": 0.8,
+      "peak_x": 0.1123724356957945,
+      "peak_response": 1.0102051443364382
+    },
+    {
+      "A": 2.8,
+      "epsilon": 0.8,
+      "peak_x": 0.5895711445273499,
+      "peak_response": 1.3851860318427955
+    }
+  ],
+  "product_Hill_onset_coefficient": "1/(4*epsilon)",
+  "product_Hill_onset_errors": [
+    0.029034682170191672,
+    0.0029900358123881032,
+    0.0002999261662353092
+  ],
+  "linear_logistic_checks": [
+    {
+      "Da": 1,
+      "Dt": 2,
+      "s": 1,
+      "A": 1,
+      "B": 10,
+      "initial_derivative": -0.8533239207935833,
+      "interior_peak": false,
+      "peak_dose": 0.0,
+      "grid_maximum_increment": 0.0
+    },
+    {
+      "Da": 1,
+      "Dt": 3,
+      "s": 1,
+      "A": 1,
+      "B": 2,
+      "initial_derivative": 0.10625861377965759,
+      "interior_peak": true,
+      "peak_dose": 1.220196071255428,
+      "grid_maximum_increment": 0.09208329191131581
+    },
+    {
+      "Da": 1,
+      "Dt": 10,
+      "s": 1,
+      "A": 1,
+      "B": 2,
+      "initial_derivative": 0.19652114162600995,
+      "interior_peak": true,
+      "peak_dose": 5.145477460133008,
+      "grid_maximum_increment": 0.7000947807845096
+    },
+    {
+      "Da": 4,
+      "Dt": 5,
+      "s": 1,
+      "A": 0.3,
+      "B": 1,
+      "initial_derivative": -0.0013492448068028193,
+      "interior_peak": false,
+      "peak_dose": 0.0,
+      "grid_maximum_increment": 0.0
+    },
+    {
+      "Da": 1,
+      "Dt": 2,
+      "s": 1,
+      "A": 1,
+      "B": 1.872609002596415,
+      "initial_derivative": 0.0,
+      "interior_peak": false,
+      "peak_dose": 0.0,
+      "grid_maximum_increment": 0.0
+    }
+  ],
+  "additive_Hill_exact_identities": "peak derivative, peak amplitude and return dose verified",
+  "additive_Hill_onset_u_coefficient": "-1/(2*beta*epsilon*(epsilon - 1))",
+  "additive_Hill_onset_height_coefficient": "-1/(4*beta*epsilon*(epsilon - 1))",
+  "normalized_viability_Taylor_linear": "2 - 2*p0",
+  "normalized_viability_Taylor_quadratic": "4*p0**2 - 6*p0 + 2",
+  "series_resistance_checks": [
+    {
+      "n": 2,
+      "A": 0.1,
+      "series_fold": 1.0476190476190477,
+      "geometric_mean_fold": 1.0488088481701516,
+      "series_eta": 2.099999999999998
+    },
+    {
+      "n": 2,
+      "A": 1,
+      "series_fold": 1.3333333333333333,
+      "geometric_mean_fold": 1.4142135623730951,
+      "series_eta": 3.000000000000001
+    },
+    {
+      "n": 2,
+      "A": 2,
+      "series_fold": 1.5,
+      "geometric_mean_fold": 1.7320508075688772,
+      "series_eta": 4.0
+    },
+    {
+      "n": 3,
+      "A": 0.1,
+      "series_fold": 1.03125,
+      "geometric_mean_fold": 1.0322801154563672,
+      "series_eta": 3.2
+    },
+    {
+      "n": 3,
+      "A": 1,
+      "series_fold": 1.2,
+      "geometric_mean_fold": 1.2599210498948732,
+      "series_eta": 5.000000000000001
+    },
+    {
+      "n": 3,
+      "A": 2,
+      "series_fold": 1.2857142857142858,
+      "geometric_mean_fold": 1.4422495703074083,
+      "series_eta": 6.999999999999997
+    },
+    {
+      "n": 5,
+      "A": 0.1,
+      "series_fold": 1.0185185185185184,
+      "geometric_mean_fold": 1.0192448764914566,
+      "series_eta": 5.400000000000041
+    },
+    {
+      "n": 5,
+      "A": 1,
+      "series_fold": 1.1111111111111112,
+      "geometric_mean_fold": 1.148698354997035,
+      "series_eta": 8.999999999999996
+    },
+    {
+      "n": 5,
+      "A": 2,
+      "series_fold": 1.1538461538461537,
+      "geometric_mean_fold": 1.2457309396155174,
+      "series_eta": 13.000000000000009
+    }
+  ],
+  "moment_Hankel_rank": 3,
+  "continuous_Gaussian_Hankel_positive": true,
+  "additional_exact_checks": [
+    "projective filter bias composition",
+    "variable-clock curvature",
+    "unequal-Hill derivative condition",
+    "nonzero mixture variances cancel"
+  ],
+  "known_reference_fix": "Price 1972 DOI is 10.1111/j.1469-1809.1972.tb00764.x"
+}

@@ -1,0 +1,44 @@
+name: Research task
+description: Develop or test a scoped question in a Bounded Observer branch
+title: "[Research] "
+body:
+  - type: input
+    id: branch
+    attributes:
+      label: Branch and current source
+      description: Name an existing branch or explain a proposed extension.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and existing checkpoint
+      description: What reading, prediction, action or mathematical result should change?
+    validations:
+      required: true
+  - type: textarea
+    id: contract
+    attributes:
+      label: Records and operations
+      description: Specify the record, normalization, readings, allowed operations, retained state and composition premises.
+    validations:
+      required: true
+  - type: textarea
+    id: bridge
+    attributes:
+      label: Clock, resources and bridge
+      description: State the evolution/sampling clock, resources and observation or physical identification. Use pure mathematics where appropriate.
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: Derivation or discriminating comparison
+      description: Give the proof obligation, runnable entry point, fixed comparator, independent outcome and loss condition.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source and result
+      description: Link versions, protocols, outputs and licences. Distinguish planned work from completed results.

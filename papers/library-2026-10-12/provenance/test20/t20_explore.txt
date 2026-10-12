@@ -1,0 +1,2 @@
+  bao+sn  profile minimum near c = 0.980 ; 68% interval [0.916, 1.070] ; 95% interval [0.852, 1.165] ; chi2(c=1) - min = 0.01 ; LCDM - min = 3.38
+  bao     profile minimum near c = 0.940 ; 68% interval [0.798, 1.099] ; 95% interval [0.700, 1.320] ; chi2(c=1) - min = 0.19 ; LCDM - min = 0.23

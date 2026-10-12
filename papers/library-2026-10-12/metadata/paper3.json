@@ -1,0 +1,46 @@
+{
+  "paper": 3,
+  "title": "Light Time and Horizons",
+  "subtitle": "Lorentz signal geometry under explicit event and clock identifications",
+  "author": "Daniel John Murray",
+  "date": "12 October 2026",
+  "version": "Working v3.1",
+  "abstract": "A complex binary record has a Lorentz cone and a hyperbolic projective interior. We specify the operational bridges that identify this structure with physical event displacements, null signals and calibrated clocks. The determinant then supplies a conformal Lorentz metric, while a tangent-only Lorentz-invariant clock selects proper time up to scale. Doppler frequencies and normalized binary readouts have a common cone pairing, with different physical calibrations. We prove the distinction among harmonic sky probability, local photon-number density and bolometric radiation moments, give an exact acceleration-horizon criterion, and isolate the Fourier amplitude ratio produced by exponential redshift from the additional quantum assumptions needed for thermality. Positive maps and finite-rank baths yield exact boundary and cumulative-resource inequalities. Within flat scalar wave models, positivity together with sharp retarded support selects three spatial dimensions. The conclusions are closed within their stated operational and physical models; no identification of all qubit operations with frame changes, all radiation with a finite moment state, or all horizons with thermal states is assumed.\n",
+  "keywords": [
+    "Lorentz cone",
+    "null signals",
+    "proper time",
+    "Doppler shift",
+    "harmonic measure",
+    "radiation closure",
+    "acceleration horizon",
+    "positive maps"
+  ],
+  "conditions": [
+    "Invertible tangent-to-Hermitian event solder identifies physical future and null displacement cones.",
+    "Global special-relativistic results use a flat affine event structure and constant solder.",
+    "Null phase covector and calibrated detector velocity contraction define received frequency.",
+    "Tangent-only Lorentz-invariant clock uses a common calibration, excluding history, acceleration and metric-derivative corrections.",
+    "Harmonic angular probability and bolometric energy intensity are separate measures; P4 requires the radiation transformation model.",
+    "Acceleration horizon criterion uses a future-complete collinear proper-time worldline in flat spacetime.",
+    "Mellin amplitude ratio is a regulated nonzero-frequency statement; quantum thermality requires field-state, normalization and detector/KMS premises.",
+    "Finite-bath resource bound uses fixed finite system dimension, full-rank baths, unitary coupling and partial trace.",
+    "Three-dimensional propagation selection is conditional on the flat scalar massless wave operator and positive retarded response.",
+    "Moment nonclosure theorem applies to the specified collisionless ray model, not every finite observer.",
+    "D3 photon-number density requires a finite positive isotropic-rest scalar kinetic occupation and equal-time local sampling; generic detector crossing counts can carry other weights."
+  ],
+  "references": [
+    "[1] J. Aczél, *Lectures on Functional Equations and Their Applications*, Academic Press, New York (1966).",
+    "[2] C. D. Levermore, “Relating Eddington factors to flux limiters,” *Journal of Quantitative Spectroscopy and Radiative Transfer* **31**, 149–160 (1984). [doi:10.1016/0022-4073(84)90112-2](https://doi.org/10.1016/0022-4073(84)90112-2).",
+    "[3] W. G. Unruh, “Notes on black-hole evaporation,” *Physical Review D* **14**, 870–892 (1976). [doi:10.1103/PhysRevD.14.870](https://doi.org/10.1103/PhysRevD.14.870).",
+    "[4] M. Riesz, “L'intégrale de Riemann–Liouville et le problème de Cauchy,” *Acta Mathematica* **81**, 1–222 (1949). [doi:10.1007/BF02395016](https://doi.org/10.1007/BF02395016)."
+  ],
+  "language": "en",
+  "status": "publication working manuscript",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent researcher, Melbourne, Australia",
+  "source_sha256": "7ec53a4451f9076b3d466be013876554715e16d2f672a08a29701cdcd55ac8c1",
+  "source_file": "papers/paper3.md",
+  "pdf_sha256": "cde1d023556c0006f88a956267a3a855e461debe95ead7cb1f7d56c7c66c6961",
+  "pdf_file": "pdf/paper3.pdf"
+}

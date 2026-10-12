@@ -1,0 +1,48 @@
+---
+title: "Correction to Hormesis as a Geometric Necessity of Bounded Adaptive Systems"
+subtitle: "Proposed author corrigendum for DOI 10.1177/15593258261469171"
+author: "Daniel John Murray"
+date: "12 October 2026"
+---
+
+Independent Researcher, Melbourne, Australia. ORCID: 0009-0005-1794-5945.
+
+This proposed correction concerns Murray DJ, *Dose Response*. 2026;24(3):15593258261469171, doi:10.1177/15593258261469171. It corrects the mathematical necessity, peak-location, finite-change attenuation, approximation and zone-width statements. It does not constitute an accepted or issued journal correction.
+
+**Necessity and baseline normalization.** In Sections 3.3, 7.2, 7.5 and the Conclusion, activation before toxicity and greater high-dose damage are insufficient to guarantee a positive-dose beneficial interval. The adopted Möbius composition law supplies an additive rapidity coordinate; it does not choose the relative amplitude or slope of the two dose-dependent increments. Section 2.2 correctly states that Aczél's general theorem alone does not select that coordinate, and this clarification is retained.
+
+For the published primary model with equal linear-dose logistic slope $s$, repair amplitude $\alpha$, damage amplitude $\beta>\alpha$, and $0<D_a<D_t$, set $a=e^{sD_a}$ and $t=e^{sD_t}$. A beneficial interval relative to the actual zero-dose control exists if and only if
+
+$$\frac{\alpha a}{(1+a)^2}>\frac{\beta t}{(1+t)^2}.$$
+
+Zero-dose logistic tails should be subtracted from the rapidity increments, or the response should be divided by its actual zero-dose value, so the control is exactly one. The dose-dependent peak is unchanged by this normalization. With $s=1,D_a=4,D_t=5,\alpha=0.3,\beta=1$, the stated threshold ordering and high-dose inequality hold, but the response decreases throughout the positive-dose domain. The geometric-necessity claim and the corresponding mathematical exclusion of a monotonically harmful endpoint must therefore be withdrawn at their stated generality.
+
+**Peak location.** Section 5.1, Prediction 1, Section 7.6, the Conclusion and Appendix A.2 should not state a universal peak near $2D_a$. For the equal-slope primary model, an interior peak exists under the condition above and is exactly
+
+$$D_*=\frac1s\log\left[
+\frac{\sqrt{\alpha a}\,t-\sqrt{\beta t}\,a}
+{\sqrt{\beta t}-\sqrt{\alpha a}}
+\right].$$
+
+The peak depends on both amplitudes, both thresholds and the slope. Unequal slopes require their own stationary equation. The later multiplicative Hill response has a different exact law and is not an algebraic replacement for the published linear-dose rapidity model.
+
+**Attenuation and finite changes.** Sections 4.2–4.3, Predictions 3 and 5, related amplitude conclusions and Appendix A.3 extend a local metabolic-control approximation to finite changes. The summation theorem constrains the sum of local logarithmic coefficients. It neither forces equal control coefficients nor determines a finite doubling. In the explicitly chosen equal-resistance series model, increasing one rate by a fraction $A_{\rm mol}$ gives
+
+$$A_{\rm func}=\frac{A_{\rm mol}}{n+(n-1)A_{\rm mol}},\qquad
+\eta=n+(n-1)A_{\rm mol}.$$
+
+The approximation $\eta\simeq n$ is its small-change limit. Doubling one rate gives a flux increase of $1/3$ for two equal steps and $1/5$ for three, rather than $1/2$ and $1/3$. Other kinetic models give other finite responses, so step counts alone do not fix the observed attenuation.
+
+The published comparisons with broad hormesis features and activation–toxicity ordering do not validate the withdrawn universal peak or finite-amplitude statements. The bounded-composition framework and conditional response models remain available. The companion mathematical amendment provides complete proofs, exact model-specific onset, peak and return-to-control laws, and independent reproducibility checks. The journal's handling and final wording of a formal corrigendum remain subject to editorial review.
+
+**Coincident thresholds and locally linear harm.** Section 7.2's general near-coincident-threshold guarantee is withdrawn. Identical repair and damage sigmoids with equal midpoint and greater damage give no beneficial interval. In the common-slope logistic model at fixed amplitudes, sufficiently small threshold gaps also give none. Different sigmoid shapes require their own amplitude–slope conditions. A negative linear low-dose term is permitted in the common-slope logistic model and in the additive Hill model at exponent one. The composition law therefore does not exclude locally linear harm; this does not identify a globally proportional dose law.
+
+**Approximation bounds and zone width.** Section 3.4 and Appendix A.1 require a full calibration and error definition for the product shortcut. Repair-only saturation matching and tanh concavity do not establish a conservative bound for the combined repair–damage response. The full product can overestimate the exact response even with a positive actual baseline. The uniform conservative interpretation and the unqualified error bound are withdrawn. The peak and zone-width ranges in Section 5.2, Table 2 and Appendix A.2 also depend on an incompletely stated steepness and control protocol. One compatible reconstruction, with each logistic slope set to $4/D_j$, reproduces Appendix A.2's range 1.69–2.43; this does not identify the original unstated protocol uniquely, and other slopes give other peaks. A detectable zone must use the actual control, a declared positive threshold and both threshold crossings. No universal 8–80-fold width follows from bounded composition.
+
+**Finite amplitudes and control.** This also amends the peak-range, mean and aggregate-agreement claims in the abstract, Section 5.3 equation (8), Section 6.4 and Table 2. For the stated molecular changes $A_{\rm mol}\in[0.8,1.5]$ and $n\in\{2,3\}$, the corrected series-model flux factors span 117.4–142.9% of control. These are conditional finite flux ceilings, not a predicted distribution of hormesis peaks. A normalized bounded viability with actual control $p_0$ is below $1/p_0$ at finite rapidity, so its amplitude also requires an independently measured baseline and a flux-to-endpoint bridge.
+
+# References
+
+1. Murray DJ. *Dose Response*. 2026;24(3):15593258261469171. doi:10.1177/15593258261469171.
+2. Kacser H, Burns JA. *Symp Soc Exp Biol*. 1973;27:65-104.
+3. Heinrich R, Rapoport TA. *Eur J Biochem*. 1974;42:89-95. doi:10.1111/j.1432-1033.1974.tb03318.x.

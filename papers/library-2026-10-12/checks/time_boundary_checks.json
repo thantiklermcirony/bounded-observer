@@ -1,0 +1,33 @@
+{
+  "rank_bound_random_models": {
+    "models": 24,
+    "dimensions": [
+      2,
+      3,
+      4
+    ],
+    "time_points_per_model": 21,
+    "minimum_Duhamel_positive_source_eigenvalue": 0.0,
+    "worst_trace_error": 7.77156429915272e-16
+  },
+  "amplitude_damping_saturation": {
+    "initial_small_eigenvalue": 0.3,
+    "lambda_min": "p0 exp(-Xi)"
+  },
+  "clock_change": {
+    "t": "s^2",
+    "G_s": "2s G_t",
+    "Xi_preserved": true
+  },
+  "finite_swap_scope_counterexample": {
+    "initial_system_full_rank": true,
+    "pure_bath_available": true,
+    "final_system_pure": true,
+    "local_effective_decay_rate": "2 tan(t), divergent at pi/2"
+  },
+  "mass_dictionary": {
+    "random_states": 40,
+    "exact_algebraic_identity": true,
+    "physical_momentum_and_mass_identification_required": true
+  }
+}

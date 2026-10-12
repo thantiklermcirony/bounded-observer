@@ -1,0 +1,21 @@
+{
+  "carrier_dimension": 16,
+  "electric_zero_pair_dimension": 42,
+  "marginal_sector_weights": {
+    "u": "3/7",
+    "d": "3/7",
+    "e": "1/21",
+    "nu": "2/21"
+  },
+  "K_colour": "1/7",
+  "K_charge": "2/7",
+  "ratio": "2",
+  "closed_colour_singlet_ratio": "14/3",
+  "unrestricted_electric_and_colour_edge_ratio": "8/3",
+  "octet_weight_ratio": "-(3*b - 28)/(3*(3*b + 2))",
+  "regular_colour_edge_octet_weight": "16/21",
+  "uniform_charged_multiplicity_and_neutral_species_robust": true,
+  "general_colour_number_ratio": "(N**2 + 3)/(2*N)",
+  "scope": "Covariance ratio with a retained reference; gauge coupling interpretation requires a kinetic-response bridge.",
+  "physical_selector_remaining": "Electrically closed matter pair, colour edge flux available, equal cost of relevant sectors."
+}

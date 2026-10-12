@@ -1,0 +1,177 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Cambria}
+  \setmathfont[]{Cambria Math}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\pagestyle{plain}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Proposed correction to Bounded Composition and Deformed Kinematics},
+  pdfauthor={Daniel John Murray},
+  pdfkeywords={bounded composition; correction; Einstein addition; momentum coordinates; Snyder algebra},
+  colorlinks=true,
+  linkcolor={black},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Proposed correction to Bounded Composition and Deformed Kinematics}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Composition uniqueness and the momentum operator derivation}
+\author{Daniel John Murray\\{\small Independent Researcher, Melbourne, Australia}\\{\small ORCID: 0009-0005-1794-5945}}
+\date{12 October 2026\\{\small Proposed correction notice for author review}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+The composition axioms in the earlier manuscript do not uniquely select Einstein addition or the artanh coordinate. Smooth radial transports of ordinary addition provide explicit counterexamples. The three-dimensional operator appendix also conflates momentum coordinates with boost generators and gives an incorrect radial derivative. The conditional one-dimensional commutator and phase-space measure remain valid when the artanh chart and its canonical quantization are independently specified. We give corrected statements and delimit the physical conclusions that require further dynamics and calibration.
+\end{abstract}
+
+\section{Scope of this proposed notice}\label{scope-of-this-proposed-notice}
+
+This notice concerns \emph{Bounded Composition and Deformed Kinematics An Axiomatic Route to Hyperbolic Momentum Space}, dated 13 May 2026, associated with \href{https://ssrn.com/abstract=6756063}{SSRN record 6756063}. It corrects Theorem 3 and Corollary 4 in Section 2, the claimed automatic Snyder derivation in Section 3 and Appendix A.2, and the resulting claims of model-independent phenomenology. It is proposed correction text for author review; it does not assert that a notice has already been posted or that an editorial action has occurred.
+
+The conclusions corrected below should not be relied on as deductions from the stated composition axioms. The valid one-dimensional identities are retained with their required additional hypotheses.
+
+\section{Composition does not select the claimed geometry}\label{composition-does-not-select-the-claimed-geometry}
+
+Theorem 3 claims that the stated boundedness, smoothness, gyro-associativity and rotational covariance force Einstein addition. They do not. For a ball \(B_\ell\subset\mathbb R^3\), define the smooth radial diffeomorphism
+
+\[
+F(a)=\frac{a}{1-|a|^2/\ell^2},\qquad
+a\oplus_F b=F^{-1}(F(a)+F(b)).
+\]
+
+The radial function \(r/(1-r^2/\ell^2)\) has strictly positive derivative, is zero at zero and tends to infinity as \(r\uparrow\ell\). Hence \(F\) maps the ball diffeomorphically onto \(\mathbb R^3\). The transported operation is smooth, associative, commutative, has identity zero, has inverses and is a diffeomorphism in either argument. It is rotationally equivariant because \(F(Ra)=RF(a)\).
+
+Its gyrations can all be the identity, so it satisfies gyro-associativity as well as the collinear associativity requirement. For any fixed interior \(a\), if \(b\to\ell n\), then \(|F(b)|\to\infty\) in direction \(n\); adding the fixed vector \(F(a)\) leaves that limit direction unchanged. Consequently \(a\oplus_F b\to\ell n\). This is precisely the fixed-interior-argument boundary preservation used in the paper's displayed Axiom 4. The one-dimensional additive coordinate is \(x/(1-x^2/\ell^2)\), with derivative one at zero, rather than \(\ell\operatorname{artanh}(x/\ell)\).
+
+Even independently specifying the artanh law on every diameter does not select Einstein addition in three dimensions. Replace \(F\) by
+
+\[
+F_H(a)=\ell\operatorname{artanh}(|a|/\ell)\frac{a}{|a|},
+\qquad F_H(0)=0.
+\]
+
+Its transported addition remains associative and commutative. On a diameter it gives \((x+y)/(1+xy/\ell^2)\), yet for noncollinear inputs it is not Einstein addition. A flat translation geometry transported onto the ball is therefore an omitted possibility in the earlier homogeneous-space argument. Additional geometric or physical premises are needed to select the curved boost composition.
+
+Axiom 4 should also distinguish its fixed-interior-argument limit from a jointly continuous extension to all pairs of closed-ball points. Opposing boundary inputs can have different limits along different approaches, already in the one-dimensional relativistic formula.
+
+The appropriate one-dimensional Aczél statement requires continuity, associativity and strict monotonicity, including the paper's Axiom 3, not only Axioms 1 and 2. With an interior identity it gives an increasing additive coordinate, unique up to positive scale {[}1{]}. Its image is an interval containing zero in its interior and closed under addition. Iteration of one positive and one negative value makes that interval unbounded in both directions, so the image is \(\mathbb R\). This proves an additive-coordinate representation; it does not select the coordinate's functional form.
+
+\section{The one dimensional formulas that remain valid}\label{the-one-dimensional-formulas-that-remain-valid}
+
+Independently choose \(\kappa>0\) and the chart
+
+\[
+p=\kappa^{-1}\tanh(\kappa\pi).
+\]
+
+On \(L^2(\mathbb R,d\pi)\) take \(\pi\) to be multiplication and \(x=i\hbar\partial_\pi\) with its usual self-adjoint realization. On the common dense core \(C_c^\infty(\mathbb R)\), direct differentiation gives
+
+\[
+[x,p]=i\hbar(1-\kappa^2p^2),\qquad
+d\pi=\frac{dp}{1-\kappa^2p^2}.
+\]
+
+These are the corrected conditional meanings of Propositions 5 and 6. A general independently chosen smooth increasing chart \(\pi=\psi(p)\) instead gives \([x,p]=i\hbar/\psi'(p)\) and \(d\pi=\psi'(p)dp\). Canonical quantization does not select artanh from boundedness. The Stone--von Neumann theorem concerns a specified regular canonical representation; it does not select this physical momentum chart.
+
+\section{The three dimensional radial derivative}\label{the-three-dimensional-radial-derivative}
+
+Use commuting canonical momentum coordinates \(\pi_i\) on \(L^2(\mathbb R^3,d^3\pi)\), with \(x_i=i\hbar\partial_{\pi_i}\). For the radial map stated in Appendix A.2, put
+
+\[
+r=|\pi|,\qquad h(r)=\frac{\tanh(\kappa r)}{\kappa r},
+\qquad p_j=h(r)\pi_j.
+\]
+
+The actual chain rule on \(C_c^\infty(\mathbb R^3)\) is
+
+\[
+[x_i,p_j]=i\hbar\left[h(r)\delta_{ij}
++\frac{h'(r)}r\pi_i\pi_j\right].
+\]
+
+Its radial eigenvalue is \(h+rh'=\operatorname{sech}^2(\kappa r)=1-\kappa^2|p|^2\); its transverse eigenvalues are \(h\). In particular, at fixed \(p\) as \(\kappa\to0\),
+
+\[
+[x_i,p_j]=i\hbar\left[
+\left(1-\frac{\kappa^2|p|^2}{3}\right)\delta_{ij}
+-\frac{2\kappa^2}{3}p_ip_j+O(\kappa^4)\right].
+\]
+
+This differs from the expansion printed in Appendix A.2. In this explicit representation, \([p_i,p_j]=[x_i,x_j]=0\). Momentum coordinate multipliers cannot simultaneously be the noncommuting Lorentz boost generators used in the appendix. The asserted Snyder commutators therefore do not follow from that calculation.
+
+Snyder's original model uses commuting momentum coordinates and noncommuting spacetime coordinate generators on de Sitter momentum space {[}2,3{]}. It requires its own geometric and operator construction. The earlier identification of a three-dimensional hyperbolic velocity ball with the complete original Snyder momentum space is also incorrect. A Riemannian hyperbolic ball is not a conformal chart of a Lorentzian de Sitter momentum manifold: a real nonzero conformal rescaling preserves metric signature and dimension. These distinctions leave Snyder and other deformed-kinematics models available as separately specified models; they remove the claimed universal derivation.
+
+\section{Physical conclusions and future use}\label{physical-conclusions-and-future-use}
+
+A momentum chart and its canonical commutator do not determine a Hamiltonian or dispersion relation. Photon propagation, interaction thresholds and time-of-flight predictions require those dynamics, an energy calibration and conservation laws. The paper's claim that its commutator and measure alone imply a deformed dispersion relation is therefore withdrawn. Bounds from other DSR models cannot be transferred without those identifications.
+
+An observed particle constrains a physical hard momentum ceiling only after the measured energy has been related to the particular momentum observable in the chosen model. No numerical observational bound is newly established by this notice. Velocity composition in special relativity remains a valid example when Lorentz frame transformations and the velocity readout are supplied independently. It is not established as the unique consequence of the earlier axioms.
+
+Future use should cite the interval representation as a representation theorem, the artanh commutator as a chosen-chart identity, and any Snyder or DSR application with its additional geometry and dynamics stated explicitly.
+
+\section{References}\label{references}
+
+{[}1{]} J. Aczél, \emph{Lectures on Functional Equations and Their Applications}, Academic Press, New York (1966).
+
+{[}2{]} H. S. Snyder, ``Quantized space-time,'' \emph{Physical Review} \textbf{71}, 38--41 (1947). \href{https://doi.org/10.1103/PhysRev.71.38}{\nolinkurl{doi:10.1103/PhysRev.71.38}}.
+
+{[}3{]} A. Ballesteros, G. Gubitosi and F. J. Herranz, ``Lorentzian Snyder spacetimes and their Galilei and Carroll limits from projective geometry,'' \emph{Classical and Quantum Gravity} \textbf{37}, 195021 (2020). \href{https://arxiv.org/abs/1912.12878}{\nolinkurl{arXiv:1912.12878}}.
+
+Prepared with AI-assisted source review and mathematical checks. The original manuscript is preserved.
+
+\end{document}

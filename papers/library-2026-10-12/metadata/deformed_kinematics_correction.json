@@ -1,0 +1,123 @@
+{
+  "title": "Proposed correction to Bounded Composition and Deformed Kinematics",
+  "subtitle": "Composition uniqueness and the momentum operator derivation",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent Researcher, Melbourne, Australia",
+  "date": "12 October 2026",
+  "version": "Proposed correction notice for author review",
+  "publication_status": "proposed_notice_not_submitted_or_issued",
+  "target_record": "https://ssrn.com/abstract=6756063",
+  "target_manuscript_title": "Bounded Composition and Deformed Kinematics: An Axiomatic Route to Hyperbolic Momentum Space",
+  "target_manuscript_date": "13 May 2026",
+  "source_docx_sha256": "33ab1b6dad7d673c15e119dee03d202c74431d5afcab055e33b81e0bcd4bb260",
+  "source_original_modified": false,
+  "word_count": 1138,
+  "manuscript_sha256": "A3205629896B712A3EBA174FE88907946A7EAF2E80083BD57F1824F942AC801E",
+  "keywords": "bounded composition; correction; Einstein addition; momentum coordinates; Snyder algebra",
+  "abstract": "The composition axioms in the earlier manuscript do not uniquely select Einstein addition or the artanh coordinate. Smooth radial transports of ordinary addition provide explicit counterexamples. The three-dimensional operator appendix also conflates momentum coordinates with boost generators and gives an incorrect radial derivative. The conditional one-dimensional commutator and phase-space measure remain valid when the artanh chart and its canonical quantization are independently specified. We give corrected statements and delimit the physical conclusions that require further dynamics and calibration.\n",
+  "affected_source_locations": [
+    {
+      "location": "Section2 Lemma1",
+      "extraction_paragraphs": [
+        30,
+        31
+      ],
+      "issue": "Strict monotonicity must be included in representation hypotheses"
+    },
+    {
+      "location": "Section2 Theorem3 and Corollary4",
+      "extraction_paragraphs": [
+        36,
+        37,
+        38,
+        46
+      ],
+      "issue": "Claimed unique Einstein and artanh selection invalid; radial transported flat addition is a counterexample"
+    },
+    {
+      "location": "Section3 Snyder algebra and AppendixA2",
+      "extraction_paragraphs": [
+        61,
+        62,
+        63,
+        124,
+        125,
+        128,
+        138,
+        140
+      ],
+      "issue": "Conflicting multiplication-coordinate/boost-generator identifications and incorrect radial Jacobian expansion"
+    },
+    {
+      "location": "Section4 relation to kappaPoincare",
+      "extraction_paragraphs": [
+        70
+      ],
+      "issue": "Claimed conformal identification conflates signature and dimension"
+    },
+    {
+      "location": "Experimental bounds and dynamics",
+      "extraction_paragraphs": [
+        74,
+        75,
+        76,
+        77,
+        98
+      ],
+      "issue": "No model-independent dispersion or transferred astrophysical bound follows from chart/commutator alone"
+    }
+  ],
+  "conditions": [
+    {
+      "result": "Radial composition counterexamples",
+      "conditions": [
+        "Smooth increasing radial diffeomorphism from open ball to Euclidean space",
+        "Boundary condition uses one fixed interior argument"
+      ],
+      "status": "explicit counterexamples proved"
+    },
+    {
+      "result": "Retained one-dimensional commutator and measure",
+      "conditions": [
+        "Independently chosen artanh momentum chart",
+        "Specified regular canonical Schrodinger representation",
+        "Common dense compactly supported smooth core"
+      ],
+      "status": "direct differential identities proved"
+    },
+    {
+      "result": "Corrected three-dimensional radial commutator",
+      "conditions": [
+        "Commuting canonical momentum coordinates",
+        "Position derivatives in the same canonical representation",
+        "Specified radial tanh map"
+      ],
+      "status": "exact Jacobian and fixed-momentum expansion proved"
+    }
+  ],
+  "public_status_verification": {
+    "checked_date": "12 October 2026",
+    "indexed_ssrn_record_observed": true,
+    "indexed_title_matches_source": true,
+    "current_live_revision_status": "not verified",
+    "direct_page_attempts": "SSRN full page and abstract redirect returned browser-tool errors",
+    "notice_posted_or_submitted": false,
+    "interpretation": "Indexed metadata identifies the intended target but does not certify its current live revision or journal status"
+  },
+  "verification": {
+    "source_read_in_full": true,
+    "source_nonempty_paragraphs": 166,
+    "source_omath_nodes": 242,
+    "symbolic_radial_eigenvalue_verified": true,
+    "symbolic_second_order_expansion_verified": true,
+    "display_math_delimiters_balanced": true,
+    "no_original_source_edits": true,
+    "no_empirical_reanalysis_or_new_numerical_bound": true,
+    "public_notice_contains_no_internal_paths": true
+  },
+  "source_sha256": "a3205629896b712a3eba174fe88907946a7eaf2e80083bd57f1824f942ac801e",
+  "source_file": "corrections/deformed_kinematics_correction.md",
+  "pdf_sha256": "09ec552b6c10911b6cfdcb154a2f1cae9da15bb72fbff1e75cb12d87fe6b403b",
+  "pdf_file": "pdf/deformed_kinematics_correction.pdf"
+}

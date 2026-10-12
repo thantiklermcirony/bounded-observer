@@ -1,0 +1,12 @@
+{
+  "status": "all checks passed",
+  "dimensions": [
+    2,
+    3,
+    4
+  ],
+  "purification_and_Kraus_dilation_max_residual": 3.2160128307939936e-16,
+  "instrument_probabilities_and_serial_parallel_completeness": "passed",
+  "Buttazzo_Eq64_inverse_at_declared_inputs_GeV": 170.99714285714285,
+  "scope": "Finite checks of explicit constructions. The capstone proofs establish the general claims; the stability-fit inverse is not a new UHL mass prediction."
+}

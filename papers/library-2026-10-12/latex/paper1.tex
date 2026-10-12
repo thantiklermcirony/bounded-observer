@@ -1,0 +1,353 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Cambria}
+  \setmathfont[]{Cambria Math}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\pagestyle{plain}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={The Geometry of Bounded Records},
+  pdfauthor={Daniel John Murray},
+  pdfkeywords={positive records, symmetric cones, Euclidean Jordan algebras, dynamical correspondence, Hilbert projective metric, Lorentz cone, quantum foundations},
+  colorlinks=true,
+  linkcolor={black},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{The Geometry of Bounded Records}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Positive records and a connected reading generator correspondence}
+\author{Daniel John Murray\\{\small Independent researcher, Melbourne, Australia}\\{\small ORCID: 0009-0005-1794-5945}}
+\date{12 October 2026\\{\small Working v3.1}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We classify finite-dimensional record systems with a proper homogeneous self-dual cone and a linear connected-equivariant bijection between nonconstant readings and reversible generators that conserve their own readings. The cone is a Euclidean Jordan cone by the Koecher--Vinberg theorem. The correspondence excludes direct sums and selects a simple complex Hermitian matrix algebra, apart from the trivial one-dimensional case. Its normalization remains free until a commutator calibration is imposed. For a binary distinction, the positive cone is Lorentzian and its Hilbert projective distance is twice the curvature-minus-one hyperbolic distance. Additive positive readouts give the trace pairing, canonical filters give exact hyperbolic-tangent composition, and two positive filters applied to equilibrium have an order angle determined by their polar rotation. We also derive intrinsic affine record geometry, a spinor pushforward measure, and the covariance-cone form of a specified uncertainty relation. These are closed deductions of the stated operational framework. Their identification with spacetime, physical clocks or particular field dynamics requires separately specified bridges.
+\end{abstract}
+
+\section{1 Operational records}\label{operational-records}
+
+A raw record contains both an amount and a normalized description. Combining independently collected raw records is additive. Normalizing that amount produces a bounded state space, while reversible filters compare different strictly positive records. These operations motivate an ordered vector-space model. They do not, without further hypotheses, select a particular cone.
+
+Let \(V\) be finite dimensional and \(C\subset V\) a proper cone: closed, convex, pointed and generating, with nonempty interior. A normalizer \(\tau\) is strictly positive on \(C\setminus\{0\}\). Its base \(\Omega=\{x\in C:\tau(x)=1\}\) is compact. To see boundedness, an unbounded sequence in the base would have normalized directions converging to a nonzero \(y\in C\) with \(\tau(y)=0\), a contradiction. Thus bounded normalized records are a consequence of this finite cone model. Homogeneity is a stronger requirement.
+
+We impose three hypotheses.
+
+\textbf{H1 Homogeneity.} The group of invertible linear cone automorphisms acts transitively on \(C^\circ\).
+
+\textbf{H2 Strong self-duality.} A specified positive definite inner product identifies \(C\) with its positive dual cone. Choose a compatible Euclidean Jordan realization, equilibrium unit \(u\), and normalizer
+
+\[\tau(x)=\frac{\langle u,x\rangle}{\langle u,u\rangle}.\]
+
+\textbf{H3 Connected reading generator correspondence.} With \(V_0=u^\perp\) and \(K_0=\operatorname{Aut}(J)^0\), there is a linear bijection
+
+\[\phi:V_0\longrightarrow\operatorname{Der}(J),\qquad
+\phi(kx)=k\phi(x)k^{-1},\qquad \phi(x)x=0.\]
+
+Here the Jordan algebra \(J\) is obtained from H1 and H2. Its automorphisms preserve the unit and compatible inner product. Thus \(\phi(x)x=0\) is equivalent to conservation of the reading \(\langle x,y\rangle\) along \(e^{t\phi(x)}y\). These unit-preserving motions differ from general cone filters, which can change normalization.
+
+The Koecher--Vinberg theorem states that a finite-dimensional proper homogeneous self-dual cone is the cone of squares of a Euclidean Jordan algebra {[}1,2{]}. We import that theorem and the finite-dimensional simple-algebra classification {[}3{]}. The remaining classification proof is given below. The hypotheses specify an operational framework; a slogan such as boundedness or readability does not replace them.
+
+\section{2 The connected classification}\label{the-connected-classification}
+
+\textbf{Theorem 1.} Under H1--H3, \(J\) is isomorphic to \(\operatorname{Herm}_n(\mathbb C)\) for some \(n\ge1\). The \(n=1\) case has no nonconstant readings. For \(n\ge2\), every correspondence in H3 has the form
+
+\[\phi(x)y=\alpha i[x,y],\qquad \alpha\in\mathbb R\setminus\{0\}.\]
+
+The group \(K_0\) acts transitively on the rank-one normalized records.
+
+\textbf{Proof.} Write \(J=\bigoplus_{\nu=1}^mJ_\nu\) as a sum of simple Euclidean Jordan algebras. Derivations preserve the summands and annihilate their central units. One direct proof uses a central idempotent \(c\): differentiating \(c\circ c=c\) gives \(Dc=2c\circ Dc\), but a central idempotent has no Peirce one-half space. Hence
+
+\[\operatorname{Der}(J)=\bigoplus_\nu\operatorname{Der}(J_\nu).\]
+
+First exclude the planar spin factor \(V_2\). Its two-dimensional noncentral reading space is rotated by \(SO(2)\), while its derivation algebra \(\mathfrak{so}(2)\) has trivial adjoint action. That same rotation acts trivially on the derivation algebras of all other summands. Equivariance would therefore map the plane into a trivial representation. Rotation by \(\pi\) and linearity imply \(\phi(x)=\phi(-x)=-\phi(x)\) on the plane. This contradicts injectivity.
+
+Every remaining simple summand has a compact semisimple derivation algebra or zero derivations. If \(m>1\), the central-unit span has an \(m-1\) dimensional intersection with \(u^\perp\). These vectors are fixed by \(K_0\). Their images must be fixed by its adjoint action, hence belong to the center of \(\operatorname{Der}(J)\), which is zero after the planar factor has been excluded. Injectivity forces \(m=1\).
+
+For a simple nontrivial algebra, bijectivity now requires \(\dim J-1=\dim\operatorname{Der}(J)\). The classification gives:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Simple algebra
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(\dim J-1\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(\dim\operatorname{Der}(J)\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\operatorname{Sym}_n(\mathbb R)\), \(n\ge2\) & \(n(n+1)/2-1\) & \(n(n-1)/2\) \\
+\(\operatorname{Herm}_n(\mathbb C)\), \(n\ge2\) & \(n^2-1\) & \(n^2-1\) \\
+\(\operatorname{Herm}_n(\mathbb H)\), \(n\ge2\) & \(n(2n-1)-1\) & \(n(2n+1)\) \\
+\(\operatorname{Herm}_3(\mathbb O)\) & \(26\) & \(52\) \\
+Spin factor \(V_d\), \(d\ge2\) & \(d\) & \(d(d-1)/2\) \\
+\end{longtable}
+}
+
+Only the complex family and \(V_3\cong\operatorname{Herm}_2(\mathbb C)\) satisfy the equality. The scalar algebra gives the vacuous \(0=0\) case.
+
+For the complex family, \(x\mapsto i[x,\cdot]\) is an equivariant bijection from traceless Hermitian matrices to derivations, and annihilates its own \(x\). Composing any other equivariant bijection with its inverse gives an endomorphism of the real adjoint representation of the compact simple algebra \(\mathfrak{su}(n)\). Its complexification is the irreducible adjoint representation of \(\mathfrak{sl}_n(\mathbb C)\), so its real commutant is \(\mathbb R\). The endomorphism is a nonzero real scalar. Finally, unitary conjugation is transitive on rank-one projectors. \(\square\)
+
+Connected equivariance is essential. Let \(\Theta(y)=y^T\) and \(D_x(y)=i[x,y]\). Then
+
+\[\Theta D_x\Theta^{-1}=-D_{x^T}.\]
+
+Transposition is a disconnected Jordan automorphism and reverses the correspondence's chirality. Ordinary equivariance under the full group would exclude the intended complex model. A disconnected extension needs this sign twist.
+
+The scale \(\alpha\) is not fixed by conservation and equivariance. If one additionally adopts the standard dynamical-correspondence identity
+
+\[[D_x,D_y]=-[L_x,L_y],\qquad L_xy=x\circ y,\]
+
+then \([L_x,L_y]z=\tfrac14[[x,y],z]\) and \([D_x,D_y]z=-\alpha^2[[x,y],z]\) give \(\alpha=\pm\tfrac12\). This calibration is an additional identity. The standard correspondence literature {[}4{]} and energy-observability reconstructions {[}5{]} provide related, differently formulated hypotheses. The bijectivity imposed here additionally excludes central superselection readings within the chosen record system.
+
+\section{3 Positive readings and operational sufficiency}\label{positive-readings-and-operational-sufficiency}
+
+In the complex model, raw records are \(M\succeq0\) and density matrices are \(\rho=M/\operatorname{Tr}M\). The unit record and its density differ: for unit \(I_n\), the equilibrium density is \(I_n/n\).
+
+\textbf{Theorem 2.} Suppose expected readout counts are continuous and additive on independent raw-record collections. Every nonnegative readout is then
+
+\[\ell_E(M)=\operatorname{Tr}(EM),\qquad E\succeq0.\]
+
+If two complementary readouts sum to the total amount \(\operatorname{Tr}M\), their normalized probabilities are
+
+\[p_E(\rho)=\operatorname{Tr}(E\rho),\qquad 0\preceq E\preceq I.\]
+
+\textbf{Proof.} Additivity and continuity give positive-real homogeneity, first for rational factors and then by continuity. Since \(C-C=V\), the readout extends uniquely to a linear functional on \(V\). The trace inner product represents it by a Hermitian \(E\). Positivity on every rank-one \(M\) implies \(E\succeq0\). Positivity of the complementary readout similarly gives \(I-E\succeq0\). Division by the total count gives the displayed probability. \(\square\)
+
+This derives the usual state-effect trace rule within the specified additive complex record model. It does not derive a physical detector from geometry alone, nor select a tensor product or a dynamical channel.
+
+If every declared future raw-record action is a positive linear map of \(M\), equal \(M\) gives equal future readouts. Sequential instruments have the same property when each outcome has a specified positive branch map. Conversely, all positive effects separate records. Thus \(M\) is a sufficient summary relative to this operational action class. A readout or dynamics depending on information omitted from \(M\) changes that class and requires a larger record.
+
+The order itself is operational:
+
+\[A\preceq B
+\quad\Longleftrightarrow\quad
+\operatorname{Tr}(EA)\le\operatorname{Tr}(EB)
+\ \text{for every }E\succeq0.\]
+
+The reverse implication follows by testing a negative eigenvector of \(B-A\) if that difference is not positive.
+
+\section{4 Binary projective geometry}\label{binary-projective-geometry}
+
+For a simple rank-two Jordan algebra, the imported classification gives a spin factor \(V_d=\mathbb R\oplus\mathbb R^d\). Its cone is \(t\ge|v|\), and its unit slice is the closed ball. Theorem 1 selects \(d=3\) when H3 is also imposed.
+
+Write complex binary raw records as
+
+\[M=x_0I+\mathbf x\cdot\boldsymbol\sigma,\qquad
+\det M=x_0^2-|\mathbf x|^2.\]
+
+Then \(M\succeq0\) iff \(x_0\ge|\mathbf x|\). The trace-one density is
+
+\[\rho=\tfrac12(I+\mathbf b\cdot\boldsymbol\sigma),\qquad |\mathbf b|\le1.\]
+
+For interior cone points define the Hilbert metric
+
+\[d_H(A,B)=\log\frac{\lambda_{\max}(B^{-1/2}AB^{-1/2})}
+{\lambda_{\min}(B^{-1/2}AB^{-1/2})}.\]
+
+It is independent of positive scalar representatives.
+
+\textbf{Theorem 3.} On the interior ball,
+
+\[d_H(\mathbf a,\mathbf b)=2\operatorname{arcosh}
+\frac{1-\mathbf a\cdot\mathbf b}
+{\sqrt{(1-|\mathbf a|^2)(1-|\mathbf b|^2)}}.\]
+
+Consequently the Hilbert metric is twice the curvature-minus-one hyperbolic metric.
+
+\textbf{Proof.} Normalize \(A,B\) to determinant one. Their hyperboloid representatives are \(U=(1,\mathbf a)/\sqrt{1-|\mathbf a|^2}\) and similarly \(V\). Congruence invariance sends \(B\) to \(I\). The eigenvalues of the resulting determinant-one \(A\) are \(e^{\pm d}\), where \(\cosh d=\tfrac12\operatorname{Tr}A=\langle U,V\rangle_L\). Their log ratio is \(2d\). \(\square\)
+
+Determinant-one congruences \(M\mapsto gMg^\dagger\) act as \(SO^+(1,3)\). The map from \(SL(2,\mathbb C)\) has kernel \(\{\pm I\}\); its faithful image is \(PSL(2,\mathbb C)\). General cone automorphisms also include positive scalar factors and disconnected reflections.
+
+Along a fixed axis \(\mathbf n\), the canonical positive filter \(A_r=e^{r\mathbf n\cdot\sigma/2}\) sends equilibrium to Bloch coordinate \(\tanh r\). On a pre-existing axial coordinate \(b\), it multiplies odds by \(e^{2r}\):
+
+\[b'=\frac{b+\tanh r}{1+b\tanh r},\qquad
+\operatorname{artanh}b'=\operatorname{artanh}b+r.\]
+
+Thus tanh addition is fixed by the chosen linear record coordinate and congruence action. Continuity and associativity alone only give an additive generator. For example \(f(b)=\tan(\pi b/2)\) defines the different associative bounded law \(f^{-1}(f(a)+f(b))\). The hyperbolic law is unique in its stated filter class, not among every possible bounded operation.
+
+\section{5 Intrinsic affine record geometry}\label{intrinsic-affine-record-geometry}
+
+The determinant polarizes to a Lorentz form on record differences. Addition supplies its affine structure. This produces an intrinsic causal geometry before any physical event identification.
+
+\textbf{Theorem 4.} Positive increments and determinant-one comparisons generate the affine semigroup
+
+\[F_{g,A}(M)=gMg^\dagger+A,\qquad A\succeq0,\]
+
+with
+
+\[(g,A)(h,B)=(gh,A+gBg^\dagger).\]
+
+The group they generate after allowing signed differences is \(\operatorname{Herm}_2(\mathbb C)\rtimes SL(2,\mathbb C)\); its faithful affine action is the proper orthochronous Poincaré group of the determinant form.
+
+\textbf{Proof.} Composition gives the displayed law and preserves positivity of increments. Every Hermitian difference is a difference of positive matrices by spectral decomposition, so adjoining translation inverses generates all of \(V\). Congruence preserves the determinant and acts on this translation space by the Lorentz representation. Only \(\pm I\) act trivially. \(\square\)
+
+This is a group of affine record comparisons. Calling its points physical spacetime events requires a separate operational identification.
+
+If \(A=a|\psi\rangle\langle\psi|\) and \(B=b|\varphi\rangle\langle\varphi|\) with unit spinors and \(a,b>0\), then
+
+\[\det(A+B)=ab\bigl(1-|\langle\psi,\varphi\rangle|^2\bigr).\]
+
+Each increment is null; their sum is timelike exactly when their rays differ. The formula follows by evaluating the determinant in a basis beginning with \(\psi\).
+
+There is also a precise intrinsic length selection. A continuous positive function \(L\) on \(C^\circ\), invariant under determinant-one congruence and homogeneous of degree one, must be
+
+\[L(M)=c\sqrt{\det M},\qquad c>0.\]
+
+Indeed \(M=\sqrt{\det M}\,gIg^\dagger\) for a determinant-one \(g\), so invariance and homogeneity leave only \(L(I)\). For a path with future-positive derivative, \(\int L(\dot M)\,ds\) is affine-invariant and reparameterization-invariant. Identifying this record length with a physical clock is an additional bridge.
+
+\section{6 Turns filters and order}\label{turns-filters-and-order}
+
+The Lorentz algebra has rotations \(J_i=-i\sigma_i/2\) and boosts \(K_i=\sigma_i/2\). Multiplication by \(i\) maps \(J_i\) to \(K_i\) and \(K_i\) to \(-J_i\). Among \(\mathfrak{so}(1,d)\), \(d\ge2\), only \(d=3\) admits such an adjoint-commuting complex structure: its complexification splits into two simple ideals, whereas \(\mathfrak{so}(d+1,\mathbb C)\) is simple for all other dimensions in this class. An adjoint-commuting complex structure would split that complexification into its two eigenspace ideals.
+
+One Hermitian reading therefore generates both a unitary turn and a positive filter. For energy spacing \(\Delta\) and \(H=\Delta\sigma_z/2\), applying \(e^{-\beta H/2}\) to equilibrium gives the Gibbs density \(e^{-\beta H}/Z\), whose Bloch length is \(\tanh(|\beta\Delta|/2)\). This is a matrix identity for a specified Hamiltonian and inverse-energy parameter \(\beta\).
+
+\textbf{Theorem 5.} Let \(A=e^{a\mathbf n\cdot\sigma/2}\) and \(B=e^{b\mathbf m\cdot\sigma/2}\), with \(a,b>0\) and \(0<\theta<\pi\) between their axes. Applied in opposite orders to equilibrium, the two normalized outputs have equal purity. Their Bloch vectors are related by the polar rotation of \(AB\), and their angular separation is
+
+\[\Omega=2\arctan
+\frac{\sin\theta\,\sinh(a/2)\sinh(b/2)}
+{\cosh(a/2)\cosh(b/2)+\cos\theta\,\sinh(a/2)\sinh(b/2)}.\]
+
+Its magnitude is the unsigned area of the geodesic triangle with vertices \(o\), \(A\cdot o\) and \(AB\cdot o\), where \(o\) is equilibrium and \(g\cdot M=gMg^\dagger\), with curvature normalized to \(-1\). Reversing traversal reverses the signed holonomy.
+
+\textbf{Proof.} Put \(AB=PU\) in polar form. Since \(BA=(AB)^\dagger\), the raw outputs are \(P^2\) and \(U^\dagger P^2U\), with equal trace and spectrum. Pauli multiplication writes
+
+\[AB=dI+\mathbf v\cdot\sigma+i\mathbf w\cdot\sigma,\]
+
+where \(d=\cosh(a/2)\cosh(b/2)+\cos\theta\sinh(a/2)\sinh(b/2)\) and \(\mathbf w=\sinh(a/2)\sinh(b/2)\mathbf n\times\mathbf m\). The polar unitary is
+
+\[U=\frac{dI+i\mathbf w\cdot\sigma}{\sqrt{d^2+|\mathbf w|^2}}.\]
+
+Multiplying by \(U^\dagger\) leaves a positive Hermitian matrix with Bloch axis in the plane of \(\mathbf n,\mathbf m\). Its squared Bloch vector is therefore perpendicular to the rotation axis \(\mathbf w\), so the actual output-vector angle equals the spatial rotation angle \(2\arctan(|\mathbf w|/d)\). The canonical boost lifts parallel transport the frame around a geodesic triangle in their hyperbolic two-plane; Gauss--Bonnet gives rotational holonomy equal to the oriented area, up to the traversal sign {[}6{]}. \(\square\)
+
+This result specifies positive filters, equilibrium input and canonical transport. Arbitrary initial states, arbitrary tests or general nonunitary updates need not have that order angle. Physical selected filters also carry success probabilities that projective normalization suppresses.
+
+\section{7 Two finite summaries}\label{two-finite-summaries}
+
+\subsection{7.1 The covariance cone}\label{the-covariance-cone}
+
+For two self-adjoint observables \(Q,P\), assume finite second moments and sufficient domain conditions to define their commutator expectation. Positivity of their complex covariance matrix gives
+
+\[\det\Sigma\ge\tfrac14|\langle[Q,P]\rangle|^2.\]
+
+One proof applies Cauchy--Schwarz to the centered observable vectors; their imaginary covariance is \(\langle[Q,P]\rangle/(2i)\). Choose compatible units before adding variances. Then
+
+\[t=\tfrac12(\Sigma_{11}+\Sigma_{22}),\quad
+x=\tfrac12(\Sigma_{11}-\Sigma_{22}),\quad y=\Sigma_{12}\]
+
+give \(\det\Sigma=t^2-x^2-y^2\). Positive covariance matrices form a Lorentz cone in three dimensions. With the additional canonical commutator \([Q,P]=i\hbar I\), the bound is \(\hbar^2/4\) {[}7{]}.
+
+The fixed-minimal-determinant covariance sheet is \(\mathbb H^2\). Displaced states have additional first moments, so the entire state family is not just that sheet. Pure one-mode Gaussian states realize every such covariance. A nonzero scalar canonical commutator cannot hold on a finite-dimensional Hilbert space because the trace of a commutator is zero. A finite covariance summary is consistent with infinite-dimensional physical observables and differs from their complete record algebra.
+
+\subsection{7.2 The spinor pushforward measure}\label{the-spinor-pushforward-measure}
+
+\textbf{Theorem 6.} In coordinates \(M=x_0I+\mathbf x\cdot\sigma\), the pushforward of Lebesgue measure \(d^4\psi\) under \(\psi\mapsto\psi\psi^\dagger\) is
+
+\[4\pi^2G_{\mathrm{ret}}(x)\,d^4x,\qquad
+G_{\mathrm{ret}}(x)=\frac{\delta(x_0-|\mathbf x|)}{4\pi|\mathbf x|}.\]
+
+It is an invariant measure on the nonzero rank-one orbit, unique up to scale there.
+
+\textbf{Proof.} Write \(\psi=R\zeta\), \(\zeta\in S^3\), so \(x_0=R^2/2\). The Hopf projection of surface measure on \(S^3\) to \(S^2\) is \((\pi/2)d\Omega\), by rotational invariance and the areas \(2\pi^2\) and \(4\pi\). Since \(R^3dR=2x_0dx_0\), the pushforward is \(\pi x_0dx_0d\Omega\). The displayed Green measure is \(x_0dx_0d\Omega/(4\pi)\), proving the constant.
+
+The spatial Fourier transform of \(G_{\mathrm{ret}}\) is \(\theta(x_0)\sin(|k|x_0)/|k|\). Applying \(\partial_0^2+|k|^2\) gives \(\delta(x_0)\), so it is the retarded fundamental solution of \(\partial_0^2-\nabla^2\). Determinant-one complex linear maps preserve \(d^4\psi\) and act transitively on nonzero rank-one matrices. The stabilizer is a spin cover of the unimodular Euclidean-motion group in two dimensions, yielding uniqueness of its invariant orbit measure. An additional atom at the origin is invariant on the full closed cone, so exclusion of that atom is necessary for full-cone uniqueness. \(\square\)
+
+This identifies a positive null-cone measure with a chosen wave operator's propagator. It does not establish that physical light is made of qubit amplitudes, nor derive an electromagnetic field equation. The observer's normalized directional probability is a different measure, developed in the companion signal geometry.
+
+\section{8 Scope of the framework}\label{scope-of-the-framework}
+
+The framework is closed at its named scope: H1--H3 classify the single-system records; additive counts specify their positive dual readings; determinant and projective order supply intrinsic binary geometry. Its shared structures are exact mathematical objects. A physical event solder, composite-system rule, detector calibration and action principle extend the framework by explicit conditions.
+
+This contribution is an elementary organization of established symmetric-cone and quantum-foundational structures, together with their precise conditional consequences. It does not assert that compactness alone implies homogeneity, that all physical systems have one simple block, or that a spacetime or Hamiltonian is selected merely by recognizing a Lorentz representation.
+
+\subsection{Acknowledgements}\label{acknowledgements}
+
+Claude and Codex were used for drafting, independent calculations and mathematical checking. Responsibility for the assumptions, proofs, citations and final scientific claims rests with the author.
+
+\subsection{References}\label{references}
+
+{[}1{]} M. Koecher, ``Positivitätsbereiche im \(\mathbb R^n\),'' \emph{American Journal of Mathematics} \textbf{79}, 575--596 (1957). \href{https://doi.org/10.2307/2372563}{\nolinkurl{doi:10.2307/2372563}}.
+
+{[}2{]} E. B. Vinberg, ``The theory of convex homogeneous cones,'' \emph{Transactions of the Moscow Mathematical Society} \textbf{12}, 340--403 (1963). See also J. Bellissard and B. Iochum, ``Homogeneous self dual cones versus Jordan algebras. The theory revisited,'' \emph{Annales de l'Institut Fourier} \textbf{28}(1), 27--67 (1978). \href{https://doi.org/10.5802/aif.680}{\nolinkurl{doi:10.5802/aif.680}}.
+
+{[}3{]} P. Jordan, J. von Neumann and E. Wigner, ``On an algebraic generalization of the quantum mechanical formalism,'' \emph{Annals of Mathematics} \textbf{35}, 29--64 (1934). \href{https://doi.org/10.2307/1968117}{\nolinkurl{doi:10.2307/1968117}}.
+
+{[}4{]} G. Niestegge, ``Dynamical Correspondence in a Generalized Quantum Theory,'' \emph{Foundations of Physics} \textbf{45}, 525--534 (2015). \href{https://doi.org/10.1007/s10701-015-9881-x}{\nolinkurl{doi:10.1007/s10701-015-9881-x}}; \href{https://arxiv.org/abs/1402.0158}{\nolinkurl{arXiv:1402.0158}}.
+
+{[}5{]} H. Barnum, M. P. Müller and C. Ududec, ``Higher-order interference and single-system postulates characterizing quantum theory,'' \emph{New Journal of Physics} \textbf{16}, 123029 (2014). \href{https://arxiv.org/abs/1403.4147}{\nolinkurl{arXiv:1403.4147}}.
+
+{[}6{]} P. K. Aravind, ``The Wigner angle as an anholonomy in rapidity space,'' \emph{American Journal of Physics} \textbf{65}, 634--636 (1997). \href{https://doi.org/10.1119/1.18620}{\nolinkurl{doi:10.1119/1.18620}}.
+
+{[}7{]} E. Schrödinger, ``Zum Heisenbergschen Unschärfeprinzip,'' \emph{Sitzungsberichte der Preussischen Akademie der Wissenschaften, Physikalisch-mathematische Klasse}, 296--303 (1930). English translation and annotations: \href{https://arxiv.org/abs/quant-ph/9903100}{\nolinkurl{arXiv:quant-ph/9903100}}.
+
+\end{document}

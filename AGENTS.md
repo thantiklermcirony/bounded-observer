@@ -1,73 +1,49 @@
-# For AI agents working in this repository
+# Working on The Bounded Observer
 
-You are reading the source of a research programme, not a codebase with a product to ship.
-The rules below exist because the programme's value is entirely in the discipline of its
-claims. Breaking them silently damages it more than any bug would.
+This repository is the canonical entrance and branch registry for a research programme. Read the current mathematics before changing a scientific claim.
 
-## The one rule
+## Sources of authority
 
-**Nothing is asserted without a status tag, and nothing is promoted without a test that ran.**
-
-- `[P]` proven here, or classical with a citation you have checked.
-- `[D]` derived, awaiting independent checking.
-- `[H]` a hypothesis, with a stated test *and* a stated loss condition — the observation that
-  would make it wrong.
-
-If you cannot tag a claim, you cannot add it. If you want to move a claim from `[H]` to `[D]`
-or `[P]`, point to the test and its output. A claim with no loss condition is not a hypothesis;
-it is an opinion, and it does not belong here.
-
-## What this programme is
-
-An observer with finite access, inside the world it measures. From that: predictive state,
-bounded composition, horizons, hyperbolic geometry. The central theorem is the Universal
-Hyperbolic Law; `papers/capstone/` has the proofs. `docs/` walks the six gates in order.
-
-## Where to look before you write anything
-
-| You want to | Read |
+| Task | Source |
 | --- | --- |
-| Know what a theorem actually says | `papers/capstone/` (numbered; cite by number) |
-| Check a piece of maths | `toolkit/bounded/` — the module docstrings name the theorem each implements |
-| Know whether something is already claimed | `registry/atlas.csv` — 39 rows, every work placed |
-| Trace an earlier paper or prediction | `registry/legacy/README.md` — dated identifiers and source receipts, not current verdicts |
-| Know what failed | `experiments/` — failures are kept, not deleted |
-| Know what is still open | `registry/atlas.csv`, column `next_test` |
+| Current operational framework | `papers/library-2026-10-12/papers/capstone.md` |
+| A mathematical result | The relevant paper in `papers/library-2026-10-12/papers/`, with its premises |
+| Identity and branch relationships | `docs/project-structure.md` and `registry/branches.json` |
+| A new extension | `docs/branch-contract.md` |
+| Publication and correction status | `papers/PUBLICATION_STATUS_2026-10-13.md` |
+| Earlier composition theorems | Frozen `papers/capstone/`, version 2.1 |
+| Historical claims and failures | `registry/atlas.csv`, `registry/legacy/` and `experiments/` |
+| A component's scientific outcome | Its authoritative dated result, not a stale README |
 
-## Running the checks
+## Claims and evidence
 
-```bash
-pip install -e toolkit
+Use **[P]** for a proof under explicit premises or a checked cited theorem, **[D]** for a derivation awaiting checking, and **[H]** for a hypothesis with a test and loss condition. Record numerical verification, software behavior and empirical outcome separately. A test that ran is not a universal promotion rule.
+
+A claim is scoped by its actual model and operation class. Boundedness alone does not select all physics. Classical or general predictive-state applications need not use complex record premises. A physical interpretation requires its own bridge.
+
+Distinguish projective/rank boundaries, supplied boundary data and spacetime horizons. Boundary attainment must use the resource and clock conditions of the stated dynamics. Do not turn a post-hoc numerical observation into a derived precision prediction.
+
+## Preserve the record
+
+The October snapshot and its manifest are frozen. Reproduce checks or builds in a separate working copy; `run_checks.py` writes receipts. A mathematical revision needs a new dated release, checks, PDF inspection and a new manifest.
+
+Keep v2.1 sources, original identifiers, failed tests and dated corrections. SSRN completeness review is not peer review. Proposed author corrections are not journal-issued corrigenda. Keep private author/editor materials, raw physiological recordings, credentials and deployment configuration out of public files.
+
+The old atlas classifies earlier composition work. New branch membership is tracked separately; outside the C1–C4 conditions does not mean refuted or outside the whole programme.
+
+## Checks
+
+```sh
+pip install -e "toolkit[test]"
 pytest toolkit/tests -q
+python registry/validate_programme.py
+python site/build_evidence.py
+python site/build_programme.py
+python registry/legacy/validate_inventory.py
 ```
 
-Every test names the theorem it checks. If you change `toolkit/bounded/`, the tests must still
-pass, and a new function needs a new test that names what it is checking.
+Code changes need checks appropriate to their behavior. Documentation changes need accurate dependencies, functioning links and source-supported statements. Do not write mirrored tests for simple prose edits.
 
-## Things that look like improvements and are not
+## Contribute
 
-- **Rounding a bound into a claim.** "The exponent is between 1/2 and 1" is the result.
-  "The exponent is about 0.7" is not.
-- **Dropping a failed test.** H1 was pre-registered, run, and refuted. It stays, with its data
-  and its code. A programme that only keeps its wins has no evidence at all.
-- **Smoothing a hedge.** "Status: [D]" is load-bearing. So is "loss condition:".
-- **Generalising a measured number.** A rescue window measured in one cell line under one
-  condition is not a constant of biology.
-- **Inventing a citation.** If you cannot open the source, say so rather than writing a
-  plausible reference. Unverifiable citations are the fastest way to discredit the whole
-  repository.
-- **Making the law sound more universal than its conditions.** The UHL is universal *over its
-  four conditions* (C1–C4). Outside them it says nothing, and `registry/atlas.csv` has a whole
-  category for work whose conditions it does not meet.
-
-## If you find an error
-
-Open an issue using the error-report template, or send a pull request that states plainly what
-is wrong, what the correct statement is, and what evidence settles it. Corrections to the
-author's own work are the most valuable contribution here; several are already in the record.
-
-## Style
-
-Plain words. Short sentences. No jargon where a common word will do. Say what is true, then say
-how confident you are and why. The reader is assumed to be intelligent and to have no patience
-for padding.
+Use the common branch contract. State the problem, premises, result, verification and loss condition where appropriate. Plain words and precise claims are part of the work.

@@ -1,5 +1,10 @@
 # The atlas
 
+The current project uses [branches.json](branches.json) for operational relationships, [publications.json](publications.json) for dated publication status, and [repositories.json](repositories.json) for component roles. These are distinct from the earlier composition claim catalogue below.
+
+The historical atlas copy before the 13 October corrections is retained under [history/](history/). Current rows carry the verified hormesis and kinematics correction pointers. Original sources remain unchanged.
+
+
 `atlas.csv` places every work in the programme as a chart of the law.
 
 | Column | What it holds |

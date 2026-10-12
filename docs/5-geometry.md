@@ -1,5 +1,8 @@
 # Gate 5 · Geometry
 
+> Earlier six-gate composition teaching route. See the [current project map](project-structure.md) and [current library](../papers/README.md) for the full operational framework and branches.
+
+
 **What shape is the room inside the horizon?**
 
 In one dimension the rapidity makes the interval infinitely long, and that is all. In two or

@@ -1,0 +1,38 @@
+{
+  "bubble_energy": {
+    "unit_round_metric": 12.566370614359172,
+    "standard_FS_metric_radius_one_half": 3.141592653589793,
+    "ratio": 4
+  },
+  "Bures_hemisphere_metric_residual": 0.0,
+  "Kerr_horizon_counterexample": {
+    "M": 1.0,
+    "a": 0.8,
+    "event_horizon_r_plus": 1.5999999999999999,
+    "equatorial_ergosurface_r": 2.0,
+    "f_at_equatorial_event_horizon": -0.25
+  },
+  "unbounded_rate_finite_time": {
+    "T0": 1,
+    "proper_time_to_boundary": 1.5707963267948966
+  },
+  "zero_acceleration_GR_singularity": {
+    "proper_acceleration": 0,
+    "proper_time_from_horizon_to_r_zero": 1.3333333333333333,
+    "Kretschmann_at_r_0.1": 47999999.999999985
+  },
+  "fixed_intensity_critical_point": {
+    "domain": "unit S2",
+    "n": "identity",
+    "E": 1,
+    "direction_gradient_squared": 2,
+    "energy": 12.566370614359172,
+    "intensity_constraint_multiplier": 2
+  },
+  "finite_cell_local_state_counterexample": {
+    "cross_region_Bell_pairs": 100,
+    "entropy_nats": 69.31471805599453,
+    "local_Hamiltonian": 0,
+    "scaling": "volume when one pair per region cell"
+  }
+}

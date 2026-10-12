@@ -1,0 +1,57 @@
+[
+  {
+    "record": "provenance/test15/PREREGISTRATION.md",
+    "sha256": "ff4d89cc313f1b39403d1f8b1bbc2a49e23727fa649d5ab7e872f80c1660bebc",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test15/t15_results.txt",
+    "sha256": "eb00b813da90a43d3df5cb30ac3811c542ba44746931a455447b36632c79997d",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test15/t15_explore_results.txt",
+    "sha256": "5be5bbcb96e32ba3ffd7291fedefb6e90bccd66d8dafc4701ea0c5f10f03bab6",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test15b/PREREGISTRATION_T15b.md",
+    "sha256": "a14657af0ec9d65c927fc00d2b6a99be8914c0e2edae4323b9537b8f1b34677d",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test15b/t15b_results.txt",
+    "sha256": "3590cdd783ea26489e0acf4a6c24228a0550152c8e83a7138fe74dfe165ef595",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test15b/t15b_posthoc.txt",
+    "sha256": "6ef5c620f663823103cefc3928319b18a69c085b73aa935ec56e9d0ee243a0ad",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test20/PREREGISTRATION_T20.md",
+    "sha256": "76ef596a1c1daa669ca44d249dbbf0aceb1da47594eb9d97d00df59f0a5581a7",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test20/t20_results.txt",
+    "sha256": "9e21abe7fea18d606a5fc623f510bcaff3c9352f1e241cdfe53c54a80e153a57",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test20/t20_explore.txt",
+    "sha256": "e81cd2e7b4f8a57de06aa9e55c9482c12fabc9ad07c044801ad8fa6a3113fc49",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test20/t20_explore_cmb.txt",
+    "sha256": "d4dcd759987fc7c95d14a22d7611a525a1326cb6a0b8166c7fe843ef1244d498",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  },
+  {
+    "record": "provenance/test20/t20_validation.txt",
+    "sha256": "09601959cf9dd15d6363c9a3f27d730f93a6526ab388941658289b3363ecb13f",
+    "status": "Historical protocol/output copied byte-for-byte; not independently rerun in this revision."
+  }
+]

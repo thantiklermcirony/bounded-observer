@@ -1,5 +1,8 @@
 # Gate 3 · Action
 
+> Earlier six-gate composition teaching route. See the [current project map](project-structure.md) and [current library](../papers/README.md) for the full operational framework and branches.
+
+
 **Which interventions act the same way from every state?**
 
 A state is only a state relative to a set of admissible interventions (gate 2). So before any

@@ -1,0 +1,172 @@
+{
+  "title": "Where Singularities Can Live",
+  "subtitle": "Conditional field theorems for bounded records",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Melbourne, Australia",
+  "date": "12 October 2026",
+  "version": "Working version 3.1",
+  "keywords": "bounded records; harmonic-map heat flow; Bures metric; bubbling; hyperbolic geometry; incompressible flow",
+  "abstract": "A bounded record space supports several inequivalent field geometries and evolution equations. We identify the hypotheses under which its hyperbolic interior and its mixed-qubit hemisphere admit global harmonic-map heat flow. For a fixed closed flat source, hyperbolic heat flow has non-increasing maximum target radius and energy density. A weighted maximum principle proves global regularity for smooth qubit heat-flow data with a strictly positive mixedness margin in the Bures hemisphere. A Bernstein estimate also controls pressure-free self-transport. On two-dimensional sources, sphere-valued heat flow can instead concentrate harmonic spheres; the bubble energy is determined by the normalization of the target metric. We give explicit mixing and attenuation constructions, distinguish their energy and topology statements from claims about arbitrary physical dynamics, and state the precise imported wave-map and equivariant Schrödinger-map results. An optional incompressible Klein-velocity model has a uniquely specified elliptic pressure closure while its global regularity remains conjectural. These results give the singularity hypothesis a conditional mathematical meaning without extending it to all field equations or to spacetime curvature singularities.\n",
+  "paper_id": "paper5",
+  "publication_status": "working_preprint_v3.1",
+  "conditions": [
+    {
+      "result": "Theorem 1",
+      "conditions": [
+        "Complete hyperbolic target of dimension at least two",
+        "Nonnegative local quadratic first-spatial-derivative functional",
+        "All target isometries and independent full source orthogonal invariance",
+        "Identical constitutive law at every source point for constant coefficient"
+      ],
+      "status": "proved classification within declared functional class"
+    },
+    {
+      "result": "Proposition 2",
+      "conditions": [
+        "Single four-vector orbit of connected Lorentz group",
+        "Stabilizer-invariant symmetric tangent form"
+      ],
+      "status": "proved orbit-form classification"
+    },
+    {
+      "result": "Theorem 3",
+      "conditions": [
+        "Closed flat source",
+        "Smooth initial map into complete hyperbolic space",
+        "Positive viscosity",
+        "Exactly harmonic-map heat flow"
+      ],
+      "status": "proved estimates with imported local continuation theory"
+    },
+    {
+      "result": "Theorem 4",
+      "conditions": [
+        "Flat periodic T3",
+        "Hyperbolic H3 target",
+        "Klein velocity readout",
+        "Smooth initial data",
+        "Positive viscosity",
+        "Pressure-free self-transport"
+      ],
+      "status": "proved Bernstein bound and continuation"
+    },
+    {
+      "result": "Theorem 5",
+      "conditions": [
+        "Closed flat source",
+        "Smooth Bures-hemisphere initial map",
+        "Uniform initial q>=delta>0",
+        "Exactly its heat flow"
+      ],
+      "status": "proved weighted maximum principle and continuation"
+    },
+    {
+      "result": "Proposition 6 and imported surface bubbles",
+      "conditions": [
+        "Oriented two-dimensional source",
+        "Unit-round S2 target for 4pi; conventional FS radius 1/2 for pi",
+        "Smooth finite-energy surface-flow setting of cited theorems"
+      ],
+      "status": "degree bound proved; existence and energy identity imported"
+    },
+    {
+      "result": "Theorem 8",
+      "conditions": [
+        "Fixed epsilon>0",
+        "Closed smooth source",
+        "Smooth initial flat-ball field |m0|<=1",
+        "Specified Ginzburg-Landau semilinear heat equation"
+      ],
+      "status": "proved maximum principle and continuation; inversion not forced"
+    },
+    {
+      "result": "Proposition 9",
+      "conditions": [
+        "Closed oriented surface",
+        "Fixed positive total intensity",
+        "Smooth direction map in chosen degree class",
+        "Specified degenerate null-record energy"
+      ],
+      "status": "proved infimum-zero construction; no attenuation dynamics asserted"
+    },
+    {
+      "result": "Wave-map theorem",
+      "conditions": [
+        "Fixed R1+2 Minkowski source",
+        "Hyperbolic target",
+        "Smooth finite-energy data"
+      ],
+      "status": "imported global regularity; concentration clock statement is sequential"
+    },
+    {
+      "result": "Schrodinger-map theorem",
+      "conditions": [
+        "R2 spatial source",
+        "H2 target",
+        "Nonzero integer equivariance",
+        "Homogeneous H1 intersect H3 classical data or cited smooth-limit energy completion"
+      ],
+      "status": "imported global solution and moving-frame scattering"
+    },
+    {
+      "result": "Proposition 10",
+      "conditions": [
+        "Minkowski four-velocity curve",
+        "Fixed inertial reference",
+        "Proper-time parameter",
+        "Finite accumulated proper acceleration divided by c"
+      ],
+      "status": "proved path-length non-arrival; no GR singularity theorem"
+    },
+    {
+      "result": "Proposition 11",
+      "conditions": [
+        "Chosen inverse-hyperbolic-metric pressure projection",
+        "Smooth T3 velocity with |v|<=kappa<1",
+        "Zero-mean periodic pressure"
+      ],
+      "status": "proved elliptic pressure definition and divergence preservation"
+    },
+    {
+      "result": "Conjecture 12",
+      "conditions": [
+        "Explicit equations (9.1)-(9.2)",
+        "Smooth divergence-free initial v with positive distance from velocity boundary",
+        "Positive viscosity"
+      ],
+      "status": "open global smoothness and finite-distance image conjecture"
+    },
+    {
+      "result": "Proposition A1",
+      "conditions": [
+        "Specified scalar capped ODE",
+        "One declared clock",
+        "A>0, p>=3, gamma>0",
+        "Fixed positive initial value",
+        "Large-ceiling asymptotic C to infinity"
+      ],
+      "status": "proved fold-delay asymptotic; separate from fluid regularity"
+    }
+  ],
+  "manuscript_sha256": "9D24722F779A277926AB54692944239B7460E0259050AD8A4B77B4A52E41F206",
+  "word_count": 4464,
+  "original_author_files_modified": false,
+  "verification": {
+    "display_math_delimiters_balanced": true,
+    "no_internal_filesystem_paths": true,
+    "imported_results_explicitly_labelled": true,
+    "numerics_do_not_replace_proofs": true,
+    "independent_formula_checks": [
+      "Klein inverse target metric",
+      "all 27 Klein Christoffel coefficients",
+      "exact p=3 gamma=1 fold antiderivative",
+      "second algebraic derivation of strict-hemisphere weighted maximum principle",
+      "fold exact formula checked against adaptive quadrature at C=10,100,1000"
+    ]
+  },
+  "source_sha256": "9d24722f779a277926ab54692944239b7460e0259050ad8a4b77b4a52e41f206",
+  "source_file": "papers/paper5.md",
+  "pdf_sha256": "df4ad8e8c72cbedbdfa95df5e992321e6b489c24366002a636b09418dd44c4b0",
+  "pdf_file": "pdf/paper5.pdf"
+}

@@ -1,0 +1,46 @@
+{
+  "document_id": "hormesis_corrigendum",
+  "document_type": "proposed_author_corrigendum",
+  "title": "Correction to Hormesis as a Geometric Necessity of Bounded Adaptive Systems",
+  "subtitle": "Proposed author corrigendum for DOI 10.1177/15593258261469171",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent Researcher, Melbourne, Australia",
+  "date": "12 October 2026",
+  "related_original_doi": "10.1177/15593258261469171",
+  "publication_status": "proposed_not_accepted_or_issued",
+  "manuscript_sha256": "B9221F49C06AFF659BFCB5A58192003C205EF5E9D48900F378DD8161D2541D2E",
+  "pdf_sha256": "e6418c5a490476d588ab1fee88cfde7eeb172d477cfc747fcb320a41f9a41777",
+  "pdf_page_count": 2,
+  "visual_review": "See the hash-bound final visual coverage and author-review receipts.",
+  "summary": "Proposed correction to the necessity, universal peak-location and finite-change attenuation statements in the published article. It replaces threshold ordering as a sufficient condition with the exact equal-slope initial-derivative condition, states the parameter-dependent peak, corrects finite series attenuation, and retains the adopted bounded-composition framework.",
+  "keywords": [
+    "author correction",
+    "hormesis",
+    "exact onset",
+    "peak location",
+    "finite attenuation"
+  ],
+  "affected_claims": [
+    "Threshold ordering and high-dose damage do not by themselves imply a beneficial interval.",
+    "A universal peak near twice the activation threshold is withdrawn at its stated generality.",
+    "Local metabolic-control derivatives cannot be extrapolated to finite enzyme changes without a kinetic model.",
+    "The full product shortcut has no universal conservative interpretation or error bound without calibration.",
+    "Detectable zone widths require both threshold crossings and a stated cutoff and control.",
+    "Finite series-model flux ceilings do not predict the distribution of hormesis peaks.",
+    "The common-shape equal-midpoint model does not imply a beneficial interval."
+  ],
+  "conditions": [
+    "Equal positive linear-dose logistic slopes for the stated exact primary-model condition and peak",
+    "Positive repair and damage amplitudes with greater eventual damage",
+    "Actual zero-dose control normalization",
+    "Specified equal-resistance series model for the corrected finite attenuation"
+  ],
+  "companion_derivation": "papers/hormesis_amendment.md",
+  "editorial_scope": "Journal handling and final corrigendum wording remain subject to editorial review.",
+  "original_publication_preserved": true,
+  "new_biological_data": false,
+  "source_sha256": "b9221f49c06aff659bfcb5a58192003c205ef5e9d48900f378dd8161d2541d2e",
+  "source_file": "corrections/hormesis_corrigendum.md",
+  "pdf_file": "pdf/hormesis_corrigendum.pdf"
+}

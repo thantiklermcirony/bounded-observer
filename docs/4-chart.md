@@ -1,5 +1,8 @@
 # Gate 4 · Chart and boundary
 
+> Earlier six-gate composition teaching route. See the [current project map](project-structure.md) and [current library](../papers/README.md) for the full operational framework and branches.
+
+
 **How do bounded changes combine, and can the edge ever be reached?**
 
 This is the Universal Hyperbolic Law.

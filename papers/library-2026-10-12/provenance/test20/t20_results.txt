@@ -1,0 +1,9 @@
+== T20 decisive run: DESI DR2 BAO + Pantheon+ (n_SN = 1590) ==
+  real     bao        LCDM chi2 10.27 (Om 0.2975) | UHL c=1 chi2 10.24 (Om 0.2720) | Delta chi2 = -0.03 -> NEUTRAL
+  real     bao+sn     LCDM chi2 1416.14 (Om 0.3042) | UHL c=1 chi2 1412.77 (Om 0.2718) | Delta chi2 = -3.37 -> NEUTRAL
+
+== exploratory (not decisive) ==
+  bao        HDE with c free: c = 0.930, Om = 0.2725, chi2 = 10.04
+  bao+sn     HDE with c free: c = 0.988, Om = 0.2725, chi2 = 1412.75
+  UHL c=1 at its best fit: Omega_de0 = 0.7282, w0 = -0.9022, wa (CPL slope at a=1) = +0.2093
+  LCDM best fit Om = 0.3042: event horizon today = 1.1432 c/H0 ; vacuum energy / horizon ceiling = 0.9093 (c_eff = 0.9536); -> 1 as a -> infinity

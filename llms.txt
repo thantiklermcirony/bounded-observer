@@ -1,48 +1,41 @@
 # The Bounded Observer
 
-> A research programme derived from one premise: an observer with finite access, standing
-> inside the world it measures. Finite access forces a predictive state; bounded quantities
-> force a composition law; that law forces a horizon; the horizon forces a hyperbolic
-> geometry. The central theorem is the Universal Hyperbolic Law. Author: Daniel John Murray,
-> ORCID 0009-0005-1794-5945.
+Author: Daniel John Murray. ORCID 0009-0005-1794-5945.
 
-Every claim carries a status tag: [P] proven or classical with citation, [D] derived and
-awaiting checking, [H] hypothesis with a stated test and a stated loss condition. Claims are
-promoted only when a test has run. Refuted predictions are kept in the record.
+The programme studies what an observer can record, read, retain, combine and change. UHL is its operational mathematics of positive records and bounded normalized readings. SIH studies field regularity and concentration in named models. IDA, VCC and other branches are scoped instruments, applications and experiments.
 
-## Start
+## Current authority
 
-- [AGENTS.md](AGENTS.md): rules for agents working here. Read before writing anything.
-- [README.md](README.md): the programme on one page, and the six gates.
+- [AGENTS.md](AGENTS.md): claims, evidence, preservation and contribution rules.
+- [README.md](README.md): project entrance.
+- [LAB.md](LAB.md): active questions, runnable models and the experiment/revision cycle.
+- [Project structure](docs/project-structure.md): dependencies and branch relationships.
+- [Branch contract](docs/branch-contract.md): operational interface for extensions.
+- [Branch registry](registry/branches.json): typed relationships and current evidence.
+- [Current capstone](papers/library-2026-10-12/papers/capstone.md): finite operational closure with named premises.
+- [Current papers](papers/README.md): supporting papers, amendment and proposed corrections.
+- [Publication receipt](papers/PUBLICATION_STATUS_2026-10-13.md): SSRN status and licensing.
 
-## The six gates, in order
+## Applications
 
-- [1 Access](docs/1-access.md): what an observer can reach from inside.
-- [2 State](docs/2-state.md): what must be kept so the rest of the past can be forgotten.
-- [3 Action](docs/3-action.md): which interventions act the same way from every state.
-- [4 Chart and boundary](docs/4-chart.md): how bounded changes combine; the horizon.
-- [5 Geometry](docs/5-geometry.md): the shape of the room inside the horizon.
-- [6 Prediction](docs/6-prediction.md): what has been tested, and what failed.
+- [Physical models and SIH](branches/physics/README.md)
+- [Adaptation and biology](branches/adaptation/README.md)
+- [IDA](branches/ida/README.md)
+- [VCC](branches/vcc/README.md)
+- [Scientific AI](branches/scientific-ai/README.md)
+- [Arithmetic](branches/arithmetic/README.md)
+- [Evidence and decisions](branches/evidence-decisions/README.md)
 
-## Sources
+Applications identify their own records, operation class, clock/resources and physical or measurement bridge. A shared interface does not establish missing model premises. Classical branches do not automatically inherit quantum reconstruction.
 
-- [papers/capstone/](papers/capstone/): Bounded Composition and Its Horizons, v2.1. Theorems
-  are numbered; cite by number.
-- [toolkit/](toolkit/): the Python package `bounded`. Each module names the theorem it
-  implements; `pytest toolkit/tests` checks them numerically.
-- [registry/atlas.csv](registry/atlas.csv): every work in the programme placed as a chart of
-  the law, with its bounded quantity, its status and its next test.
-- [registry/legacy/README.md](registry/legacy/README.md): a dated, source-pinned inventory of
-  the earlier Atlas, with manuscript and prediction identifiers and page receipts. Historical
-  source statuses do not replace the current verdicts in registry/atlas.csv.
-- [experiments/](experiments/): pre-registered tests with data and code, including H1, which
-  was refuted as stated.
-- [apps/ida-live/](apps/ida-live/): IDA Live, the instrument that runs the law on a living mind.
+## Earlier sources and checks
 
-## Optional
+- [Frozen capstone v2.1](papers/capstone/): C1–C4 composition specialization.
+- [Toolkit](toolkit/): implemented identities and tests.
+- [Earlier claim atlas](registry/atlas.csv): composition and historical works, with corrections.
+- [Dated inventory](registry/legacy/README.md): historical identifiers and source receipts.
+- [Experiments](experiments/): protocols, data and failures.
+- [IDA Live](apps/ida-live/): research software; physiological interpretation remains unvalidated.
+- [Public site](site/): project map, teaching walk and exhibits.
 
-- [site/](site/): the website source; twelve interactive models tied to the six-gate walk.
-- [site/library.html](site/library.html): the wider research record and searchable source ledger.
-- [site/labs.html](site/labs.html): earlier laboratory results and room source routes, including
-  failed success gates.
-- [CONTRIBUTING.md](CONTRIBUTING.md): how to add a chart, a replication or a refutation.
+Proof, numerical checks, software tests and empirical outcomes remain separate. Preserve failures and historical source bytes.

@@ -1,0 +1,297 @@
+---
+title: "Light Time and Horizons"
+subtitle: "Lorentz signal geometry under explicit event and clock identifications"
+author: "Daniel John Murray"
+orcid: "0009-0005-1794-5945"
+affiliation: "Independent researcher, Melbourne, Australia"
+date: "12 October 2026"
+version: "Working v3.1"
+abstract: |
+  A complex binary record has a Lorentz cone and a hyperbolic projective interior. We specify the operational bridges that identify this structure with physical event displacements, null signals and calibrated clocks. The determinant then supplies a conformal Lorentz metric, while a tangent-only Lorentz-invariant clock selects proper time up to scale. Doppler frequencies and normalized binary readouts have a common cone pairing, with different physical calibrations. We prove the distinction among harmonic sky probability, local photon-number density and bolometric radiation moments, give an exact acceleration-horizon criterion, and isolate the Fourier amplitude ratio produced by exponential redshift from the additional quantum assumptions needed for thermality. Positive maps and finite-rank baths yield exact boundary and cumulative-resource inequalities. Within flat scalar wave models, positivity together with sharp retarded support selects three spatial dimensions. The conclusions are closed within their stated operational and physical models; no identification of all qubit operations with frame changes, all radiation with a finite moment state, or all horizons with thermal states is assumed.
+keywords:
+  - Lorentz cone
+  - null signals
+  - proper time
+  - Doppler shift
+  - harmonic measure
+  - radiation closure
+  - acceleration horizon
+  - positive maps
+---
+
+# 1 From records to events
+
+The binary record model is
+
+$$M(x)=x^0I+\mathbf x\cdot\boldsymbol\sigma,\qquad
+C=\{M\succeq0\},\qquad \det M=(x^0)^2-|\mathbf x|^2.$$
+
+Its determinant-one congruences give the double cover $SL(2,\mathbb C)\to SO^+(1,3)$. Its normalized interior is hyperbolic three-space. These are record-space statements, obtained in the companion paper *The Geometry of Bounded Records*. To interpret them physically, the following bridges are explicit.
+
+**Event bridge.** A smooth event manifold has a local invertible linear map
+$E_x:T_x\mathcal M\to\operatorname{Herm}_2(\mathbb C)$. Physically admissible future displacements correspond to $C$, and elementary null signal displacements correspond to its nonzero rank-one boundary. Frame comparison acts by the declared congruences.
+
+**Signal bridge.** A received wave has a future null phase covector, and a calibrated detector reads its contraction with the observer's velocity as frequency.
+
+**Clock bridge.** A local clock increment is constructed from the event metric and future timelike tangent alone, with the same calibration at all events. It is continuous, homogeneous of degree one and invariant under the declared local Lorentz comparisons. Extra fields, metric-derivative corrections, acceleration dependence and clock history are excluded in this clock model.
+
+For global special-relativistic formulas we additionally use a flat affine event structure with constant solder. Local cone geometry alone does not imply global flatness or gravitational field equations.
+
+**Theorem 1.** The event bridge defines a Lorentz metric by
+
+$$g_x(v,v)=\det E_x(v).$$
+
+The causal cone determines its conformal class, not its absolute scale. The clock bridge then gives
+
+$$d\tau=\alpha\sqrt{g_x(dx,dx)},\qquad\alpha>0,$$
+
+up to the declared calibration.
+
+**Proof.** The determinant on Hermitian matrices has signature $(1,3)$; an invertible pullback preserves that signature. Two Lorentz forms with the same cone are proportional. To verify the latter directly, put one form in coordinates $t^2-|\mathbf x|^2$. Evaluating the second form on all null vectors $(1,\pm\mathbf n)$ forces its mixed entries to vanish and its spatial quadratic form to be a scalar multiple of the identity. The future cone fixes the positive proportionality sign.
+
+On future timelike vectors, the Lorentz group is transitive at fixed $g(v,v)$. An invariant clock function therefore depends only on that norm; degree-one homogeneity fixes its square-root form. A single calibration sets $\alpha$. $\square$
+
+The record cone thus supplies a genuine event metric after a specified event identification. An abstract isomorphism between two spheres does not supply that identification. In particular, rotating the polarization of a fixed beam changes a polarization qubit while leaving the beam's null direction unchanged.
+
+# 2 Frame comparison and received frequency
+
+Use signature $(+---)$ and dimensionless unit observer velocities
+
+$$U=(\gamma,\gamma\mathbf v/c),\qquad
+\langle U,U\rangle_L=1,\qquad \gamma=(1-|\mathbf v|^2/c^2)^{-1/2}.$$
+
+The induced velocity-space metric is minus the restricted Lorentz form, and
+$\cosh d(U,V)=\langle U,V\rangle_L$. A boost along a fixed axis adds rapidities, giving $\mathbf v/c=\tanh r$ on that axis.
+
+Let $k_\xi=(1,\xi)$ for $\xi\in S^2$. Under the signal bridge, a null wave with reference frequency $\omega_0$ is read by observer $U$ as
+
+$$\omega_U=\omega_0q(U,\xi),\qquad
+q(U,\xi)=\langle U,k_\xi\rangle_L
+=\gamma(1-\mathbf v\cdot\xi/c).$$
+
+**Proposition 2.** The function
+
+$$B_\xi(U)=\log q(U,\xi)$$
+
+is the Busemann function with $B_\xi(o)=0$, using the convention that it decreases toward $\xi$. Hence
+
+$$\frac{\omega_U}{\omega_V}
+=e^{B_\xi(U)-B_\xi(V)}.$$
+
+**Proof.** Along the geodesic $U(r)=(\cosh r,\sinh r\,\xi)$, $q=e^{-r}$ and $B=-r$. Differentiation on the hyperboloid gives $|\nabla B|=1$ and $\operatorname{Hess}B=g_H-dB\otimes dB$, the horospherical characterization. Frequency contraction gives the ratio. $\square$
+
+This relates received frequency to a horospherical difference, not to spatial curvature of the event manifold.
+
+For a null matrix $M(k)$, $gM(k)g^\dagger$ preserves rank one. On its projective spinor, $g\in SL(2,\mathbb C)$ acts by a Möbius transformation. If an active boost of rapidity $r$ is along $z$, then
+
+$$D=\cosh r+\mu\sinh r,\qquad
+\mu'=\frac{\mu+\beta}{1+\beta\mu},\qquad
+d\Omega'=D^{-2}d\Omega,\qquad \beta=\tanh r.$$
+
+The area formula follows by differentiating $\mu'$; the conformal length factor is $D^{-1}$. For a passive moving detector the inverse transformation gives the usual Doppler sign convention.
+
+The common cone pairing also appears in binary readout:
+
+$$\rho=\tfrac12(I+\mathbf b\cdot\sigma),\quad
+\Pi_{\mathbf n}=\tfrac12(I+\mathbf n\cdot\sigma),\quad
+\operatorname{Tr}(\rho\Pi_{\mathbf n})
+=\frac{1+\mathbf b\cdot\mathbf n}{2}
+=\frac{\langle U,(1,-\mathbf n)\rangle_L}{2U^0}.$$
+
+Here $U=(1,\mathbf b)/\sqrt{1-|\mathbf b|^2}$. The antipodal sign converts the positive trace dual into the Lorentz pairing. Probability and frequency share a bilinear expression while retaining different units, normalizers and experimental meanings.
+
+# 3 Additive clocks and physical proper time
+
+A continuous associative scalar update law on a real interval, strictly increasing in both arguments and with an identity, admits an increasing additive coordinate [1]. Any two such coordinates differ by a positive scale. This is a theorem about the specified scalar composition. It does not identify its coordinate with the physical clock in Theorem 1.
+
+In a flat calibrated event metric let $u_a=cU_a$ be an inertial frame velocity and define its coordinate-time differential by
+
+$$dt_a=\langle u_a,dx\rangle_L/c^2.$$
+
+Along an observer $b$, $dx=u_b\,d\tau_b$, so
+
+$$\frac{dt_a}{d\tau_b}
+=\frac{\langle u_a,u_b\rangle_L}{c^2}
+=\cosh d(U_a,U_b).$$
+
+This is the frame-$a$ coordinate-time function evaluated on the worldline of $b$. It is not the tick rate of a clock signal received from $a$: propagation direction and emission history enter that received rate.
+
+Observer trajectories need not be geodesic in either event space or velocity space. Stationarity of the reparameterization-invariant action $-mc^2\int d\tau$ yields timelike event geodesics after an additional variational principle. An event-space inertial geodesic has constant velocity, hence is a point in velocity space. A nonconstant velocity-space geodesic instead describes a chosen acceleration history. Neither variational principle follows merely from the cone or an additive chart.
+
+# 4 Direction probability and radiation energy
+
+**Theorem 3.** A probability assignment $U\mapsto h_U$ on the sky, covariant under every Lorentz transformation, is uniquely determined. Its value at $o$ is uniform, and for a boost $\beta$ along $z$ its density is
+
+$$P_2(\mu)=\frac{1-\beta^2}{4\pi(1-\beta\mu)^2},\qquad \mu=\cos\theta.$$
+
+It is harmonic measure of $\mathbb H^3$.
+
+**Proof.** The stabilizer of $o$ is the full rotation group, whose unique invariant sky probability is uniform. Transitivity determines all other values. The aberration Jacobian gives $P_2$. Equivalently $dh_U/dh_o=e^{-2B_\xi(U)}$. Since $\Delta B_\xi=2$ and $|\nabla B_\xi|=1$, $\Delta e^{-2B_\xi}=0$. Direct angular integration gives unit mass. $\square$
+
+No probability is invariant under the full Lorentz action on the sky: rotational invariance would make it uniform, and a boost changes that measure. The covariant family is observer dependent.
+
+Radiation energy has additional weights. In the bolometric rest-isotropic radiation model, the Lorentz transformation of specific intensity supplies four Doppler powers, giving the normalized energy distribution
+
+$$P_4(\mu)=
+\frac{3(1-\beta^2)^3}
+{4\pi(3+\beta^2)(1-\beta\mu)^4}.$$
+
+This radiometric law is a physical input distinct from pushforward of angular probability. Photon counts per detector time, energy intensity and an angular sample probability need not transform with the same weight.
+
+**Proposition 4.** The two moment pairs are
+
+$$f_2=\frac1\beta-\frac{1-\beta^2}{\beta^2}\operatorname{artanh}\beta,\qquad
+\chi_2=\frac{2\beta-\beta^3-2(1-\beta^2)\operatorname{artanh}\beta}{\beta^3},$$
+
+and
+
+$$f_4=\frac{4\beta}{3+\beta^2},\qquad
+\chi_4=\frac{1+3\beta^2}{3+\beta^2}
+=\frac{3+4f_4^2}{5+2\sqrt{4-3f_4^2}}.$$
+
+In particular $f_2=2\beta/3+O(\beta^3)$ while $f_4=4\beta/3+O(\beta^3)$.
+
+**Proof.** Integrate $1,\mu,\mu^2$ against each normalized density. For $P_2$, substitution $s=1-\beta\mu$ yields the displayed logarithm. For $P_4$, the normalizing integral is $2(3+\beta^2)/[3(1-\beta^2)^3]$ and the other two elementary integrals give the rational moments. Eliminating $\beta$ gives the last expression. $\square$
+
+**Proposition 4a (local photon-number sampling).** Specify an isotropic-rest photon gas with finite positive local number density and a scalar kinetic occupation distribution. Sample its angular number density on an observer's equal-time hypersurface. Its Doppler weight is $D^3$, where $D=[\gamma(1-\beta\mu)]^{-1}$. The normalized density and its mean are
+
+$$P_3(\mu)=\frac{(1-\beta^2)^2}{4\pi(1-\beta\mu)^3},\qquad
+\int\mu P_3d\Omega=\beta.$$
+
+*Proof.* Integrating the scalar occupation against the boosted momentum-volume measure gives the third Doppler power. The elementary angular integrals are
+
+$$\int_{-1}^1\frac{d\mu}{(1-\beta\mu)^3}=\frac2{(1-\beta^2)^2},\qquad
+\int_{-1}^1\frac{\mu\,d\mu}{(1-\beta\mu)^3}=\frac{2\beta}{(1-\beta^2)^2}.$$
+
+They give normalization and mean. Equivalently, the timelike particle-number current has boosted spatial-to-time ratio $\beta$, defining its Eckart velocity. $\square$
+
+This local sampling rule is additional physical content. A uniform rest-frame probability of recorded sky directions pushes forward by aberration to $P_2$. Detector crossing counts can include aperture, incidence-angle, spectral and event-clock weights; they need not sample $P_3$. A collimated null number current has no timelike Eckart rest frame. Thus probability, equal-time number density and bolometric energy give three distinct records, even when generated by one isotropic-rest gas.
+
+The $f_4,\chi_4$ relation in Proposition 4 is the M1 Eddington relation associated with the radiation-rest-frame closure [2]. For a declared perfect radiation stress tensor
+
+$$T^{\mu\nu}=\tfrac43E_0U^\mu U^\nu-\tfrac13E_0\eta^{\mu\nu},$$
+
+the four equations $\partial_\mu T^{\mu\nu}=0$ form a closed constitutive model for $E_0$ and three independent components of $U$. They do not prove that every radiation distribution has this form.
+
+The Landau zero-flux frame also differs from an angular conformal barycenter. For bolometric $I(\mu)=I_0(1+a\mu)$, $|a|<1$, $F_z/E=a/3$ and $P_{zz}/E=1/3$. A passive boost with zero energy flux solves
+
+$$a(1+\beta_L^2)-4\beta_L=0,\qquad
+\beta_L=\frac{a}{2+\sqrt{4-a^2}}=\frac a4+O(a^3).$$
+
+For the corresponding normalized angular density, the Busemann-barycenter equation is $\mathbb E[(t-\mu)/(1-t\mu)]=0$, $t=\tanh R_B$, giving $R_B=a/2+O(a^3)$. The additive Hermitian directional summary instead has Bloch coordinate $a/3$. These are three defined summaries, not interchangeable equilibrium frames.
+
+Locally, $(E,F/c)$ consists of stress components $T^{00},T^{0i}$; its passive boost transformation requires the pressure tensor. Integrated four-momentum of an isolated finite packet is a true Lorentz vector, but it is not sufficient for all local interactions.
+
+For example equal opposed $z$ beams and equal opposed $x$ beams have the same total energy and zero momentum, but different longitudinal pressures. In the explicit collisionless ray model $\partial_tI+c\mathbf n\cdot\nabla I=0$, choose their common initial energy profile $E_0(x)=1+\varepsilon\cos kx$. The $z$ beams keep $E_z=E_0,F_z=0$. The $x$ beams give
+
+$$E_x(t,x)=1+\varepsilon\cos kx\cos ckt,\qquad
+F_x(t,x)=c\varepsilon\sin kx\sin ckt.$$
+
+Thus even the future energy/flux records differ despite identical initial fields. This is an exact ray-transport example, not an exact finite-wavelength Maxwell envelope.
+
+More generally, exact autonomous closure for all spatial profiles in that ray model would require a finite continuous moment span $V$ containing $1$ to satisfy $n_iV\subset V$. Otherwise a bounded angular perturbation orthogonal to $V$ but not to some $n_if$ produces equal initial moments with different derivatives; sufficiently small perturbations preserve positive intensity. Such closure is impossible: it would put $1,n_x,n_x^2,\ldots$ in $V$, and these are linearly independent on the sphere. This limits that moment model's predictive sufficiency; it is not a claim about every possible finite observer.
+
+# 5 Acceleration and horizons
+
+**Theorem 5.** A future-complete collinear timelike worldline in flat spacetime, parametrized by proper time $\tau$, has a finite future endpoint of $u=t-x/c$ iff
+
+$$\int_0^\infty e^{-\eta(\tau)}\,d\tau<\infty,$$
+
+where $\eta$ is its rapidity. Such an endpoint is the null horizon in that direction.
+
+**Proof.** Proper velocity gives $\dot t=\cosh\eta$ and $\dot x/c=\sinh\eta$, so $\dot u=e^{-\eta}>0$. Integration proves the criterion. The complementary coordinate has derivative $e^\eta$ and must diverge if $u$ has a finite endpoint, by Cauchy–Schwarz on the two integrals. Events beyond the finite null coordinate never lie in the observer's causal past. $\square$
+
+The velocity geodesic $\eta=\tau/\tau_0$ meets the criterion, while the same unparameterized geodesic with $\eta=\log(1+\tau/\tau_0)$ does not. A geodesic image alone therefore does not select a physical horizon.
+
+For constant proper acceleration $a$, $\eta=a\tau/c$ and
+
+$$ct=\frac{c^2}{a}\sinh(a\tau/c),\qquad
+x=\frac{c^2}{a}[\cosh(a\tau/c)-1].$$
+
+Then $u=(c/a)(1-e^{-a\tau/c})$ has finite endpoint $c/a$. The exponential Doppler factor is $e^{-a\tau/c}$.
+
+**Proposition 6.** Put $\kappa=a/c$ and let the received signal be
+$f(\tau)=\exp(i\omega_0e^{-\kappa\tau}/\kappa)$. Its distributional Fourier amplitudes, with convention $F(\Omega)=\int e^{i\Omega\tau}f(\tau)d\tau$ and Mellin analytic continuation, satisfy for $\Omega>0$
+
+$$\frac{|F(-\Omega)|^2}{|F(\Omega)|^2}=e^{-2\pi\Omega/\kappa}.$$
+
+**Proof.** With $z=(\omega_0/\kappa)e^{-\kappa\tau}$,
+
+$$F(\Omega)=\frac{(\omega_0/\kappa)^{i\Omega/\kappa}}{\kappa}
+\int_0^\infty z^{-i\Omega/\kappa-1}e^{iz}\,dz.$$
+
+Start in a convergent Mellin strip with an Abel factor $e^{-\epsilon z}$ and continue to nonzero real frequency. The integral is
+$\Gamma(-i\Omega/\kappa)(\epsilon-i)^{i\Omega/\kappa}$.
+As $\epsilon\downarrow0$, its magnitude contains $e^{\pi\Omega/(2\kappa)}$. Gamma magnitudes at opposite imaginary arguments agree, giving the ratio. The zero-frequency distributional contribution is excluded. $\square$
+
+This is an exact classical amplitude relation. A quantum Planck occupation additionally uses a chosen field state, positive/negative-norm mode normalization and a detector coupling. A KMS interpretation additionally uses stationary correlation functions and their analyticity. For the Minkowski vacuum with the appropriate accelerated detector, these physical premises yield the Unruh temperature $\hbar a/(2\pi c k_B)$ [3]. The Fourier ratio alone does not establish a thermal state for arbitrary acceleration histories or radiation.
+
+# 6 Positive operations and boundary resources
+
+Let $e$ be an interior point of a proper cone. Every other interior $x$ obeys $me\preceq x\preceq Me$ for some $0<m\le M<\infty$.
+
+**Theorem 7.** For a positive linear map $\Phi$, nonzero $\Phi(x)$ and $\Phi(e)$ have the same minimal face. In particular $\Phi$ takes an interior input to a nonzero boundary output iff $\Phi(e)$ is a nonzero boundary output.
+
+**Proof.** Applying $\Phi$ preserves the two bounds. Mutual order domination implies identical minimal faces: a face containing either output must contain the other. $\square$
+
+If the output remains interior, order bounds also give
+
+$$d_H(\Phi x,\Phi e)\le d_H(x,e),\qquad
+d_H(\Phi x,e)\le d_H(x,e)+d_H(\Phi e,e).$$
+
+A finite product of invertible filters preserves rank and has finite Hilbert distance. For finite-dimensional Markov evolution, a finite integrated jump budget similarly prevents a full-rank state from reaching the boundary; the precise clock-invariant theorem is given in *Two Observers*.
+
+The face theorem is a statement about an operation, not a universal thermodynamic implementation theorem. A full-rank bath can reset $I/2$ to a biased full-rank record by a swap. An active joint unitary can create a correlation record while both marginal records remain maximally mixed. Neither process reaches a state boundary.
+
+**Theorem 8.** If a full-rank state $\rho$ couples unitarily to a full-rank finite bath $\sigma$, and the bath is discarded, then
+
+$$\kappa(\rho')\le\kappa(\rho)\kappa(\sigma),\qquad
+\kappa(\rho)=\frac{\lambda_{\max}(\rho)}{\lambda_{\min}(\rho)}.$$
+
+**Proof.** Tensor-product eigenvalue bounds give
+$m_\rho m_\sigma I\preceq\rho\otimes\sigma\preceq M_\rho M_\sigma I$.
+Unitary conjugation preserves these bounds. Partial trace multiplies their scalar endpoints by the bath dimension, which cancels from their ratio. $\square$
+
+Consequently a sequence with finite $\sum_j\log\kappa(\sigma_j)$ cannot purify a strictly positive initial state exactly. For positive-temperature Gibbs baths, $\log\kappa(\sigma_j)=\beta_j\Delta E_j$. This is a cumulative-resource statement for that bath model. It is not a prohibition on all finite-time purification, all measurements, or all physical singularities.
+
+# 7 A restricted propagation selection
+
+Within flat scalar massless wave equations in a positive integer number $n$ of spatial dimensions, positivity of the retarded fundamental distribution and support confined to the light cone jointly select $n=3$.
+
+**Theorem 9.** In units $c=1$, the retarded wave kernels in dimensions one, two and three are
+
+$$G_1=\tfrac12\theta(t-|x|),\quad
+G_2=\frac{\theta(t-r)}{2\pi\sqrt{t^2-r^2}},\quad
+G_3=\frac{\delta(t-r)}{4\pi r}.$$
+
+The first two are positive but have interior tails. The third is positive and sharp. Every odd $n\ge5$ is sharp but not positive; every even $n\ge4$ is not positive.
+
+**Proof.** Spatial Fourier transformation solves
+$(\partial_t^2+|k|^2)\widehat G_n=\delta(t)$, giving
+$\widehat G_n=\theta(t)\sin(|k|t)/|k|$. Radial Fourier inversion, or its Bessel recurrence, gives
+
+$$G_{n+2}=-\frac1{2\pi r}\partial_rG_n.$$
+
+The three initial formulas follow by direct inversion. In odd higher dimensions this recurrence produces nonzero derivatives of a delta distribution on the cone; such distributions are not positive measures. In even dimensions its nonzero interior part has density proportional to $(t^2-r^2)^{-(n-1)/2}$. If its coefficient is negative, positivity already fails on an interior test function. If positive, its nonintegrable cone-edge divergence precludes a locally finite positive measure. Positive distributions are measures, completing the exclusion. These retarded distributions belong to the classical Riesz construction [4]. $\square$
+
+This theorem does not identify wave amplitudes with probabilities, or derive the scalar operator from record positivity. It supplies a sharp consequence once that operator and its response positivity are specified.
+
+# 8 Operational closure
+
+The record cone, its dual pairing and null boundary organize the mathematical comparisons. The event solder, phase covector and clock functional identify the physical quantities. Direction probability, energy intensity and complete radiation states then retain their distinct operational definitions.
+
+The resulting framework is closed at this declared scope: its Lorentz formulas, horizon criterion, positive-map face theorem and finite-bath bound follow from explicit premises. A wider claim requires additional operations and equations. In particular, an acceleration horizon is not synonymous with a state-space boundary, a normalized probability is not a radiometric energy distribution, and a chosen equilibrium moment closure is not the complete radiation field.
+
+## Acknowledgements
+
+Claude and Codex were used for drafting, independent calculations and mathematical checking. Responsibility for the assumptions, proofs, citations and final scientific claims rests with the author.
+
+## References
+
+[1] J. Aczél, *Lectures on Functional Equations and Their Applications*, Academic Press, New York (1966).
+
+[2] C. D. Levermore, “Relating Eddington factors to flux limiters,” *Journal of Quantitative Spectroscopy and Radiative Transfer* **31**, 149–160 (1984). [doi:10.1016/0022-4073(84)90112-2](https://doi.org/10.1016/0022-4073(84)90112-2).
+
+[3] W. G. Unruh, “Notes on black-hole evaporation,” *Physical Review D* **14**, 870–892 (1976). [doi:10.1103/PhysRevD.14.870](https://doi.org/10.1103/PhysRevD.14.870).
+
+[4] M. Riesz, “L'intégrale de Riemann–Liouville et le problème de Cauchy,” *Acta Mathematica* **81**, 1–222 (1949). [doi:10.1007/BF02395016](https://doi.org/10.1007/BF02395016).

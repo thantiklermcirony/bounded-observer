@@ -1,0 +1,87 @@
+{
+  "Q1_transpose_obstruction": {
+    "correct_sign_residual": 0.0,
+    "full_group_equivariance_failure": 9.372215415517376
+  },
+  "Q2_dynamical_calibration": {
+    "alpha_half_residual": 1.2899625854847774e-15,
+    "alpha_one_residual": 14.563853507106653,
+    "own_reading_derivative": 4.577566798522237e-16
+  },
+  "Q3_order_hyperbolic_metric": {
+    "pairs": 250,
+    "max_absolute_error": 7.549516567451064e-15
+  },
+  "Q4_bounded_law_counterexample": {
+    "alternative": 0.5159666600047433,
+    "einstein": 0.5555555555555556,
+    "associativity_error": 1.1102230246251565e-16
+  },
+  "B1_constant_conversion_order_effect": {
+    "p_AB": 0.625,
+    "p_BA": 0.375,
+    "columns_conserve_counts": true
+  },
+  "B2_tilted_variance_identity": {
+    "cases": 40,
+    "max_fd_error": 1.2189837793677438e-09
+  },
+  "B3_clock_correction": {
+    "cases": 40,
+    "max_fd_error": 1.9500707715280896e-09
+  },
+  "B4_hidden_variance_cancellation": {
+    "logit": 1.0,
+    "variance_A": 0.419974341614026,
+    "variance_B": 0.4199743416140261
+  },
+  "B5_linear_moment_closure": {
+    "finite_atomic_rank": 3,
+    "recurrence_error": 2.0816681711721685e-17,
+    "continuous_gaussian_H5_min_eigenvalue": 0.31136951386183526,
+    "continuous_gaussian_nonlinear_closure": "mean'=variance, variance'=0 under exponential tilting"
+  },
+  "B6_exact_hormesis_peak": {
+    "peak_cases": 33,
+    "monotone_cases": 3,
+    "max_derivative_relative_residual": 4.906288618924302e-16,
+    "max_Rmax_error": 8.79296635503124e-14,
+    "max_beneficial_endpoint_error": 2.220446049250313e-16
+  },
+  "B7_hormesis_onset_scaling": {
+    "peak_y_over_onset_asymptotic": 0.999970001299925,
+    "peak_excess_over_onset_asymptotic": 0.9999400039997122
+  },
+  "B8_unequal_exponent_threshold": {
+    "cases": 3,
+    "max_critical_response_error": 0.0
+  },
+  "L1_direction_vs_energy_moments": {
+    "models": [
+      "normalized angular pushforward exponent 2",
+      "bolometric energy exponent 4"
+    ],
+    "beta_cases": 4,
+    "max_quadrature_error": 1.837419105754634e-14
+  },
+  "L2_dipole_Landau_frame": {
+    "cases": 3,
+    "max_zero_flux_residual": 1.1102230246251565e-16,
+    "small_dipole_beta_over_dipole": 0.25000001562500196
+  },
+  "C1_commuting_parabolic_not_geodesic": {
+    "adjacent_distance": 0.9624236501192069,
+    "endpoint_distance": 1.762747174039086,
+    "strict_triangle_gap": 0.1621001261993278
+  },
+  "C2_full_rank_correlation_record": {
+    "initial_system": "I/2",
+    "initial_memory": "diag(0.8,0.2)",
+    "operation": "CNOT",
+    "output_joint_min_eigenvalue": 0.1,
+    "both_output_marginals": "I/2",
+    "mutual_information_nats": 0.1927447570217573
+  },
+  "status": "all independent checks passed",
+  "scope": "Finite numerical checks and explicit counterexamples; general statements are proved in the revised manuscripts."
+}

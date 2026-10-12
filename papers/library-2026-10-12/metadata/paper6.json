@@ -1,0 +1,57 @@
+{
+  "paper": 6,
+  "title": "The Partner Freedom",
+  "subtitle": "Gauge connections, Higgs breaking and conditional charge classification",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent researcher, Melbourne, Australia",
+  "date": "12 October 2026",
+  "version": "Working v3.1",
+  "abstract": "Purification supplies a precise freedom of description, but a physical gauge connection requires an additional local frame identification. We formulate that identification explicitly and derive the centred covariance measured by a joint-fidelity experiment. The covariance becomes a trace form on traceless generators at maximal mixing; abelian response requires distinct charge sectors or a relational reference. Given a local Lorentz gauge action and a curvature-quadratic truncation, the leading dynamics is Yang–Mills with independent kinetic coefficients. We then classify Higgs stabilizers, admissible U(2) representations, the faithful local-field Standard Model quotient, and anomaly-free hypercharges within a specified chiral matter and Yukawa family. Right-handed neutrinos leave a B−L mixing freedom rather than forcing an additional gauge field. A conditional minimality theorem selects four completed U(2) doublets of charges (1,1,1,−3). Finally, an electrically neutral CPT pair with specified colour-reference sectors gives a covariance ratio of two. Its interpretation as a coupling relation remains conditional on an operational response-to-action identification. The framework separates mathematical classifications, physical premises and numerical hypotheses.\n",
+  "keywords": [
+    "purification",
+    "gauge covariance",
+    "Higgs mechanism",
+    "anomaly cancellation",
+    "Standard Model global group",
+    "conditional expectation",
+    "boundary representations"
+  ],
+  "physical_conditions": [
+    "Declared local internal frame bundle and physical connection",
+    "Lorentzian spin background and local curvature-quadratic two-derivative gauge action",
+    "Specified chiral matter, Higgs vector vacuum and Yukawa interactions",
+    "Quantum anomaly consistency, including background spin-connection coupling",
+    "Specified carrier, retained algebra and forgetting dynamics when state selection is used",
+    "Independent kinetic coefficients unless a common response-to-action identification is explicitly imposed"
+  ],
+  "optional_model_conditions": [
+    "Four completed odd-charge U(2) doublets; no opposite pair; lexicographic count and charge-size minimality; singleton neutrality",
+    "Electrically neutral CPT matter pair with distinct neutral particle/antiparticle modes",
+    "Regular colour-reference multiplicities, unbiased physical-subspace mixing and no compensating matter-pair electric edge flux",
+    "Common calibrated covariance-to-kinetic map at a declared matching scale"
+  ],
+  "not_claimed_as_derived": [
+    "three colours",
+    "observed generation count",
+    "coupling values",
+    "Yukawa values",
+    "Higgs vacuum scale",
+    "ceiling criticality",
+    "horizon localization of arbitrary prepared parameters"
+  ],
+  "primary_reference_count": 16,
+  "verification": {
+    "script": "checks/paper6_checks.py",
+    "report": "checks/paper6_checks.json",
+    "dependencies": [
+      "numpy",
+      "sympy"
+    ],
+    "independent_review": "Conditional-expectation entropy theorem and neutral-pair colour-edge construction independently reviewed and confirmed."
+  },
+  "source_sha256": "2e77b01782ddd035614123cf5f018e0c4d82d70db729b312685c2bdaa00e6342",
+  "source_file": "papers/paper6.md",
+  "pdf_sha256": "118f62bbb14f7e08ed6633c3d1251ca0792cc735186a5b4c23b1f289c80dbd01",
+  "pdf_file": "pdf/paper6.pdf"
+}

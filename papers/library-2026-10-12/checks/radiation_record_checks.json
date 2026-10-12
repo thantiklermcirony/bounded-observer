@@ -1,0 +1,34 @@
+{
+  "status": "All normalization, moment and stress-tensor checks passed.",
+  "claim_repaired": "The squared Poisson kernel does not have the fourth-power radiation M1 moments.",
+  "cases": [
+    {
+      "beta": 0.1,
+      "sky_probability_flux": 0.06680057462351753,
+      "radiation_energy_flux": 0.13289036544850502,
+      "sky_second_moment": 0.33601149247035034,
+      "radiation_pressure": 0.34219269102990035
+    },
+    {
+      "beta": 0.3,
+      "sky_probability_flux": 0.2037462241685371,
+      "radiation_energy_flux": 0.3883495145631069,
+      "sky_second_moment": 0.3583081611235807,
+      "radiation_pressure": 0.41100323624595475
+    },
+    {
+      "beta": 0.6,
+      "sky_probability_flux": 0.4344050123378753,
+      "radiation_energy_flux": 0.7142857142857143,
+      "sky_second_moment": 0.44801670779291675,
+      "radiation_pressure": 0.619047619047619
+    },
+    {
+      "beta": 0.85,
+      "sky_probability_flux": 0.6940035912433415,
+      "radiation_energy_flux": 0.9133646742780392,
+      "sky_second_moment": 0.6329496264549208,
+      "radiation_pressure": 0.8509066487575556
+    }
+  ]
+}

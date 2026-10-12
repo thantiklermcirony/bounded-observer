@@ -1,0 +1,106 @@
+{
+  "paper_id": "hormesis_amendment",
+  "title": "Exact Onset and Peak Laws for Bounded Adaptive Responses",
+  "subtitle": "A mathematical amendment to the geometric-necessity claim for hormesis",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent Researcher, Melbourne, Australia",
+  "date": "12 October 2026",
+  "publication_status": "working_mathematical_amendment",
+  "manuscript_sha256": "1F947C27A25F952A3C02EF525BC4096547AFE95BF2C015EC1C47200F0D44F8E9",
+  "pdf_sha256": "dd227ab806efbcb4ed9ea52c05207e633145f107387b26589f9fe474b3d3185f",
+  "pdf_page_count": 9,
+  "visual_review": "See the hash-bound final visual coverage and author-review receipts.",
+  "related_original_doi": "10.1177/15593258261469171",
+  "abstract": "A published bounded-adaptation model represents repair and damage as opposing rapidity increments, while its analytical approximation multiplies a benefit and a survival factor. These are distinct response models. We derive exact onset, peak and return-to-control conditions for the published additive-rapidity model with equal linear-dose logistic slopes, with an exact zero-dose normalization. Activation before toxicity and greater high-dose damage are not sufficient for a beneficial interval: a further amplitude–slope condition is necessary. We then obtain closed-form laws for an explicitly different log-dose Hill version of the additive model and for the multiplicative Hill response. Their conditions and amplitudes differ, and none has a universal peak at twice the activation threshold. We also derive exact detectable-interval quadratics at a declared assay cutoff. Finally, we distinguish local metabolic-control coefficients from finite enzyme changes and prove an exact finite-gain attenuation law for a specified equal-resistance chain. These results correct the necessity, peak-location and finite-amplitude claims without discarding bounded projective composition. They are analytic model results, not a new fit to biological data. They provide independently testable response laws once their components and matched endpoints are measured.\n",
+  "keywords": "hormesis; bounded adaptation; rapidity; dose response; metabolic control; peak location; corrigendum",
+  "conditions": [
+    {
+      "result": "Theorem 1",
+      "conditions": [
+        "Finite baseline viability p0 strictly between zero and one",
+        "Equal positive linear-dose logistic slopes",
+        "Positive activation threshold below toxicity threshold",
+        "Positive rapidity amplitudes beta greater than alpha",
+        "Nonnegative dose",
+        "Exact zero-dose normalization"
+      ],
+      "conclusion": "An interior beneficial peak exists exactly when the initial repair slope exceeds the initial damage slope; peak and return dose then have the displayed closed forms."
+    },
+    {
+      "result": "Theorem 2",
+      "conditions": [
+        "Additive rapidity response with common positive Hill exponent",
+        "Positive activation threshold below toxicity threshold",
+        "Positive amplitudes beta greater than alpha",
+        "Finite baseline viability",
+        "Nonnegative dose"
+      ],
+      "conclusion": "Benefit exists exactly when alpha exceeds beta epsilon; the peak, amplitude and return dose are model-specific."
+    },
+    {
+      "result": "Additive onset asymptotics",
+      "conditions": [
+        "Fixed positive beta",
+        "Fixed epsilon strictly between zero and one",
+        "alpha equals beta epsilon plus delta",
+        "delta tends to zero from above"
+      ],
+      "conclusion": "Peak position is linear in delta in the Hill variable; the peak rapidity increment is quadratic."
+    },
+    {
+      "result": "Multiplicative Hill response",
+      "conditions": [
+        "Functional benefit amplitude A positive",
+        "Common Hill exponent positive",
+        "Positive activation threshold below toxicity threshold",
+        "Declared product of benefit and retention"
+      ],
+      "conclusion": "Benefit exists exactly when A exceeds epsilon; its peak law differs from the additive rapidity law."
+    },
+    {
+      "result": "Normalized viability Taylor expansion",
+      "conditions": [
+        "Finite baseline p0 strictly between zero and one",
+        "Small net rapidity increment z",
+        "Specified normalized logistic viability readout"
+      ],
+      "conclusion": "The linear and quadratic coefficients are 2(1-p0) and 2(1-p0)(1-2p0), without automatically implying a product-response approximation."
+    },
+    {
+      "result": "Theorem 4",
+      "conditions": [
+        "Specified equal-resistance series kinetics",
+        "Positive rates",
+        "Fixed nonzero total driving drop",
+        "One rate increased by a positive molecular fraction",
+        "Other rates held fixed"
+      ],
+      "conclusion": "Finite attenuation is n plus (n-1) times the molecular fraction; a local control coefficient alone does not determine a finite fold."
+    }
+  ],
+  "empirical_scope": "Analytic model correction with no new biological fit, clinical result or treatment recommendation.",
+  "correction_status": "A separate proposed author corrigendum accompanies the amendment; journal acceptance is not claimed.",
+  "verification": {
+    "script": "checks/hormesis_revision_checks.py",
+    "report": "checks/hormesis_revision_checks.json",
+    "visual_receipt": "verification/visual_coverage.json",
+    "independent_formula_checks": [
+      "linear-dose logistic domain condition",
+      "exact zero-dose control",
+      "additive and multiplicative Hill peaks",
+      "additive onset asymptotics",
+      "baseline Taylor expansion",
+      "finite series attenuation"
+    ],
+    "supplemental_script": "checks/hormesis_doc32_supplemental_checks.py",
+    "supplemental_report": "checks/hormesis_doc32_supplemental_checks.json"
+  },
+  "source_sha256": "1f947c27a25f952a3c02ef525bc4096547afe95bf2c015ec1c47200f0d44f8e9",
+  "source_file": "papers/hormesis_amendment.md",
+  "pdf_file": "pdf/hormesis_amendment.pdf",
+  "new_exact_results": [
+    "Calibrated full two-increment lower bound and explicit shortcut counterexample",
+    "Theorem 3: both assay-threshold crossings for three stated response models"
+  ]
+}

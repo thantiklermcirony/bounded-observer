@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-12T01:44:41.512739+00:00",
+  "decision": "REJECT_SIGNED_LOGFC_L1_HEAD_FOR_ACTUAL_SUBMISSION35",
+  "numerical_execution_passed": true,
+  "independent_prediction_replay_passed": true,
+  "full_held_biology_evaluation_complete": true,
+  "biological_promotion_passed": false,
+  "reason": "All-axis logFC/profile errors improve, but confirmed down/up errors and arithmetic mean MSE worsen in every primary context versus oldGP.",
+  "scope": "Signed-logFC L1 head evaluated in this particular candidate line, not a verdict on all EchoRoad or other official competition submissions.",
+  "source_sha256": "f0153607e1e4623ae1214affe687483572bd284dfd2b159a34881a3d6489ef4f",
+  "source": "ROOT_BIOLOGICAL_REVIEW.json; original local evaluation retained",
+  "summary_exported_on": "2026-10-13"
+}

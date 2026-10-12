@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-13",
+  "project": "The Bounded Observer",
+  "canonical_repository": "thantiklermcirony/bounded-observer",
+  "foundation": {
+    "uhl": "Operational geometry of positive records and bounded normalized readings under named premises",
+    "sih": "Regularity and boundary concentration in specified field models",
+    "closed": "Finite complex records and declared operations form a closed operational loop",
+    "source": "papers/library-2026-10-12/papers/capstone.md"
+  },
+  "membership_rule": "Shared operational question plus explicit model/interface and claim-specific evidence. Classical branches do not automatically inherit complex-record or physical-qubit premises.",
+  "branches": [
+    {
+      "id": "physical-models",
+      "title": "Geometry, physical models and SIH",
+      "role": "foundation and conditional physical models",
+      "relation": "named mathematical premises and explicitly supplied physical bridges",
+      "landing": "branches/physics/README.md",
+      "question": "Which geometry and operations follow from a declared record model, and which physical interpretations can be justified?",
+      "contract": {
+        "record": "Positive matrices or specified record-valued fields",
+        "normalization": "Strictly positive record normalizer; declared field energy convention",
+        "readings": "Effects, marginals, calibrated signals and physical observables",
+        "operations": "Filters, reversible motions, instruments and specified field dynamics",
+        "retained_state": "The complete retained observable algebra or specified field state",
+        "composition": "Named cone/correspondence and complex tensor/CP premises where used",
+        "clock_resources": "Calibrated clocks, PDE evolution parameter and integrated exposure",
+        "bridge": "Event/signal, field/action, frame or horizon identification supplied separately",
+        "test_revision": "Verify proof premises; test distinct physical observables with a declared loss condition"
+      },
+      "dependencies": [
+        "papers/library-2026-10-12/papers/capstone.md",
+        "papers/library-2026-10-12/papers/paper1.md",
+        "papers/library-2026-10-12/papers/paper2.md",
+        "papers/library-2026-10-12/papers/paper3.md",
+        "papers/library-2026-10-12/papers/paper4.md",
+        "papers/library-2026-10-12/papers/paper5.md",
+        "papers/library-2026-10-12/papers/paper6.md",
+        "papers/library-2026-10-12/papers/paper7.md",
+        "papers/library-2026-10-12/papers/paper8.md"
+      ],
+      "evidence": {
+        "proof": "P: conditional theorems with named premises",
+        "numerical": "13 modules recorded passing in the immutable library",
+        "implementation": "Mathematical checks; no universal physical simulator",
+        "empirical": "Historical tests have separate outcomes; no general confirmation of all actual physics"
+      },
+      "next_task": "Develop a stated model or resolve a specific conjecture with its own premises and evidence."
+    },
+    {
+      "id": "adaptation-biology",
+      "title": "Adaptation and living systems",
+      "role": "conditional models and empirical applications",
+      "relation": "independent positive-weight sector and general state/resource questions",
+      "landing": "branches/adaptation/README.md",
+      "question": "Which response distinctions and resource histories predict a later biological outcome?",
+      "contract": {
+        "record": "Population counts, repair/damage, absolute reserve, exposure and outcome",
+        "normalization": "Matched baseline, total population or declared reserve reference",
+        "readings": "Shares, log odds, dose response, recoverability and durable fate",
+        "operations": "Growth, doses, challenges and timed rescue in a specified mechanism",
+        "retained_state": "Subtype distribution, resources and endpoint-relevant history",
+        "composition": "Diagonal filtering, specified Hill/rapidity model or chemical dynamics",
+        "clock_resources": "Declared growth/exposure clock, forcing duration and rescue deadline",
+        "bridge": "Independent component measurement plus actual census or biochemical assay",
+        "test_revision": "Predict untouched outcomes against fixed alternatives; retain failures"
+      },
+      "dependencies": [
+        "papers/library-2026-10-12/papers/paper2.md",
+        "papers/library-2026-10-12/papers/hormesis_amendment.md",
+        "https://github.com/thantiklermcirony/empirical-observatory"
+      ],
+      "evidence": {
+        "proof": "P: exact conditional line and response theorems",
+        "numerical": "Scoped model checks in the library and component packages",
+        "implementation": "Model and laboratory packages",
+        "empirical": "Recovery added-history gate failed; prospective therapeutic applications remain separately tested"
+      },
+      "next_task": "Calibrate components and the endpoint before a new held-out response or rescue test."
+    },
+    {
+      "id": "ida",
+      "title": "IDA and StateAtlas",
+      "role": "measurement and intervention instruments",
+      "relation": "sufficient-record and viable-action research interface",
+      "landing": "branches/ida/README.md",
+      "question": "Which measured distinctions improve a later intervention?",
+      "contract": {
+        "record": "Signal, uncertainty, calibration, intervention and outcome logs",
+        "normalization": "Frozen reference or independent assay calibration",
+        "readings": "Present features, return dynamics and action-relevant distinctions",
+        "operations": "Recorded session actions and specifically designed interventions",
+        "retained_state": "History needed for the declared independent future outcome",
+        "composition": "Synthetic transitions or declared feature map and update order",
+        "clock_resources": "Sampling, perturbation, return and diagnostic delays",
+        "bridge": "Physiological measurements predict independent behavior and improve action",
+        "test_revision": "Matched present, common future, held-session test versus strong fixed comparator"
+      },
+      "dependencies": [
+        "docs/branch-contract.md",
+        "apps/ida-live/README.md",
+        "https://github.com/thantiklermcirony/ida-stateatlas"
+      ],
+      "evidence": {
+        "proof": "Operational definitions; improved physiology/action claim is H",
+        "numerical": "Synthetic discovery and instrument decoder checks",
+        "implementation": "Two distinct research prototypes; StateAtlas R1 not fabricated",
+        "empirical": "Existing analyses do not establish useful added predictive value"
+      },
+      "next_task": "Specify and run the independent read/action gate for the chosen instrument."
+    },
+    {
+      "id": "virtual-cell-lab",
+      "title": "Observatory cell-response flights",
+      "role": "frozen cellular prediction experiments",
+      "relation": "earlier retained-state and held-out prediction trials",
+      "landing": "branches/cell-flights/README.md",
+      "question": "Does additional state improve held-out cellular prediction in the declared trial?",
+      "contract": {
+        "record": "Frozen laboratory data and model inputs",
+        "normalization": "Trial-specific observation and normalization conventions",
+        "readings": "Declared cellular outcome and retained prediction error",
+        "operations": "Trial-specific perturbations and prediction operators",
+        "retained_state": "Inputs explicitly allowed by each frozen flight",
+        "composition": "The trial's model, not automatically quantum tensor composition",
+        "clock_resources": "Assay endpoint and frozen evaluation order",
+        "bridge": "Observed cell assay and untouched outcome",
+        "test_revision": "Original baseline and success gate; preserve both failed candidates"
+      },
+      "dependencies": [
+        "https://github.com/thantiklermcirony/empirical-observatory/tree/main/research/virtual-cell",
+        "https://github.com/thantiklermcirony/empirical-observatory/tree/main/research/virtual-cell-flight02"
+      ],
+      "evidence": {
+        "proof": "No new physical law established by these flights",
+        "numerical": "Frozen evaluation packages",
+        "implementation": "Completed trial candidates",
+        "empirical": "Both added candidates failed success gates; Flight 02 gained 0.13% against 10% prerequisite"
+      },
+      "next_task": "Keep these trial records distinct from Arc competition submissions."
+    },
+    {
+      "id": "vcc-arc",
+      "title": "Arc Virtual Cell Challenge",
+      "role": "competition predictor and cellular-response research",
+      "relation": "framework-led prediction through declared assay, retention and response interfaces",
+      "landing": "branches/vcc/README.md",
+      "question": "Which retained information predicts genetic perturbation outcomes on official challenge metrics?",
+      "contract": {
+        "record": "Raw counts, controls, target/source identity, available information and frozen folds",
+        "normalization": "Full-axis per-cell normalization before equal-cell averaging; separate common-axis reclosure",
+        "readings": "Gene means, detection, signed logFC, profiles and official scores",
+        "operations": "Genetic perturbations, specified response transfer and count construction",
+        "retained_state": "Source/destination/control features, support and missing information",
+        "composition": "Population averaging and the implemented prediction/count operator",
+        "clock_resources": "Biological endpoint and acquisition provenance; runtime is separate",
+        "bridge": "Compatible assay conventions and whole-context/target holdouts",
+        "test_revision": "Official receipts and candidate promotion gates; retain successful submissions and rejected heads"
+      },
+      "dependencies": [
+        "docs/branch-contract.md",
+        "registry/receipts/vcc-review-2026-10-12.json",
+        "registry/receipts/vcc-competition-results-2026-10-13.json"
+      ],
+      "evidence": {
+        "proof": "Analytical contracts scope the model; no inferred universal perturbation portability",
+        "numerical": "Candidate-specific numerical and replay checks",
+        "implementation": "31: non-neural rule-based empirical-source predictor. Some later variants add fitted components.",
+        "empirical": "31-EchoFull: recorded validation-panel leaderboard entry rank 221 of 1,416, overall 0.2102 and normalized PDS 0.7815, observed on 10 October 2026. This is a dated validation result, not a final standing. Later official results and rejected candidate families are preserved separately."
+      },
+      "next_task": "Preserve the best official control and advance a candidate only on its specified biological and challenge evidence."
+    },
+    {
+      "id": "scientific-ai",
+      "title": "Scientific AI and evidence memory",
+      "role": "epistemic methods and engineering",
+      "relation": "retained warrant and sufficient-record interface",
+      "landing": "branches/scientific-ai/README.md",
+      "question": "What must be retained so a later answer or action remains warranted?",
+      "contract": {
+        "record": "Source bytes, versions, typed claims, dependencies and check receipts",
+        "normalization": "Not necessarily a physical normalized-probability model",
+        "readings": "Allowed verdicts, certified meaning and permitted actions",
+        "operations": "Queries, source changes, checking and dependency invalidation",
+        "retained_state": "Consequential dependencies and current warrant, retaining failed history",
+        "composition": "Declared proof, evidence and verification operations",
+        "clock_resources": "Event/version order and specified warrant policy",
+        "bridge": "Trusted verifier and rendering assumptions plus real comparative workloads",
+        "test_revision": "Fixed correctness/efficiency comparison; keep failed superiority gates"
+      },
+      "dependencies": [
+        "https://github.com/thantiklermcirony/empirical-architecture",
+        "https://github.com/thantiklermcirony/empirical-observatory/tree/main/automation/active-context",
+        "https://github.com/thantiklermcirony/empirical-observatory/tree/main/automation"
+      ],
+      "evidence": {
+        "proof": "Typed inference claims depend on their verifier assumptions",
+        "numerical": "Finite prototype checks",
+        "implementation": "Evidence automation, continuation tools and upstream contributions",
+        "empirical": "Active Context tied conventional invalidation; no performance advantage established in its first diagnostic"
+      },
+      "next_task": "Measure consequential errors and work saved on an independently assessed workload."
+    },
+    {
+      "id": "arithmetic",
+      "title": "Arithmetic and refinement",
+      "role": "mathematical constructions and proposed approximations",
+      "relation": "record projection, sufficient refinement and retained distinctions",
+      "landing": "branches/arithmetic/README.md",
+      "question": "Which divisibility distinctions support a later survivor or gap reading?",
+      "contract": {
+        "record": "Divisibility state, wheel coordinates and finite offset patterns",
+        "normalization": "Density only where finite probability positivity and normalization hold",
+        "readings": "Survivor and gap-word functionals",
+        "operations": "CRT refinement and exact marginalization",
+        "retained_state": "Explicit wheel factors and unresolved Euler factors",
+        "composition": "Specified exact arithmetic refinement",
+        "clock_resources": "Arithmetic scale or refinement index, not physical time",
+        "bridge": "Pure mathematics; predictive prime approximation needs controlled bounds",
+        "test_revision": "Independent enumeration and error bounds for predictive/asymptotic claims"
+      },
+      "dependencies": [
+        "registry/atlas.csv",
+        "https://github.com/thantiklermcirony/empirical-architecture"
+      ],
+      "evidence": {
+        "proof": "Exact constructions and separate proposed derivations retain their source statuses",
+        "numerical": "Finite enumeration where supplied",
+        "implementation": "Arithmetic research modules and manuscripts",
+        "empirical": "Physical empirical validation is not applicable; actual-prime approximation requires its own evidence"
+      },
+      "next_task": "Separate exact covariance from controlled approximation for actual primes."
+    },
+    {
+      "id": "evidence-decisions",
+      "title": "Evidence and decisions",
+      "role": "retained domain research and proposed operational mappings",
+      "relation": "shared evidence/action questions; no complete UHL instantiation established for every review",
+      "landing": "branches/evidence-decisions/README.md",
+      "question": "Which source-specific evidence warrants a particular decision?",
+      "contract": {
+        "record": "Sources, outcomes, consent, legal/domain propositions and versions",
+        "normalization": "No common positive normalizer established",
+        "readings": "Domain-specific evidentiary readings",
+        "operations": "Explicit inference, applicability and decision operations",
+        "retained_state": "Jurisdiction, source version, context and decision-relevant distinctions",
+        "composition": "Domain rules; no common UHL composition established",
+        "clock_resources": "Source date, applicability period and decision ordering",
+        "bridge": "Domain-specific source and applicability review",
+        "test_revision": "Preserve historical scope; specify the missing operational mapping before a mathematical extension"
+      },
+      "dependencies": [
+        "registry/atlas.csv",
+        "registry/repositories.json"
+      ],
+      "evidence": {
+        "proof": "No automatic theorem status for historical domain conclusions",
+        "numerical": "Not applicable unless a particular model supplies it",
+        "implementation": "Retained documents in their original repositories",
+        "empirical": "Listing records provenance; validity of individual domain claims is separately assessed"
+      },
+      "next_task": "Complete a branch contract for any new formal application; keep historical work linked."
+    }
+  ]
+}

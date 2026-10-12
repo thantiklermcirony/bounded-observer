@@ -1,0 +1,2 @@
+# Frozen publication manifests refer to exact source bytes on every platform.
+papers/library-2026-10-12/** -text -whitespace

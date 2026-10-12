@@ -1,0 +1,647 @@
+{
+  "scope": "DOI identity validation from Crossref primary registrations. This is not a substitute for reviewing the cited theorem or its hypotheses.",
+  "registered": 59,
+  "unresolved": 0,
+  "records": [
+    {
+      "doi": "10.1090/S0002-9939-1955-0069403-4",
+      "manuscripts": [
+        "capstone",
+        "paper4"
+      ],
+      "status": "registered",
+      "registered_title": "Positive functions on 𝐶*-algebras",
+      "publisher": "American Mathematical Society (AMS)",
+      "primary_url": "https://doi.org/10.1090/s0002-9939-1955-0069403-4"
+    },
+    {
+      "doi": "10.1103/PhysRev.106.620",
+      "manuscripts": [
+        "capstone",
+        "paper8"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Information Theory and Statistical Mechanics",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrev.106.620"
+    },
+    {
+      "doi": "10.1007/BF01608499",
+      "manuscripts": [
+        "capstone",
+        "paper4",
+        "paper6",
+        "paper8"
+      ],
+      "status": "registered",
+      "registered_title": "On the generators of quantum dynamical semigroups",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/bf01608499"
+    },
+    {
+      "doi": "10.2307/2373037",
+      "manuscripts": [
+        "capstone",
+        "paper5"
+      ],
+      "status": "registered",
+      "registered_title": "Harmonic Mappings of Riemannian Manifolds",
+      "publisher": "JSTOR",
+      "primary_url": "https://doi.org/10.2307/2373037"
+    },
+    {
+      "doi": "10.1007/BF02567432",
+      "manuscripts": [
+        "capstone",
+        "paper5"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "On the evolution of harmonic mappings of Riemannian surfaces",
+      "publisher": "European Mathematical Society - EMS - Publishing House GmbH",
+      "primary_url": "https://doi.org/10.1007/bf02567432"
+    },
+    {
+      "doi": "10.1016/0370-2693(82)90728-6",
+      "manuscripts": [
+        "capstone",
+        "paper6"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "An SU(2) anomaly",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.1016/0370-2693(82)90728-6"
+    },
+    {
+      "doi": "10.1103/PhysRev.167.1175",
+      "manuscripts": [
+        "capstone",
+        "paper7"
+      ],
+      "status": "registered",
+      "registered_title": "New Formulation of the Axially Symmetric Gravitational Field Problem",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrev.167.1175"
+    },
+    {
+      "doi": "10.1103/PhysRevLett.75.1260",
+      "manuscripts": [
+        "capstone"
+      ],
+      "status": "registered",
+      "registered_title": "Thermodynamics of Spacetime: The Einstein Equation of State",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevlett.75.1260"
+    },
+    {
+      "doi": "10.1103/PhysRevLett.82.4971",
+      "manuscripts": [
+        "capstone"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Effective Field Theory, Black Holes, and the Cosmological Constant",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevlett.82.4971"
+    },
+    {
+      "doi": "10.1103/PhysRevLett.79.321",
+      "manuscripts": [
+        "capstone",
+        "paper8"
+      ],
+      "status": "registered",
+      "registered_title": "Programmable Quantum Gate Arrays",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevlett.79.321"
+    },
+    {
+      "doi": "10.1007/JHEP12(2013)089",
+      "manuscripts": [
+        "capstone",
+        "paper8"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Investigating the near-criticality of the Higgs boson",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/jhep12(2013)089"
+    },
+    {
+      "doi": "10.1177/15593258261469171",
+      "manuscripts": [
+        "hormesis_amendment",
+        "hormesis_corrigendum",
+        "hormesis_editor_letter",
+        "paper2"
+      ],
+      "status": "registered",
+      "registered_title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions From First Principles",
+      "publisher": "SAGE Publications",
+      "primary_url": "https://doi.org/10.1177/15593258261469171"
+    },
+    {
+      "doi": "10.1111/j.1432-1033.1974.tb03318.x",
+      "manuscripts": [
+        "hormesis_amendment",
+        "hormesis_corrigendum"
+      ],
+      "status": "registered",
+      "registered_title": "A Linear Steady-State Treatment of Enzymatic Chains. General Properties, Control and Effector Strength",
+      "publisher": "Wiley",
+      "primary_url": "https://doi.org/10.1111/j.1432-1033.1974.tb03318.x"
+    },
+    {
+      "doi": "10.2139/ssrn.6858819",
+      "manuscripts": [
+        "hormesis_amendment"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions from First Principles",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.2139/ssrn.6858819"
+    },
+    {
+      "doi": "10.2139/ssrn.6754378",
+      "manuscripts": [
+        "hormesis_amendment"
+      ],
+      "status": "registered",
+      "registered_title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions from First Principles",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.2139/ssrn.6754378"
+    },
+    {
+      "doi": "10.2307/2372563",
+      "manuscripts": [
+        "paper1"
+      ],
+      "status": "registered",
+      "registered_title": "Positivitatsbereiche Im R n",
+      "publisher": "JSTOR",
+      "primary_url": "https://doi.org/10.2307/2372563"
+    },
+    {
+      "doi": "10.5802/aif.680",
+      "manuscripts": [
+        "paper1"
+      ],
+      "status": "registered",
+      "registered_title": "Homogeneous self dual cones versus Jordan algebras. The theory revisited",
+      "publisher": "MathDoc/Centre Mersenne",
+      "primary_url": "https://doi.org/10.5802/aif.680"
+    },
+    {
+      "doi": "10.2307/1968117",
+      "manuscripts": [
+        "paper1"
+      ],
+      "status": "registered",
+      "registered_title": "On an Algebraic Generalization of the Quantum Mechanical Formalism",
+      "publisher": "JSTOR",
+      "primary_url": "https://doi.org/10.2307/1968117"
+    },
+    {
+      "doi": "10.1007/s10701-015-9881-x",
+      "manuscripts": [
+        "paper1"
+      ],
+      "status": "registered",
+      "registered_title": "Dynamical Correspondence in a Generalized Quantum Theory",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/s10701-015-9881-x"
+    },
+    {
+      "doi": "10.1119/1.18620",
+      "manuscripts": [
+        "paper1"
+      ],
+      "status": "registered",
+      "registered_title": "The Wigner angle as an anholonomy in rapidity space",
+      "publisher": "American Association of Physics Teachers (AAPT)",
+      "primary_url": "https://doi.org/10.1119/1.18620"
+    },
+    {
+      "doi": "10.1080/01621459.1944.10500699",
+      "manuscripts": [
+        "paper2"
+      ],
+      "status": "registered",
+      "registered_title": "Application of the Logistic Function to Bio-Assay",
+      "publisher": "Informa UK Limited",
+      "primary_url": "https://doi.org/10.1080/01621459.1944.10500699"
+    },
+    {
+      "doi": "10.1090/S0002-9947-1957-0087058-6",
+      "manuscripts": [
+        "paper2"
+      ],
+      "status": "registered",
+      "registered_title": "Extensions of Jentzsch’s theorem",
+      "publisher": "American Mathematical Society (AMS)",
+      "primary_url": "https://doi.org/10.1090/s0002-9947-1957-0087058-6"
+    },
+    {
+      "doi": "10.1111/j.1469-1809.1972.tb00764.x",
+      "manuscripts": [
+        "paper2"
+      ],
+      "status": "registered",
+      "registered_title": "Fisher's ‘fundamental theorem’ made clear",
+      "publisher": "Wiley",
+      "primary_url": "https://doi.org/10.1111/j.1469-1809.1972.tb00764.x"
+    },
+    {
+      "doi": "10.1038/ncomms15586",
+      "manuscripts": [
+        "paper2"
+      ],
+      "status": "registered",
+      "registered_title": "A scalable double-barcode sequencing platform for characterization of dynamic protein-protein interactions",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1038/ncomms15586"
+    },
+    {
+      "doi": "10.7554/eLife.61271",
+      "manuscripts": [
+        "paper2"
+      ],
+      "status": "registered",
+      "registered_title": "Fitness variation across subtle environmental perturbations reveals local modularity and global pleiotropy of adaptation",
+      "publisher": "eLife Sciences Publications, Ltd",
+      "primary_url": "https://doi.org/10.7554/elife.61271"
+    },
+    {
+      "doi": "10.1016/0022-4073(84)90112-2",
+      "manuscripts": [
+        "paper3"
+      ],
+      "status": "registered",
+      "registered_title": "Relating Eddington factors to flux limiters",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.1016/0022-4073(84)90112-2"
+    },
+    {
+      "doi": "10.1103/PhysRevD.14.870",
+      "manuscripts": [
+        "paper3"
+      ],
+      "status": "registered",
+      "registered_title": "Notes on black-hole evaporation",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevd.14.870"
+    },
+    {
+      "doi": "10.1007/BF02395016",
+      "manuscripts": [
+        "paper3"
+      ],
+      "status": "registered",
+      "registered_title": "L'intégrale de Riemann-Liouville et le problème de Cauchy",
+      "publisher": "International Press of Boston",
+      "primary_url": "https://doi.org/10.1007/bf02395016"
+    },
+    {
+      "doi": "10.22331/q-2020-11-08-359",
+      "manuscripts": [
+        "paper4"
+      ],
+      "status": "verified_primary_publisher",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Composites and Categories of Euclidean Jordan Algebras",
+      "primary_url": "https://quantum-journal.org/papers/q-2020-11-08-359/"
+    },
+    {
+      "doi": "10.1103/PhysRevLett.80.2245",
+      "manuscripts": [
+        "paper4"
+      ],
+      "status": "registered",
+      "registered_title": "Entanglement of Formation of an Arbitrary State of Two Qubits",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevlett.80.2245"
+    },
+    {
+      "doi": "10.2307/1968551",
+      "manuscripts": [
+        "paper4",
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "On Unitary Representations of the Inhomogeneous Lorentz Group",
+      "publisher": "JSTOR",
+      "primary_url": "https://doi.org/10.2307/1968551"
+    },
+    {
+      "doi": "10.1007/BF01609396",
+      "manuscripts": [
+        "paper4"
+      ],
+      "status": "registered",
+      "registered_title": "Completely positive maps and entropy inequalities",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/bf01609396"
+    },
+    {
+      "doi": "10.1038/nphys444",
+      "manuscripts": [
+        "paper4",
+        "paper8"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Entanglement and the foundations of statistical mechanics",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1038/nphys444"
+    },
+    {
+      "doi": "10.1007/BF02392590",
+      "manuscripts": [
+        "paper4"
+      ],
+      "status": "registered",
+      "registered_title": "Conformally natural extension of homeomorphisms of the circle",
+      "publisher": "International Press of Boston",
+      "primary_url": "https://doi.org/10.1007/bf02392590"
+    },
+    {
+      "doi": "10.1007/s002200050750",
+      "manuscripts": [
+        "paper4"
+      ],
+      "status": "registered",
+      "registered_title": "A Multiplicative Ergodic Theorem and Nonpositively Curved Spaces",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/s002200050750"
+    },
+    {
+      "doi": "10.2307/1992971",
+      "manuscripts": [
+        "paper4"
+      ],
+      "status": "registered",
+      "registered_title": "Extensions of Jentzsch's Theorem",
+      "publisher": "JSTOR",
+      "primary_url": "https://doi.org/10.2307/1992971"
+    },
+    {
+      "doi": "10.1007/BFb0087227",
+      "manuscripts": [
+        "paper5"
+      ],
+      "status": "registered",
+      "registered_title": "Harmonic Maps of Manifolds with Boundary",
+      "publisher": "Springer Berlin Heidelberg",
+      "primary_url": "https://doi.org/10.1007/bfb0087227"
+    },
+    {
+      "doi": "10.1016/0375-9601(92)91004-B",
+      "manuscripts": [
+        "paper5"
+      ],
+      "status": "registered",
+      "registered_title": "Explicit computation of the Bures distance for density matrices",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.1016/0375-9601(92)91004-b"
+    },
+    {
+      "doi": "10.4310/jdg/1214448751",
+      "manuscripts": [
+        "paper5"
+      ],
+      "status": "registered",
+      "registered_title": "Finite-time blow-up of the heat flow of harmonic maps from surfaces",
+      "publisher": "International Press of Boston",
+      "primary_url": "https://doi.org/10.4310/jdg/1214448751"
+    },
+    {
+      "doi": "10.4310/CAG.1995.v3.n2.a4",
+      "manuscripts": [
+        "paper5"
+      ],
+      "status": "registered",
+      "registered_title": "On singularities of the heat flow for harmonic maps from surfaces into spheres",
+      "publisher": "International Press of Boston",
+      "primary_url": "https://doi.org/10.4310/cag.1995.v3.n2.a4"
+    },
+    {
+      "doi": "10.1007/BF01161997",
+      "manuscripts": [
+        "paper5"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Existence and partial regularity results for the heat flow for harmonic maps",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/bf01161997"
+    },
+    {
+      "doi": "10.1007/s00222-012-0427-y",
+      "manuscripts": [
+        "paper5"
+      ],
+      "status": "verified_primary_publisher",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Blowup dynamics for smooth data equivariant solutions to the critical Schrödinger map problem",
+      "primary_url": "https://link.springer.com/article/10.1007/s00222-012-0427-y"
+    },
+    {
+      "doi": "10.1103/PhysRev.96.191",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Conservation of Isotopic Spin and Isotopic Gauge Invariance",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrev.96.191"
+    },
+    {
+      "doi": "10.1007/JHEP07(2017)104",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Line operators in the Standard Model",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/jhep07(2017)104"
+    },
+    {
+      "doi": "10.1103/PhysRev.134.B882",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Feynman Rules for Any Spin. II. Massless Particles",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrev.134.b882"
+    },
+    {
+      "doi": "10.1103/PhysRev.159.1251",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "All Possible Symmetries of the\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mi>S</mml:mi>\n                    </mml:math>\n                    Matrix",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrev.159.1251"
+    },
+    {
+      "doi": "10.1103/PhysRevLett.19.1264",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "A Model of Leptons",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevlett.19.1264"
+    },
+    {
+      "doi": "10.1103/PhysRevD.39.693",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Uniqueness of quark and lepton representations in the standard model from the anomalies viewpoint",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevd.39.693"
+    },
+    {
+      "doi": "10.1103/PhysRevD.41.715",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Comment on anomaly cancellation in the standard model",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevd.41.715"
+    },
+    {
+      "doi": "10.1016/0550-3213(84)90066-X",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Gravitational anomalies",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.1016/0550-3213(84)90066-x"
+    },
+    {
+      "doi": "10.1007/JHEP05(2020)098",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Anomaly interplay in U(2) gauge theories",
+      "publisher": "Springer Science and Business Media LLC",
+      "primary_url": "https://doi.org/10.1007/jhep05(2020)098"
+    },
+    {
+      "doi": "10.1103/PhysRevD.85.085004",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Decomposition of entanglement entropy in lattice gauge theory",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevd.85.085004"
+    },
+    {
+      "doi": "10.1088/0264-9381/31/21/214003",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "error": "HTTP Error 429: Too Many Requests",
+      "registered_title": "Entanglement entropy and nonabelian gauge symmetry",
+      "publisher": "IOP Publishing",
+      "primary_url": "https://doi.org/10.1088/0264-9381/31/21/214003"
+    },
+    {
+      "doi": "10.1143/PTP.49.652",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "<i>C</i><i>P</i>-Violation in the Renormalizable Theory of Weak Interaction",
+      "publisher": "Oxford University Press (OUP)",
+      "primary_url": "https://doi.org/10.1143/ptp.49.652"
+    },
+    {
+      "doi": "10.1103/PhysRevD.22.2227",
+      "manuscripts": [
+        "paper6"
+      ],
+      "status": "registered",
+      "registered_title": "Neutrino masses in SU(2) ⊗ U(1) theories",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrevd.22.2227"
+    },
+    {
+      "doi": "10.1063/1.1665681",
+      "manuscripts": [
+        "paper7"
+      ],
+      "status": "registered",
+      "registered_title": "A Method for Generating Solutions of Einstein's Equations",
+      "publisher": "AIP Publishing",
+      "primary_url": "https://doi.org/10.1063/1.1665681"
+    },
+    {
+      "doi": "10.1088/0305-4470/15/10/021",
+      "manuscripts": [
+        "paper7"
+      ],
+      "status": "registered",
+      "registered_title": "Proof of uniqueness of the Kerr-Newman black hole solution",
+      "publisher": "IOP Publishing",
+      "primary_url": "https://doi.org/10.1088/0305-4470/15/10/021"
+    },
+    {
+      "doi": "10.1063/1.522898",
+      "manuscripts": [
+        "paper7"
+      ],
+      "status": "registered",
+      "registered_title": "On the duality condition for quantum fields",
+      "publisher": "AIP Publishing",
+      "primary_url": "https://doi.org/10.1063/1.522898"
+    },
+    {
+      "doi": "10.1088/1751-8113/41/39/395303",
+      "manuscripts": [
+        "paper8"
+      ],
+      "status": "registered",
+      "registered_title": "Analysis of quantum semigroups with GKS–Lindblad generators: II. General",
+      "publisher": "IOP Publishing",
+      "primary_url": "https://doi.org/10.1088/1751-8113/41/39/395303"
+    },
+    {
+      "doi": "10.1016/j.physletb.2009.12.022",
+      "manuscripts": [
+        "paper8"
+      ],
+      "status": "registered",
+      "registered_title": "Asymptotic safety of gravity and the Higgs boson mass",
+      "publisher": "Elsevier BV",
+      "primary_url": "https://doi.org/10.1016/j.physletb.2009.12.022"
+    },
+    {
+      "doi": "10.1103/PhysRev.71.38",
+      "manuscripts": [
+        "deformed_kinematics_correction"
+      ],
+      "status": "registered",
+      "registered_title": "Quantized Space-Time",
+      "publisher": "American Physical Society (APS)",
+      "primary_url": "https://doi.org/10.1103/physrev.71.38"
+    }
+  ],
+  "verified_primary_publisher": 2,
+  "verified_total": 61
+}

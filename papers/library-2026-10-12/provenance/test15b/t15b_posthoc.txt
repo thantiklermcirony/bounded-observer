@@ -1,0 +1,58 @@
+== P1: read depths (columns failing 100,000 marked *) ==
+  3       3-0=609514, 3-1-1=1356341, 3-2-1=2121809, 3-3-1=1584438, 3-4-1=3203355, 3-1-2=1938771, 3-2-2=2551400, 3-3-2=3100700, 3-4-2=2832465, 3-1-3=1259539, 3-2-3=2051769, 3-3-3=2431569, 3-4-3=3161827
+  6       6-0=859554, 6-1-1=1671081, 6-2-1=1912465, 6-3-1=3111800, 6-4-1=5779961, 6-1-2=1332407, 6-2-2*=46041, 6-3-2=4294330, 6-4-2=2323633, 6-1-3*=2044, 6-2-3=1130390, 6-3-3=3601479, 6-4-3=2677154
+  13      13-0*=21149, 13-1-1=1138999, 13-2-1=2399880, 13-3-1=3950750, 13-4-1=1473942, 13-1-2=1310835, 13-2-2=1712743, 13-3-2=3287883, 13-4-2=1655167, 13-1-3=1122575, 13-2-3=366483, 13-3-3=2938992, 13-4-3=1016186
+  18      18-1-1=289364, 18-2-1=104195, 18-3-1=2365974, 18-4-1=5334168, 18-1-2=288742, 18-2-2=265563, 18-3-2=672289, 18-4-2=6473793, 18-1-3=197126, 18-2-3=1361173, 18-3-3=2640350, 18-4-3=3884866
+  20      20-1-1=398922, 20-2-1=1652478, 20-3-1=1363545, 20-4-1=866836, 20-1-2=1296857, 20-2-2=1670307, 20-3-2=1202018, 20-4-2=1386643, 20-1-3=1345720, 20-2-3=1316096, 20-3-3=1178662, 20-4-3=1599878
+  21      21-1-1=648164, 21-2-1=1538389, 21-3-1=1106350, 21-4-1=1758008, 21-1-2=486568, 21-2-2=485523, 21-3-2=1224148, 21-4-2=1721069, 21-1-3=1338544, 21-2-3=1410590, 21-3-3=1875712, 21-4-3=1647879
+  23      23-0=1530803, 23-1-1=1227998, 23-2-1=1664821, 23-3-1=1498190, 23-4-1=1940380, 23-1-2=1477496, 23-2-2=1960979, 23-3-2=2166322, 23-4-2=2421463, 23-1-3=1229373, 23-2-3=1839677, 23-3-3=1491357, 23-4-3=1807631
+  1.4%    1.4%-T0*=29770, 1.4%-R1-T1=193242, 1.4%-R1-T2=220885, 1.4%-R1-T3=291461, 1.4%-R1-T4=401547, 1.4%-R2-T1*=2509, 1.4%-R2-T2=162395, 1.4%-R2-T3=163004, 1.4%-R2-T4=192492
+  1.5%    1.5%-T0*=54250, 1.5%-R1-T1*=74393, 1.5%-R1-T2=109588, 1.5%-R1-T3=129257, 1.5%-R1-T4=252771, 1.5%-R2-T1*=61242, 1.5%-R2-T2=106603, 1.5%-R2-T3=129418, 1.5%-R2-T4=221092
+  1.6%    1.6%-T0*=49202, 1.6%-R1-T1=144748, 1.6%-R1-T2=186883, 1.6%-R1-T3=239999, 1.6%-R1-T4=677668, 1.6%-R2-T1=101689, 1.6%-R2-T2=254212, 1.6%-R2-T3=250512, 1.6%-R2-T4=318062
+  1.7%    1.7%-T0*=74443, 1.7%-R1-T1=125178, 1.7%-R1-T2=244875, 1.7%-R1-T3=230488, 1.7%-R1-T4=238891, 1.7%-R2-T1=107820, 1.7%-R2-T2=138797, 1.7%-R2-T3=115708, 1.7%-R2-T4=443998
+  1.8%    1.8%-T0*=71110, 1.8%-R1-T1=100029, 1.8%-R1-T2=201005, 1.8%-R1-T3=271690, 1.8%-R1-T4=499150, 1.8%-R2-T1=179927, 1.8%-R2-T2=291895, 1.8%-R2-T3*=63001, 1.8%-R2-T4=107786
+  2.5%    2.5%-T0*=20066, 2.5%-R1-T1*=39541, 2.5%-R1-T2*=23432, 2.5%-R1-T3*=25533, 2.5%-R1-T4*=61021, 2.5%-R2-T1*=8596, 2.5%-R2-T2*=16772, 2.5%-R2-T3*=12222, 2.5%-R2-T4*=28294
+  Ben0.4  Ben0.4-T0*=8572, Ben0.4-R1-T1*=13677, Ben0.4-R1-T2*=12713, Ben0.4-R1-T3*=16821, Ben0.4-R1-T4*=25124, Ben0.4-R2-T1*=16581, Ben0.4-R2-T2*=13224, Ben0.4-R2-T3*=14369, Ben0.4-R2-T4*=22639
+  Ben10   Ben10-T0*=63, Ben10-R1-T1*=25583, Ben10-R1-T2*=11310, Ben10-R1-T3*=23721, Ben10-R1-T4*=9314, Ben10-R2-T1*=3, Ben10-R2-T2*=27397, Ben10-R2-T3*=25220, Ben10-R2-T4*=44103
+  Ben2    Ben2-T0*=64291, Ben2-R1-T1*=62635, Ben2-R1-T2*=57579, Ben2-R1-T3*=13, Ben2-R1-T4*=60123, Ben2-R2-T1*=36829, Ben2-R2-T2*=25497, Ben2-R2-T3*=51612, Ben2-R2-T4*=79577
+
+== P2: performance by experiment ==
+  exp 3   n=117  slope  0.73  r  0.82  RMSE 0.2111 vs clock-only 0.2221  (+5%)
+  exp 18  n= 78  slope  0.23  r  0.18  RMSE 0.2049 vs clock-only 0.2293  (+11%)
+  exp 20  n= 74  slope  0.53  r  0.32  RMSE 0.1318 vs clock-only 0.1512  (+13%)
+  exp 21  n= 72  slope  0.53  r  0.45  RMSE 0.1243 vs clock-only 0.1465  (+15%)
+  exp 23  n=108  slope  0.83  r  0.41  RMSE 0.1285 vs clock-only 0.1552  (+17%)
+  by group:
+  class:Adaptive Diploid     n= 36  slope  1.49  r  0.58  RMSE 0.2801 vs clock-only 0.2881  (+3%)
+  class:Diploid              n= 36  slope  0.70  r  0.82  RMSE 0.1710 vs clock-only 0.1779  (+4%)
+  class:ExpNeutral           n= 17  slope  0.55  r  0.76  RMSE 0.4128 vs clock-only 0.3828  (-8%)
+  class:NotSequenced         n= 36  slope  1.26  r  0.77  RMSE 0.0575 vs clock-only 0.0578  (+1%)
+  class:PKA                  n= 36  slope  0.07  r  0.08  RMSE 0.1090 vs clock-only 0.1453  (+25%)
+  class:other                n= 36  slope  0.34  r  0.40  RMSE 0.1634 vs clock-only 0.2155  (+24%)
+  gene:Diploid               n= 36  slope  0.70  r  0.82  RMSE 0.1710 vs clock-only 0.1779  (+4%)
+  gene:GPB2                  n= 36  slope  1.57  r  0.79  RMSE 0.1275 vs clock-only 0.1769  (+28%)
+  gene:IRA1                  n= 36  slope  0.52  r  0.50  RMSE 0.1179 vs clock-only 0.1435  (+18%)
+  gene:IRA2                  n= 36  slope  1.35  r  0.59  RMSE 0.1377 vs clock-only 0.1614  (+15%)
+  gene:NotSequenced          n= 36  slope  1.30  r  0.75  RMSE 0.0581 vs clock-only 0.0584  (+1%)
+  gene:PDE2                  n= 36  slope  1.92  r  0.76  RMSE 0.1160 vs clock-only 0.1485  (+22%)
+  gene:other                 n= 36  slope  0.34  r  0.41  RMSE 0.1632 vs clock-only 0.2160  (+24%)
+
+== P3: noise ceiling from replicate disagreement ==
+  measurement-noise s.d. of one replicate's curvature (from replicate differences): 0.1326
+  total s.d. of observed curvature 0.2091 -> reproducible-signal fraction 0.60 ; best achievable r for a perfect predictor ~ 0.77
+  RMSE floor for a perfect predictor ~ 0.1326 ; clock-only 0.1871 -> largest possible improvement over clock-only ~ 29% (pre-registered bar 30%)
+  achieved: RMSE 0.1680 (35% of the attainable gap closed: (clock-only - achieved)/(clock-only - floor))
+
+== P4: the hidden-variance term alone ==
+  s.d. of the hidden-variance term Dpred - Dclock2 = 0.0731 ; s.d. of the clock-only residual Dobs - Dclock2 = 0.1859
+  regression of residual on hidden-variance term: slope 1.09, r 0.428 (n=449)
+  block-bootstrap 95% interval for that slope: [0.92, 1.22]  (law predicts 1; no hidden-variance effect predicts 0)
+  block-bootstrap 95% interval for the headline r: [0.49, 0.77] ; for comparison the pre-registered bar was 0.70
+
+== P5: leakage check. Experiments 3 and 23 share one T0 column between training and held-out cultures; 18, 20, 21 do not ==
+  shared T0 (3, 23), all j                       n=225  residual-on-hidden-variance slope  1.12  r  0.39 ; headline r  0.77
+  shared T0 (3, 23), curvature not touching T0   n=150  residual-on-hidden-variance slope  0.78  r  0.34 ; headline r  0.42
+  no shared column (18, 20, 21)                  n=224  residual-on-hidden-variance slope  1.07  r  0.47 ; headline r  0.29
+    experiment 18                                n= 78  residual-on-hidden-variance slope  1.26  r  0.47 ; headline r  0.18
+    experiment 20                                n= 74  residual-on-hidden-variance slope  0.98  r  0.46 ; headline r  0.32
+    experiment 21                                n= 72  residual-on-hidden-variance slope  0.93  r  0.51 ; headline r  0.45

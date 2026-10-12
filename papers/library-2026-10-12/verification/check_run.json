@@ -1,0 +1,71 @@
+{
+  "scope": "Analytic identities, explicit countermodels and finite numerical constructions; no empirical dataset replication is claimed.",
+  "passed": 13,
+  "modules": [
+    {
+      "script": "checks/check_neutral_pair.py",
+      "sha256": "47bca5decc13eaa7c6b20ffcc4b1b0068f3d050c5205dbbc25522afe9eaedb25",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/check_radiation_records.py",
+      "sha256": "d08edb93e3a51bafbc1be52f5048b1585302dc5254efe68a762a22fa3028296c",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/check_time_boundary.py",
+      "sha256": "ec12bddd08dce760b0bc54eb4a5c105205549fcd98504ad1599b6200b680a046",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/constants_dynamics_checks.py",
+      "sha256": "80553f067b0789906762b5918aa4b241cb5cf6908f6afe862c0beb682a29fc48",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/constants_state_checks.py",
+      "sha256": "8a54f90ac937462aea0fee659e1e6657101ea0be6c8e41095d790b30a313a1c9",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/deformed_kinematics_checks.py",
+      "sha256": "e733a2c68296f68f33c23953f2535e64444899e4df664d58913d6b80ac138fd9",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/gravity_field_checks.py",
+      "sha256": "409df55172179c4a223149dc10228b8471920a815043cbcc8fb607b66a4892d1",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/hormesis_doc32_supplemental_checks.py",
+      "sha256": "ae7bfd789dee020c236caa8285ed087342292f840d9705e6f6207a002fc828d8",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/hormesis_revision_checks.py",
+      "sha256": "801d1f15be19eb5f1546955c257ec17b96ec2ede302d2461591627a0f22cd53d",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/local_covariant_rate_checks.py",
+      "sha256": "69eb8729b06174769cbc5c6f5725b6a35aeebb546717bee198b25d5c27b9fa23",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/operational_closure_checks.py",
+      "sha256": "1e01115b64d8d2d657ac0afdfc37adaa7833b54a78029c814700a157154ee300",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/paper6_checks.py",
+      "sha256": "3b406817f867d347224d0ffd5cf92eb58343833d09d5180c49de185a8363a4d7",
+      "exit_code": 0
+    },
+    {
+      "script": "checks/quantum_kinematics_checks.py",
+      "sha256": "f0354b118da534ebe40a0653d98a4b79c3867c164ddeeef40a966b74b5acae9f",
+      "exit_code": 0
+    }
+  ]
+}

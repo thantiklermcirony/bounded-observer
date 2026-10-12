@@ -5,6 +5,19 @@ on:
   pull_request:
 
 jobs:
+  programme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Branch contracts, links and immutable publication bytes
+        run: python registry/validate_programme.py
+      - name: Generated programme pages agree with their sources
+        run: |
+          python site/build_programme.py
+          git diff --exit-code site/project.html site/papers.html site/labs.html
+
   toolkit:
     runs-on: ubuntu-latest
     steps:
@@ -12,7 +25,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - run: pip install -e toolkit[test]
-      - name: Theorems checked numerically
+      - name: Scoped mathematical APIs and independent numerical checks
         run: pytest toolkit/tests -q
 
   site-maths:
@@ -26,6 +39,7 @@ jobs:
           node site/bo.test.mjs
           node --test site/inside-core.test.mjs
           node --test site/valley-world.test.mjs
+          node --test site/radiation-model.test.mjs
           node --check site/inside.js
           node --check site/valley-view.mjs
           node --check site/inside-film.mjs

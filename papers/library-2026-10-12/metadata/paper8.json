@@ -1,0 +1,16 @@
+{
+  "title": "The Ceiling and the Constants",
+  "subtitle": "State selection, dynamical parameters and operational closure",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent Researcher, Melbourne, Australia",
+  "date": "12 October 2026",
+  "version": "Revised working version 3.1",
+  "abstract": "We ask what the bounded-observer framework determines about physical parameters. For fixed constraints and fixed readout operators, the unique finite-dimensional maximum-entropy state defines responses that factor through conserved expectations. We prove the exact rank bound and the Kubo–Mori derivative criterion for preparation-independent readings. A full conserved-algebra conditional expectation supplies an explicit completely positive forgetting semigroup, whereas mean-only Gibbs selection generally cannot be the universal limit of one fixed linear channel. Equilibrium does not determine every dynamical parameter: two locally covariant systems can share the same entropy-maximizing state and conserved algebra while having different clock-independent relative relaxation. Full unitary covariance of dynamics on one carrier is a stronger premise that genuinely selects an isotropic generator. We also classify the complete-positivity cone of the three locally covariant decay rates. We formulate a factorization criterion across admissible physical completions, distinguish preparation data from geometric horizons, and examine the separate cell, criticality and coupling hypotheses. The framework is operationally closed within its stated model class; physical readout, generator and scale identifications remain explicit content. The paper preserves the dated top-mass proposal while correcting its claim to be an already derived precision prediction.\n",
+  "keywords": "maximum entropy; conserved observables; quantum channels; physical constants; operational closure; Higgs criticality; bounded observer",
+  "source_sha256": "f8fd3654bb9f870503988462bff7befe51142afb36c8067c241483c87e19d5b0",
+  "source_file": "papers/paper8.md",
+  "pdf_sha256": "504eeea33231ff6fa1a875e4cf6ee5fe49add19684cbf1715226627e5503e74a",
+  "pdf_file": "pdf/paper8.pdf",
+  "new_exact_result": "Theorem 5: necessary and sufficient complete-positivity cone for three decay rates of a locally unitary-covariant GKSL generator, with m,n at least two."
+}

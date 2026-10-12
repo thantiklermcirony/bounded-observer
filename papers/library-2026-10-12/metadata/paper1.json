@@ -1,0 +1,45 @@
+{
+  "paper": 1,
+  "title": "The Geometry of Bounded Records",
+  "subtitle": "Positive records and a connected reading generator correspondence",
+  "author": "Daniel John Murray",
+  "date": "12 October 2026",
+  "version": "Working v3.1",
+  "abstract": "We classify finite-dimensional record systems with a proper homogeneous self-dual cone and a linear connected-equivariant bijection between nonconstant readings and reversible generators that conserve their own readings. The cone is a Euclidean Jordan cone by the Koecher–Vinberg theorem. The correspondence excludes direct sums and selects a simple complex Hermitian matrix algebra, apart from the trivial one-dimensional case. Its normalization remains free until a commutator calibration is imposed. For a binary distinction, the positive cone is Lorentzian and its Hilbert projective distance is twice the curvature-minus-one hyperbolic distance. Additive positive readouts give the trace pairing, canonical filters give exact hyperbolic-tangent composition, and two positive filters applied to equilibrium have an order angle determined by their polar rotation. We also derive intrinsic affine record geometry, a spinor pushforward measure, and the covariance-cone form of a specified uncertainty relation. These are closed deductions of the stated operational framework. Their identification with spacetime, physical clocks or particular field dynamics requires separately specified bridges.\n",
+  "keywords": [
+    "positive records",
+    "symmetric cones",
+    "Euclidean Jordan algebras",
+    "dynamical correspondence",
+    "Hilbert projective metric",
+    "Lorentz cone",
+    "quantum foundations"
+  ],
+  "conditions": [
+    "Finite-dimensional proper cone with homogeneity and specified strong self-duality.",
+    "Compatible equilibrium unit, strictly positive normalizer and connected Jordan automorphism group.",
+    "Linear bijective equivariant reading-generator correspondence conserving each own reading; correspondence scale is separately calibrated.",
+    "Continuous additive raw readout counts with a declared total-count normalization.",
+    "Order-angle theorem uses two positive determinant-one filters, equilibrium input and canonical hyperbolic transport.",
+    "Canonical uncertainty interpretation requires specified commutator, units and operator domains.",
+    "Spinor measure uses M=x0 I+x.sigma and Lebesgue measure on C2; invariant-orbit uniqueness excludes an atom at zero.",
+    "Record affine geometry does not identify physical event displacements or clocks without an operational bridge."
+  ],
+  "references": [
+    "[1] M. Koecher, “Positivitätsbereiche im $\\mathbb R^n$,” *American Journal of Mathematics* **79**, 575–596 (1957). [doi:10.2307/2372563](https://doi.org/10.2307/2372563).",
+    "[2] E. B. Vinberg, “The theory of convex homogeneous cones,” *Transactions of the Moscow Mathematical Society* **12**, 340–403 (1963). See also J. Bellissard and B. Iochum, “Homogeneous self dual cones versus Jordan algebras. The theory revisited,” *Annales de l'Institut Fourier* **28**(1), 27–67 (1978). [doi:10.5802/aif.680](https://doi.org/10.5802/aif.680).",
+    "[3] P. Jordan, J. von Neumann and E. Wigner, “On an algebraic generalization of the quantum mechanical formalism,” *Annals of Mathematics* **35**, 29–64 (1934). [doi:10.2307/1968117](https://doi.org/10.2307/1968117).",
+    "[4] G. Niestegge, “Dynamical Correspondence in a Generalized Quantum Theory,” *Foundations of Physics* **45**, 525–534 (2015). [doi:10.1007/s10701-015-9881-x](https://doi.org/10.1007/s10701-015-9881-x); [arXiv:1402.0158](https://arxiv.org/abs/1402.0158).",
+    "[5] H. Barnum, M. P. Müller and C. Ududec, “Higher-order interference and single-system postulates characterizing quantum theory,” *New Journal of Physics* **16**, 123029 (2014). [arXiv:1403.4147](https://arxiv.org/abs/1403.4147).",
+    "[6] P. K. Aravind, “The Wigner angle as an anholonomy in rapidity space,” *American Journal of Physics* **65**, 634–636 (1997). [doi:10.1119/1.18620](https://doi.org/10.1119/1.18620).",
+    "[7] E. Schrödinger, “Zum Heisenbergschen Unschärfeprinzip,” *Sitzungsberichte der Preussischen Akademie der Wissenschaften, Physikalisch-mathematische Klasse*, 296–303 (1930). English translation and annotations: [arXiv:quant-ph/9903100](https://arxiv.org/abs/quant-ph/9903100)."
+  ],
+  "language": "en",
+  "status": "publication working manuscript",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent researcher, Melbourne, Australia",
+  "source_sha256": "c79c5f429e80fd4ddad6cec5787f69405d710c4f0d1f0de2e1cf62af573facd9",
+  "source_file": "papers/paper1.md",
+  "pdf_sha256": "00f7160e74bad7ca54622af84c84d965cd99329e3f37dd297d5c7aa64e32958f",
+  "pdf_file": "pdf/paper1.pdf"
+}

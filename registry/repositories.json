@@ -1,0 +1,152 @@
+{
+  "as_of": "2026-10-13",
+  "scope": "Public thantiklermcirony repositories returned by live GitHub search; roles are proposed programme placement, not scientific validation.",
+  "canonical": "https://github.com/thantiklermcirony/bounded-observer",
+  "new_repository_required": false,
+  "repositories": [
+    {
+      "name": "thantiklermcirony/Pharmacological-Hegemony-and-the-Failure-of-Evidence",
+      "url": "https://github.com/thantiklermcirony/Pharmacological-Hegemony-and-the-Failure-of-Evidence",
+      "role": "historical domain evidence/review",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/empirical-architecture",
+      "url": "https://github.com/thantiklermcirony/empirical-architecture",
+      "role": "earlier foundation and manuscript component",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/neurogym",
+      "url": "https://github.com/thantiklermcirony/neurogym",
+      "role": "upstream engineering working copy",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/Part-V-Non-Pharmacological-Alternatives-and-the-Completion-of-the-Evidentiary-Proof",
+      "url": "https://github.com/thantiklermcirony/Part-V-Non-Pharmacological-Alternatives-and-the-Completion-of-the-Evidentiary-Proof",
+      "role": "historical domain evidence/review",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/Videos",
+      "url": "https://github.com/thantiklermcirony/Videos",
+      "role": "media source repository",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/commonly",
+      "url": "https://github.com/thantiklermcirony/commonly",
+      "role": "separate software working copy",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/Part-III-Scientific-Validity-Questions-in-Antipsychotic-Research",
+      "url": "https://github.com/thantiklermcirony/Part-III-Scientific-Validity-Questions-in-Antipsychotic-Research",
+      "role": "historical domain evidence/review",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/ida-stateatlas",
+      "url": "https://github.com/thantiklermcirony/ida-stateatlas",
+      "role": "independently maintained instrument application",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/thantiklermcirony",
+      "url": "https://github.com/thantiklermcirony/thantiklermcirony",
+      "role": "author profile entrance",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/bounded-observer",
+      "url": "https://github.com/thantiklermcirony/bounded-observer",
+      "role": "canonical project hub",
+      "default_branch": "main",
+      "archived": false,
+      "action": "update canonical project entrance"
+    },
+    {
+      "name": "thantiklermcirony/empirical-observatory",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory",
+      "role": "laboratory, data and execution component",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/Olanzapine-Conflict-of-Laws-Analysis",
+      "url": "https://github.com/thantiklermcirony/Olanzapine-Conflict-of-Laws-Analysis",
+      "role": "historical domain evidence/review",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/graphiti",
+      "url": "https://github.com/thantiklermcirony/graphiti",
+      "role": "upstream engineering working copy",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/FRBM-Hypothesis-Competing-Attractor-Dynamics-Aluminium",
+      "url": "https://github.com/thantiklermcirony/FRBM-Hypothesis-Competing-Attractor-Dynamics-Aluminium",
+      "role": "historical domain hypothesis",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/ray",
+      "url": "https://github.com/thantiklermcirony/ray",
+      "role": "upstream engineering working copy",
+      "default_branch": "master",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/pertpy",
+      "url": "https://github.com/thantiklermcirony/pertpy",
+      "role": "upstream engineering working copy",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/boundedness-atlas",
+      "url": "https://github.com/thantiklermcirony/boundedness-atlas",
+      "role": "earlier public synthesis and history",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    },
+    {
+      "name": "thantiklermcirony/Part-IV-Documented-Iatrogenic-Harms-by-Drug-Class",
+      "url": "https://github.com/thantiklermcirony/Part-IV-Documented-Iatrogenic-Harms-by-Drug-Class",
+      "role": "historical domain evidence/review",
+      "default_branch": "main",
+      "archived": false,
+      "action": "link and retain source history"
+    }
+  ]
+}

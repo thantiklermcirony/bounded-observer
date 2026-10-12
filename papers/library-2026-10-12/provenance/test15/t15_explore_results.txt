@@ -1,0 +1,30 @@
+== E1: one common clock per environment? ==
+  CuSO4  MTX=yes  tau = [ 0.    5.63  9.16 10.91 12.  ]   weighted residual RMS: linear clock 0.1977 -> common clock 0.1051
+  CuSO4  MTX=no   tau = [ 0.    3.24  6.98  9.29 12.  ]   weighted residual RMS: linear clock 0.0572 -> common clock 0.0562
+  DMSO   MTX=yes  tau = [ 0.    5.49  9.04 10.84 12.  ]   weighted residual RMS: linear clock 0.1903 -> common clock 0.1027
+  DMSO   MTX=no   tau = [ 0.    5.66  9.34 10.49 12.  ]   weighted residual RMS: linear clock 0.0399 -> common clock 0.0352
+  FK506  MTX=yes  tau = [ 0.    4.86  8.44 10.54 12.  ]   weighted residual RMS: linear clock 0.1730 -> common clock 0.1205
+  FK506  MTX=no   tau = [ 0.    2.76  6.34  9.31 12.  ]   weighted residual RMS: linear clock 0.0412 -> common clock 0.0411
+  H2O2   MTX=yes  tau = [ 0.    5.4   8.81 10.65 12.  ]   weighted residual RMS: linear clock 0.1844 -> common clock 0.0975
+  H2O2   MTX=no   tau = [ 0.    2.46  3.98  4.72 12.  ]   weighted residual RMS: linear clock 0.1269 -> common clock 0.1168
+  NaCl   MTX=yes  tau = [ 0.    4.52  8.47 10.56 12.  ]   weighted residual RMS: linear clock 0.1610 -> common clock 0.1036
+  NaCl   MTX=no   tau = [ 0.    6.36  9.84 10.76 12.  ]   weighted residual RMS: linear clock 0.0416 -> common clock 0.0355
+
+== E2: hidden-variety law in the common clock (out of sample: clock and fitness from two replicates, tested on the third) ==
+  all            n=1800 slope 0.867 intercept -0.0473 r = 0.784  RMSE pred 0.1732 vs D=0 0.2761
+  MTX selection  n= 900 slope 0.880 intercept -0.0940 r = 0.827  RMSE pred 0.2181 vs D=0 0.3802
+  no MTX         n= 900 slope 0.090 intercept -0.0025 r = 0.075  RMSE pred 0.1114 vs D=0 0.0890
+  clock only, two-type (no hidden variety), MTX: slope -0.202 r = -0.041 RMSE 0.3905   <- does hidden variety add anything beyond the clock?
+  hidden-variety part alone (Dpred - Dclock2) vs what the clock leaves unexplained (Dobs - Dclock2): slope 0.934 r = 0.832
+    MTX + CuSO4  slope 0.778  r = 0.838  RMSE pred 0.2049 vs D=0 0.3272
+    MTX + DMSO   slope 0.951  r = 0.884  RMSE pred 0.2054 vs D=0 0.4153
+    MTX + FK506  slope 0.875  r = 0.727  RMSE pred 0.2777 vs D=0 0.4189
+    MTX + H2O2   slope 0.879  r = 0.815  RMSE pred 0.2064 vs D=0 0.3563
+    MTX + NaCl   slope 0.902  r = 0.875  RMSE pred 0.1841 vs D=0 0.3752
+
+== E2c: single-genotype pairs in the common clock (held-out clock) ==
+  MTX: RMS deviation of single-genotype log-ratios from a straight line: in generations 0.5515 ; in the common clock 0.2406 ; replicate noise per point ~0.1509
+
+== E3: fair forecast (both methods see only generations 0 and 3) ==
+  MTX=yes mean |log-odds error| at gens 6-12: straight line 0.9283   lineage-resolved (0-3 fitness) 1.1319
+  MTX=no  mean |log-odds error| at gens 6-12: straight line 0.1128   lineage-resolved (0-3 fitness) 0.1180

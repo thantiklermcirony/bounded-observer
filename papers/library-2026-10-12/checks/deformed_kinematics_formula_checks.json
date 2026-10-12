@@ -1,0 +1,8 @@
+{
+  "source_docx_sha256": "33ab1b6dad7d673c15e119dee03d202c74431d5afcab055e33b81e0bcd4bb260",
+  "radial_derivative_identity_exact": true,
+  "transverse_expansion": "-k**2*r**2/3 + 1",
+  "rank_one_expansion_coefficient": "-2*k**2/3",
+  "source_original_modified": false,
+  "method": "Symbolic identities supplement the displayed differentiation proof; no observational reanalysis"
+}

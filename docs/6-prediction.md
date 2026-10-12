@@ -1,5 +1,8 @@
 # Gate 6 · Prediction
 
+> Earlier six-gate composition teaching route. See the [current project map](project-structure.md) and [current library](../papers/README.md) for the full operational framework and branches.
+
+
 **Does any of this win on data it has never seen?**
 
 The five gates above are mathematics. This one is the only gate that can go wrong in a way the
@@ -62,11 +65,9 @@ data, the report, and the superseded output kept for provenance.
 ### Published
 
 - **Hormesis as a geometric necessity of bounded adaptive systems** —
-  [SSRN 6858819](https://papers.ssrn.com/abstract=6858819). A zero-free-parameter prediction
-  checked against Calabrese's database of more than 10,000 dose-responses.
+  [SSRN 6858819](https://papers.ssrn.com/abstract=6858819). The unrestricted necessity, universal-peak and finite-amplitude claims are withdrawn at their stated scope. Read the exact model-specific [amendment (7603323)](https://papers.ssrn.com/abstract=7603323) and [proposed correction (7603378)](https://papers.ssrn.com/abstract=7603378).
 - **A dynamical model of glutathione homeostasis** —
-  [SSRN 6754498](https://papers.ssrn.com/abstract=6754498). Recovers G6PD severe-deficiency
-  contraindications and forecasts a phase II NSCLC trial outcome.
+  [SSRN 6754498](https://papers.ssrn.com/abstract=6754498). Published model with biochemical calibration and a stated, conditional NSCLC trial forecast awaiting experimental testing.
 
 ### In review
 
@@ -87,7 +88,7 @@ data, the report, and the superseded output kept for provenance.
 
 ## The rule this gate enforces
 
-A chart is promoted only when its test has run. A claim with no loss condition is not a
+A mathematical claim needs its scoped proof or derivation; an empirical hypothesis needs its stated comparison. Numerical checks, software tests and empirical outcomes are separate evidence. A claim with no loss condition is not a
 hypothesis. And a refuted prediction stays in the record with its data and its code — because a
 programme that keeps only its wins has no evidence at all, and because the register's meaning
 comes entirely from the fact that entries can leave it.

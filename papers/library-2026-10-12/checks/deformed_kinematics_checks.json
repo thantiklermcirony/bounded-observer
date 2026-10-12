@@ -1,0 +1,21 @@
+{
+  "all_exact_checks_pass": true,
+  "radial_eigenvalue_remainder": "0",
+  "transverse_expansion": "-kappa**2*radius**2/3 + 1",
+  "rank_one_expansion_coefficient": "-2*kappa**2/3",
+  "origin_extension_checked": true,
+  "nine_cartesian_chain_rule_remainders": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "one_dimensional_commutator_remainder": "0",
+  "one_dimensional_measure_remainder": "0",
+  "interpretation": "Exact formula verification; no observational analysis"
+}

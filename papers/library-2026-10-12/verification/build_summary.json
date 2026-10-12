@@ -1,0 +1,93 @@
+[
+  {
+    "name": "capstone",
+    "title": "The Bounded Observer",
+    "pages": 9,
+    "source_sha256": "e640eedb3aea53f5a817e7bbf9225411b2745933f21a9cbd070ef4a7a3a28ff0",
+    "pdf_sha256": "a00e2d614a42ab6e3382c1bad696db3f70e1b906adf006bc26e977c9f6707d60"
+  },
+  {
+    "name": "paper1",
+    "title": "The Geometry of Bounded Records",
+    "pages": 8,
+    "source_sha256": "c79c5f429e80fd4ddad6cec5787f69405d710c4f0d1f0de2e1cf62af573facd9",
+    "pdf_sha256": "00f7160e74bad7ca54622af84c84d965cd99329e3f37dd297d5c7aa64e32958f"
+  },
+  {
+    "name": "paper2",
+    "title": "One Motion on the Line",
+    "pages": 6,
+    "source_sha256": "a39a826a98f6e16db9b896cf0e8523dcbf71840a96c3296a33e668b96abab299",
+    "pdf_sha256": "7e3491e63a6b1dc2d1705dc882ee769a654b410a1e2763edd5ea647dc41482db"
+  },
+  {
+    "name": "paper3",
+    "title": "Light Time and Horizons",
+    "pages": 8,
+    "source_sha256": "7ec53a4451f9076b3d466be013876554715e16d2f672a08a29701cdcd55ac8c1",
+    "pdf_sha256": "cde1d023556c0006f88a956267a3a855e461debe95ead7cb1f7d56c7c66c6961"
+  },
+  {
+    "name": "paper4",
+    "title": "Two Observers",
+    "pages": 8,
+    "source_sha256": "75fa1766da17777e02c1fe10349d81638ff8fd1988cf619eb7bf44a0064a16d0",
+    "pdf_sha256": "b4ee9d015d7b9c5288ac0d83147c8cf8492c13139c32a8cc38e0b079966e9996"
+  },
+  {
+    "name": "paper5",
+    "title": "Where Singularities Can Live",
+    "pages": 13,
+    "source_sha256": "9d24722f779a277926ab54692944239b7460e0259050ad8a4b77b4a52e41f206",
+    "pdf_sha256": "df4ad8e8c72cbedbdfa95df5e992321e6b489c24366002a636b09418dd44c4b0"
+  },
+  {
+    "name": "paper6",
+    "title": "The Partner Freedom",
+    "pages": 11,
+    "source_sha256": "2e77b01782ddd035614123cf5f018e0c4d82d70db729b312685c2bdaa00e6342",
+    "pdf_sha256": "118f62bbb14f7e08ed6633c3d1251ca0792cc735186a5b4c23b1f289c80dbd01"
+  },
+  {
+    "name": "paper7",
+    "title": "Gravity as Equilibrium",
+    "pages": 10,
+    "source_sha256": "ad5793ff93934fc95f8406dcf2fda13e43edf72081539d09596c36b6283ba10b",
+    "pdf_sha256": "6990d4fbe7fb89b2c9450f8cdaedc15fa0be39aa238c8749ba79e3b25f2c8c7a"
+  },
+  {
+    "name": "paper8",
+    "title": "The Ceiling and the Constants",
+    "pages": 8,
+    "source_sha256": "f8fd3654bb9f870503988462bff7befe51142afb36c8067c241483c87e19d5b0",
+    "pdf_sha256": "504eeea33231ff6fa1a875e4cf6ee5fe49add19684cbf1715226627e5503e74a"
+  },
+  {
+    "name": "hormesis_amendment",
+    "title": "Exact Onset and Peak Laws for Bounded Adaptive Responses",
+    "pages": 9,
+    "source_sha256": "1f947c27a25f952a3c02ef525bc4096547afe95bf2c015ec1c47200f0d44f8e9",
+    "pdf_sha256": "dd227ab806efbcb4ed9ea52c05207e633145f107387b26589f9fe474b3d3185f"
+  },
+  {
+    "name": "hormesis_corrigendum",
+    "title": "Correction to Hormesis as a Geometric Necessity of Bounded Adaptive Systems",
+    "pages": 2,
+    "source_sha256": "b9221f49c06aff659bfcb5a58192003c205ef5e9d48900f378dd8161d2541d2e",
+    "pdf_sha256": "e6418c5a490476d588ab1fee88cfde7eeb172d477cfc747fcb320a41f9a41777"
+  },
+  {
+    "name": "deformed_kinematics_correction",
+    "title": "Proposed correction to Bounded Composition and Deformed Kinematics",
+    "pages": 3,
+    "source_sha256": "a3205629896b712a3eba174fe88907946a7eaf2e80083bd57f1824f942ac801e",
+    "pdf_sha256": "09ec552b6c10911b6cfdcb154a2f1cae9da15bb72fbff1e75cb12d87fe6b403b"
+  },
+  {
+    "name": "hormesis_editor_letter",
+    "title": "Request for an Author Correction",
+    "pages": 1,
+    "source_sha256": "9f5d3846fcf804a68c5a876f0d5a01e7c4cf6b6afdc3fc61bb719151762c83c9",
+    "pdf_sha256": "b766698e65d5ed190ef854a2bf8032018d95d556ffd1a6f6fb06300a4170f0aa"
+  }
+]

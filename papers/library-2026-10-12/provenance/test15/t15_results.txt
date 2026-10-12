@@ -1,0 +1,27 @@
+== P-a: observed curvature of aggregate shares vs curvature predicted from other replicates ==
+all groups, all environments       n=1800  slope 0.492 [0.436, 0.554]  intercept -0.0157  r = 0.332  RMSE pred 0.2703 vs two-type(D=0) 0.2761
+MTX selection                      n= 900  slope 0.393 [0.298, 0.489]  intercept -0.0543  r = 0.209  RMSE pred 0.3718 vs two-type(D=0) 0.3802
+no MTX                             n= 900  slope 0.281 [-0.706, 1.621]  intercept -0.0021  r = 0.016  RMSE pred 0.0890 vs two-type(D=0) 0.0890
+  MTX + CuSO4                      n= 180  slope 0.253 [0.116, 0.466]  intercept -0.0716  r = 0.147  RMSE pred 0.3388 vs two-type(D=0) 0.3272
+  MTX + DMSO                       n= 180  slope 0.212 [0.040, 0.426]  intercept -0.0852  r = 0.105  RMSE pred 0.4347 vs two-type(D=0) 0.4153
+  MTX + FK506                      n= 180  slope 0.621 [0.498, 0.801]  intercept -0.0069  r = 0.323  RMSE pred 0.3795 vs two-type(D=0) 0.4189
+  MTX + H2O2                       n= 180  slope 0.166 [-0.007, 0.358]  intercept -0.1046  r = 0.093  RMSE pred 0.3714 vs two-type(D=0) 0.3563
+  MTX + NaCl                       n= 180  slope 0.709 [0.507, 0.947]  intercept -0.0071  r = 0.366  RMSE pred 0.3247 vs two-type(D=0) 0.3752
+
+== P-c: size of curvature by environment (RMS of D_obs per 3 generations) ==
+     rms_Dobs  rms_Dpred
+mtx                     
+no     0.0890     0.0056
+yes    0.3802     0.3077
+
+== P-b: two-type closure: single genotype vs single reference genotype ==
+  MTX=yes pairs= 170  RMS curvature 0.9077   replicate noise 0.3109   RMS of replicate-mean curvature 0.8715   (noise/sqrt3 = 0.1795)
+  MTX=no  pairs= 500  RMS curvature 0.4305   replicate noise 0.4136   RMS of replicate-mean curvature 0.2669   (noise/sqrt3 = 0.2388)
+  for comparison, mixed groups under MTX: RMS curvature 0.3802
+
+== tool value: forecasting the held-out share at generations 6-12 from generations 0-3 ==
+  MTX=yes mean |error| in log-odds: straight-line (two-type) 0.9283   hidden-variety model 0.3847   (n=300)
+  MTX=no  mean |error| in log-odds: straight-line (two-type) 0.1128   hidden-variety model 0.0598   (n=300)
+
+== fitness reproducibility across replicates (genotype level) ==
+  median correlation of genotype fitness, replicate 1 vs 2, over 10 environments: 0.979 (min 0.936)

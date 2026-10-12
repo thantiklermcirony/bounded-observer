@@ -1,5 +1,8 @@
 # Gate 1 · Access
 
+> Earlier six-gate composition teaching route. See the [current project map](project-structure.md) and [current library](../papers/README.md) for the full operational framework and branches.
+
+
 **What can an observer reach, from inside the world it measures?**
 
 This is the premise everything else is derived from, and it is the one thing the programme

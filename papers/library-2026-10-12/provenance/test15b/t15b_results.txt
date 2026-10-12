@@ -1,0 +1,18 @@
+== T15b PRIMARY (pre-registered decision set): seven 3-replicate experiments ==
+  6: fewer than two replicates pass the depth rule; skipped
+  13: fewer than two replicates pass the depth rule; skipped
+  primary: n=449  replicate consistency of observed curvature r_rep=0.611
+     slope 0.682  r 0.672  RMSE hidden-variety 0.1680 | clock-only two-type 0.1871 | D=0 0.2148  (improvement over clock-only 10.2%)
+     verdict: FAIL
+
+== T15b SECONDARY (reported, not decisive): nine 2-replicate environments ==
+  1.4%: fewer than two replicates pass the depth rule; skipped
+  1.5%: fewer than two replicates pass the depth rule; skipped
+  1.6%: fewer than two replicates pass the depth rule; skipped
+  1.7%: fewer than two replicates pass the depth rule; skipped
+  1.8%: fewer than two replicates pass the depth rule; skipped
+  2.5%: fewer than two replicates pass the depth rule; skipped
+  Ben0.4: fewer than two replicates pass the depth rule; skipped
+  Ben10: fewer than two replicates pass the depth rule; skipped
+  Ben2: fewer than two replicates pass the depth rule; skipped
+  no evaluable rows

@@ -2,91 +2,100 @@
 
 *Science from within.*
 
-An observer with finite access, standing inside the world it measures, cannot see everything.
-That premise starts the programme. Each later result has its own assumptions and tests.
+The Bounded Observer studies what an observer can **record, read, retain, combine and change**. An observer here is defined by its access and allowed operations. The same questions can be asked of a detector, an experiment, a cell model or a computational system.
 
-Finite access makes **predictive state** a question: what must be kept so the rest of the past
-can be forgotten safely? A bounded quantity has a lawful **composition** only after its
-changes pass separate state and action tests. When composition satisfies C1–C4 below, an
-additive coordinate puts a finite bound at an unreachable **horizon**. A multidimensional
-**geometry** needs further structure, including the observer's comparison and channel cone.
-
-The central theorem is the **Universal Hyperbolic Law**. Status: [P] under C1–C4. For a bounded
-real quantity, these conditions require continuous, associative, strictly monotone composition
-with a neutral state. They give an additive coordinate, its *rapidity*, in which the bound sits at
-infinity. Boundedness alone gives neither that law nor a particular geometric curvature.
+**UHL**, the Universal Hyperbolic Law, supplies the operational mathematics of positive records and bounded normalized readings. **SIH**, the Singularity Hypothesis, studies regularity and boundary concentration in specified field models. **IDA, VCC and the other branches** turn the programme's questions into instruments, models and experiments.
 
 Daniel John Murray · [ORCID 0009-0005-1794-5945](https://orcid.org/0009-0005-1794-5945)
 
-## Start here
+## One project, a common foundation
 
-| If you are | Start at |
+The mathematical library closes a precise operational loop:
+
+```text
+record → reading or intervention → updated record
+   ↕                                   ↕
+combine parts → joint record → retain part → next record
+```
+
+**[P, conditional]** In the finite complex record model, effects, completely positive instruments, tensor composition, marginals, purification and environment dilation remain within the declared record class. This is operational closure. The cone classification and complex composition use the named premises in [the capstone](papers/library-2026-10-12/papers/capstone.md) and [Paper 1](papers/library-2026-10-12/papers/paper1.md).
+
+An application specifies what its records mean, which operations are available, what information must be retained, and how change is measured. It can use the general predictive-state question, the positive two-weight model, or the complex record model according to its own assumptions. The biological line model is self-contained; it does not require a quantum or gravitational interpretation.
+
+The [project structure](docs/project-structure.md) gives the dependency map. The [branch contract](docs/branch-contract.md) states what a new extension must specify.
+
+The common task is to identify **which distinctions matter**. If two histories have the same summary but different conditional future readings under the same allowed intervention, that summary is insufficient. If every declared future reading agrees, the distinction can be forgotten for those tasks. The geometry describes lawful changes within a model; the branches establish which records and changes are useful in their subjects.
+
+## Explore the project
+
+| Purpose | Start here |
 | --- | --- |
-| A person | [the website](https://thantiklermcirony.github.io/bounded-observer/) — twelve simulations you can touch |
-| Curious what finite observation feels like | [Inside](https://thantiklermcirony.github.io/bounded-observer/inside.html) — an original cinematic story and optional constructed valley; social outcomes illustrate chosen rules, not empirical evidence |
-| Tracing the wider research | [research library](https://thantiklermcirony.github.io/bounded-observer/library.html) — dated manuscript and prediction records; [laboratories](https://thantiklermcirony.github.io/bounded-observer/labs.html) — results and failure gates |
-| An AI agent | [`AGENTS.md`](AGENTS.md), then [`llms.txt`](llms.txt) |
-| A mathematician | [`papers/capstone/`](papers/capstone/) — *Bounded Composition and Its Horizons*, v2.1 |
-| Here to check the maths | [`toolkit/`](toolkit/) — `pip install -e toolkit && pytest toolkit/tests` |
-| Looking for what is untested | [`registry/atlas.csv`](registry/atlas.csv) — every claim, its status, its next test |
-| Here for the instrument | [`apps/ida-live/`](apps/ida-live/) — the law running on a living mind |
+| Understand the whole programme | [Project and branches](https://thantiklermcirony.github.io/bounded-observer/project.html) · [source map](docs/project-structure.md) |
+| Join or run the research | [Working lab](LAB.md) · [Research board](docs/research-board.md) · [Usable toolkit](toolkit/README.md) |
+| Read the current mathematics | [Capstone PDF](papers/library-2026-10-12/pdf/capstone.pdf) · [nine-manuscript library](papers/README.md) · [SSRN record](https://papers.ssrn.com/abstract=7603080) |
+| Read the field programme | [SIH and physical models](branches/physics/README.md) |
+| Explore the earlier composition model | [Six-gate walk](https://thantiklermcirony.github.io/bounded-observer/) · [frozen capstone v2.1](papers/capstone/) |
+| Work on measurements and useful action | [IDA](branches/ida/README.md) |
+| Work on cellular perturbation prediction | [Arc competition](branches/vcc/README.md) · [Earlier cell-response flights](branches/cell-flights/README.md) |
+| Work on adaptation, hormesis, redox or population models | [Living systems](branches/adaptation/README.md) |
+| Work on evidence, memory and scientific AI | [Scientific AI](branches/scientific-ai/README.md) |
+| Follow arithmetic or domain evidence research | [Arithmetic](branches/arithmetic/README.md) · [Evidence and decisions](branches/evidence-decisions/README.md) |
+| Check the project as an AI agent | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) |
 
-## The six gates
+## The branches and their relationships
 
-Every chapter, folder and simulation follows the same order. Each gate needs the one above it:
-a claim about geometry means nothing until the state and the admissible actions are fixed.
-
-| Gate | The question | Where |
+| Branch | Shared question | Additional structure |
 | --- | --- | --- |
-| 1 · Access | What can an observer reach from inside? | [`docs/1-access.md`](docs/1-access.md) |
-| 2 · State | What must be kept so the rest can be forgotten? | [`docs/2-state.md`](docs/2-state.md) |
-| 3 · Action | Which interventions act the same way from every state? | [`docs/3-action.md`](docs/3-action.md) |
-| 4 · Chart and boundary | How do bounded changes combine, and can the edge be reached? | [`docs/4-chart.md`](docs/4-chart.md) |
-| 5 · Geometry | What shape is the room inside the horizon? | [`docs/5-geometry.md`](docs/5-geometry.md) |
-| 6 · Prediction | Does it win on data it has never seen? | [`docs/6-prediction.md`](docs/6-prediction.md) |
+| Geometry and physical models | What geometry and operations follow from the specified record system? | Cone/correspondence premises; physical clocks, signals, fields and actions where used |
+| SIH | Where can a specified field remain regular or concentrate? | The PDE, target space, energy convention and initial/boundary data |
+| IDA | Which measured distinctions change a useful intervention? | Signal calibration, intervention protocol and independently assessed later outcomes |
+| Arc Virtual Cell Challenge | Which retained cellular distinctions predict a perturbation response? | Assay normalization, response model, held-context evaluation and challenge metrics |
+| Earlier cell-response flights | Does the selected model improve the specified cellular response comparison? | Separate archived flight protocols, assay records and failed outcomes |
+| Adaptation and biology | What can a bounded response and its history predict? | Growth, binding, repair/damage or resource dynamics, plus a declared clock and endpoint |
+| Scientific AI | Which records preserve the warrant for a future answer or action? | Typed evidence, source versions, dependency rules, trusted checks and workload comparisons |
+| Arithmetic | Which distinctions survive projection or refinement? | Exact divisibility and wheel constructions; approximation bounds when predicting primes |
+| Evidence and decisions | Which evidence warrants a particular decision? | Domain-specific sources, applicability and decision rules; no full UHL model is established for every historical review |
 
-## Status tags
+These are relationships to a common operational programme. A branch's mathematical theorem, physical interpretation, implementation and empirical outcome have separate records in the [branch registry](registry/branches.json).
 
-Every claim in this repository carries one:
+## Current library and corrections
 
-- **[P]** proven here, or classical with a citation.
-- **[D]** derived and awaiting independent checking.
-- **[H]** a hypothesis with a stated test and a stated loss condition.
+The 12 October library contains a capstone, eight supporting papers, a hormesis amendment and two proposed author corrections. The twelve public manuscripts were received by SSRN on 13 October 2026 and await completeness review. See the [dated publication receipt](papers/PUBLICATION_STATUS_2026-10-13.md).
 
-A claim is promoted only when its test has run. Failures stay in the record: see
-[`experiments/h1-decrease/`](experiments/h1-decrease/), a prediction in a dated local analysis plan of this
-programme that was tested and refuted as stated.
+**[P, conditional]** The current hormesis amendment gives exact onset and peak laws for its specified response models. It replaces the unrestricted necessity and universal peak claims. The earlier deformed-kinematics uniqueness claim also has a dedicated proposed correction. Original versions remain available with their correction links.
 
-## What has been tested
+The checked publication snapshot is preserved under [papers/library-2026-10-12](papers/library-2026-10-12/). The 30 September [v2.1 composition capstone](papers/capstone/) remains a separate, frozen source. The [earlier catalogue](registry/atlas.csv) and [dated legacy inventory](registry/legacy/README.md) retain the historical programme.
 
-| Result | Status |
-| --- | --- |
-| Across 19 public meta-analyses, 14 showed heterogeneity between trials; in 11 of those 14 the flat risk difference was the least consistent effect scale | replication of the correspondence prediction |
-| H1, mechanistic overlap against the one-horizon dial position, specified in a dated local plan and tested on DECREASE (210 blocks, 36 pairs) | **refuted as stated**; restated as a statement about surfaces, not a single dial position |
-| Hormesis as a geometric necessity | published, [SSRN 6858819](https://papers.ssrn.com/abstract=6858819) |
-| Glutathione two-failure-mode model | published, [SSRN 6754498](https://papers.ssrn.com/abstract=6754498) |
+## Evidence and checks
 
-## Layout
+Proof, numerical agreement, software behavior and empirical prediction are different forms of evidence. **[P]** identifies a scoped proof or cited theorem; **[D]** identifies a derivation awaiting checking; **[H]** identifies a hypothesis with a test and loss condition. Empirical outcomes are recorded separately as supported, failed, mixed or untested. A passing simulation does not establish biological or physical validity.
 
-```
-docs/        six chapters, one per gate
-site/        the website, Inside experience, interactive models, research library and laboratories
-toolkit/     the Python package `bounded`: the maths, with tests that check each theorem
-registry/    the current claim atlas and dated source inventory
-papers/      programme paper guide and the capstone source
-experiments/ dated local analysis plans with their data and code
-apps/        IDA Live, the instrument
+The [evidence atlas](https://thantiklermcirony.github.io/bounded-observer/evidence.html), [laboratories](https://thantiklermcirony.github.io/bounded-observer/labs.html) and current branch pages retain failed outcomes, including H1, Recovery Lab, the two earlier Virtual Cell flights and the rejected VCC candidate. The October library preserves T15/T15b failures and the separate cosmological test outcomes.
+
+```sh
+pip install -e "toolkit[test]"
+pytest toolkit/tests -q
+python registry/validate_programme.py
 ```
 
-## Contributing
+Toolkit v1.1 preserves the original v2.1 composition modules and adds selected current [record operations](toolkit/RECORDS.md) and [hormesis models](toolkit/HORMESIS.md), with their premises stated at the API. The frozen library includes thirteen independent mathematical check modules and their receipts. Its reproduction instructions explain how to run them in a separate working copy.
 
-New charts, replications and refutations are all welcome, and a refutation is worth more than
-a confirmation. See [`CONTRIBUTING.md`](CONTRIBUTING.md). The one rule: nothing is claimed
-without a status tag, and nothing is promoted without a test.
+## Repository roles
 
-## Licence
+This repository is the canonical project entrance, current mathematical library and branch registry. Existing repositories remain component stores:
 
-Code is MIT (see [`LICENSE`](LICENSE)). Text and figures are CC BY 4.0
-(see [`LICENSE-CONTENT`](LICENSE-CONTENT)). Third-party material is listed in each folder's
-`NOTICE.md`. The dated source inventory preserves original identifiers and links; its
-underlying manuscripts, datasets, art and source repositories retain their own terms.
+- [empirical-architecture](https://github.com/thantiklermcirony/empirical-architecture): earlier foundations, manuscripts and certificates.
+- [empirical-observatory](https://github.com/thantiklermcirony/empirical-observatory): experiments, software, data routes and frozen laboratory results.
+- [ida-stateatlas](https://github.com/thantiklermcirony/ida-stateatlas): the StateAtlas instrument application.
+- [boundedness-atlas](https://github.com/thantiklermcirony/boundedness-atlas): the earlier public synthesis and its source history.
+- Engineering forks and upstream pull requests: their own code and review histories.
+
+Future research begins as a branch here. An independently maintained application or large data workflow may need a component repository; that changes its storage, not its place in the programme.
+
+The [research board](docs/research-board.md) names concrete proof, replication and instrument tasks. The [incubation register](docs/incubation.md) keeps earlier and proposed lines visible while their source and model bindings are established.
+
+## Contribute and reuse
+
+Use the [branch contract](docs/branch-contract.md) and [contribution guide](CONTRIBUTING.md). Preserve sources, assumptions, corrections and failed tests.
+
+Original code is MIT; original text and figures are CC BY 4.0. The twelve new public manuscripts use the author-approved CC BY 4.0 option. The [dated receipt](papers/PUBLICATION_STATUS_2026-10-13.md) explains the historical snapshot notices. Linked manuscripts, datasets, third-party material and component repositories retain their own terms.

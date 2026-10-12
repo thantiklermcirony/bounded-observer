@@ -1,0 +1,53 @@
+{
+  "paper": 4,
+  "title": "Two Observers",
+  "subtitle": "Complex composition purification and the dynamics of retained records",
+  "author": "Daniel John Murray",
+  "date": "12 October 2026",
+  "version": "Working v3.1",
+  "abstract": "We study two complex binary record systems under an explicitly specified tensor-product composition. Local tomography gives sixteen real readings, and the fifteen nonconstant generators contain entangling motions. A pure joint amplitude supplies exact determinant, concurrence, Schmidt and steering identities. Its right purification fiber and left determinant-preserving stabilizer recover the algebraic massive little group, while physical spin and proper time require separate identifications. We construct maximum-entropy forgetting for a complete retained observable algebra, distinguish it from canonical typicality, and prove a clock-invariant full-rank bound for finite-dimensional time-local GKSL evolution. A Busemann barycenter gives a nonlinear projection of angular probability onto harmonic measures, with a finite-entropy condition for its KL interpretation. Independently sampled non-elementary filters have conditional boundary and geodesic-tracking results; isotropic steps yield an exact escape-rate formula. These results close the declared composition and dynamics models without identifying every mixed environment with entanglement, every observer path with a geodesic, or equilibrium state selection with a unique physical generator.\n",
+  "keywords": [
+    "quantum composition",
+    "local tomography",
+    "purification",
+    "concurrence",
+    "quantum steering",
+    "conditional expectation",
+    "Lindblad evolution",
+    "hyperbolic random walk"
+  ],
+  "conditions": [
+    "Standard complex tensor-product composition, product effects and completely positive local operations are explicitly specified.",
+    "Pure joint amplitude is nonzero; raw determinant mass and normalized concurrence have separate normalization.",
+    "Physical momentum, spin and proper-time interpretations require separately calibrated operational bridges.",
+    "Right fiber U2, determinant-phase-fixed SU2 and scalar-phase quotient PU2=SO3 are distinguished.",
+    "Selected steering retains its effect and success probability; unconditional trace-preserving partner action leaves the marginal unchanged.",
+    "Maximum-entropy forgetting retains every reading of a specified finite unital star subalgebra.",
+    "Canonical typicality samples Haar-random states in a constrained subspace with effective-bath dimension conditions.",
+    "GKSL boundary bound requires finite integrated operator-norm jump activity and a specified or canonical jump representation.",
+    "Busemann barycenter requires no atom at least one-half; finite KL projection additionally requires finite relative entropy.",
+    "Random-filter tracking assumes IID, finite first moment and non-elementary support; exact drift formula additionally requires isotropic steps."
+  ],
+  "references": [
+    "[1] H. Barnum, M. A. Graydon and A. Wilce, “Composites and Categories of Euclidean Jordan Algebras,” *Quantum* **4**, 359 (2020). [doi:10.22331/q-2020-11-08-359](https://doi.org/10.22331/q-2020-11-08-359).",
+    "[2] W. K. Wootters, “Entanglement of Formation of an Arbitrary State of Two Qubits,” *Physical Review Letters* **80**, 2245–2248 (1998). [doi:10.1103/PhysRevLett.80.2245](https://doi.org/10.1103/PhysRevLett.80.2245).",
+    "[3] E. P. Wigner, “On Unitary Representations of the Inhomogeneous Lorentz Group,” *Annals of Mathematics* **40**, 149–204 (1939). [doi:10.2307/1968551](https://doi.org/10.2307/1968551).",
+    "[4] W. F. Stinespring, “Positive Functions on C*-algebras,” *Proceedings of the American Mathematical Society* **6**, 211–216 (1955). [doi:10.1090/S0002-9939-1955-0069403-4](https://doi.org/10.1090/S0002-9939-1955-0069403-4).",
+    "[5] G. Lindblad, “Completely Positive Maps and Entropy Inequalities,” *Communications in Mathematical Physics* **40**, 147–151 (1975). [doi:10.1007/BF01609396](https://doi.org/10.1007/BF01609396).",
+    "[6] B. Baumgartner and H. Narnhofer, “Analysis of quantum semigroups with GKS–Lindblad generators II. General,” *Journal of Physics A* **41**, 395303 (2008). [arXiv:0806.3164](https://arxiv.org/abs/0806.3164).",
+    "[7] S. Popescu, A. J. Short and A. Winter, “Entanglement and the foundations of statistical mechanics,” *Nature Physics* **2**, 754–758 (2006). [doi:10.1038/nphys444](https://doi.org/10.1038/nphys444); [arXiv:quant-ph/0511225](https://arxiv.org/abs/quant-ph/0511225).",
+    "[8] G. Lindblad, “On the Generators of Quantum Dynamical Semigroups,” *Communications in Mathematical Physics* **48**, 119–130 (1976). [doi:10.1007/BF01608499](https://doi.org/10.1007/BF01608499).",
+    "[9] A. Douady and C. J. Earle, “Conformally natural extension of homeomorphisms of the circle,” *Acta Mathematica* **157**, 23–48 (1986). [doi:10.1007/BF02392590](https://doi.org/10.1007/BF02392590).",
+    "[10] H. Furstenberg, “Noncommuting random products,” *Transactions of the American Mathematical Society* **108**, 377–428 (1963); V. A. Kaimanovich, “The Poisson formula for groups with hyperbolic properties,” *Annals of Mathematics* **152**, 659–692 (2000). [arXiv:math/9802132](https://arxiv.org/abs/math/9802132).",
+    "[11] A. Karlsson and G. A. Margulis, “A Multiplicative Ergodic Theorem and Nonpositively Curved Spaces,” *Communications in Mathematical Physics* **208**, 107–123 (1999). [doi:10.1007/s002200050750](https://doi.org/10.1007/s002200050750).",
+    "[12] G. Birkhoff, “Extensions of Jentzsch's Theorem,” *Transactions of the American Mathematical Society* **85**, 219–227 (1957). [doi:10.2307/1992971](https://doi.org/10.2307/1992971)."
+  ],
+  "language": "en",
+  "status": "publication working manuscript",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent researcher, Melbourne, Australia",
+  "source_sha256": "75fa1766da17777e02c1fe10349d81638ff8fd1988cf619eb7bf44a0064a16d0",
+  "source_file": "papers/paper4.md",
+  "pdf_sha256": "b4ee9d015d7b9c5288ac0d83147c8cf8492c13139c32a8cc38e0b079966e9996",
+  "pdf_file": "pdf/paper4.pdf"
+}

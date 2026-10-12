@@ -1,0 +1,14 @@
+{
+  "title": "One Motion on the Line",
+  "subtitle": "Filters, mixture curvature and competing responses in a bounded two-outcome record",
+  "author": "Daniel John Murray",
+  "date": "12 October 2026 — revised working version 3.1",
+  "abstract": "A positive two-outcome record has a projective log-odds coordinate. Fixed diagonal filters translate this coordinate and compose the normalized bias by the Einstein addition formula. We show exactly how specified exponential growth, Boltzmann weighting and all-or-none binding models realize this same action. For fixed-rate mixtures, log-odds curvature is the difference of the within-group rate variances, rather than total hidden heterogeneity. We derive the transformation under a variable common clock, establish the finite-atomic criterion for constant-coefficient linear moment closure, and give counterexamples to broader identifiability claims. For an explicitly specified multiplicative Hill benefit–harm response, we prove a necessary and sufficient beneficial-interval condition, its unique peak, its exact amplitude and its threshold asymptotics. This response model is distinct from an additive-rapidity viability model. The results are conditional mathematical laws with experimentally stated model assumptions; boundedness alone does not force exponential growth, a Hill response, a common clock or hormesis. The line construction is self-contained and does not require a quantum or gravitational reconstruction. It supplies a practical common language for several biological models and their falsification.\n",
+  "keywords": "log odds; bounded records; selection; hidden heterogeneity; biological clocks; hormesis; Hill response",
+  "source_sha256": "a39a826a98f6e16db9b896cf0e8523dcbf71840a96c3296a33e668b96abab299",
+  "source_file": "papers/paper2.md",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent Researcher, Melbourne, Australia",
+  "pdf_sha256": "7e3491e63a6b1dc2d1705dc882ee769a654b410a1e2763edd5ea647dc41482db",
+  "pdf_file": "pdf/paper2.pdf"
+}

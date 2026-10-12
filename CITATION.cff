@@ -1,18 +1,28 @@
 cff-version: 1.2.0
 title: "The Bounded Observer"
-message: "If you use this work, please cite the capstone manuscript."
+message: "Cite the relevant manuscript for a scientific result, and the software version for an implementation."
 type: software
 authors:
   - family-names: Murray
     given-names: Daniel John
     orcid: "https://orcid.org/0009-0005-1794-5945"
 abstract: >-
-  A research programme derived from one premise: an observer with finite access, standing inside
-  the world it measures. Finite access forces a predictive state; bounded quantities force a
-  composition law; that law forces a horizon; the horizon forces a hyperbolic geometry. The
-  central theorem is the Universal Hyperbolic Law.
+  A research programme about records, readings, operations, composition and retained information.
+  UHL supplies operational geometry under named premises. SIH studies field regularity and
+  concentration in specified models. IDA, VCC and other branches supply instruments, applications
+  and empirical tests with explicit observation and intervention interfaces.
 license: MIT
 repository-code: "https://github.com/thantiklermcirony/bounded-observer"
+preferred-citation:
+  type: article
+  title: "The Bounded Observer"
+  authors:
+    - family-names: Murray
+      given-names: Daniel John
+      orcid: "https://orcid.org/0009-0005-1794-5945"
+  year: 2026
+  url: "https://papers.ssrn.com/abstract=7603080"
+  notes: "Working preprint; submitted 13 October 2026; SSRN completeness review pending at that date."
 references:
   - type: article
     title: "Bounded Composition and Its Horizons: when a bounded quantity earns an additive chart, a horizon and a geometry"
@@ -20,4 +30,4 @@ references:
       - family-names: Murray
         given-names: Daniel John
     year: 2026
-    notes: "Version 2.1"
+    notes: "Historical frozen version 2.1, 30 September 2026"

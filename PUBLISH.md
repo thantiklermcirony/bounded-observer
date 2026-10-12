@@ -12,19 +12,32 @@ Run from the repository root with Python 3.10+ and Node.js 20+:
 ```sh
 python -m pip install -e "toolkit[test]"
 python -m pytest toolkit/tests -q
+python registry/validate_programme.py
 node site/bo.test.mjs
+node --test site/inside-core.test.mjs
+node --test site/valley-world.test.mjs
+node --test site/radiation-model.test.mjs
+node --check site/inside.js
+node --check site/valley-view.mjs
+node --check site/inside-film.mjs
+node --check site/inside-film-player.js
 python registry/legacy/validate_inventory.py
 python site/build_evidence.py
+python site/build_programme.py
 git diff --check
 ```
 
-Check whether `site/evidence.html` changed after regeneration; commit it with
-the corresponding `registry/atlas.csv` edit. The inventory validator checks
-the dated source receipt and its GitHub Pages copy. IDA Live has its own
-dependencies and checks in `apps/ida-live/README.md`. CI runs the site maths,
-toolkit, current atlas, dated inventory and IDA checks.
+Commit generated `site/evidence.html` with its corresponding `registry/atlas.csv`
+edit. The branch and publication registries generate `site/project.html`,
+`site/papers.html` and the current work section of `site/labs.html`; commit those
+pages with their source changes. Regeneration must leave these pages unchanged
+in a clean checkout. The programme validator verifies branch contracts, local
+links and the exact publication snapshot bytes. CI also runs the toolkit,
+browser models, legacy inventory and IDA simulator checks. IDA setup and the
+minimal cross-platform simulator route are in [LAB.md](LAB.md).
 
-Check the home page, Atlas, Library, Labs, IDA Live, Papers and Contribute
+Check Project, the Walk, Inside, Atlas, Library, Labs, IDA Live, Radiation,
+Papers and Contribute
 pages after deployment. The Library is a text-light, source-pinned receipt of
 the earlier Atlas. The old Observatory remains a separate runnable project:
 its server routes, database and live features cannot be copied unchanged to
@@ -33,11 +46,14 @@ GitHub Pages. Labs indexes its experiments, results and room source routes.
 ## Preserving the earlier work
 
 Keep `boundedness-atlas`, `empirical-observatory`, `empirical-architecture`
-and `ida-stateatlas` online for source history and deep links. The profile
-README groups them in a collapsed archive below the new entry. Do not delete
-or force-push their histories. The current `registry/atlas.csv` is the claim
-classification for this project; `registry/legacy/` keeps the dated wider
-programme inventory without reproducing manuscript prose or 471 page images.
+and `ida-stateatlas` online in their declared component and history roles.
+Do not delete or force-push their histories. The current project registry is
+`registry/branches.json`; `registry/atlas.csv` retains the earlier claim atlas,
+and `registry/legacy/` preserves the dated wider programme inventory. Frozen
+v2.1 remains under `papers/capstone/`. The October library remains byte-for-byte
+under `papers/library-2026-10-12/`; reproduce its receipt-writing checks in a
+separate working copy. Its later submission/licensing status is recorded in
+[the dated publication receipt](papers/PUBLICATION_STATUS_2026-10-13.md).
 
 ## Rights
 

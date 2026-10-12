@@ -1,5 +1,8 @@
 # Gate 2 · State
 
+> Earlier six-gate composition teaching route. See the [current project map](project-structure.md) and [current library](../papers/README.md) for the full operational framework and branches.
+
+
 **What must be kept, so that the rest of the past can be forgotten safely?**
 
 An observer with finite memory has to throw almost everything away. The question is what it is

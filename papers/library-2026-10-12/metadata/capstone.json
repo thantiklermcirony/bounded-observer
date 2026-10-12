@@ -1,0 +1,15 @@
+{
+  "title": "The Bounded Observer",
+  "subtitle": "Operational closure, hyperbolic records and conditional physical applications",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Independent Researcher, Melbourne, Australia",
+  "date": "12 October 2026",
+  "version": "Revised working version 3.1",
+  "abstract": "We formulate the Universal Hyperbolic Law as an operational framework for bounded normalized readings of positive records. Homogeneity, strong self-duality and a connected equivariant reading–generator correspondence select a simple complex Hermitian matrix algebra. Its elementary binary record has a Lorentz cone, a hyperbolic projective interior and exact rapidity composition under canonical filters. With explicit complex composition and complete positivity premises, records, effects, instruments, purification and environment dilation form a closed operational loop. We prove this closure without demanding that the framework uniquely select every Hamiltonian or constant. A full retained-algebra forgetting law supplies a realizable entropy selector; cumulative dissipative exposure gives a clock-invariant obstruction to finite-resource boundary attainment. We organize exact applications to growth, light, composite records, fields, matter and gravity, identifying the additional physical premises each uses. The singularity hypothesis acquires model-specific regularity and concentration statements. A factorization criterion distinguishes model-dependent preparation readings from claims fixed across physical completions. Historical empirical outcomes and high-scale hypotheses are preserved at their supported strength. The resulting library is mathematically closed as an operational framework with explicit applications, rather than an established derivation of all actual physics from boundedness alone.\n",
+  "keywords": "bounded observer; hyperbolic geometry; positive records; operational closure; quantum information; singularities; physical foundations",
+  "source_sha256": "e640eedb3aea53f5a817e7bbf9225411b2745933f21a9cbd070ef4a7a3a28ff0",
+  "source_file": "papers/capstone.md",
+  "pdf_sha256": "a00e2d614a42ab6e3382c1bad696db3f70e1b906adf006bc26e977c9f6707d60",
+  "pdf_file": "pdf/capstone.pdf"
+}

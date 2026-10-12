@@ -11,7 +11,9 @@ if missing_tests:
 
 def tag(v):
     v = (v or "").strip()
-    if v.lower().startswith(("outside", "refuted")):
+    if v.lower().startswith("outside"):
+        return "O"
+    if v.lower().startswith("refuted"):
         return "X"
     parts = v.split(" / ")
     statuses = [re.match(r"^([PDH])(?:$|[\s;,(])", part) for part in parts]
@@ -42,7 +44,7 @@ for L in layers:
             f'<td>{html.escape(r["last_result"])}</td></tr>')
     body.append("</tbody></table></div>")
 
-counts = {t: sum(1 for r in rows if tag(r["verdict_status"]) == t) for t in "PDHMXU"}
+counts = {t: sum(1 for r in rows if tag(r["verdict_status"]) == t) for t in "PDHMXUO"}
 
 page = f"""<!doctype html>
 <html lang="en">
@@ -50,34 +52,34 @@ page = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The atlas · The Bounded Observer</title>
-<meta name="description" content="Every work in the programme placed as a chart of the law, with its status and its next test. Failures included.">
+<meta name="description" content="Earlier composition and manuscript claims, with dated corrections and links to the current project registry.">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>.tag-O{{background:var(--bg-sunk);color:var(--ink-3)}}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the atlas</a>
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="./">The Bounded Observer <span>· science from within</span></a>
-  <nav aria-label="Primary"><a href="./">Walk</a><a href="inside.html">Inside</a><a href="evidence.html" aria-current="page">Atlas</a>
-  <a href="library.html">Library</a><a href="labs.html">Labs</a><a href="ida.html">IDA Live</a>
-  <a href="radiation.html">Radiation</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
+  <nav aria-label="Primary"><a href="project.html">Project</a><a href="./">Walk</a><a href="inside.html">Inside</a><a href="evidence.html" aria-current="page">Atlas</a><a href="library.html">Library</a><a href="labs.html">Labs</a><a href="ida.html">IDA</a><a href="radiation.html">Radiation</a><a href="papers.html">Papers</a><a href="contribute.html">Contribute</a></nav>
 </div></header>
 
 <main id="main" class="wrap" style="padding-top:2.5rem;padding-bottom:4rem">
   <div class="prose">
     <h1>The atlas</h1>
-    <p>Every work in the programme, placed as a chart of the law: what is bounded, which chart
-    applies, what state the claim is in, and — the column that matters — <b>what would move it</b>.
+    <p>The earlier composition and manuscript catalogue: what is bounded, which chart
+    applies, the source claim's status, and <b>what would move it</b>. Current project membership and branch relationships are in the <a href="project.html">project map</a>.
     A row with no next test is a row that cannot be wrong, and it does not belong here.</p>
     <p><span class="tag tag-P">P</span> proven, or classical with a citation ·
        <span class="tag tag-D">D</span> derived, awaiting checking ·
        <span class="tag tag-H">H</span> hypothesis with a stated loss condition ·
        <span class="tag tag-M">M</span> mixed statuses within one work ·
-       <span class="tag tag-X">X</span> outside the law's conditions or explicitly refuted ·
+       <span class="tag tag-O">O</span> outside the earlier composition conditions ·
+       <span class="tag tag-X">X</span> explicitly refuted ·
        <span class="tag tag-U">U</span> status needs classification</p>
     <p>{counts['P']} proven · {counts['D']} derived · {counts['H']} open · {counts['M']} mixed ·
-    {counts['X']} outside or refuted · {counts['U']} unclassified. The full status text stays
-    visible in each row. The law applies <b>only where its four conditions hold</b>.</p>
+    {counts['O']} outside composition scope · {counts['X']} refuted · {counts['U']} unclassified. The full status text stays
+    visible in each row. The C1–C4 composition theorem applies where those conditions hold. The <a href="papers.html">current record library</a> has its own named premises. Outside-scope membership is distinct from refutation.</p>
   </div>
   <div style="max-width:76rem;margin-top:2rem">
   {''.join(body)}

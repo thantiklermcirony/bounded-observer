@@ -1,0 +1,184 @@
+{
+  "title": "Gravity as Equilibrium",
+  "subtitle": "Stationary record geometry, conditional horizon dynamics and cosmological identities",
+  "author": "Daniel John Murray",
+  "orcid": "0009-0005-1794-5945",
+  "affiliation": "Melbourne, Australia",
+  "date": "12 October 2026",
+  "version": "Working version 3.1",
+  "keywords": "Ernst equation; hyperbolic geometry; local horizon thermodynamics; entanglement entropy; cosmological constant; non-equilibrium gravity",
+  "abstract": "Hyperbolic geometry enters gravity through two distinct constructions. On a timelike Killing patch, the stationary vacuum Einstein equations reduce to a hyperbolic Ernst map coupled to a three-dimensional quotient metric. We state that reduction, distinguish the stationary ergosurface from the event horizon, and give the precise conditions of an imported smooth-completion theorem. Photon exchange between normalized orbits of the same Killing field has an exact Busemann redshift expression. Separately, area entropy, Unruh temperature, local horizon equilibrium, the all-horizon Clausius relation and stress-tensor conservation imply Einstein's equation by Jacobson's argument. The entropy coefficient and cosmological constant remain physical inputs. Locality and bounded cells alone do not establish the required area entropy. A declared effective-theory non-collapse condition yields a density ceiling; in flat positive-Λ cosmology the future-event-horizon ratio lies below that scale and reaches equality in the de Sitter limit. These are identities and conditional bounds, not a prediction of the vacuum density. We distinguish a possible emergent-metric interpretation from a microscopic quantum-gravity theory and specify the variables, constitutive laws and initial-value requirements needed for a non-equilibrium extension.\n",
+  "paper_id": "paper7",
+  "publication_status": "working_preprint_v3.1",
+  "conditions": [
+    {
+      "result": "Imported stationary reduction and Proposition 1",
+      "conditions": [
+        "Smooth four-dimensional vacuum Einstein spacetime",
+        "Timelike Killing fixed-sign patch f>0",
+        "Locally defined conventional twist potential",
+        "Specified reduced action with coupled quotient metric"
+      ],
+      "status": "classical equivalence imported; variational equations proved"
+    },
+    {
+      "result": "Imported ergosurface completion",
+      "conditions": [
+        "Stationary axisymmetric vacuum Ernst solution",
+        "Off rotation axis in Weyl coordinates",
+        "Smooth Ernst potential",
+        "No infinite-order zeros of f"
+      ],
+      "status": "imported theorem; genuine curvature singularities outside claim"
+    },
+    {
+      "result": "Theorem 2",
+      "conditions": [
+        "Normalized orbits of same timelike Killing field",
+        "Null-geodesic photon exchange",
+        "Consistent Killing normalization and gravitational metric"
+      ],
+      "status": "proved redshift/Busemann identity; not equivalence-principle derivation"
+    },
+    {
+      "result": "Imported wedge KMS statement",
+      "conditions": [
+        "Relativistic QFT hypotheses of Bisognano-Wichmann",
+        "Specified Minkowski vacuum and wedge",
+        "Regulator for finite density-matrix language"
+      ],
+      "status": "imported quantum-field theorem"
+    },
+    {
+      "result": "Proposition 3",
+      "conditions": [
+        "Faithful finite-dimensional reference state rho0",
+        "Fixed modular Hamiltonian K0=-log rho0",
+        "Differentiable trace-normalized perturbation"
+      ],
+      "status": "proved first variation"
+    },
+    {
+      "result": "Theorem 4",
+      "conditions": [
+        "Smooth Lorentzian spacetime and conserved stress tensor",
+        "Local Rindler pencils through every event and null direction",
+        "Vanishing reference expansion and shear",
+        "Universal area-entropy coefficient eta>0",
+        "Unruh temperature and all-horizon reversible Clausius relation",
+        "Thermodynamic regime neglecting stress fluctuations and higher-order horizon terms"
+      ],
+      "status": "complete conditional Jacobson derivation; eta and Lambda not selected"
+    },
+    {
+      "result": "Proposition 5",
+      "conditions": [
+        "Declared effective-theory non-collapse energy inequality",
+        "Specified spherical radius and volume",
+        "Positive mean energy density"
+      ],
+      "status": "proved density-scale algebra conditional on bound"
+    },
+    {
+      "result": "Theorem 6 and Corollary 7",
+      "conditions": [
+        "Flat FLRW Lambda cosmology",
+        "Positive Lambda",
+        "Nonnegative matter and radiation densities",
+        "Standard stated Friedmann form and future-event-horizon definition"
+      ],
+      "status": "proved bound, monotonicity, de Sitter limit and entropy-capacity identity"
+    },
+    {
+      "result": "Section 7.3",
+      "conditions": [
+        "Separately reported T20 likelihood and datasets",
+        "Reported preregistration and pipeline",
+        "Compressed CMB-prior applicability required for replication"
+      ],
+      "status": "attributed empirical result; no new fit performed"
+    },
+    {
+      "result": "Proposition 8",
+      "conditions": [
+        "Specified unitary plus isotropic depolarization generators",
+        "Gamma>0",
+        "Same fixed clock"
+      ],
+      "status": "proved same-equilibrium/different-response example"
+    },
+    {
+      "result": "Proposition 9",
+      "conditions": [
+        "Additional R+alpha R2 effective action",
+        "Ricci-flat vacuum comparison",
+        "Alpha>0 for positive scalar mass squared"
+      ],
+      "status": "proved action equation and trace; not selected UHL dynamics"
+    },
+    {
+      "result": "Non-equilibrium extension",
+      "conditions": [
+        "State/geometry reading map",
+        "Specified entropy and causal response/noise law",
+        "Closed constrained coupled evolution and data",
+        "Well-posed regime and equilibrium/observable matching"
+      ],
+      "status": "open model construction and analysis; emergent interpretation not no-quantization theorem"
+    }
+  ],
+  "manuscript_sha256": "AD5793FF93934FC95F8406DCF2FDA13E43EDF72081539D09596C36B6283BA10B",
+  "word_count": 3738,
+  "original_author_files_modified": false,
+  "verification": {
+    "display_math_delimiters_balanced": true,
+    "no_internal_filesystem_paths": true,
+    "imported_results_explicitly_labelled": true,
+    "numerics_do_not_replace_proofs": true,
+    "independent_formula_checks": [
+      "all-c null tensor consequence and reduced-action trace normalization reviewed",
+      "restored-units Planck/density/capacity symbolic identities",
+      "flat Lambda cosmology event-horizon inequalities and monotonicity numerical limits"
+    ],
+    "illustrative_flat_cosmology": {
+      "Omega_m": 0.304,
+      "Omega_Lambda": 0.696,
+      "radiation": 0,
+      "q_values": [
+        {
+          "a": 0.01,
+          "q": 0.001151585543427669
+        },
+        {
+          "a": 0.1,
+          "q": 0.07503816446076912
+        },
+        {
+          "a": 0.5,
+          "q": 0.636529462778505
+        },
+        {
+          "a": 1,
+          "q": 0.9093544073161725
+        },
+        {
+          "a": 2,
+          "q": 0.9867046333046227
+        },
+        {
+          "a": 10,
+          "q": 0.9998908280128135
+        },
+        {
+          "a": 1000,
+          "q": 0.9999999998908046
+        }
+      ],
+      "interpretation": "formula verification at stated illustrative parameters; not a new data fit"
+    }
+  },
+  "source_sha256": "ad5793ff93934fc95f8406dcf2fda13e43edf72081539d09596c36b6283ba10b",
+  "source_file": "papers/paper7.md",
+  "pdf_sha256": "6990d4fbe7fb89b2c9450f8cdaedc15fa0be39aa238c8749ba79e3b25f2c8c7a",
+  "pdf_file": "pdf/paper7.pdf"
+}

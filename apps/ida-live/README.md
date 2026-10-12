@@ -1,5 +1,7 @@
 # IDA Live
 
+Part of the [IDA branch](../../branches/ida/README.md). IDA Live and StateAtlas are distinct research instruments with separate capabilities and evidence.
+
 The live instrument of the IDA programme. It reads a Muse S Athena over your laptop's
 Bluetooth, places your state as a point in a hyperbolic (Poincaré disk) map against a
 frozen personal reference, and runs blinded, sham-controlled light experiments, either
@@ -36,11 +38,19 @@ settings are in **Documents\IDA Live**; the Start-menu shortcut **My recordings*
 that folder, and uninstalling (Settings › Apps) never deletes it. If something goes
 wrong, `Documents\IDA Live\ida_live.log` has the details.
 
-Developers can run from source: `install.bat`, then `Start IDA Live.bat`. The installer is
-rebuilt with `packaging/build_windows.sh`. Tests: `python -m pytest tests`.
+Developers can run from source from this folder:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+.venv\Scripts\python -m ida_live --sim
+```
+
+The simulator needs no headband. Use the same environment's Python for tests after installing
+pytest. The installer is rebuilt with `packaging/build_windows.sh`.
 
 This folder is part of [The Bounded Observer](../../README.md). IDA Live is where the
-programme's six gates run on a living mind: a frozen reference (access), return and residue
+programme's six questions are implemented as a research feature model: a frozen reference (access), return and residue
 (state), sealed real-against-replay rounds (action), feature rapidities composed by Möbius
 addition (chart), the Poincaré disk map with the flat map alongside as comparator (geometry),
 and a pre-declared calibration gate (prediction).

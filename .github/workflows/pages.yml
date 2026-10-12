@@ -26,6 +26,10 @@ jobs:
         with: { python-version: '3.12' }
       - name: Rebuild the atlas page from the register
         run: python site/build_evidence.py
+      - name: Build the current programme and paper pages
+        run: python site/build_programme.py
+      - name: Verify branch references and publication snapshot
+        run: python registry/validate_programme.py
       - name: Check the dated research inventory
         run: python registry/legacy/validate_inventory.py
       - uses: actions/configure-pages@v5
