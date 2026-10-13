@@ -81,3 +81,7 @@ Go back to the kitchen and the morning body. Its work has made this encounter po
 Breakfast is on the table. Imagine that the mug beside it is one you learned to hold with both hands, because someone once insisted that a hot drink deserved attention. You find yourself doing it without the instruction being spoken. The small cut on your finger catches your notice, then leaves it. There is a day ahead, with work the body can manage and work for which it may need help.
 
 You take the cup. The gesture is yours now. Somewhere inside that ordinary possession is another person's time.
+
+## Amendment note — 2026
+
+*Amendment note — 2026:* This discussion follows my bounded-adaptive-response work [as amended in 2026 in *Exact Onset and Peak Laws for Bounded Adaptive Responses*](https://papers.ssrn.com/abstract=7603323). Earlier repair activation alone does not guarantee a beneficial interval; the actual repair–damage balance, baseline and measured endpoint matter. The accompanying [correction notice](https://papers.ssrn.com/abstract=7603378) is author-proposed.

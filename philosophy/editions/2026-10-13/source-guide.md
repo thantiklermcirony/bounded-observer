@@ -44,7 +44,9 @@ The current programme papers are author manuscripts. Their mathematical results 
 
 **[On the Mode of Communication of Cholera, second edition](https://www.gutenberg.org/files/72894/72894-h/72894-h.htm).** John Snow. Snow investigated water usage and illness distribution; the handle was removed, but he recorded that attacks had declined beforehand and could not establish whether the well remained infectious at removal.
 
-**[Exact Onset and Peak Laws for Bounded Adaptive Responses; proposed hormesis correction](https://papers.ssrn.com/abstract=7603323).** Daniel John Murray. Boundedness alone does not force a beneficial interval; corrected onset/peak conclusions require the chosen repair/harm model and endpoint assumptions.
+**[Exact Onset and Peak Laws for Bounded Adaptive Responses](https://papers.ssrn.com/abstract=7603323).** Daniel John Murray. Boundedness alone does not force a beneficial interval; corrected onset and peak conclusions require the chosen repair/harm model and endpoint assumptions.
+
+**[Correction to Hormesis as a Geometric Necessity of Bounded Adaptive Systems](https://papers.ssrn.com/abstract=7603378).** Daniel John Murray. The accompanying author-proposed correction records the narrowing of earlier necessity and universal-peak claims. It is an author-proposed notice, rather than an issued journal corrigendum.
 
 **[Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm).** Richard P. Feynman; Caltech commencement address. Feynman urged scientists to guard against self-deception and disclose weaknesses or contrary information instead of presenting only the favorable account.
 

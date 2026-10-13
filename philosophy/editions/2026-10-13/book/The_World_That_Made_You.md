@@ -8,7 +8,7 @@ Illustrated continuous edition, October 2026
 
 ## Before we begin
 
-Lina, Dev, Rae and Kit are fictional. Their home, workplace, school and conversations give the argument a place to happen; they are not accounts of the author's private life or clinical case histories. Historical episodes and scientific results have their own sources, gathered at the end. The illustrations are original imagined scenes.
+Lina, Dev, Rae and Kit are fictional. Their home, workplace, school and conversations give the argument a place to happen; they are not accounts of the author's private life or clinical case histories. Historical episodes and scientific results have their own sources in the accompanying [reading and source guide](../source-guide.md). The illustrations are original imagined scenes.
 
 This book speaks from the philosophical position developed through The Bounded Observer, UHL and SIH. It follows a human life from inherited conditions to the conditions it leaves for others. It contains no mathematics. When a physical or biological result matters to that journey, the conditions that make it applicable remain part of the explanation. The book's judgments about care and responsibility are human commitments argued in the open.
 

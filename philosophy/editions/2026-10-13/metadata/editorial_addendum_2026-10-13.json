@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-13",
+  "title": "Editorial addendum: attribution, disclosure and navigation clarifications",
+  "basis_release_commit": "c10414a96688a9deda0b0a14831c839eb6220d25",
+  "basis_receipt_commit": "7e8338de603273f607563823a6bebbb40d75003c",
+  "applied_commit": "recorded in the follow-up verification commit",
+  "changes": [
+    "Source guide, Essay 4: the combined entry now lists the amendment (SSRN 7603323) and the author-proposed correction (SSRN 7603378) as two distinct linked sources, in both source-guide.html and source-guide.md.",
+    "Essay 2: an 'Amendment note — 2026' after the essay body in the reading page, and as a separated '## Amendment note — 2026' at the end of the editable Markdown. The approved narrative is unchanged.",
+    "Reader pages: the footer credit 'Original imagined illustrations' is replaced by 'Illustration: an original imagined scene, generated with AI. Daniel John Murray developed and revised this series with AI assistance.' on all eleven reader HTML pages; author/date and About link kept.",
+    "Editable Markdown book: the preface now points to the accompanying reading and source guide instead of saying the sources are gathered at the end."
+  ],
+  "unchanged": "Both checked PDFs, all illustrations, captions, the public source ledger (url and additional_url), the release manifest's first-release hashes and the first deployment receipt.",
+  "file_hashes_sha256": {
+    "philosophy/editions/2026-10-13/book/The_World_That_Made_You.md": {
+      "before": "80632f79e0a4b24a05237baf3a38f91b8f64a2fabb7670e10aed3de62f6555c6",
+      "after": "7ba010cf05a0356a8b702e73d3a9e0ea07a78b116bc3affdb233426ed8666a99"
+    },
+    "philosophy/editions/2026-10-13/essays/02_the_body_you_keep_becoming.md": {
+      "before": "6289cf50a6ab438982f0df68b7c5a9f040964da0882fc770da74a445dd3fd7cf",
+      "after": "bdc032dc9378f48079c7b6a7fcc7eaa23605d1320df5e707f760a5a00648f8d8"
+    },
+    "philosophy/editions/2026-10-13/source-guide.md": {
+      "before": "4ce2d77f44511320ed3dad28d507f1911806f6b51300010a81798d2f60bb5124",
+      "after": "e7a5ab6d23b9a053523126531493d0b96d1e28f36c3609355c365e9d67818ce5"
+    },
+    "site/philosophy/01_you_were_not_there.html": {
+      "before": "b9dcc83a7f3aa13179328c1942eac75a27294d370eb3d1ec5808688c52586032",
+      "after": "ed4531b45fe722aff83f96bfa3790ead073068b2b12bb7bfddaf3510c06190f7"
+    },
+    "site/philosophy/02_the_body_you_keep_becoming.html": {
+      "before": "68146111a824b4d1ff80246db56914c5ef3c771d59c43561a0c4ee46b8d532be",
+      "after": "7871a6d4c343826995d19e56de1e94c5301d7011b7a8d59f0948f9340c012f7c"
+    },
+    "site/philosophy/03_the_past_arrives_through_other_people.html": {
+      "before": "5393fc0d563509cdadeaa771f9f9d849ed273a34cb656198b01a1bf29785445f",
+      "after": "218fdf28b6f4a5c5880d8c8e7c8e1c23ec1da31a06935b7a94cd1f2d9773ca27"
+    },
+    "site/philosophy/04_the_room_to_be_wrong.html": {
+      "before": "547f14d9c8f9bbea3a3edfcc00b6c5220b4cac61abeeb85e538349665fcd140d",
+      "after": "757d02a3a844f9cdf775aaa2299fd236065f28d3cba876644770237e7095c839"
+    },
+    "site/philosophy/05_the_edge_of_the_map.html": {
+      "before": "93626d783224c5b0e0f5297f58753e74fc730f5450d7cd3a0b93d5e735d377d5",
+      "after": "67a193e2d88327f07556077273466aed6d382857ec3dad211bcaab2a0516a25f"
+    },
+    "site/philosophy/06_the_world_we_leave_behind.html": {
+      "before": "7c34ca6985eae487d2500854966229f6b75c899f82d4cd0f89ecbfed72125a00",
+      "after": "aef3c02b5f2d024d4706ca425f538d05c395226b08fb52f58714263665f059ed"
+    },
+    "site/philosophy/book.html": {
+      "before": "c71a6d305485cc054c37f3d3087473bff1cdf7105b32a616cb402a8f4d6662b0",
+      "after": "c3fa1c45ba8ec6d1a355cc7c70fcdba8f296eee220ed29dc84c056be081d9d4e"
+    },
+    "site/philosophy/index.html": {
+      "before": "c6516cea5f7bb40844667a7ea157e429fabdf716095bfa76902683f09ba422c4",
+      "after": "82753d756b31df6639730b03acfcb36af8ffaf9d9244c68a11ad2da7f43a274e"
+    },
+    "site/philosophy/profile.html": {
+      "before": "0314161b02ca803222ba8778dc36f20271bb1b9275afa0188bf9f1643cc1e08f",
+      "after": "5dda3a5efad022aa5f8f45c83a11c2d05bed83bea9bd876aa5d387d3c28831ed"
+    },
+    "site/philosophy/reading-guide.html": {
+      "before": "89707fc667ca0b86e7d284aab2c75c8c1bf1bbe23f23984be9f2ea99a2311b5e",
+      "after": "143e7590b2a7cb83fae2cf0dec057c1d5084bac27b1df46912a2f2e855712209"
+    },
+    "site/philosophy/source-guide.html": {
+      "before": "58869277048846a63ac9b39f2dfa8caa76df86c2656f9082649ec0a2f6ba7e18",
+      "after": "95fb194fd2c65eff7109750c70be59ff239a017cebed05965c5304ba1f9bb05b"
+    }
+  },
+  "checked_pdfs": {
+    "site/philosophy/output/pdf/The_World_That_Made_You.pdf": "100ab0981d97737a980c7993d9c0baf0913aea2e9d4dd57309db0df9a4bbe0e7",
+    "site/philosophy/output/pdf/The_World_That_Made_You_Six_Essays.pdf": "d7e0e66d83c300b9d734406d93c7b4e337e2c807d1ed0a32582e45d29f6d81ed"
+  },
+  "pages_verification": "pending at the time of this commit; recorded in the follow-up verification commit"
+}
