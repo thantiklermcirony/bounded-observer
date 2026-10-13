@@ -3,20 +3,34 @@
   "repository": "thantiklermcirony/bounded-observer",
   "branch": "main",
   "comparison_base": "aae11ae730726e95948c2c9dcaea9adf2ab527fd",
-  "release_commit": "recorded in the follow-up receipt commit",
-  "pages_deployment": "pending verification at the time of the release commit",
-  "verified_routes": {},
+  "merged_into": "aae11ae730726e95948c2c9dcaea9adf2ab527fd (main had not advanced)",
+  "release_commit": "c10414a96688a9deda0b0a14831c839eb6220d25",
+  "pushed_at": "2026-10-13T01:06:24Z",
+  "ci": {
+    "tests": {"conclusion": "success", "run": "https://github.com/thantiklermcirony/bounded-observer/actions/runs/38330530324"},
+    "pages": {"conclusion": "success", "run": "https://github.com/thantiklermcirony/bounded-observer/actions/runs/38330530334", "deployment_id": 7027514947, "deployed_at": "2026-10-13T01:06:50Z", "environment_url": "https://thantiklermcirony.github.io/bounded-observer/"}
+  },
+  "verified_routes": {
+    "series": "https://thantiklermcirony.github.io/bounded-observer/philosophy/",
+    "book": "https://thantiklermcirony.github.io/bounded-observer/philosophy/book.html",
+    "book_pdf": "https://thantiklermcirony.github.io/bounded-observer/philosophy/output/pdf/The_World_That_Made_You.pdf",
+    "essays_pdf": "https://thantiklermcirony.github.io/bounded-observer/philosophy/output/pdf/The_World_That_Made_You_Six_Essays.pdf",
+    "source_guide": "https://thantiklermcirony.github.io/bounded-observer/philosophy/source-guide.html"
+  },
+  "verification": "On 2026-10-13 each route returned HTTP 200 at the same final URL (no redirect). All 20 files under site/philosophy were fetched from the public site and their SHA-256 digests matched the release commit bytes.",
   "book_pdf": {
     "path": "site/philosophy/output/pdf/The_World_That_Made_You.pdf",
     "pages": 101,
+    "bytes": 29335899,
     "sha256": "100ab0981d97737a980c7993d9c0baf0913aea2e9d4dd57309db0df9a4bbe0e7"
   },
   "essays_pdf": {
     "path": "site/philosophy/output/pdf/The_World_That_Made_You_Six_Essays.pdf",
     "pages": 71,
+    "bytes": 29268987,
     "sha256": "d7e0e66d83c300b9d734406d93c7b4e337e2c807d1ed0a32582e45d29f6d81ed"
   },
-  "substack_posts": "pending; no URLs supplied",
+  "substack_posts": "pending; no URLs supplied at this receipt",
   "series_announcement": "not sent",
   "note": "Software, link and production checks establish edition integrity, not empirical confirmation of the philosophy or the framework."
 }
