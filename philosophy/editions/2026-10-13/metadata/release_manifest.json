@@ -1,0 +1,95 @@
+{
+  "series": "The World That Made You",
+  "as_of": "2026-10-13",
+  "articles": [
+    {
+      "order": 1,
+      "title": "You Were Not There at the Beginning",
+      "source_file": "essays/01_you_were_not_there.md",
+      "reading_file": "01_you_were_not_there.html",
+      "image": "images/01_illustration.png",
+      "words": 2825,
+      "public_url": null,
+      "public_date": null,
+      "status": "Reading edition released in the canonical GitHub project on 13 October 2026; Substack web-only post pending (URL not yet supplied)"
+    },
+    {
+      "order": 2,
+      "title": "The Body You Keep Becoming",
+      "source_file": "essays/02_the_body_you_keep_becoming.md",
+      "reading_file": "02_the_body_you_keep_becoming.html",
+      "image": "images/02_illustration.png",
+      "words": 2912,
+      "public_url": null,
+      "public_date": null,
+      "status": "Reading edition released in the canonical GitHub project on 13 October 2026; Substack web-only post pending (URL not yet supplied)"
+    },
+    {
+      "order": 3,
+      "title": "The Past Arrives Through Other People",
+      "source_file": "essays/03_the_past_arrives_through_other_people.md",
+      "reading_file": "03_the_past_arrives_through_other_people.html",
+      "image": "images/03_illustration.png",
+      "words": 2744,
+      "public_url": null,
+      "public_date": null,
+      "status": "Reading edition released in the canonical GitHub project on 13 October 2026; Substack web-only post pending (URL not yet supplied)"
+    },
+    {
+      "order": 4,
+      "title": "The Room to Be Wrong",
+      "source_file": "essays/04_the_room_to_be_wrong.md",
+      "reading_file": "04_the_room_to_be_wrong.html",
+      "image": "images/04_illustration.png",
+      "words": 2706,
+      "public_url": null,
+      "public_date": null,
+      "status": "Reading edition released in the canonical GitHub project on 13 October 2026; Substack web-only post pending (URL not yet supplied)"
+    },
+    {
+      "order": 5,
+      "title": "The Edge of the Map",
+      "source_file": "essays/05_the_edge_of_the_map.md",
+      "reading_file": "05_the_edge_of_the_map.html",
+      "image": "images/05_illustration.png",
+      "words": 2910,
+      "public_url": null,
+      "public_date": null,
+      "status": "Reading edition released in the canonical GitHub project on 13 October 2026; Substack web-only post pending (URL not yet supplied)"
+    },
+    {
+      "order": 6,
+      "title": "The World We Leave Behind",
+      "source_file": "essays/06_the_world_we_leave_behind.md",
+      "reading_file": "06_the_world_we_leave_behind.html",
+      "image": "images/06_illustration.png",
+      "words": 3054,
+      "public_url": null,
+      "public_date": null,
+      "status": "Reading edition released in the canonical GitHub project on 13 October 2026; Substack web-only post pending (URL not yet supplied)"
+    }
+  ],
+  "book_status": "Complete",
+  "public_release": "GitHub reading edition released 13 October 2026; Substack posts and the series announcement are pending",
+  "github_release": {
+    "date": "2026-10-13",
+    "repository": "thantiklermcirony/bounded-observer",
+    "routes": {
+      "series": "https://thantiklermcirony.github.io/bounded-observer/philosophy/",
+      "book": "https://thantiklermcirony.github.io/bounded-observer/philosophy/book.html",
+      "book_pdf": "https://thantiklermcirony.github.io/bounded-observer/philosophy/output/pdf/The_World_That_Made_You.pdf",
+      "essays_pdf": "https://thantiklermcirony.github.io/bounded-observer/philosophy/output/pdf/The_World_That_Made_You_Six_Essays.pdf",
+      "source_guide": "https://thantiklermcirony.github.io/bounded-observer/philosophy/source-guide.html"
+    },
+    "receipt": "github_release_receipt.json"
+  },
+  "substack": {
+    "delivery": "Six web-only individual posts; no individual email sends",
+    "status": "Pending; verified post URLs are added to the articles when supplied"
+  },
+  "series_announcement": {
+    "delivery": "One email for the whole series, including the public book link",
+    "status": "Not sent; requires all six live post URLs and a verified public book link"
+  },
+  "license": "CC BY 4.0 consistent with canonical project content licence; third-party linked sources retain their terms"
+}

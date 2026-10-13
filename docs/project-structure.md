@@ -88,6 +88,7 @@ A branch belongs to the programme when it exposes the [common contract](branch-c
 | [Scientific AI](../branches/scientific-ai/README.md) | Retained evidence, dependency-aware memory and warranted actions |
 | [Arithmetic](../branches/arithmetic/README.md) | Projection and refinement in exact number-theoretic constructions |
 | [Evidence and decisions](../branches/evidence-decisions/README.md) | Source and decision standards; historical domain work with incomplete operational mappings |
+| [Philosophy and human experience](../branches/philosophy/README.md) | Source-traceable interpretation, a continuous human journey and defended ethical commitments |
 
 The [branch registry](../registry/branches.json) records the relationships and supporting sources. Branches can share methods or instruments without one being a theorem of another. IDA asks whether a measured distinction improves an action; VCC asks whether retained cellular information predicts a response. Both use observation, retention and intervention, while their biological bridges and success criteria differ. The earlier GitHub Virtual Cell laboratory and the Arc competition have separate branch identifiers and evidence histories.
 

@@ -1,0 +1,74 @@
+[
+  {
+    "order": 1,
+    "file": "site/philosophy/images/01_illustration.png",
+    "title": "The world before you",
+    "alt": "An adult at a timber window faces a coastal morning; delicate reflections suggest inherited histories.",
+    "caption": "An imagined morning. The street exists before the person looking out.",
+    "credit": "Original illustration created with OpenAI image generation for Daniel John Murray, October 2026.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2590361,
+    "sha256": "95358ccfc5b9c4ff7695a1e8c201c40859d403829f8d5c2b28449cca4346c154"
+  },
+  {
+    "order": 2,
+    "file": "site/philosophy/images/02_illustration.png",
+    "title": "The work of staying alive",
+    "alt": "A worn kitchen table holds food, mending and traces of different ages, beside an empty chair.",
+    "caption": "An imagined table, carrying care and absence through a lifetime.",
+    "credit": "Original illustration created with OpenAI image generation for Daniel John Murray, October 2026.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2771651,
+    "sha256": "9c044e3a3e7d51f6b8c191d39ffed0b5584da7fc19d9ae659c8370f222f7532b"
+  },
+  {
+    "order": 3,
+    "file": "site/philosophy/images/03_illustration.png",
+    "title": "A threshold with a history",
+    "alt": "People pass through a repaired public doorway; a practical object passes to younger hands.",
+    "caption": "An imagined doorway, shaped by the people who made access possible.",
+    "credit": "Original illustration created with OpenAI image generation for Daniel John Murray, October 2026.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2525489,
+    "sha256": "d1be9ffddf1a5092663016038b264e05d03a47ce0954d1cb094d97c4341ec711"
+  },
+  {
+    "order": 4,
+    "file": "site/philosophy/images/04_illustration.png",
+    "title": "Room for another view",
+    "alt": "An adult moves a small lamp in a room with two doors and an imposing portrait.",
+    "caption": "An imagined room. A modest change reveals a usable way through.",
+    "credit": "Original illustration created with OpenAI image generation for Daniel John Murray, October 2026.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2459560,
+    "sha256": "1dda21b684c1dd71c385d05f15b3bb07d46f221252978a9cdb034dccd752a7f1"
+  },
+  {
+    "order": 5,
+    "file": "site/philosophy/images/05_illustration.png",
+    "title": "The edge of the map",
+    "alt": "An observer works beside an unfinished coastline map at a rocky shore under a night sky.",
+    "caption": "An imagined shoreline. The world continues beyond the paper.",
+    "credit": "Original illustration created with OpenAI image generation for Daniel John Murray, October 2026.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2851250,
+    "sha256": "fadaa1b4622a3e745f0bae862883d4bbff63b2c14ff80c272f6f914a502b7f35"
+  },
+  {
+    "order": 6,
+    "file": "site/philosophy/images/06_illustration.png",
+    "title": "Another observer arrives",
+    "alt": "A younger adult faces the same coastal window; repaired objects and a shared garden suggest a possible later morning.",
+    "caption": "An imagined future morning, answering the opening image; a possibility, not a forecast.",
+    "credit": "Original illustration created with OpenAI image generation for Daniel John Murray, October 2026.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3023481,
+    "sha256": "c363dfb51386e87a989686f3d7c7b39c54aabeffff242793a5e4b884a78c515b"
+  }
+]

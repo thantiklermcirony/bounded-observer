@@ -40,6 +40,7 @@ The common task is to identify **which distinctions matter**. If two histories h
 | Work on adaptation, hormesis, redox or population models | [Living systems](branches/adaptation/README.md) |
 | Work on evidence, memory and scientific AI | [Scientific AI](branches/scientific-ai/README.md) |
 | Follow arithmetic or domain evidence research | [Arithmetic](branches/arithmetic/README.md) · [Evidence and decisions](branches/evidence-decisions/README.md) |
+| Follow the human and philosophical journey | [The World That Made You](https://thantiklermcirony.github.io/bounded-observer/philosophy/) · [branch contract](branches/philosophy/README.md) |
 | Check the project as an AI agent | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) |
 
 ## The branches and their relationships

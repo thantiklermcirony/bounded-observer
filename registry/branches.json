@@ -261,6 +261,42 @@
         "empirical": "Listing records provenance; validity of individual domain claims is separately assessed"
       },
       "next_task": "Complete a branch contract for any new formal application; keep historical work linked."
+    },
+    {
+      "id": "philosophy",
+      "title": "The World That Made You: philosophy and human experience",
+      "role": "interpretation, exposition and reflective inquiry",
+      "relation": "A human reading of the Bounded Observer programme, with source-traceable scientific bridges, disclosed fictional scenes and openly defended ethical commitments",
+      "landing": "branches/philosophy/README.md",
+      "question": "How does a person formed by a world learn to examine its conditions, act within them and help shape what another observer inherits?",
+      "contract": {
+        "record": "Versioned essays, the continuous book, source and illustration guides, scientific and historical anchors, and dated editorial review records",
+        "normalization": "Not applicable: philosophical interpretation and literary exposition are not a normalized positive-state model",
+        "readings": "The argument a reader can follow, its factual grounds, distinctions between source claims and interpretation, and the concrete questions or actions the exposition makes understandable",
+        "operations": "Read, compare with primary sources, distinguish fact from fiction or interpretation, challenge an argument, revise the wording and preserve the reason for a correction",
+        "retained_state": "Claim-specific source scope, scientific premises and empirical status, fictional-scene disclosure, the author's defended values, edition identity and consequential revision history",
+        "composition": "Continuous narrative and explicit relations among ideas and sources; no claim that human relationships or ethical arguments implement quantum tensor composition",
+        "clock_resources": "Edition and source-review dates, newsletter publication order and reader access; these editorial times are distinct from physical proper time or accumulated dissipative exposure",
+        "bridge": "Science enters through the conditions and observations of its cited model; human experience enters through philosophical interpretation and disclosed fiction; ethical commitments are stated and defended rather than inferred as physical theorems",
+        "test_revision": "Source and conceptual reviews precede release. Future reader comparisons must name the comprehension or usability question and preserve adverse findings. Corrections change a versioned text and its source guide together without erasing earlier editions"
+      },
+      "dependencies": [
+        "docs/branch-contract.md",
+        "docs/project-structure.md",
+        "papers/library-2026-10-12/papers/capstone.md",
+        "philosophy/editions/2026-10-13/book/The_World_That_Made_You.md",
+        "philosophy/editions/2026-10-13/source-guide.md",
+        "site/philosophy/index.html",
+        "site/philosophy/book.html",
+        "site/philosophy/source-guide.html"
+      ],
+      "evidence": {
+        "proof": "The philosophical interpretation is an argument, not a new physical theorem. Cited mathematical results retain their named premises and source scope",
+        "numerical": "No new numerical validation is supplied by the narrative. Cited calculations, competition receipts and failed comparisons retain their original identities and supported status",
+        "implementation": "Six developed essays and a continuous illustrated twelve-chapter book have complete editorial sources and source-scoped reviews dated 13 October 2026. Reading editions and deployment status are recorded separately in the release manifest",
+        "empirical": "Reader comprehension or practical benefit has not been established by a new reader study. The scientific and historical examples have individual evidence; literature does not independently confirm the whole framework"
+      },
+      "next_task": "Collect source-specific reader questions on the released reading editions and test a declared comprehension or usability improvement. Keep the completed book's human arc intact while the research programme continues through its actual open questions"
     }
   ]
 }
